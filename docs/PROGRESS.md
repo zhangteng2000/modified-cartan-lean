@@ -1,6 +1,6 @@
-VERIFIED: 102 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, and lem:poisson-mean fully proved.
+VERIFIED: 106 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, and the connected two-dominant-index assertion fully proved.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; Montel extraction and the remaining Cartan, Wronskian and logarithmic derivative estimates.
+WIP: Full manuscript; stabilization, Cartan circle estimates, Wronskians, logarithmic derivatives, absorption and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -65,6 +65,6 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 
 `LogPoisson.lean` proves Poisson comparison for logarithmic factors with zeros in the closed disk, including boundary zeros using mathlib's integrability theorem. Finite zero-factor extraction then gives the comparison for any analytic F nonzero at the evaluation point. Integrating the upper and lower kernel bounds proves the manuscript's exact q log|F(w)| − (q²−1)m(R,F) bound. `poissonMeanEstimate_proved` has the original normalized q = (1+t)/(1−t), t = |w|/R.
 
-`Convergence.lean` proves preservation of C-classes and partitions under subsequences, finite simultaneous extraction, transitivity of locally bounded quotients, the exact change-of-dominant-index criterion, boundedness of convergent continuous families including initial terms, and holomorphic/derivative limit interfaces. These results do not assume connectedness. The connected-domain two-dominant-index result still requires Hurwitz and Montel extraction.
+`Convergence.lean` proves preservation of C-classes and partitions under subsequences, finite simultaneous extraction, transitivity of locally bounded quotients, the exact change-of-dominant-index criterion, boundedness of convergent continuous families including initial terms, and holomorphic/derivative limit interfaces. These results do not assume connectedness.
 
-`Hurwitz.lean` now proves Hurwitz nonvanishing on a connected open set, inversion of locally uniform limits, and boundedness of their reciprocals. It proves the two-dominant-index argument once normalized quotients have limits. The paper's unconditional assertion after extraction remains WIP until Montel extraction is proved; this conditional auxiliary lemma is not counted as completion of that assertion.
+`Hurwitz.lean` proves Hurwitz nonvanishing on a connected open set, inversion of locally uniform limits, and boundedness of their reciprocals. `Montel.lean` proves locally bounded holomorphic families are equicontinuous and admits a convergent subsequence on any open subset, using Schwarz and mathlib's Arzelà–Ascoli theorem. `CClass.lean` combines simultaneous Montel extraction with Hurwitz to prove `cclass_two_dominants_after_extraction` in full. The connectedness hypothesis occurs in this auxiliary assertion, not in the C-class definition or the main/sharp targets.

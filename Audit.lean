@@ -7,6 +7,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.cclass_mono
 #print axioms ModifiedCartan.cclass_card_ge_two
 #print axioms ModifiedCartan.partitionProperty_mono
+#print axioms ModifiedCartan.cclass_two_dominants_after_extraction
 #print axioms ModifiedCartan.locallyBounded_mono
 #print axioms ModifiedCartan.locallyBounded_subsequence
 #print axioms ModifiedCartan.locallyBounded_congr
@@ -81,6 +82,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.log_norm_le_poisson
 #print axioms ModifiedCartan.poisson_mean_inequality
 #print axioms ModifiedCartan.poissonMeanEstimate_proved
+#print axioms ModifiedCartan.holomorphic_equicontinuous
+#print axioms ModifiedCartan.montel_subsequence
+#print axioms ModifiedCartan.finite_montel_subsequence
 #print axioms ModifiedCartan.sharpRadius_pos
 #print axioms ModifiedCartan.sharpRadius_lt_one
 #print axioms ModifiedCartan.sharpRadius_quadratic

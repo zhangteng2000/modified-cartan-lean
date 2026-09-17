@@ -15,3 +15,5 @@ import ModifiedCartan.AnalyticStatements
 import ModifiedCartan.LogPoisson
 import ModifiedCartan.Convergence
 import ModifiedCartan.Hurwitz
+import ModifiedCartan.Montel
+import ModifiedCartan.CClass
