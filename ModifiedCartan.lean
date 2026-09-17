@@ -13,3 +13,4 @@ import ModifiedCartan.Envelope
 import ModifiedCartan.HarmonicKernel
 import ModifiedCartan.AnalyticStatements
 import ModifiedCartan.LogPoisson
+import ModifiedCartan.Convergence
