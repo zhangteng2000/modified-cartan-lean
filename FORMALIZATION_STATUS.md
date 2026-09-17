@@ -20,7 +20,7 @@
 | `lem:poisson-mean` | 完整证明 | `poissonMeanEstimate_proved : PoissonMeanEstimate`，允许边界零点，保留原稿的 q 和 q²−1 系数。 |
 | `thm:absorption` | 精确递归半径目标已陈述，半径代数已证明 | `ExplicitAbsorptionTheorem` 同时要求构造有效的 Wronskian 指数并在原稿指定半径上证明吸收。`AbsorptionTheorem` 仅为较弱的存在半径推论目标。解析证明未完成。 |
 | `cor:rank-adaptive-absorption` | 未形式化 | 最大行列式选基、子列固定基和吸收定理应用未证明。 |
-| `lem:stabilization` | 整数计数步骤完成 | `count_stabilization`；Montel 抽取、商函数预序、极大等价类计数和比较的完整论证未证明。 |
+| `lem:stabilization` | 完整证明 | `stabilization_lemma`；同时分析抽取、固定紧集上的最大值发散、实际商函数预序、极大等价类计数及下一层不可比较性均已证明。 |
 | `cor:centers` | 未形式化 | 需主定理与圆盘自同构的拉回。 |
 | `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
 | `cor:geodesic-comparison` | 未形式化 | Harnack 比较、自同构归一化与测地段步骤未证明。 |
@@ -32,9 +32,9 @@
 
 ## 证明边界
 
-- 当前本地源码包含 106 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
+- 当前证明声明总数记录于 `verification/result.json`。它们包含辅助引理，不能把数量当作论文完成比例。
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- `GrowthLemma`、调和包络、调和函数两点核和对数 Poisson 平均四个引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
+- `GrowthLemma`、调和包络、调和函数两点核、对数 Poisson 平均及预序稳定化五个引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
 - `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
 

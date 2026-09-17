@@ -1,4 +1,5 @@
-✔ [3512/3515] Built ModifiedCartan.Montel (19s)
-✔ [3513/3515] Built ModifiedCartan.CClass (18s)
-✔ [3514/3515] Built ModifiedCartan (18s)
-Build completed successfully (3515 jobs).
+✔ [3514/3518] Built ModifiedCartan.FinitePreorder (16s)
+✔ [3515/3518] Built ModifiedCartan.Extraction (16s)
+✔ [3516/3518] Built ModifiedCartan.QuotientStabilization (15s)
+✔ [3517/3518] Built ModifiedCartan (16s)
+Build completed successfully (3518 jobs).

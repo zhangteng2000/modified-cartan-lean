@@ -1,13 +1,13 @@
-VERIFIED: 106 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, and the connected two-dominant-index assertion fully proved.
+VERIFIED: Manuscript lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; stabilization, Cartan circle estimates, Wronskians, logarithmic derivatives, absorption and geometric applications.
+WIP: Full manuscript; Cartan circle estimates, Wronskians, logarithmic derivatives, absorption and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
 
 # Full formalization progress
 
-The goal is the full manuscript, with the original hypotheses, constants, explicit radii, endpoint inequalities, and equivalences. A definition of a proposition is not a proof. The 59 declarations include elementary auxiliary results and do not measure a percentage of manuscript completion.
+The goal is the full manuscript, with the original hypotheses, constants, explicit radii, endpoint inequalities, and equivalences. A definition of a proposition is not a proof. Declaration counts include elementary auxiliary results and do not measure a percentage of manuscript completion.
 
 ## Reproducible baseline
 
@@ -44,7 +44,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `prop:sharp-two-absorption` | WIP | harmonic comparison, path selection and contradiction |
 | `thm:absorption` | WIP | `ExplicitAbsorptionTheorem` now includes exact radii and valid Wronskian exponents; analytic induction remains |
 | `cor:rank-adaptive-absorption` | WIP | minor selection and subsequence basis |
-| `lem:stabilization` | WIP | Montel/Hurwitz and quotient preorder; integer-count step proved |
+| `lem:stabilization` | VERIFIED | `stabilization_lemma`; common extraction, actual quotient preorders, maximal-class counting and incomparability |
 | `thm:main`, `cor:centers` | WIP | stabilization/absorption assembly and disk automorphisms |
 | `thm:sharp-five` | WIP | classical Cartan extraction and sharp absorption; arbitrary open U retained |
 | optimal five-function radius | WIP | Gaussian integral counterexample and exact extremal argument |
@@ -68,3 +68,5 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `Convergence.lean` proves preservation of C-classes and partitions under subsequences, finite simultaneous extraction, transitivity of locally bounded quotients, the exact change-of-dominant-index criterion, boundedness of convergent continuous families including initial terms, and holomorphic/derivative limit interfaces. These results do not assume connectedness.
 
 `Hurwitz.lean` proves Hurwitz nonvanishing on a connected open set, inversion of locally uniform limits, and boundedness of their reciprocals. `Montel.lean` proves locally bounded holomorphic families are equicontinuous and admits a convergent subsequence on any open subset, using Schwarz and mathlib's Arzelà–Ascoli theorem. `CClass.lean` combines simultaneous Montel extraction with Hurwitz to prove `cclass_two_dominants_after_extraction` in full. The connectedness hypothesis occurs in this auxiliary assertion, not in the C-class definition or the main/sharp targets.
+
+`Extraction.lean` proves simultaneous holomorphic-limit-or-compact-supremum-divergence alternatives, including their equivalence to boundedness/unboundedness after extraction. `FinitePreorder.lean` counts actual maximal equivalence classes as finite sets, constructs the injection between successive maximal-class sets, and proves incomparability when the counts agree. `QuotientStabilization.lean` combines them into the full `lem:stabilization` for the manuscript radii σ^k, 0 < σ < 1, on a nonempty finite family. No analytic or order-theoretic conclusion is supplied as an extra hypothesis.

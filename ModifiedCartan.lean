@@ -17,3 +17,6 @@ import ModifiedCartan.Convergence
 import ModifiedCartan.Hurwitz
 import ModifiedCartan.Montel
 import ModifiedCartan.CClass
+import ModifiedCartan.Extraction
+import ModifiedCartan.FinitePreorder
+import ModifiedCartan.QuotientStabilization

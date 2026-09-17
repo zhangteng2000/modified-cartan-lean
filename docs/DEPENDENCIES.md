@@ -25,7 +25,7 @@ flowchart TD
   Mean --> Abs
   TwoAbs --> Abs
   Abs --> Rank[cor:rank-adaptive-absorption]
-  Normal[Montel and Hurwitz extraction] --> Stabilize[lem:stabilization]
+  Normal[VERIFIED Montel and Hurwitz extraction] --> Stabilize[VERIFIED lem:stabilization]
   Counts[proved integer count stabilization] --> Stabilize
   Rank --> Main[thm:main]
   Stabilize --> Main
