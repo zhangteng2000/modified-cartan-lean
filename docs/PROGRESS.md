@@ -1,6 +1,6 @@
-VERIFIED: 59 auxiliary theorem declarations; manuscript lem:growth fully proved.
+VERIFIED: 66 theorem declarations; manuscript lem:growth and lem:envelope fully proved.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; Harnack estimates and lem:envelope are the current proof work.
+WIP: Full manuscript; the harmonic integration step of lem:two-point-kernel is the current proof work.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -33,7 +33,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `prop:wronskian` | WIP | general induction; only m = 1 and structural determinant identities proved |
 | `lem:logderivative` | WIP | exact statement, local logarithmic derivative bounds and pole integrability |
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
-| `lem:envelope` | WIP | derive Harnack from mathlib's Poisson formula; prove exact 8 and 64 bounds |
+| `lem:envelope` | VERIFIED | `envelope_lemma`; exact 8δ and 64η constants and closed-disk supremum |
 | `lem:poisson-mean` | WIP | logarithms at boundary zeros and subharmonic comparison |
 | `lem:two-point-kernel` | WIP | rational kernel bound and uniform gap proved; harmonic integral step remains |
 
@@ -54,3 +54,9 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `cor:projective-zero-directions` | WIP | quotient tangent-space identification and dimension bound |
 
 Final completion requires genuine proof terms for every row, no placeholder or manuscript-specific axioms, successful full build and recursive axiom audit, and a theorem-by-theorem comparison against `paper.tex`. No final report exists yet.
+
+## Verified analytic checkpoint
+
+`Harmonic.lean` proves both centered Harnack inequalities directly from the library Poisson formula and proves boundary nonnegativity implies interior nonnegativity. `Envelope.lean` proves `lem:envelope` for the harmonic extension U of the positive boundary maximum. The extension is represented by `HarmonicContOnCl` plus the exact boundary-maximum equality (`IsGreatest`), matching the manuscript's given U. The origin estimate and supremum estimate have the original constants.
+
+Git initialized in the deliverable directory; no remote is configured, so no push target exists.

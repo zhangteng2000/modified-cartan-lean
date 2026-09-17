@@ -1,7 +1,5 @@
 import ModifiedCartan
 
-/-! Full local theorem audit. This is not a proof of the open paper targets. -/
-
 #print axioms ModifiedCartan.compactConvergence_iff
 #print axioms ModifiedCartan.compactConvergence_mono
 #print axioms ModifiedCartan.compactConvergence_pointwise
@@ -9,6 +7,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.cclass_mono
 #print axioms ModifiedCartan.cclass_card_ge_two
 #print axioms ModifiedCartan.partitionProperty_mono
+#print axioms ModifiedCartan.harnack_defect_bound
+#print axioms ModifiedCartan.envelope_coefficient_bound
+#print axioms ModifiedCartan.envelope_pointwise
+#print axioms ModifiedCartan.envelope_lemma
 #print axioms ModifiedCartan.coefficients_zero_of_moments
 #print axioms ModifiedCartan.exponentialSum_iteratedDeriv
 #print axioms ModifiedCartan.exponentialSum_derivatives_at_zero
@@ -24,6 +26,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.exponentialOrbit_hasDerivAt
 #print axioms ModifiedCartan.growth_lemma
 #print axioms ModifiedCartan.growthLemma_proved
+#print axioms ModifiedCartan.harmonic_harnack_bounds
+#print axioms ModifiedCartan.harmonic_nonneg_of_boundary
+#print axioms ModifiedCartan.harmonic_harnack_uniform
 #print axioms ModifiedCartan.poissonDenom_pos
 #print axioms ModifiedCartan.poissonKernel_pos
 #print axioms ModifiedCartan.kernel_factorization

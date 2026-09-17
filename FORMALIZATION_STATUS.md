@@ -16,7 +16,7 @@
 | `prop:wronskian` | 单函数情形完成，一般命题仅陈述 | `quantitativeWronskian_one`；一般归纳、辅因子估计、Schur 补公式、圆弧积分和最大值原理的组合未证明。另有常数缩放及线性相关推出行列式为零的完整证明。 |
 | `lem:logderivative` | 未形式化 | 尚缺该局部高阶对数导数估计的陈述与证明。 |
 | `lem:growth` | 完整证明 | `growthLemma_proved : GrowthLemma`。证明得到更强结果：连续与正性已足够，不需要单调性。 |
-| `lem:envelope` | 未形式化 | 尚缺调和包络与 Harnack 比较的形式化。 |
+| `lem:envelope` | 完整证明 | `envelope_lemma` 保留原稿所有参数范围、8 和 64 两个常数，以及闭圆盘上的上确界。`Harmonic.lean` 从 Poisson 公式证明所用 Harnack 比较。 |
 | `lem:poisson-mean` | 未形式化 | 尚缺含边界零点时的对数积分、Poisson 比较与极限处理。 |
 | `thm:absorption` | 存在形式的命题已陈述，半径代数已证明 | `AbsorptionTheorem` 未证明。`absorptionRadius_pos`、`absorptionRadius_antitone`、`absorption_constant_bound` 已证明；半径递推的解析适用性未证明。 |
 | `cor:rank-adaptive-absorption` | 未形式化 | 最大行列式选基、子列固定基和吸收定理应用未证明。 |
@@ -32,9 +32,9 @@
 
 ## 证明边界
 
-- 当前本地源码包含 59 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
+- 当前本地源码包含 66 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- `GrowthLemma` 有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
+- `GrowthLemma` 和原稿的调和包络引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
 - `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
 

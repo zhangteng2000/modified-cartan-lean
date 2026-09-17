@@ -8,3 +8,5 @@ import ModifiedCartan.Growth
 import ModifiedCartan.Laurent
 import ModifiedCartan.Kobayashi
 import ModifiedCartan.Wronskian
+import ModifiedCartan.Harmonic
+import ModifiedCartan.Envelope

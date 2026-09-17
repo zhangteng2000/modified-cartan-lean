@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'
 $leanVersion = 'v4.34.0-rc1'
 $lakeBin = Join-Path $env:USERPROFILE ".elan\toolchains\leanprover--lean4---$leanVersion\bin\lake.exe"
 if (!(Test-Path -LiteralPath $lakeBin)) { throw "Missing Lean toolchain $leanVersion" }
-$sources = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'ModifiedCartan') -Filter '*.lean' -File)
+$sources = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'ModifiedCartan') -Filter '*.lean' -File -Recurse)
 $names = @()
 foreach ($source in $sources) {
   $body = [IO.File]::ReadAllText($source.FullName)

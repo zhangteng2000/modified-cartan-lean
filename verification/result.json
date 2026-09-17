@@ -3,12 +3,12 @@
   "full_paper_proved": false,
   "lean": "v4.34.0-rc1",
   "mathlib": "de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11",
-  "checked_theorems": 59,
+  "checked_theorems": 66,
   "allowed_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "verified_at_utc": "2026-09-17T22:36:32.5398745Z",
-  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-bc659bb8249e43ef82d1ef0857b0da58"
+  "verified_at_utc": "2026-09-17T22:56:01.9093329Z",
+  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-verified"
 }
