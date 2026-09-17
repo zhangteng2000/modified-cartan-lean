@@ -10,3 +10,4 @@ import ModifiedCartan.Kobayashi
 import ModifiedCartan.Wronskian
 import ModifiedCartan.Harmonic
 import ModifiedCartan.Envelope
+import ModifiedCartan.HarmonicKernel

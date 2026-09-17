@@ -1,6 +1,6 @@
-VERIFIED: 66 theorem declarations; manuscript lem:growth and lem:envelope fully proved.
+VERIFIED: 71 theorem declarations; manuscript lem:growth, lem:envelope, and lem:two-point-kernel fully proved.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; the harmonic integration step of lem:two-point-kernel is the current proof work.
+WIP: Full manuscript; analytic target specifications, logarithmic Poisson estimates, and C-class foundations remain in progress.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -35,7 +35,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
 | `lem:envelope` | VERIFIED | `envelope_lemma`; exact 8δ and 64η constants and closed-disk supremum |
 | `lem:poisson-mean` | WIP | logarithms at boundary zeros and subharmonic comparison |
-| `lem:two-point-kernel` | WIP | rational kernel bound and uniform gap proved; harmonic integral step remains |
+| `lem:two-point-kernel` | VERIFIED | `two_point_harmonic`; all positive harmonic functions on the open unit disk |
 
 ## Phases 2–4 — principal results and applications
 
@@ -60,3 +60,5 @@ Final completion requires genuine proof terms for every row, no placeholder or m
 `Harmonic.lean` proves both centered Harnack inequalities directly from the library Poisson formula and proves boundary nonnegativity implies interior nonnegativity. `Envelope.lean` proves `lem:envelope` for the harmonic extension U of the positive boundary maximum. The extension is represented by `HarmonicContOnCl` plus the exact boundary-maximum equality (`IsGreatest`), matching the manuscript's given U. The origin estimate and supremum estimate have the original constants.
 
 Git initialized in the deliverable directory; no remote is configured, so no push target exists.
+
+`HarmonicKernel.lean` connects the real rational kernel to mathlib's complex Poisson kernel, integrates the uniform inequality on circles of radius R, and passes to R → 1 from below. Thus `two_point_harmonic` assumes no boundary continuity on the unit circle and proves the full manuscript lemma, with a single positive ε depending only on q.

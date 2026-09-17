@@ -29,6 +29,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.harmonic_harnack_bounds
 #print axioms ModifiedCartan.harmonic_nonneg_of_boundary
 #print axioms ModifiedCartan.harmonic_harnack_uniform
+#print axioms ModifiedCartan.poissonKernel_real_on_circle
+#print axioms ModifiedCartan.twoPointKernel_eq_combination
+#print axioms ModifiedCartan.scaled_real_mem_ball
+#print axioms ModifiedCartan.harmonic_two_point_on_closedBall
+#print axioms ModifiedCartan.two_point_harmonic
 #print axioms ModifiedCartan.poissonDenom_pos
 #print axioms ModifiedCartan.poissonKernel_pos
 #print axioms ModifiedCartan.kernel_factorization

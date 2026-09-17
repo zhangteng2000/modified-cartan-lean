@@ -14,4 +14,4 @@ The existing `kobayashiRoyden` definition uses coordinatewise holomorphic disks 
 
 ## D4 — Status accounting (CORRECTED)
 
-The current theorem count includes auxiliary facts. Only `lem:growth` is presently a complete principal manuscript lemma. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.
+The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, and `lem:two-point-kernel` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.

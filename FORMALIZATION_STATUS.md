@@ -22,7 +22,7 @@
 | `cor:rank-adaptive-absorption` | 未形式化 | 最大行列式选基、子列固定基和吸收定理应用未证明。 |
 | `lem:stabilization` | 整数计数步骤完成 | `count_stabilization`；Montel 抽取、商函数预序、极大等价类计数和比较的完整论证未证明。 |
 | `cor:centers` | 未形式化 | 需主定理与圆盘自同构的拉回。 |
-| `lem:two-point-kernel` | 核不等式与一致正间隙完成 | `kernel_factorization`、`twoPointKernel_strict`、`twoPointKernel_uniform`；尚缺对正调和函数的 Poisson 表示积分步骤，故未将整个引理标成完成。 |
+| `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
 | `cor:geodesic-comparison` | 未形式化 | Harnack 比较、自同构归一化与测地段步骤未证明。 |
 | `prop:sharp-two-absorption` | 仅命题陈述 | `SharpTwoAbsorption`；失败点选取、调和函数估计、避零路径和积分矛盾未证明。 |
 | `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
@@ -32,9 +32,9 @@
 
 ## 证明边界
 
-- 当前本地源码包含 66 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
+- 当前本地源码包含 71 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- `GrowthLemma` 和原稿的调和包络引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
+- `GrowthLemma`、调和包络引理和调和函数两点核引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
 - `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
 
