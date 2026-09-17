@@ -50,6 +50,12 @@ import ModifiedCartan
 #print axioms ModifiedCartan.laurentMonomial_on_orbit
 #print axioms ModifiedCartan.laurent_eval_on_orbit
 #print axioms ModifiedCartan.laurent_orbit_zero_iff_finite_equations
+#print axioms ModifiedCartan.blaschke_norm_identity
+#print axioms ModifiedCartan.blaschke_numerator_ne_zero
+#print axioms ModifiedCartan.log_factor_le_poisson
+#print axioms ModifiedCartan.log_norm_le_poisson
+#print axioms ModifiedCartan.poisson_mean_inequality
+#print axioms ModifiedCartan.poissonMeanEstimate_proved
 #print axioms ModifiedCartan.sharpRadius_pos
 #print axioms ModifiedCartan.sharpRadius_lt_one
 #print axioms ModifiedCartan.sharpRadius_quadratic

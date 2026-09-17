@@ -1,6 +1,6 @@
-VERIFIED: 71 theorem declarations; manuscript lem:growth, lem:envelope, and lem:two-point-kernel fully proved.
+VERIFIED: 77 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, and lem:poisson-mean fully proved.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; analytic target specifications, logarithmic Poisson estimates, and C-class foundations remain in progress.
+WIP: Full manuscript; C-class/subsequence foundations and the remaining Cartan, Wronskian and logarithmic derivative estimates.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -31,10 +31,10 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 |---|---|---|
 | `lem:cartan-circle` | WIP | canonical factorization, zero count, logarithmic averaging and circle selection |
 | `prop:wronskian` | WIP | general induction; only m = 1 and structural determinant identities proved |
-| `lem:logderivative` | WIP | exact statement, local logarithmic derivative bounds and pole integrability |
+| `lem:logderivative` | WIP | exact `LogDerivativeEstimate` statement added; local bounds and pole integrability remain |
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
 | `lem:envelope` | VERIFIED | `envelope_lemma`; exact 8δ and 64η constants and closed-disk supremum |
-| `lem:poisson-mean` | WIP | logarithms at boundary zeros and subharmonic comparison |
+| `lem:poisson-mean` | VERIFIED | `poissonMeanEstimate_proved : PoissonMeanEstimate`; boundary zeros permitted |
 | `lem:two-point-kernel` | VERIFIED | `two_point_harmonic`; all positive harmonic functions on the open unit disk |
 
 ## Phases 2–4 — principal results and applications
@@ -42,7 +42,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | Result | Status | Remaining proof work |
 |---|---|---|
 | `prop:sharp-two-absorption` | WIP | harmonic comparison, path selection and contradiction |
-| `thm:absorption` | WIP | exact recursive-radius target and full analytic induction |
+| `thm:absorption` | WIP | `ExplicitAbsorptionTheorem` now includes exact radii and valid Wronskian exponents; analytic induction remains |
 | `cor:rank-adaptive-absorption` | WIP | minor selection and subsequence basis |
 | `lem:stabilization` | WIP | Montel/Hurwitz and quotient preorder; integer-count step proved |
 | `thm:main`, `cor:centers` | WIP | stabilization/absorption assembly and disk automorphisms |
@@ -62,3 +62,5 @@ Final completion requires genuine proof terms for every row, no placeholder or m
 Git initialized in the deliverable directory; no remote is configured, so no push target exists.
 
 `HarmonicKernel.lean` connects the real rational kernel to mathlib's complex Poisson kernel, integrates the uniform inequality on circles of radius R, and passes to R → 1 from below. Thus `two_point_harmonic` assumes no boundary continuity on the unit circle and proves the full manuscript lemma, with a single positive ε depending only on q.
+
+`LogPoisson.lean` proves Poisson comparison for logarithmic factors with zeros in the closed disk, including boundary zeros using mathlib's integrability theorem. Finite zero-factor extraction then gives the comparison for any analytic F nonzero at the evaluation point. Integrating the upper and lower kernel bounds proves the manuscript's exact q log|F(w)| − (q²−1)m(R,F) bound. `poissonMeanEstimate_proved` has the original normalized q = (1+t)/(1−t), t = |w|/R.

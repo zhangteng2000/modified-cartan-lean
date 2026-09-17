@@ -1,8 +1,8 @@
 # Manuscript-to-code discrepancies
 
-## D1 — Explicit absorption radii (OPEN)
+## D1 — Explicit absorption radii (STATEMENT CORRECTED; PROOF OPEN)
 
-The earlier `AbsorptionTheorem` definition only asserts existence of some positive radius. The manuscript specifies `r₁ = 1`, `r₂ = 2 - √3`, and `rₘ = rₘ₋₁ / (1024 (Kₘ + m))`. The existential statement is not an adequate final target. `absorptionRadius` already has this recursion, but its analytic applicability and linkage to the Wronskian exponents remain unproved. The final theorem must use the exact recursion; the existing existential form may remain as a corollary.
+The earlier `AbsorptionTheorem` definition only asserts existence of some positive radius. The manuscript specifies `r₁ = 1`, `r₂ = 2 - √3`, and `rₘ = rₘ₋₁ / (1024 (Kₘ + m))`. The existential statement is not an adequate final target. `ExplicitAbsorptionTheorem` in `AnalyticStatements.lean` now uses the exact recursion and includes the obligation to produce valid exponents for the Wronskian estimate at a = 1/4, b = 1/2. Its proof remains open. The older existential-radius target is only a weaker corollary target.
 
 ## D2 — Geometric model (OPEN)
 
@@ -14,4 +14,4 @@ The existing `kobayashiRoyden` definition uses coordinatewise holomorphic disks 
 
 ## D4 — Status accounting (CORRECTED)
 
-The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, and `lem:two-point-kernel` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.
+The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, `lem:two-point-kernel`, and `lem:poisson-mean` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.

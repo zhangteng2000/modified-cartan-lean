@@ -14,11 +14,11 @@
 | `thm:torus-zero` | 一个方向完成 | `kobayashiRoyden_zero_of_orbit` 证明轨道包含推出零伪度量，使用环境坐标中的圆盘定义。反向蕴含未证明；与抽象复流形版本的识别未形式化。 |
 | `lem:cartan-circle` | 仅命题陈述 | `CartanCircleEstimate`；零点分解、Harnack 估计及选圆平均步骤未证明。 |
 | `prop:wronskian` | 单函数情形完成，一般命题仅陈述 | `quantitativeWronskian_one`；一般归纳、辅因子估计、Schur 补公式、圆弧积分和最大值原理的组合未证明。另有常数缩放及线性相关推出行列式为零的完整证明。 |
-| `lem:logderivative` | 未形式化 | 尚缺该局部高阶对数导数估计的陈述与证明。 |
+| `lem:logderivative` | 精确命题已陈述 | `AnalyticStatements.lean` 的 `LogDerivativeEstimate`；证明尚未完成。 |
 | `lem:growth` | 完整证明 | `growthLemma_proved : GrowthLemma`。证明得到更强结果：连续与正性已足够，不需要单调性。 |
 | `lem:envelope` | 完整证明 | `envelope_lemma` 保留原稿所有参数范围、8 和 64 两个常数，以及闭圆盘上的上确界。`Harmonic.lean` 从 Poisson 公式证明所用 Harnack 比较。 |
-| `lem:poisson-mean` | 未形式化 | 尚缺含边界零点时的对数积分、Poisson 比较与极限处理。 |
-| `thm:absorption` | 存在形式的命题已陈述，半径代数已证明 | `AbsorptionTheorem` 未证明。`absorptionRadius_pos`、`absorptionRadius_antitone`、`absorption_constant_bound` 已证明；半径递推的解析适用性未证明。 |
+| `lem:poisson-mean` | 完整证明 | `poissonMeanEstimate_proved : PoissonMeanEstimate`，允许边界零点，保留原稿的 q 和 q²−1 系数。 |
+| `thm:absorption` | 精确递归半径目标已陈述，半径代数已证明 | `ExplicitAbsorptionTheorem` 同时要求构造有效的 Wronskian 指数并在原稿指定半径上证明吸收。`AbsorptionTheorem` 仅为较弱的存在半径推论目标。解析证明未完成。 |
 | `cor:rank-adaptive-absorption` | 未形式化 | 最大行列式选基、子列固定基和吸收定理应用未证明。 |
 | `lem:stabilization` | 整数计数步骤完成 | `count_stabilization`；Montel 抽取、商函数预序、极大等价类计数和比较的完整论证未证明。 |
 | `cor:centers` | 未形式化 | 需主定理与圆盘自同构的拉回。 |
@@ -32,9 +32,9 @@
 
 ## 证明边界
 
-- 当前本地源码包含 71 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
+- 当前本地源码包含 77 个已证明定理。它们包含辅助引理，不能把数量当作论文完成比例。
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- `GrowthLemma`、调和包络引理和调和函数两点核引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
+- `GrowthLemma`、调和包络、调和函数两点核和对数 Poisson 平均四个引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
 - `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
 
