@@ -55,6 +55,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.scaled_real_mem_ball
 #print axioms ModifiedCartan.harmonic_two_point_on_closedBall
 #print axioms ModifiedCartan.two_point_harmonic
+#print axioms ModifiedCartan.hurwitz_nonvanishing
+#print axioms ModifiedCartan.compactConvergence_inv
+#print axioms ModifiedCartan.hurwitz_reciprocal_locallyBounded
+#print axioms ModifiedCartan.cclass_two_dominants_of_quotient_limits
 #print axioms ModifiedCartan.poissonDenom_pos
 #print axioms ModifiedCartan.poissonKernel_pos
 #print axioms ModifiedCartan.kernel_factorization

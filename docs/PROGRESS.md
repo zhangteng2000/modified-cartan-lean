@@ -1,6 +1,6 @@
-VERIFIED: 98 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, and lem:poisson-mean fully proved.
+VERIFIED: 102 theorem declarations; manuscript lem:growth, lem:envelope, lem:two-point-kernel, and lem:poisson-mean fully proved.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; the connected-domain Hurwitz foundation and the remaining Cartan, Wronskian and logarithmic derivative estimates.
+WIP: Full manuscript; Montel extraction and the remaining Cartan, Wronskian and logarithmic derivative estimates.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -66,3 +66,5 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `LogPoisson.lean` proves Poisson comparison for logarithmic factors with zeros in the closed disk, including boundary zeros using mathlib's integrability theorem. Finite zero-factor extraction then gives the comparison for any analytic F nonzero at the evaluation point. Integrating the upper and lower kernel bounds proves the manuscript's exact q log|F(w)| − (q²−1)m(R,F) bound. `poissonMeanEstimate_proved` has the original normalized q = (1+t)/(1−t), t = |w|/R.
 
 `Convergence.lean` proves preservation of C-classes and partitions under subsequences, finite simultaneous extraction, transitivity of locally bounded quotients, the exact change-of-dominant-index criterion, boundedness of convergent continuous families including initial terms, and holomorphic/derivative limit interfaces. These results do not assume connectedness. The connected-domain two-dominant-index result still requires Hurwitz and Montel extraction.
+
+`Hurwitz.lean` now proves Hurwitz nonvanishing on a connected open set, inversion of locally uniform limits, and boundedness of their reciprocals. It proves the two-dominant-index argument once normalized quotients have limits. The paper's unconditional assertion after extraction remains WIP until Montel extraction is proved; this conditional auxiliary lemma is not counted as completion of that assertion.
