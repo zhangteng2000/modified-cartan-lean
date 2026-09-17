@@ -1,0 +1,14 @@
+name = "modified_cartan"
+version = "0.1.0"
+defaultTargets = ["ModifiedCartan"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0-rc1"
+
+[[lean_lib]]
+name = "ModifiedCartan"

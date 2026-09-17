@@ -1,0 +1,12 @@
+✔ [3386/3397] Built ModifiedCartan.Exponential (12s)
+✔ [3387/3397] Built ModifiedCartan.Stabilization (12s)
+✔ [3388/3397] Built ModifiedCartan.Basic (12s)
+✔ [3389/3397] Built ModifiedCartan.Radii (12s)
+✔ [3390/3397] Built ModifiedCartan.Laurent (11s)
+✔ [3391/3397] Built ModifiedCartan.Statements (12s)
+✔ [3392/3397] Built ModifiedCartan.Kernel (13s)
+✔ [3393/3397] Built ModifiedCartan.Wronskian (12s)
+✔ [3394/3397] Built ModifiedCartan.Kobayashi (12s)
+✔ [3395/3397] Built ModifiedCartan.Growth (13s)
+✔ [3396/3397] Built ModifiedCartan (10s)
+Build completed successfully (3397 jobs).
