@@ -10,15 +10,15 @@ namespace ModifiedCartan
 
 /-- A bounded finite Blaschke decomposition retaining all smaller-disk zeros,
 including boundary zeros. The remainder is analytic on the entire unit disk. -/
-theorem bounded_blaschke_factorization {F : ℂ → ℂ}
-    (hF : DifferentiableOn ℂ F (disk 1)) (hbound : ∀ z ∈ disk 1, ‖F z‖ ≤ 1)
+theorem bounded_blaschke_factorization_local {F : ℂ → ℂ} {T R M : ℝ}
+    (hF : DifferentiableOn ℂ F (disk 1)) (hbound : ∀ z ∈ sphere (0 : ℂ) R, ‖F z‖ ≤ M)
     {w : ℂ} (hw : w ∈ disk 1) (hFw : F w ≠ 0)
-    {T R : ℝ} (hT : 0 ≤ T) (hTR : T < R) (hR1 : R < 1) :
+    (hT : 0 ≤ T) (hTR : T < R) (hR1 : R < 1) :
     ∃ (s : Finset ℂ) (m : ℂ → ℕ) (Q : ℂ → ℂ),
       (∀ a ∈ s, ‖a‖ ≤ T ∧ 0 < m a) ∧
       AnalyticOnNhd ℂ Q (disk 1) ∧
       (∀ z ∈ closedBall (0 : ℂ) T, Q z ≠ 0) ∧
-      (∀ z ∈ closedBall (0 : ℂ) R, ‖Q z‖ ≤ 1) ∧
+      (∀ z ∈ closedBall (0 : ℂ) R, ‖Q z‖ ≤ M) ∧
       (∀ z ∈ closedBall (0 : ℂ) R,
         F z = (∏ a ∈ s, blaschkeFactor R a z ^ m a) * Q z) := by
   classical
@@ -56,7 +56,7 @@ theorem bounded_blaschke_factorization {F : ℂ → ℂ}
     dsimp [blaschkeFactor, d]
     rw [div_mul_div_cancel₀ (blaschke_numerator_ne_zero hR ((hs a ha).1.trans_lt hTR)
       (by simpa using hz)), mul_div_cancel_left₀ _ (Complex.ofReal_ne_zero.mpr hR.ne')]
-  have hQcircle : ∀ z ∈ sphere (0 : ℂ) R, ‖Q z‖ ≤ 1 := by
+  have hQcircle : ∀ z ∈ sphere (0 : ℂ) R, ‖Q z‖ ≤ M := by
     intro z hz
     have he := congrArg norm (hfact z (sphere_subset_closedBall hz))
     have hprod : ‖∏ a ∈ s, blaschkeFactor R a z ^ m a‖ = 1 := by
@@ -67,7 +67,7 @@ theorem bounded_blaschke_factorization {F : ℂ → ℂ}
         (by simpa using hz), one_pow]
     rw [norm_mul, hprod, one_mul] at he
     rw [← he]
-    exact hbound z (hRsub (sphere_subset_closedBall hz))
+    exact hbound z hz
   refine ⟨s, m, Q, hs, hQ, ?_, ?_, hfact⟩
   · intro z hz
     exact mul_ne_zero (Finset.prod_ne_zero_iff.mpr (fun a ha =>
@@ -80,5 +80,19 @@ theorem bounded_blaschke_factorization {F : ℂ → ℂ}
       hdQ.diffContOnCl ?_ ?_
     · simpa only [frontier_ball _ hR.ne'] using hQcircle
     · rwa [closure_ball _ hR.ne']
+
+theorem bounded_blaschke_factorization {F : ℂ → ℂ}
+    (hF : DifferentiableOn ℂ F (disk 1)) (hbound : ∀ z ∈ disk 1, ‖F z‖ ≤ 1)
+    {w : ℂ} (hw : w ∈ disk 1) (hFw : F w ≠ 0)
+    {T R : ℝ} (hT : 0 ≤ T) (hTR : T < R) (hR1 : R < 1) :
+    ∃ (s : Finset ℂ) (m : ℂ → ℕ) (Q : ℂ → ℂ),
+      (∀ a ∈ s, ‖a‖ ≤ T ∧ 0 < m a) ∧
+      AnalyticOnNhd ℂ Q (disk 1) ∧
+      (∀ z ∈ closedBall (0 : ℂ) T, Q z ≠ 0) ∧
+      (∀ z ∈ closedBall (0 : ℂ) R, ‖Q z‖ ≤ 1) ∧
+      (∀ z ∈ closedBall (0 : ℂ) R,
+        F z = (∏ a ∈ s, blaschkeFactor R a z ^ m a) * Q z) :=
+  bounded_blaschke_factorization_local hF
+    (fun z hz => hbound z (sphere_subset_ball hR1 hz)) hw hFw hT hTR hR1
 
 end ModifiedCartan

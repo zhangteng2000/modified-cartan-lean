@@ -13,7 +13,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.blaschkeFactor_norm_on_circle
 #print axioms ModifiedCartan.blaschkeFactor_uniform_bound
 #print axioms ModifiedCartan.blaschkeFactor_radial_lower
+#print axioms ModifiedCartan.bounded_blaschke_factorization_local
 #print axioms ModifiedCartan.bounded_blaschke_factorization
+#print axioms ModifiedCartan.blaschkeDecayConstant_pos
+#print axioms ModifiedCartan.blaschkeFactor_exponential_bound
 #print axioms ModifiedCartan.harnackPower_pos
 #print axioms ModifiedCartan.zero_free_log_lower
 #print axioms ModifiedCartan.power_bound_zero_count
@@ -115,6 +118,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.scaled_real_mem_ball
 #print axioms ModifiedCartan.harmonic_two_point_on_closedBall
 #print axioms ModifiedCartan.two_point_harmonic
+#print axioms ModifiedCartan.exists_holomorphic_log_on_disk
+#print axioms ModifiedCartan.holomorphic_log_real_part
 #print axioms ModifiedCartan.hurwitz_nonvanishing
 #print axioms ModifiedCartan.compactConvergence_inv
 #print axioms ModifiedCartan.hurwitz_reciprocal_locallyBounded
@@ -135,6 +140,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.laurentMonomial_on_orbit
 #print axioms ModifiedCartan.laurent_eval_on_orbit
 #print axioms ModifiedCartan.laurent_orbit_zero_iff_finite_equations
+#print axioms ModifiedCartan.iteratedDeriv_reciprocal_shift
+#print axioms ModifiedCartan.norm_iteratedDeriv_reciprocal_shift
+#print axioms ModifiedCartan.logDeriv_blaschkeFactor
+#print axioms ModifiedCartan.reflected_pole_norm_bound
+#print axioms ModifiedCartan.logDeriv_finite_factorization
 #print axioms ModifiedCartan.blaschke_norm_identity
 #print axioms ModifiedCartan.blaschke_numerator_ne_zero
 #print axioms ModifiedCartan.log_factor_le_poisson
@@ -149,6 +159,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.holomorphic_equicontinuous
 #print axioms ModifiedCartan.montel_subsequence
 #print axioms ModifiedCartan.finite_montel_subsequence
+#print axioms ModifiedCartan.log_norm_le_proximity
+#print axioms ModifiedCartan.norm_le_exp_proximity
+#print axioms ModifiedCartan.norm_le_exp_proximity_on_closedBall
+#print axioms ModifiedCartan.norm_le_exp_proximity_midpoint
 #print axioms ModifiedCartan.quantitativeWronskian_proved
 #print axioms ModifiedCartan.disk_pow_subset_unit
 #print axioms ModifiedCartan.disk_pow_succ_subset
@@ -169,6 +183,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.absorptionRadius_step
 #print axioms ModifiedCartan.absorptionRadius_antitone
 #print axioms ModifiedCartan.absorption_constant_bound
+#print axioms ModifiedCartan.iteratedDeriv_bound_of_real_part
 #print axioms ModifiedCartan.descending_count_bound
 #print axioms ModifiedCartan.count_stabilization
 #print axioms ModifiedCartan.wronskian_one
@@ -192,7 +207,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.wronskianCoefficient_deriv
 #print axioms ModifiedCartan.jet_relation_derivative
 #print axioms ModifiedCartan.wronskian_coefficient_derivative_system
+#print axioms ModifiedCartan.exists_wronskianExponents
 #print axioms ModifiedCartan.scaled_cartan_power
 #print axioms ModifiedCartan.wronskian_power_algebra
+#print axioms ModifiedCartan.blaschke_factorization_zero_count
 #print axioms ModifiedCartan.analytic_remove_finite_zeros
 #print axioms ModifiedCartan.finite_zero_factorization
+#print axioms ModifiedCartan.zero_free_log_deficit_at_origin
+#print axioms ModifiedCartan.zero_free_log_derivatives
