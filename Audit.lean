@@ -1,5 +1,15 @@
 import ModifiedCartan
 
+#print axioms ModifiedCartan.circle_distance_real_sq
+#print axioms ModifiedCartan.circle_distance_angular_lower
+#print axioms ModifiedCartan.circle_distance_small_pole
+#print axioms ModifiedCartan.circle_inverse_power_domination
+#print axioms ModifiedCartan.circle_distance_rotate
+#print axioms ModifiedCartan.abs_rpow_intervalIntegrable
+#print axioms ModifiedCartan.angular_real_pole_integral
+#print axioms ModifiedCartan.angularPowerConstant_nonneg
+#print axioms ModifiedCartan.angular_inverse_power_uniform
+#print axioms ModifiedCartan.angular_inverse_powers_finite
 #print axioms ModifiedCartan.compactConvergence_iff
 #print axioms ModifiedCartan.compactConvergence_mono
 #print axioms ModifiedCartan.compactConvergence_pointwise
@@ -92,6 +102,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.holomorphic_limit_or_escape_subsequence
 #print axioms ModifiedCartan.finite_holomorphic_limit_or_escape
 #print axioms ModifiedCartan.unitFamily_quotient_extraction
+#print axioms ModifiedCartan.finite_pole_derivative_bound
 #print axioms ModifiedCartan.mem_preorderClass
 #print axioms ModifiedCartan.mem_preorderClass_self
 #print axioms ModifiedCartan.preorderClass_eq_iff
@@ -145,6 +156,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.logDeriv_blaschkeFactor
 #print axioms ModifiedCartan.reflected_pole_norm_bound
 #print axioms ModifiedCartan.logDeriv_finite_factorization
+#print axioms ModifiedCartan.logDeriv_analyticOnNhd
+#print axioms ModifiedCartan.iterated_logDeriv_finite_factorization
+#print axioms ModifiedCartan.iterated_logDeriv_eq_log_branch
 #print axioms ModifiedCartan.blaschke_norm_identity
 #print axioms ModifiedCartan.blaschke_numerator_ne_zero
 #print axioms ModifiedCartan.log_factor_le_poisson
@@ -163,6 +177,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.norm_le_exp_proximity
 #print axioms ModifiedCartan.norm_le_exp_proximity_on_closedBall
 #print axioms ModifiedCartan.norm_le_exp_proximity_midpoint
+#print axioms ModifiedCartan.posLog_le_log_power
+#print axioms ModifiedCartan.log_tangent_bound
+#print axioms ModifiedCartan.proximity_le_log_moment
 #print axioms ModifiedCartan.quantitativeWronskian_proved
 #print axioms ModifiedCartan.disk_pow_subset_unit
 #print axioms ModifiedCartan.disk_pow_succ_subset
@@ -184,6 +201,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.absorptionRadius_antitone
 #print axioms ModifiedCartan.absorption_constant_bound
 #print axioms ModifiedCartan.iteratedDeriv_bound_of_real_part
+#print axioms ModifiedCartan.reflectedPole_analytic
+#print axioms ModifiedCartan.reflectedPole_iteratedDeriv_bound
+#print axioms ModifiedCartan.blaschke_logDeriv_iterated_bound
 #print axioms ModifiedCartan.descending_count_bound
 #print axioms ModifiedCartan.count_stabilization
 #print axioms ModifiedCartan.wronskian_one
