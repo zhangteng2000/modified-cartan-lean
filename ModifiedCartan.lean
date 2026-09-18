@@ -141,3 +141,6 @@ import ModifiedCartan.LaurentJets
 import ModifiedCartan.TorusLimits
 import ModifiedCartan.LargeDiscs
 import ModifiedCartan.TorusLocus
+import ModifiedCartan.TorusNullTopology
+import ModifiedCartan.TorusMomentPolynomials
+import ModifiedCartan.TorusAlgebraicNull

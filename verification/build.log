@@ -1,21 +1,23 @@
-⚠ [3532/3644] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3648] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3644] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3648] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3612/3644] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3612/3648] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [3642/3644] Built ModifiedCartan.TorusLocus (19s)
-✔ [3643/3644] Built ModifiedCartan (14s)
-Build completed successfully (3644 jobs).
+✔ [3644/3648] Built ModifiedCartan.TorusNullTopology (16s)
+✔ [3645/3648] Built ModifiedCartan.TorusMomentPolynomials (16s)
+✔ [3646/3648] Built ModifiedCartan.TorusAlgebraicNull (16s)
+✔ [3647/3648] Built ModifiedCartan (17s)
+Build completed successfully (3648 jobs).
