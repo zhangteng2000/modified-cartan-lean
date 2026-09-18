@@ -30,3 +30,7 @@ Searches for direct Harnack, Hurwitz, or Montel normal-family APIs did not locat
 ## Logarithmic derivative completion
 
 Used mathlib meromorphic closure under derivatives, local circle integrability of log⁺ norms, analytic isolated-zero/codiscrete results, `iteratedDeriv_fun_mul` and finite sum bounds. Adapted proximity sum/product estimates to functions meromorphic only near the integration circle, since global meromorphicity is not a manuscript hypothesis. Fractional moments and exact radius-gap dependence are proved in project modules. No extra zero-free or boundary-zero exclusion hypothesis was introduced.
+
+## Absorption preparations and constructed Poisson extension
+
+The compact-exhaustion and locally uniform convergence APIs are used for the failure-point alternative, without a connectedness assumption. Compactness of the finite-dimensional coefficient sphere supplies actual minimizers. The Herglotz integral APIs `analyticOnNhd_circleAverage_herglotzRieszKernel_smul` and `re_circleAverage_herglotzRieszKernel_smul` construct the harmonic extension, while library kernel bounds and the harmonic mean-value property prove monotonicity of the growth mean. Finite holomorphic zero factorization provides the zero-free annulus. The full library axiom audit at this checkpoint covers 317 declarations.

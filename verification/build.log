@@ -1,43 +1,29 @@
-⚠ [3525/3566] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3582] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3534/3566] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3582] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [3535/3566] Built ModifiedCartan.FractionalPowers (15s)
-✔ [3536/3566] Built ModifiedCartan.AnalyticStatements (17s)
-✔ [3537/3566] Built ModifiedCartan.CircleExceptional (14s)
-✔ [3538/3566] Built ModifiedCartan.ProximityMoment (17s)
-✔ [3539/3566] Built ModifiedCartan.LogPoisson (18s)
-✔ [3540/3566] Built ModifiedCartan.ProximityLocal (15s)
-✔ [3541/3566] Built ModifiedCartan.PoleMoments (17s)
-✔ [3542/3566] Built ModifiedCartan.ZeroFactors (17s)
-✔ [3543/3566] Built ModifiedCartan.ProximityGrowth (17s)
-✔ [3544/3566] Built ModifiedCartan.CartanAux (17s)
-✔ [3545/3566] Built ModifiedCartan.DerivativeQuotientRecurrence (16s)
-✔ [3546/3566] Built ModifiedCartan.LogarithmicGrowthAlgebra (17s)
-✔ [3547/3566] Built ModifiedCartan.Blaschke (34s)
-✔ [3548/3566] Built ModifiedCartan.ZeroFreeGrowth (18s)
-✔ [3549/3566] Built ModifiedCartan.BlaschkeDecomposition (15s)
-✔ [3550/3566] Built ModifiedCartan.LogarithmicPoles (16s)
-✔ [3551/3566] Built ModifiedCartan.ZeroFreeLogDerivatives (15s)
-✔ [3552/3566] Built ModifiedCartan.BlaschkeQuantitative (31s)
-✔ [3553/3566] Built ModifiedCartan.CartanCircle (17s)
-✔ [3554/3566] Built ModifiedCartan.LogDerivativeProducts (17s)
-✔ [3555/3566] Built ModifiedCartan.ReflectedDerivatives (17s)
-✔ [3556/3566] Built ModifiedCartan.ZeroCount (15s)
-✔ [3557/3566] Built ModifiedCartan.FinitePoleBounds (15s)
-✔ [3558/3566] Built ModifiedCartan.CartanScaled (17s)
-✔ [3559/3566] Built ModifiedCartan.QuantitativeWronskian (16s)
-✔ [3560/3566] Built ModifiedCartan.LocalLogDerivativePoles (18s)
-✔ [3561/3566] Built ModifiedCartan.WronskianExponents (16s)
-✔ [3562/3566] Built ModifiedCartan.LogDerivativeConstants (25s)
-✔ [3563/3566] Built ModifiedCartan.IteratedLogDerivativeMean (21s)
-✔ [3564/3566] Built ModifiedCartan.LogDerivativeEstimate (19s)
-✔ [3565/3566] Built ModifiedCartan (18s)
-Build completed successfully (3566 jobs).
+✔ [3565/3582] Built ModifiedCartan.FailurePoints (18s)
+✔ [3566/3582] Built ModifiedCartan.GrowthSelection (18s)
+✔ [3567/3582] Built ModifiedCartan.HolomorphicCancellation (18s)
+✔ [3568/3582] Built ModifiedCartan.Rescaling (19s)
+✔ [3569/3582] Built ModifiedCartan.PoissonExtension (19s)
+✔ [3570/3582] Built ModifiedCartan.ZeroFreeAnnulus (19s)
+✔ [3571/3582] Built ModifiedCartan.CombinationMinimum (19s)
+✔ [3572/3582] Built ModifiedCartan.FiniteFailurePoints (15s)
+✔ [3573/3582] Built ModifiedCartan.AbsorptionPreparations (15s)
+✔ [3574/3582] Built ModifiedCartan.HarmonicGrowth (15s)
+✔ [3575/3582] Built ModifiedCartan.AbsorptionLinearAlgebra (15s)
+✔ [3576/3582] Built ModifiedCartan.PoissonHarnack (16s)
+✔ [3577/3582] Built ModifiedCartan.AbsorptionReduction (16s)
+✔ [3578/3582] Built ModifiedCartan.UnitGrowth (18s)
+✔ [3579/3582] Built ModifiedCartan.PoissonEnvelope (26s)
+✔ [3580/3582] Built ModifiedCartan.AbsorptionGap (17s)
+✔ [3581/3582] Built ModifiedCartan (18s)
+Build completed successfully (3582 jobs).

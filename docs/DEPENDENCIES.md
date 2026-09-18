@@ -12,7 +12,7 @@ flowchart TD
   Cauchy[VERIFIED derivative and cofactor bounds] --> Coeff[VERIFIED derivative of Y inverse v]
   Coeff --> Variation[VERIFIED circle variation and combination bound]
   Variation --> Wronskian
-  Factor --> LogDeriv[lem:logderivative]
+  Factor --> LogDeriv[VERIFIED lem:logderivative]
   Poisson --> Mean[lem:poisson-mean including boundary zeros]
   Kernel[proved rational kernel inequalities] --> TwoPoint[lem:two-point-kernel for harmonic functions]
   Poisson --> TwoPoint
@@ -49,6 +49,10 @@ flowchart TD
 ```
 
 The sharp two-term absorption branch must remain independent of general absorption, avoiding a circular proof of the m = 2 base radius.
+
+## Proved absorption preparations
+
+`HolomorphicCancellation` proves the m = 1 base case. `CombinationMinimum + Rescaling + AbsorptionLinearAlgebra → AbsorptionReduction → AbsorptionGap` proves the positive combination gap from the lower-dimensional induction hypothesis and failure of the conclusion. `FailurePoints → FiniteFailurePoints` constructs actual failure points. `PoissonExtension → HarmonicGrowth + PoissonHarnack → PoissonEnvelope` constructs and bounds the harmonic majorant. `UnitGrowth + GrowthSelection + ZeroFreeAnnulus` supplies divergence and controlled radii. These are intermediate proofs; the full induction still requires the Wronskian contradiction.
 
 ## Completed logarithmic derivative chain
 
