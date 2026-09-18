@@ -140,3 +140,4 @@ import ModifiedCartan.PartitionJets
 import ModifiedCartan.LaurentJets
 import ModifiedCartan.TorusLimits
 import ModifiedCartan.LargeDiscs
+import ModifiedCartan.TorusLocus

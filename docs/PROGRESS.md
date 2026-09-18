@@ -48,8 +48,8 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `thm:main`, `cor:centers` | VERIFIED | `partitionTheorem_proved`, `partition_at_recursive_radius`, `partition_at_center`; exact εₚ and disk automorphism pullback |
 | `thm:sharp-five` | WIP | classical Cartan extraction and sharp absorption; arbitrary open U retained |
 | optimal five-function radius | WIP | Gaussian integral counterexample and exact extremal argument |
-| `thm:torus-zero` | WIP | forward direction from an orbit is proved; converse and geometric identification remain |
-| `prop:torus-null-set` | WIP | finite equations proved; closedness/algebraicity and positive compact lower bounds remain |
+| `thm:torus-zero` | WIP | both directions proved for the actual finite Laurent locus and ambient disk metric; intrinsic smooth-variety/tangent-space identification remains |
+| `prop:torus-null-set` | WIP | finite moment criterion and compact positive lower bound proved for the actual coordinate locus; closedness/algebraicity and intrinsic identification remain |
 | `prop:projective-equivalence` | WIP | projective formalism and both implications |
 | `cor:projective-zero-directions` | WIP | quotient tangent-space identification and dimension bound |
 
@@ -115,7 +115,7 @@ Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source 
 
 `AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem is now assembled and audited with the exact recursive radii.
 
-Latest audited checkpoint: 512 proof declarations; `lake build` successful (3643 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
+Latest audited checkpoint: 516 proof declarations; `lake build` successful (3644 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
 
 Sharp two-term preparation: `DiskAutomorphisms.lean` constructs the involutive disk automorphisms and proves their analyticity, derivatives, image and basic distance identities. `HarmonicComposition.lean` transports harmonicity through actual analytic maps and proves Harnack on open disks. `TwoPointHarnack.lean` proves the normalized real-segment comparison using the original kernel coefficients. `HyperbolicDiameter.lean` proves that compact subsets of any open set with diameter ≤ log 3 have a uniform strict pseudodistance bound, without connectedness. `SymmetricDiskSegments.lean` constructs symmetric coordinates and explicit maps for all endpoint pairs, including coincident endpoints. `FailurePointsAvoidZeros.lean` uses a finite circle cover and the maximum principle for reciprocals to move every failure point into one fixed compact zero-free set. The completed assembly is recorded below.
 
@@ -150,3 +150,5 @@ Audited principal checkpoint (490 declarations): the complete partition theorem,
 Geometry preparation now compiled: SmallPartitions treats 0, 1 and 2 terms on the full disk; CClassJets proves cancellation of limiting center values and equality of scaled logarithmic derivative limits; PartitionJets derives vanishing of the actual entire exponential sum. LaurentJets proves zero-free holomorphy, integer-power derivative formulas and parameter continuity for actual Laurent monomials. TorusLimits combines them into the limiting-disc argument with varying centers and tangent vectors. The manifold/algebraic-variety identification remains open, so thm:torus-zero is not yet marked complete.
 
 Geometry analytic checkpoint: all SmallPartitions, CClassJets, PartitionJets, LaurentJets, TorusLimits and LargeDiscs proofs passed the 512-declaration full audit. LargeDiscs constructs genuine tangent discs with unbounded derivative scales directly from the infimum defining the metric. The coordinate-locus equivalence and compact lower bound are being assembled; the manuscript geometric results remain WIP until their full geometric formulation is justified.
+
+TorusLocus is audited at 516 declarations: torus_locus_metric_zero_iff proves both directions for finite Laurent loci using the actual coordinate-disc infimum; torus_locus_metric_zero_iff_moments gives the exact finite equations; torus_locus_orbit_of_large_discs handles varying base points; torus_locus_compact_metric_lower proves a uniform positive lower bound on compact sets avoiding zero directions, without assuming lower semicontinuity. These are complete coordinate-model results, not yet a declaration that the intrinsic manifold theorem is finished.

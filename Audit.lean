@@ -435,6 +435,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.diskSegmentMap_right
 #print axioms ModifiedCartan.exists_diskSegmentMap
 #print axioms ModifiedCartan.laurent_orbit_zero_of_large_discs
+#print axioms ModifiedCartan.torus_locus_metric_zero_iff
+#print axioms ModifiedCartan.torus_locus_metric_zero_iff_moments
+#print axioms ModifiedCartan.torus_locus_orbit_of_large_discs
+#print axioms ModifiedCartan.torus_locus_compact_metric_lower
 #print axioms ModifiedCartan.harmonic_harnack_two_points
 #print axioms ModifiedCartan.diskAutomorphism_real_norm
 #print axioms ModifiedCartan.twoPoint_coefficients

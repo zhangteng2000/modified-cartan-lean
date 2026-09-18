@@ -11,7 +11,7 @@
 | `def:cclass` 及两个主导指标断言 | 完整证明 | `CClass.lean` 的 `cclass_two_dominants_after_extraction` 已包含同时 Montel 抽取和 Hurwitz 步骤；仅此辅助断言要求连通性。定义、子列保持、更换主导指标判据均已完成。 |
 | `thm:main` | 完整证明 | `partitionTheorem_proved`；更强的 `partition_at_recursive_radius` 保留 εₚ = rₚ₋₁^(p−1)，实际构造分组并由吸收证明归一化极限为零。 |
 | `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺经典 Cartan 抽取及最终组装；两项吸收定理已完整证明。 |
-| `thm:torus-zero` | 一个方向完成 | `kobayashiRoyden_zero_of_orbit` 证明轨道包含推出零伪度量，使用环境坐标中的圆盘定义。反向蕴含未证明；与抽象复流形版本的识别未形式化。 |
+| `thm:torus-zero` | 坐标模型双向证明完成；几何识别待完成 | `torus_locus_metric_zero_iff` 对实际有限 Laurent 方程零集证明完整等价；与内在光滑子簇、切空间和圆盘定义的识别仍待完成。 |
 | `lem:cartan-circle` | 完整证明 | `cartanCircleEstimate_proved : CartanCircleEstimate`；有限零点分解、Blaschke 估计、零点计数、Harnack 比较、带重数选圆和最终幂次下界均已证明，覆盖 t = 1。 |
 | `prop:wronskian` | 完整证明 | `quantitativeWronskian_proved`；全部 m ≥ 1，原稿的行列式、最小组合范数、正常数及 K ≥ m。 |
 | `lem:logderivative` | 完整证明 | `logDerivativeEstimate_proved`；所有阶数和允许半径，边界零点已处理，原稿估计保持不变。 |
@@ -26,7 +26,7 @@
 | `cor:geodesic-comparison` | 未形式化 | Harnack 比较、自同构归一化与测地段步骤未证明。 |
 | `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
 | `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
-| `prop:torus-null-set` | 有限方程判据完成 | `laurent_orbit_zero_iff_finite_equations`，允许重复轨道指数和任意整数单项式幂。零方向集合的代数性、闭性及补集上紧集正下界尚未证明。 |
+| `prop:torus-null-set` | 坐标模型有限方程及紧集正下界完成 | `torus_locus_metric_zero_iff_moments`、`torus_locus_compact_metric_lower`；代数性、闭性和内在切丛识别仍在进行。 |
 | `prop:projective-equivalence` | 未形式化 | 尚缺射影映射、Montel/Hurwitz 及两种分割表述的等价。 |
 | `cor:projective-zero-directions` | 指数和分组工具完成 | `exponentialSum_zero_iff_grouped` 已证明；射影环面切空间与零方向的最终识别、维数界未证明。 |
 
