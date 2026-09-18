@@ -203,6 +203,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.scaled_real_mem_ball
 #print axioms ModifiedCartan.harmonic_two_point_on_closedBall
 #print axioms ModifiedCartan.two_point_harmonic
+#print axioms ModifiedCartan.harnack_negative_coefficient
+#print axioms ModifiedCartan.harmonic_negative_neighborhood
+#print axioms ModifiedCartan.harmonic_negative_neighborhood_unit
 #print axioms ModifiedCartan.nonzero_surrounding_circle
 #print axioms ModifiedCartan.compactConvergence_cancel_nontrivial
 #print axioms ModifiedCartan.absorption_one
@@ -217,6 +220,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.hyperbolicDistance_le_log_three_iff
 #print axioms ModifiedCartan.open_diameter_strict_pseudodistance
 #print axioms ModifiedCartan.compact_strict_pseudodiameter
+#print axioms ModifiedCartan.interior_wronskian_boundary_error_negligible
+#print axioms ModifiedCartan.interior_derivative_quotient_growth_bound
+#print axioms ModifiedCartan.interior_derivative_quotient_growth_negligible
+#print axioms ModifiedCartan.interior_absorption_growth_radii
 #print axioms ModifiedCartan.iterated_log_derivative_mean
 #print axioms ModifiedCartan.poissonDenom_pos
 #print axioms ModifiedCartan.poissonKernel_pos
@@ -282,6 +289,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.poissonExtension_harnack_bounds
 #print axioms ModifiedCartan.poissonExtension_harnack_uniform
 #print axioms ModifiedCartan.poissonExtension_sub
+#print axioms ModifiedCartan.poissonExtension_add
+#print axioms ModifiedCartan.poissonExtension_mono_codiscrete
+#print axioms ModifiedCartan.norm_le_exp_poisson_majorant
 #print axioms ModifiedCartan.logarithmic_mean_of_pole_bound
 #print axioms ModifiedCartan.log_norm_le_proximity
 #print axioms ModifiedCartan.norm_le_exp_proximity
@@ -323,6 +333,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.real_scale_mem_disk
 #print axioms ModifiedCartan.real_div_mem_disk
 #print axioms ModifiedCartan.absorption_rescale
+#print axioms ModifiedCartan.compact_subset_unit_closedDisk
+#print axioms ModifiedCartan.compact_scaled_pseudodiameter
+#print axioms ModifiedCartan.zero_free_finite_failure_points
+#print axioms ModifiedCartan.complement_quotient_tendsto_one
+#print axioms ModifiedCartan.two_term_failure_limits
 #print axioms ModifiedCartan.descending_count_bound
 #print axioms ModifiedCartan.count_stabilization
 #print axioms ModifiedCartan.symmetricPseudodistance_continuous
@@ -340,6 +355,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.diskAutomorphism_real_norm
 #print axioms ModifiedCartan.twoPoint_coefficients
 #print axioms ModifiedCartan.real_segment_harmonic_comparison
+#print axioms ModifiedCartan.wronskian_two
+#print axioms ModifiedCartan.deriv_two_term_quotient
+#print axioms ModifiedCartan.two_wronskian_poisson_majorant
 #print axioms ModifiedCartan.unit_log_harmonic
 #print axioms ModifiedCartan.norm_le_exp_unitGrowthMean
 #print axioms ModifiedCartan.unitGrowthMean_continuousOn

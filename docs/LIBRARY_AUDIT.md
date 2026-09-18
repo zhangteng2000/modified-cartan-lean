@@ -42,3 +42,5 @@ The compact-exhaustion and locally uniform convergence APIs are used for the fai
 ### Sharp two-term geometry and moving points
 
 Reused mathlib Blaschke factors, harmonic conjugates on balls, compact finite subcovers, and the complex maximum principle. Proved disk automorphism formulas, two-point Harnack comparison, strict compact pseudodiameter for arbitrary open sets, actual symmetric disk-segment maps, and a fixed compact zero-free failure-point set. Moving-point convergence is derived from compact convergence. These are supporting results; sharp two-term absorption is still WIP.
+
+The 412-declaration checkpoint additionally uses compact uniform-neighborhood quantification (`IsCompact.eventually_forall_of_forall_eventually`), analytic isolated-zero codiscrete filters, and the actual Harnack estimates. Poisson comparison is proved through integrals and handles identically zero Wronskians explicitly. No geodesic-existence or path-integral conclusion has been assumed.

@@ -1,21 +1,21 @@
-⚠ [3532/3601] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3609] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3601] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3609] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [3592/3601] Built ModifiedCartan.DiskAutomorphisms (16s)
-✔ [3593/3601] Built ModifiedCartan.FailurePointsAvoidZeros (17s)
-✔ [3594/3601] Built ModifiedCartan.MovingPointLimits (17s)
-✔ [3595/3601] Built ModifiedCartan.HarmonicComposition (17s)
-✔ [3596/3601] Built ModifiedCartan.HyperbolicDiameter (17s)
-✔ [3597/3601] Built ModifiedCartan.TwoPointHarnack (18s)
-✔ [3598/3601] Built ModifiedCartan.SymmetricDiskSegments (19s)
-✔ [3599/3601] Built ModifiedCartan.DiskSegmentComparison (18s)
-✔ [3600/3601] Built ModifiedCartan (18s)
-Build completed successfully (3601 jobs).
+✔ [3600/3609] Built ModifiedCartan.SharpTwoEndpoints (19s)
+✔ [3601/3609] Built ModifiedCartan.InteriorGrowthRadii (19s)
+✔ [3602/3609] Built ModifiedCartan.ScaledPseudodiameter (19s)
+✔ [3603/3609] Built ModifiedCartan.PoissonMajorant (19s)
+✔ [3604/3609] Built ModifiedCartan.HarmonicNegativeNeighborhood (19s)
+✔ [3605/3609] Built ModifiedCartan.InteriorDerivativeGrowth (19s)
+✔ [3606/3609] Built ModifiedCartan.InteriorBoundaryError (15s)
+✔ [3607/3609] Built ModifiedCartan.TwoWronskian (17s)
+✔ [3608/3609] Built ModifiedCartan (15s)
+Build completed successfully (3609 jobs).
