@@ -25,7 +25,7 @@ def leastCombinationNorm {m : ℕ} (g : Fin m → ℂ → ℂ) (r : ℝ) : ℝ :
   sInf {v : ℝ | ∃ c : Fin m → ℂ, coefficientNormSq c = 1 ∧
     v = diskSupNorm (fun z => ∑ j, c j * g j z) r}
 
-/-- Theorem `thm:main`. OPEN proof target. -/
+/-- Theorem `thm:main`, proved by `partitionTheorem_proved`. -/
 def PartitionTheorem : Prop :=
   ∀ p : ℕ, 3 ≤ p → ∃ ε : ℝ, 0 < ε ∧ ε < 1 ∧ PartitionProperty p (disk ε)
 
@@ -62,7 +62,7 @@ def AbsorptionAt (m : ℕ) (U : Set ℂ) : Prop :=
     ∃ i : Fin m, ∃ φ : ℕ → ℕ, StrictMono φ ∧
       CompactConvergence (fun n z => (A i (φ n) z)⁻¹) (fun _ => 0) U
 
-/-- Proposition 3.1, existence form. OPEN proof target. -/
+/-- Proposition thm:absorption, existence form, proved by `absorptionTheorem_proved`. -/
 def AbsorptionTheorem : Prop :=
   ∀ m : ℕ, 1 ≤ m → ∃ r : ℝ, 0 < r ∧ r ≤ 1 ∧ AbsorptionAt m (disk r)
 
@@ -80,7 +80,7 @@ def SharpFiveTheorem : Prop :=
   ∀ U : Set ℂ, U.Nonempty → IsOpen U → U ⊆ disk 1 →
     HasHyperbolicDiameterLE U (Real.log 3) → PartitionProperty 5 U
 
-/-- Proposition 5.3. OPEN proof target. -/
+/-- Proposition prop:sharp-two-absorption, proved by `sharpTwoAbsorption_proved`. -/
 def SharpTwoAbsorption : Prop :=
   ∀ U : Set ℂ, U.Nonempty → IsOpen U → U ⊆ disk 1 →
     HasHyperbolicDiameterLE U (Real.log 3) → AbsorptionAt 2 U

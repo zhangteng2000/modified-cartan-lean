@@ -42,7 +42,7 @@ def WronskianExponents (K : ℕ → ℝ) : Prop :=
         diskSupNorm (wronskian g) (1 / 2)
 
 /-- Full `thm:absorption` target with the manuscript's recursive radii.
-The required exponents are produced as part of the conclusion. OPEN. -/
+The required exponents are produced as part of the conclusion. Proved by `explicitAbsorptionTheorem_proved`. -/
 def ExplicitAbsorptionTheorem : Prop :=
   ∃ K : ℕ → ℝ, WronskianExponents K ∧
     ∀ m : ℕ, 1 ≤ m → AbsorptionAt m (disk (absorptionRadius K m))

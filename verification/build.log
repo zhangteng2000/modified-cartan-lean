@@ -1,21 +1,22 @@
-⚠ [3532/3629] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3637] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3629] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3637] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3610/3629] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3612/3637] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [3627/3629] Built ModifiedCartan.AbsorptionTheorem (18s)
-✔ [3628/3629] Built ModifiedCartan (14s)
-Build completed successfully (3629 jobs).
+✔ [3634/3637] Built ModifiedCartan.FunctionRank (19s)
+✔ [3635/3637] Built ModifiedCartan.RankAdaptiveAbsorption (14s)
+✔ [3636/3637] Built ModifiedCartan (14s)
+Build completed successfully (3637 jobs).

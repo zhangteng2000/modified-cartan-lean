@@ -126,3 +126,11 @@ import ModifiedCartan.SharpTwoSubsequence
 import ModifiedCartan.SharpTwoEndgame
 import ModifiedCartan.SharpTwoAbsorption
 import ModifiedCartan.AbsorptionTheorem
+import ModifiedCartan.FiniteEscape
+import ModifiedCartan.DominancePartition
+import ModifiedCartan.NormalizedParts
+import ModifiedCartan.PartitionVanishing
+import ModifiedCartan.PartitionTheorem
+import ModifiedCartan.PartitionCenters
+import ModifiedCartan.FunctionRank
+import ModifiedCartan.RankAdaptiveAbsorption

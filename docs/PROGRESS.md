@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; rank-adaptive absorption, partition theorem and geometric applications.
+WIP: Full manuscript; sharp five-function theorem and counterexample, geodesic identification, and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -43,9 +43,9 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 |---|---|---|
 | `prop:sharp-two-absorption` | VERIFIED | `sharpTwoAbsorption_proved`; arbitrary disconnected open sets, diameter ≤ log 3, actual Wronskian decay and endpoint contradiction |
 | `thm:absorption` | VERIFIED | `explicitAbsorptionTheorem_proved` and `absorptionTheorem_proved`; actual exponent sequence, sharp m = 2 base, exact recursive radii |
-| `cor:rank-adaptive-absorption` | WIP | minor selection and subsequence basis |
+| `cor:rank-adaptive-absorption` | VERIFIED | `rank_adaptive_absorption`; rank of restrictions to D, bounded elimination and exact r_d |
 | `lem:stabilization` | VERIFIED | `stabilization_lemma`; common extraction, actual quotient preorders, maximal-class counting and incomparability |
-| `thm:main`, `cor:centers` | WIP | stabilization/absorption assembly and disk automorphisms |
+| `thm:main`, `cor:centers` | VERIFIED | `partitionTheorem_proved`, `partition_at_recursive_radius`, `partition_at_center`; exact εₚ and disk automorphism pullback |
 | `thm:sharp-five` | WIP | classical Cartan extraction and sharp absorption; arbitrary open U retained |
 | optimal five-function radius | WIP | Gaussian integral counterexample and exact extremal argument |
 | `thm:torus-zero` | WIP | forward direction from an orbit is proved; converse and geometric identification remain |
@@ -115,7 +115,7 @@ Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source 
 
 `AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem is now assembled and audited with the exact recursive radii.
 
-Latest audited checkpoint: 466 proof declarations; `lake build` successful (3629 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
+Latest audited checkpoint: 490 proof declarations; `lake build` successful (3637 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
 
 Sharp two-term preparation: `DiskAutomorphisms.lean` constructs the involutive disk automorphisms and proves their analyticity, derivatives, image and basic distance identities. `HarmonicComposition.lean` transports harmonicity through actual analytic maps and proves Harnack on open disks. `TwoPointHarnack.lean` proves the normalized real-segment comparison using the original kernel coefficients. `HyperbolicDiameter.lean` proves that compact subsets of any open set with diameter ≤ log 3 have a uniform strict pseudodistance bound, without connectedness. `SymmetricDiskSegments.lean` constructs symmetric coordinates and explicit maps for all endpoint pairs, including coincident endpoints. `FailurePointsAvoidZeros.lean` uses a finite circle cover and the maximum principle for reciprocals to move every failure point into one fixed compact zero-free set. The completed assembly is recorded below.
 
@@ -141,4 +141,8 @@ Major sharp-two connection: `sharp_two_rectangle_decay` now proves actual unifor
 
 `sharp_two_absorption` and `sharpTwoAbsorption_proved` have passed the full 460-declaration audit. No connectedness assumption is imposed on Ω. The auxiliary zero-free rectangle is proved preconnected by removing the actual finite zero set of the analytic limit. The original non-strict diameter bound is retained.
 
-`AbsorptionTheorem.lean` proves the sharp-radius pseudohyperbolic diameter bound directly from the Blaschke norm identity and the exact quadratic equation for 2−√3. It derives the disk base case and completes induction for every m ≥ 1, producing valid Wronskian exponents. Both explicit-radius and existence formulations are VERIFIED at 466 declarations. Rank-adaptive absorption is a separate remaining corollary.
+`AbsorptionTheorem.lean` proves the sharp-radius pseudohyperbolic diameter bound directly from the Blaschke norm identity and the exact quadratic equation for 2−√3. It derives the disk base case and completes induction for every m ≥ 1, producing valid Wronskian exponents. Both explicit-radius and existence formulations are VERIFIED at 466 declarations. Rank-adaptive absorption has now also been proved; see the current checkpoint below.
+
+Partition construction in progress: DominancePartition constructs actual fibers assigned to maximal representatives. FiniteEscape supplies a common subsequence and explicit quadratic escape witnesses. PartitionVanishing now proves that absorption forces every normalized limit with pairwise escaping representatives to vanish, constructing all coefficients and rescalings. NormalizedParts proves the actual partition identity and compact convergence of finite normalized sums. These supporting modules compile; the complete partition theorem is being assembled.
+
+Audited principal checkpoint (490 declarations): the complete partition theorem, its exact εₚ = rₚ₋₁^(p−1), arbitrary-center corollary and rank-adaptive absorption at r_d all passed lake build and recursive axiom inspection. Only propext, Classical.choice and Quot.sound occur. The rank-adaptive proof uses successive elimination with uniformly bounded coefficients; it preserves the original statement and does not assume a chosen basis. A transient parallel cache-read failure in the full rebuild disappeared on rerun; all previously failing targets then built successfully.

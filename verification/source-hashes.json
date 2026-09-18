@@ -41,7 +41,7 @@
   },
   {
     "file": "ModifiedCartan\\AnalyticStatements.lean",
-    "sha256": "A46B082F0C37F97F97A91A3E744C4D580D88B6FF3777FC02555EAF29A6A51316"
+    "sha256": "707F68E81C10A5A33F7659077F44A8ADFC2C9D66F0A37CF26AA0AAA12DB244B6"
   },
   {
     "file": "ModifiedCartan\\AngularGeometry.lean",
@@ -140,6 +140,10 @@
     "sha256": "9903AB7DFAE0A9FD7613F93C64101544A8205298CADC2881E8C87F28E09FD76C"
   },
   {
+    "file": "ModifiedCartan\\DominancePartition.lean",
+    "sha256": "B4FB3960F9D8B3D3F1F129FE96DB9F79DBB08720D3F4FB296D200A1A3BB1AB21"
+  },
+  {
     "file": "ModifiedCartan\\Envelope.lean",
     "sha256": "B9F84C335C68E3EBDB6212A0AA76D2F88FFBF07E79F10E6E4C690EC9FC9AB798"
   },
@@ -164,6 +168,10 @@
     "sha256": "A23FC5CD3B69D6FC982C9B2292EC6E1077E0B58818F78D9651A282FF2C89A719"
   },
   {
+    "file": "ModifiedCartan\\FiniteEscape.lean",
+    "sha256": "23D0C7FB487BD9C005CD2B1AAE4E862E553BA8F8FFD48F52A27D3C57D81EE5AB"
+  },
+  {
     "file": "ModifiedCartan\\FiniteFailurePoints.lean",
     "sha256": "9CBE5B58FA2CCB250263BF1306E89CBFF881961B736E9BBFB9AA58477E5A8D21"
   },
@@ -178,6 +186,10 @@
   {
     "file": "ModifiedCartan\\FractionalPowers.lean",
     "sha256": "7DF16531B11ACE507B165EE189B62CC6F7276981D42C0DF690DBA135001865B7"
+  },
+  {
+    "file": "ModifiedCartan\\FunctionRank.lean",
+    "sha256": "84D494D9EDCEBAEBCA42070A54F03D783CE029B06085742600A9E957CF2BA941"
   },
   {
     "file": "ModifiedCartan\\Growth.lean",
@@ -300,8 +312,24 @@
     "sha256": "705521A5C73CFDC23D5C8338EF5B88104BD376AA7423DFD55311628D14929DD0"
   },
   {
+    "file": "ModifiedCartan\\NormalizedParts.lean",
+    "sha256": "F4B7A582DDBD1303D7288CC2704338494B8962994543D8EE76211D6ED0F6A562"
+  },
+  {
     "file": "ModifiedCartan\\ParameterUniformConvergence.lean",
     "sha256": "8F7D182DFB392033614BB3C59C04AE8439B1925504F9EFA0E98E6190D843F8CB"
+  },
+  {
+    "file": "ModifiedCartan\\PartitionCenters.lean",
+    "sha256": "DB5DBB9B54D962BE84D9E35B3FA07350B9B1CEBE39E8AC585D379CC3E5C70660"
+  },
+  {
+    "file": "ModifiedCartan\\PartitionTheorem.lean",
+    "sha256": "FFD9CEA2A598A025FBC121098F23F0B9B334749012EB6A847051EA3D4C13DEF1"
+  },
+  {
+    "file": "ModifiedCartan\\PartitionVanishing.lean",
+    "sha256": "D261AEE7C4041AC1DA03A0EDACFD4D699391446FE4DDA301EF01C5CAD854AD83"
   },
   {
     "file": "ModifiedCartan\\PoissonEnvelope.lean",
@@ -354,6 +382,10 @@
   {
     "file": "ModifiedCartan\\Radii.lean",
     "sha256": "8169AFCD96D11E61D55FDEFD3F689BD05D80968493B9A4B301255DFDFB7EED71"
+  },
+  {
+    "file": "ModifiedCartan\\RankAdaptiveAbsorption.lean",
+    "sha256": "D1BEE931F3683DA02449F0475D84CAB83E1A12678D7A4594D4565FDB07BED072"
   },
   {
     "file": "ModifiedCartan\\RealPartCauchy.lean",
@@ -413,7 +445,7 @@
   },
   {
     "file": "ModifiedCartan\\Statements.lean",
-    "sha256": "9CA2BDCA57AB2B4F228D887C4DF799A0B4EBF3FB4E22C61CCCA1613F112326E0"
+    "sha256": "4E14D540C6110B8AE8F6B5C6BBE6DA631CF6A0BC043C37F389C25716430A6840"
   },
   {
     "file": "ModifiedCartan\\SymmetricDiskSegments.lean",
@@ -513,7 +545,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "47490A372FE40729719658BD8DA3D703CDFEB5BCC66C0134B5337B64D10FA41F"
+    "sha256": "262266FE37C0D735CA009425464F348B9ED046E4009E66A8D71F366D19CEFC77"
   },
   {
     "file": "lake-manifest.json",
@@ -529,6 +561,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "F35575B404F8ECB3272FD0894A68BB1201F653B46D9284964BBFB290F5428FB3"
+    "sha256": "65568F6AA10661B3F91DF5C8F8CBE7A8000803725D6881D25432C799C6B0A310"
   }
 ]

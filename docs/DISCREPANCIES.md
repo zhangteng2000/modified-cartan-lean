@@ -1,8 +1,8 @@
 # Manuscript-to-code discrepancies
 
-## D1 — Explicit absorption radii (STATEMENT CORRECTED; PROOF OPEN)
+## D1 — Explicit absorption radii (RESOLVED)
 
-The earlier `AbsorptionTheorem` definition only asserts existence of some positive radius. The manuscript specifies `r₁ = 1`, `r₂ = 2 - √3`, and `rₘ = rₘ₋₁ / (1024 (Kₘ + m))`. The existential statement is not an adequate final target. `ExplicitAbsorptionTheorem` in `AnalyticStatements.lean` now uses the exact recursion and includes the obligation to produce valid exponents for the Wronskian estimate at a = 1/4, b = 1/2. Its proof remains open. The older existential-radius target is only a weaker corollary target.
+The earlier `AbsorptionTheorem` definition only asserts existence of some positive radius. The manuscript specifies `r₁ = 1`, `r₂ = 2 - √3`, and `rₘ = rₘ₋₁ / (1024 (Kₘ + m))`. The existential statement is not an adequate final target. `ExplicitAbsorptionTheorem` in `AnalyticStatements.lean` now uses the exact recursion and includes the obligation to produce valid exponents for the Wronskian estimate at a = 1/4, b = 1/2. Both `explicitAbsorptionTheorem_proved` and the weaker corollary `absorptionTheorem_proved` now have complete proofs. The actual exponent sequence and the exact recursive radii are included.
 
 ## D2 — Geometric model (OPEN)
 

@@ -71,3 +71,7 @@ ParameterUniformConvergence -> DiskSegmentLimits; VaryingComposition transports 
 Completed sharp-two chain: SharpTwoSetup → SharpTwoCoordinates/Subsequence → SharpTwoRectangleDecay → SharpTwoEndgame → SharpTwoAbsorption. Every setup object is constructed from the original hypotheses; both endpoint limits and the actual Wronskian decay are proved.
 
 Completed thm:absorption: sharpRadius_pseudodiameter → sharpRadius_hyperbolicDiameter → absorption_two; absorption_one + absorption_two + absorption_successor + exists_wronskianExponents → absorption_at_recursive_radius → explicitAbsorptionTheorem_proved and absorptionTheorem_proved.
+
+Partition proof assembled: DominancePartition + NormalizedParts + finite_escape_points + normalized_limits_zero_of_pairwise_escape + stabilization_lemma → partition_at_recursive_radius → partitionTheorem_proved. PartitionCenters transports the actual C-partition through involutive disk automorphisms.
+
+Rank-adaptive proof assembled: functionRank_relation + finite_constant_subsequence + bounded coefficient elimination + functionRank_scaled_subfamily → induction on number of terms → rank_adaptive_absorption at the exact r_d. Rank is computed after restricting functions to the unit disk.
