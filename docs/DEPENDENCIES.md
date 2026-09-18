@@ -8,7 +8,10 @@ flowchart TD
   Harnack --> Envelope[lem:envelope]
   Factor[mathlib zero orders and factorized rational functions] --> Circle[VERIFIED lem:cartan-circle]
   Harnack --> Circle
-  Circle --> Wronskian[prop:wronskian]
+  Circle --> Wronskian[VERIFIED prop:wronskian]
+  Cauchy[VERIFIED derivative and cofactor bounds] --> Coeff[VERIFIED derivative of Y inverse v]
+  Coeff --> Variation[VERIFIED circle variation and combination bound]
+  Variation --> Wronskian
   Factor --> LogDeriv[lem:logderivative]
   Poisson --> Mean[lem:poisson-mean including boundary zeros]
   Kernel[proved rational kernel inequalities] --> TwoPoint[lem:two-point-kernel for harmonic functions]

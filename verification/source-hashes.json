@@ -24,12 +24,20 @@
     "sha256": "84C7E8AB65F6A69E6057073F49CFAA81415630F8CE3E633A5FD7A030C92892E0"
   },
   {
+    "file": "ModifiedCartan\\CartanScaled.lean",
+    "sha256": "2D7194F2BAE87EC3C9EFC82622C2B7225508A18FAC0415A1351EE4CA699E2A96"
+  },
+  {
     "file": "ModifiedCartan\\CauchyBounds.lean",
     "sha256": "89775F1A257431A11E567CD6200D096BC3EBD6DE360E6219ADB05136A4F19013"
   },
   {
     "file": "ModifiedCartan\\CClass.lean",
     "sha256": "7655507D949B05F76343B9DCEA997A0F6E2B0732A47759A932133033A8B8537C"
+  },
+  {
+    "file": "ModifiedCartan\\CircleVariation.lean",
+    "sha256": "528E579230BE9585577F51F45D7D42B865FD20F026E28241EC817B85BE8C0E73"
   },
   {
     "file": "ModifiedCartan\\CombinationNorm.lean",
@@ -88,8 +96,16 @@
     "sha256": "5BB9B26B7814A5B17C737ADE212D961EAF3EE465AF2046D4EF677665CC609EB0"
   },
   {
+    "file": "ModifiedCartan\\MatrixAnalytic.lean",
+    "sha256": "E33784D39350601184C6A3D455C2002A4A4F92DB1C56C5900E5180C8E21AD789"
+  },
+  {
     "file": "ModifiedCartan\\Montel.lean",
     "sha256": "6D2595671D00A704F5F5BCD7E531FEF7D613B2743A367BDEEF579CA4E28C9614"
+  },
+  {
+    "file": "ModifiedCartan\\QuantitativeWronskian.lean",
+    "sha256": "311FD6113E21AD29F7ECF9B28895920239BEE41C8A62E374ADFF4C3ADDEB810D"
   },
   {
     "file": "ModifiedCartan\\QuotientStabilization.lean",
@@ -109,11 +125,35 @@
   },
   {
     "file": "ModifiedCartan\\Statements.lean",
-    "sha256": "7E31738E8D4BA41247A65CDE8C31D0DFC01341A367D3DD0EDB04F28C6C87B7FB"
+    "sha256": "9CA2BDCA57AB2B4F228D887C4DF799A0B4EBF3FB4E22C61CCCA1613F112326E0"
   },
   {
     "file": "ModifiedCartan\\Wronskian.lean",
     "sha256": "100D1F18385F304AADC9E2A0B6051F7CB41F4281D78BD0D1301F0F5C9C9FFC31"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianAlgebra.lean",
+    "sha256": "3B97C236D530D6115E8132C41BE1DD18F1499FD5BA2ABC1A0C5FB057747758FC"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianCircle.lean",
+    "sha256": "3A08F8B2372B5559FB4B49B6783F07E91723B3654B80E88A7DDFBBD39F877443"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianCoefficientBounds.lean",
+    "sha256": "FE5617334F1183A558242BFB20D40311395F2C3BF0E1B2D6C149D4DDF68AE1E3"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianCoefficients.lean",
+    "sha256": "93AA6B9D51DBE02FBF264167E5900E459CE9E666058D7BB8DCE5EC3B2288F9A3"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianDifferentiation.lean",
+    "sha256": "0C46CD1EEE130EBD84D0747BA568D6FD8ADBCC70F9E87C889F86B76D023E6851"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianPower.lean",
+    "sha256": "FD76FD8E0740635FB997D2698EC32AB9560E93DB7DC85404D6FC66ED69ED759C"
   },
   {
     "file": "ModifiedCartan\\ZeroFactors.lean",
@@ -121,7 +161,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "12F1DF4BFD47712EF6F9DE2CA44444872CC1E0DFC0B48147D277D1A083EE2AA7"
+    "sha256": "A851414C9EEECE62C1D0593FDDFCFC065E6974B021AF69973DD255BA7B01C1C5"
   },
   {
     "file": "lake-manifest.json",
@@ -137,6 +177,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "6F6043CD413164796746A2FB473065A2AC38251C61A0C57C4B88304D9920AA91"
+    "sha256": "98145935E5A5D5CF01179F56F7357DCE66934E8E92A26E8DFC48FF66A6B41DCB"
   }
 ]

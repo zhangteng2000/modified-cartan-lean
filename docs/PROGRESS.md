@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; Wronskians, logarithmic derivatives, absorption and geometric applications.
+WIP: Full manuscript; logarithmic derivatives, absorption and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -30,7 +30,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | Result | Status | Remaining proof work |
 |---|---|---|
 | `lem:cartan-circle` | VERIFIED | `cartanCircleEstimate_proved : CartanCircleEstimate`; exact t^γ, γ depending only on a,b,c, including t = 1 |
-| `prop:wronskian` | WIP | m = 1, structural identities, analyticity and uniform Cauchy/determinant upper bounds proved; general lower-bound induction remains |
+| `prop:wronskian` | VERIFIED | `quantitativeWronskian_proved : QuantitativeWronskian`; all m ≥ 1 and 0 < a < b < 1, genuine determinant and coefficient sphere, c > 0 and K ≥ m |
 | `lem:logderivative` | WIP | exact `LogDerivativeEstimate` statement added; local bounds and pole integrability remain |
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
 | `lem:envelope` | VERIFIED | `envelope_lemma`; exact 8δ and 64η constants and closed-disk supremum |
@@ -73,4 +73,6 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 
 `CartanCircle.lean` proves the full Cartan circle estimate. `ZeroFactors.lean` removes all zeros with multiplicity in a fixed closed smaller disk while preserving analyticity on the whole unit disk. `BlaschkeDecomposition.lean` uses factors normalized on a larger circle, so boundary zeros of the smaller disk require no exceptional-radius choice. `Blaschke.lean` proves uniform contraction and the radial lower bound. `RadialLog.lean` proves integrability, a uniform integral estimate, and weighted radius selection avoiding all zero moduli. `CartanAux.lean` proves the logarithmic zero count and Harnack bound for the zero-free remainder. All constants depend only on the fixed radii. The final proof also works at t = 1 without a separate case.
 
-`CauchyBounds.lean` proves uniform bounds for every derivative jet, analyticity of Wronskians, and a positive explicit upper bound for all bounded holomorphic families on each smaller disk. `CombinationNorm.lean` proves attainment and homogeneity of the disk supremum, 0 ≤ Λ ≤ 1, the normalized and unnormalized coefficient inequalities, and monotonicity when the last function is removed. The general Wronskian lower estimate is still WIP: its matrix coefficient derivative identity, circle integration and induction have not yet been assembled.
+`CauchyBounds.lean` proves uniform bounds for every derivative jet, analyticity of Wronskians, and a positive explicit upper bound for all bounded holomorphic families on each smaller disk. `CombinationNorm.lean` proves attainment and homogeneity of the disk supremum, 0 ≤ Λ ≤ 1, the normalized and unnormalized coefficient inequalities, and monotonicity when the last function is removed.
+
+`WronskianAlgebra.lean`, `WronskianDifferentiation.lean`, `MatrixAnalytic.lean` and `WronskianCoefficients.lean` prove the determinant residual identity, analytic inverse entries and the exact derivative identity for the actually defined coefficients d = Y⁻¹v. `CircleVariation.lean` controls variation on a full circle without requiring holomorphic coefficients in its interior. `WronskianCoefficientBounds.lean` and `WronskianCircle.lean` combine Cauchy/cofactor bounds, circle variation and the maximum principle into Λ times the squared minor lower bound ≤ C times the full Wronskian supremum. `CartanScaled.lean` transports the proved circle lemma to an arbitrary smaller disk with exact scalar normalization. `WronskianPower.lean` proves the required real-power algebra. `QuantitativeWronskian.lean` completes the dimension induction, including Λ = 0 and increasing the exponent to K ≥ m. This proves the original proposition in full without any independence hypothesis.

@@ -1,4 +1,30 @@
-✔ [3526/3529] Built ModifiedCartan.CauchyBounds (12s)
-✔ [3527/3529] Built ModifiedCartan.CombinationNorm (12s)
-✔ [3528/3529] Built ModifiedCartan (14s)
-Build completed successfully (3529 jobs).
+✔ [3516/3539] Built ModifiedCartan.Statements (13s)
+⚠ [3517/3539] Built ModifiedCartan.CircleVariation (14s)
+warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3518/3539] Built ModifiedCartan.AnalyticStatements (15s)
+✔ [3519/3539] Built ModifiedCartan.WronskianPower (15s)
+✔ [3520/3539] Built ModifiedCartan.Wronskian (17s)
+✔ [3521/3539] Built ModifiedCartan.Growth (17s)
+✔ [3522/3539] Built ModifiedCartan.WronskianAlgebra (15s)
+✔ [3523/3539] Built ModifiedCartan.CauchyBounds (15s)
+✔ [3524/3539] Built ModifiedCartan.CombinationNorm (16s)
+✔ [3525/3539] Built ModifiedCartan.LogPoisson (18s)
+✔ [3526/3539] Built ModifiedCartan.WronskianDifferentiation (16s)
+✔ [3527/3539] Built ModifiedCartan.MatrixAnalytic (16s)
+✔ [3528/3539] Built ModifiedCartan.CartanAux (18s)
+✔ [3529/3539] Built ModifiedCartan.WronskianCoefficients (16s)
+✔ [3530/3539] Built ModifiedCartan.ZeroFactors (35s)
+✔ [3531/3539] Built ModifiedCartan.Blaschke (35s)
+✔ [3532/3539] Built ModifiedCartan.WronskianCoefficientBounds (16s)
+✔ [3533/3539] Built ModifiedCartan.BlaschkeDecomposition (15s)
+✔ [3534/3539] Built ModifiedCartan.WronskianCircle (18s)
+✔ [3535/3539] Built ModifiedCartan.CartanCircle (18s)
+✔ [3536/3539] Built ModifiedCartan.CartanScaled (18s)
+✔ [3537/3539] Built ModifiedCartan.QuantitativeWronskian (18s)
+✔ [3538/3539] Built ModifiedCartan (14s)
+Build completed successfully (3539 jobs).

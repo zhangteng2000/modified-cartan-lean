@@ -37,7 +37,7 @@ def CartanCircleEstimate : Prop :=
     0 < t → t ≤ 1 → t ≤ diskSupNorm F a →
     ∃ ρ : ℝ, b < ρ ∧ ρ < c ∧ ∀ z : ℂ, ‖z‖ = ρ → t ^ γ ≤ ‖F z‖
 
-/-- Proposition 2.2, with the actual determinant and coefficient sphere. OPEN proof target. -/
+/-- Proposition 2.2, proved by `quantitativeWronskian_proved`. -/
 def QuantitativeWronskian : Prop :=
   ∀ m : ℕ, 1 ≤ m → ∀ a b : ℝ, 0 < a → a < b → b < 1 →
   ∃ c K : ℝ, 0 < c ∧ (m : ℝ) ≤ K ∧ ∀ g : Fin m → ℂ → ℂ,
