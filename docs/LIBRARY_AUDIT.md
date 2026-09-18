@@ -38,3 +38,7 @@ The compact-exhaustion and locally uniform convergence APIs are used for the fai
 ## Wronskian scaling, boundary integration and asymptotics
 
 `iteratedDeriv_comp_const_mul` requires global smoothness, so input scaling is instead proved locally from analytic jets, eventual equality and the derivative chain rule. Library determinant column scaling then yields the exact triangular exponent. `Matrix.det_updateCol_sum` supplies the sum-column replacement identity without a sign ambiguity. Library meromorphic logarithm integrability and codiscrete-circle measure comparison justify both mean estimates even with boundary zeros. `Real.isLittleO_log_id_atTop`, finite little-o sums and locally uniform derivative convergence supply the vanishing error.
+
+### Sharp two-term geometry and moving points
+
+Reused mathlib Blaschke factors, harmonic conjugates on balls, compact finite subcovers, and the complex maximum principle. Proved disk automorphism formulas, two-point Harnack comparison, strict compact pseudodiameter for arbitrary open sets, actual symmetric disk-segment maps, and a fixed compact zero-free failure-point set. Moving-point convergence is derived from compact convergence. These are supporting results; sharp two-term absorption is still WIP.

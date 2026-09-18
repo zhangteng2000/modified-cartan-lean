@@ -50,6 +50,8 @@ flowchart TD
 
 The sharp two-term absorption branch must remain independent of general absorption, avoiding a circular proof of the m = 2 base radius.
 
+`DiskAutomorphisms + HarmonicComposition + HarmonicKernel → TwoPointHarnack` proves normalized harmonic comparison. `HyperbolicDiameter` retains the non-strict endpoint on arbitrary open sets and obtains a uniform strict bound on compact subsets. `SymmetricDiskSegments + TwoPointHarnack → DiskSegmentComparison` supplies actual paths and comparison on them. `FailurePointsAvoidZeros + MovingPointLimits` supplies the zero-free endpoint preparation. The full sharp two-term proof remains open.
+
 ## Proved absorption preparations
 
 `HolomorphicCancellation` proves the m = 1 base case. `CombinationMinimum + Rescaling + AbsorptionLinearAlgebra → AbsorptionReduction → AbsorptionGap` proves the positive combination gap from the lower-dimensional induction hypothesis and failure of the conclusion. `FailurePoints → FiniteFailurePoints` constructs actual failure points. `PoissonExtension → HarmonicGrowth + PoissonHarnack → PoissonEnvelope` constructs and bounds the harmonic majorant. `UnitGrowth + GrowthSelection + ZeroFreeAnnulus` supplies divergence and controlled radii.
