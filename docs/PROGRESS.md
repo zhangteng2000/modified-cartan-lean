@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; logarithmic derivatives, absorption and geometric applications.
+WIP: Full manuscript; absorption, partition theorem and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -90,3 +90,7 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `ReflectedDerivatives.lean` proves all higher reflected-pole derivative bounds and combines them with the principal-pole formula. `LogDerivativeProducts.lean` differentiates the actual finite product identity to every order and identifies the derivatives of Q′/Q with derivatives of the constructed logarithm. `FinitePoleBounds.lean` sums the bounds with multiplicities for an actual Blaschke factorization, on the smaller disk away from its finite zero set. Combining the explicit constants with the zero count and passing to logarithmic means remain WIP.
 
 `ProximityMoment.lean` proves the logarithmic moment inequality m(r,f) ≤ p⁻¹ log(1 + mean |f|^p) for every p > 0 when the displayed functions are circle integrable. It uses the tangent inequality for log and actual circle-average linearity. The remaining work is to apply it to the derived pole bounds with uniform constants and convert from iterated logarithmic derivatives to h^(k)/h.
+
+`FractionalPowers.lean`, `CircleExceptional.lean` and `PoleMoments.lean` prove the weighted fractional-power estimate, integration across codiscrete exceptional sets, and the logarithmic mean bound for finite pole sums. `ProximityLocal.lean` proves local-circle sum/product/congruence estimates for meromorphic functions.
+
+`LocalLogDerivativePoles.lean` assembles the actual factorization, zero count and zero-free logarithm bounds for all orders. `LogDerivativeConstants.lean` bounds all regular terms by a fixed polynomial in the inverse radius gap; `LogarithmicGrowthAlgebra.lean` converts these to the required logarithmic scale. `IteratedLogDerivativeMean.lean` proves the uniform estimate for every iterated derivative of h′/h, including zeros on the integration circle. `DerivativeQuotientRecurrence.lean` proves the actual Leibniz recurrence and its proximity inequality. `LogDerivativeEstimate.lean` completes the strong induction for h^(k)/h and proves `logDerivativeEstimate_proved : LogDerivativeEstimate` with the exact original assumptions and logarithmic error. This manuscript lemma is now fully proved.

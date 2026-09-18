@@ -12,7 +12,7 @@ namespace ModifiedCartan
 /-- The manuscript's m(r,h), using mathlib's Nevanlinna proximity function. -/
 def proximityMean (h : ℂ → ℂ) (r : ℝ) : ℝ := ValueDistribution.proximity h ⊤ r
 
-/-- `lem:logderivative`, including its dependence on all fixed radii and k. OPEN. -/
+/-- `lem:logderivative`, proved by `logDerivativeEstimate_proved`. -/
 def LogDerivativeEstimate : Prop :=
   ∀ (α rMinus rPlus : ℝ) (k : ℕ),
     0 < α → α < rMinus → rMinus < rPlus → rPlus < 1 → 1 ≤ k →
@@ -23,7 +23,7 @@ def LogDerivativeEstimate : Prop :=
         C * (Real.log (2 + proximityMean h R + Real.posLog (1 / τ)) +
           Real.log (1 / (R - r)))
 
-/-- `lem:poisson-mean`. Boundary zeros are permitted. OPEN. -/
+/-- `lem:poisson-mean`, proved by `poissonMeanEstimate_proved`. Boundary zeros are permitted. -/
 def PoissonMeanEstimate : Prop :=
   ∀ (H : ℂ → ℂ) (ρ : ℝ) (w : ℂ),
     AnalyticOnNhd ℂ H (Metric.closedBall 0 ρ) → w ∈ disk ρ → H w ≠ 0 →
