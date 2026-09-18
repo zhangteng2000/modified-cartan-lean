@@ -12,7 +12,7 @@
 | `thm:main` | 仅主命题陈述 | `ModifiedCartan.PartitionTheorem`。尚无分割主定理的证明。 |
 | `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺 Cartan 定理、两项吸收估计及组装过程。 |
 | `thm:torus-zero` | 一个方向完成 | `kobayashiRoyden_zero_of_orbit` 证明轨道包含推出零伪度量，使用环境坐标中的圆盘定义。反向蕴含未证明；与抽象复流形版本的识别未形式化。 |
-| `lem:cartan-circle` | 仅命题陈述 | `CartanCircleEstimate`；零点分解、Harnack 估计及选圆平均步骤未证明。 |
+| `lem:cartan-circle` | 完整证明 | `cartanCircleEstimate_proved : CartanCircleEstimate`；有限零点分解、Blaschke 估计、零点计数、Harnack 比较、带重数选圆和最终幂次下界均已证明，覆盖 t = 1。 |
 | `prop:wronskian` | 单函数情形完成，一般命题仅陈述 | `quantitativeWronskian_one`；一般归纳、辅因子估计、Schur 补公式、圆弧积分和最大值原理的组合未证明。另有常数缩放及线性相关推出行列式为零的完整证明。 |
 | `lem:logderivative` | 精确命题已陈述 | `AnalyticStatements.lean` 的 `LogDerivativeEstimate`；证明尚未完成。 |
 | `lem:growth` | 完整证明 | `growthLemma_proved : GrowthLemma`。证明得到更强结果：连续与正性已足够，不需要单调性。 |
@@ -34,7 +34,7 @@
 
 - 当前证明声明总数记录于 `verification/result.json`。它们包含辅助引理，不能把数量当作论文完成比例。
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- `GrowthLemma`、调和包络、调和函数两点核、对数 Poisson 平均及预序稳定化五个引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
+- Cartan 圆估计、`GrowthLemma`、调和包络、调和函数两点核、对数 Poisson 平均及预序稳定化六个引理有完整证明项。其他中心 `Prop` 目标没有被任何已证明定理当作隐含假设引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
 - `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
 

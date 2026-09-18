@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; Cartan circle estimates, Wronskians, logarithmic derivatives, absorption and geometric applications.
+WIP: Full manuscript; Wronskians, logarithmic derivatives, absorption and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -29,7 +29,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 
 | Result | Status | Remaining proof work |
 |---|---|---|
-| `lem:cartan-circle` | WIP | canonical factorization, zero count, logarithmic averaging and circle selection |
+| `lem:cartan-circle` | VERIFIED | `cartanCircleEstimate_proved : CartanCircleEstimate`; exact t^γ, γ depending only on a,b,c, including t = 1 |
 | `prop:wronskian` | WIP | general induction; only m = 1 and structural determinant identities proved |
 | `lem:logderivative` | WIP | exact `LogDerivativeEstimate` statement added; local bounds and pole integrability remain |
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
@@ -70,3 +70,5 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `Hurwitz.lean` proves Hurwitz nonvanishing on a connected open set, inversion of locally uniform limits, and boundedness of their reciprocals. `Montel.lean` proves locally bounded holomorphic families are equicontinuous and admits a convergent subsequence on any open subset, using Schwarz and mathlib's Arzelà–Ascoli theorem. `CClass.lean` combines simultaneous Montel extraction with Hurwitz to prove `cclass_two_dominants_after_extraction` in full. The connectedness hypothesis occurs in this auxiliary assertion, not in the C-class definition or the main/sharp targets.
 
 `Extraction.lean` proves simultaneous holomorphic-limit-or-compact-supremum-divergence alternatives, including their equivalence to boundedness/unboundedness after extraction. `FinitePreorder.lean` counts actual maximal equivalence classes as finite sets, constructs the injection between successive maximal-class sets, and proves incomparability when the counts agree. `QuotientStabilization.lean` combines them into the full `lem:stabilization` for the manuscript radii σ^k, 0 < σ < 1, on a nonempty finite family. No analytic or order-theoretic conclusion is supplied as an extra hypothesis.
+
+`CartanCircle.lean` proves the full Cartan circle estimate. `ZeroFactors.lean` removes all zeros with multiplicity in a fixed closed smaller disk while preserving analyticity on the whole unit disk. `BlaschkeDecomposition.lean` uses factors normalized on a larger circle, so boundary zeros of the smaller disk require no exceptional-radius choice. `Blaschke.lean` proves uniform contraction and the radial lower bound. `RadialLog.lean` proves integrability, a uniform integral estimate, and weighted radius selection avoiding all zero moduli. `CartanAux.lean` proves the logarithmic zero count and Harnack bound for the zero-free remainder. All constants depend only on the fixed radii. The final proof also works at t = 1 without a separate case.

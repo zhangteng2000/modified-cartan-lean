@@ -29,7 +29,7 @@ def leastCombinationNorm {m : ℕ} (g : Fin m → ℂ → ℂ) (r : ℝ) : ℝ :
 def PartitionTheorem : Prop :=
   ∀ p : ℕ, 3 ≤ p → ∃ ε : ℝ, 0 < ε ∧ ε < 1 ∧ PartitionProperty p (disk ε)
 
-/-- Lemma 2.1. OPEN proof target. -/
+/-- Lemma 2.1. Proved by `cartanCircleEstimate_proved` in CartanCircle.lean. -/
 def CartanCircleEstimate : Prop :=
   ∀ a b c : ℝ, 0 < a → a < b → b < c → c < 1 →
   ∃ γ : ℝ, 0 < γ ∧ ∀ (F : ℂ → ℂ) (t : ℝ),

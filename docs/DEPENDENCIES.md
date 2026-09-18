@@ -6,7 +6,7 @@ Solid analytic nodes below are proof obligations until marked VERIFIED in PROGRE
 flowchart TD
   Poisson[mathlib Poisson formula and kernel bounds] --> Harnack[Harnack comparison]
   Harnack --> Envelope[lem:envelope]
-  Factor[mathlib canonical decomposition and Jensen] --> Circle[lem:cartan-circle]
+  Factor[mathlib zero orders and factorized rational functions] --> Circle[VERIFIED lem:cartan-circle]
   Harnack --> Circle
   Circle --> Wronskian[prop:wronskian]
   Factor --> LogDeriv[lem:logderivative]
