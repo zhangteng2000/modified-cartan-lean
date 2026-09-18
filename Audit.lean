@@ -19,6 +19,12 @@ import ModifiedCartan
 #print axioms ModifiedCartan.nonnegative_sequence_zero_subsequence
 #print axioms ModifiedCartan.nontrivial_on_smaller_disk
 #print axioms ModifiedCartan.absorption_of_vanishing_combination
+#print axioms ModifiedCartan.sharpRadius_pseudodiameter
+#print axioms ModifiedCartan.sharpRadius_hyperbolicDiameter
+#print axioms ModifiedCartan.absorption_two
+#print axioms ModifiedCartan.absorption_at_recursive_radius
+#print axioms ModifiedCartan.explicitAbsorptionTheorem_proved
+#print axioms ModifiedCartan.absorptionTheorem_proved
 #print axioms ModifiedCartan.diskSupNorm_congr
 #print axioms ModifiedCartan.absorption_wronskian_point
 #print axioms ModifiedCartan.absorption_wronskian_growth_lower

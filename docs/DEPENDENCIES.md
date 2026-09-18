@@ -69,3 +69,5 @@ SharpTwoSetup constructs the entire failure-point and growth configuration. Shar
 ParameterUniformConvergence -> DiskSegmentLimits; VaryingComposition transports the convergent sums through those maps. SegmentNeighborhood + HarmonicNegativeNeighborhood -> HarmonicRectangle. WronskianComposition transports actual determinant decay. SharpTwoCoordinates constructs maps and a common convergent parameter subsequence. These form the verified scaffold for the still-open sharp two-term conclusion.
 
 Completed sharp-two chain: SharpTwoSetup → SharpTwoCoordinates/Subsequence → SharpTwoRectangleDecay → SharpTwoEndgame → SharpTwoAbsorption. Every setup object is constructed from the original hypotheses; both endpoint limits and the actual Wronskian decay are proved.
+
+Completed thm:absorption: sharpRadius_pseudodiameter → sharpRadius_hyperbolicDiameter → absorption_two; absorption_one + absorption_two + absorption_successor + exists_wronskianExponents → absorption_at_recursive_radius → explicitAbsorptionTheorem_proved and absorptionTheorem_proved.

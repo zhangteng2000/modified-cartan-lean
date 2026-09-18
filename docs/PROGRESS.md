@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; absorption, partition theorem and geometric applications.
+WIP: Full manuscript; rank-adaptive absorption, partition theorem and geometric applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -42,7 +42,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | Result | Status | Remaining proof work |
 |---|---|---|
 | `prop:sharp-two-absorption` | VERIFIED | `sharpTwoAbsorption_proved`; arbitrary disconnected open sets, diameter ≤ log 3, actual Wronskian decay and endpoint contradiction |
-| `thm:absorption` | WIP | Exact m = 1 base and full analytic successor step proved; sharp m = 2 base at 2−√3 remains |
+| `thm:absorption` | VERIFIED | `explicitAbsorptionTheorem_proved` and `absorptionTheorem_proved`; actual exponent sequence, sharp m = 2 base, exact recursive radii |
 | `cor:rank-adaptive-absorption` | WIP | minor selection and subsequence basis |
 | `lem:stabilization` | VERIFIED | `stabilization_lemma`; common extraction, actual quotient preorders, maximal-class counting and incomparability |
 | `thm:main`, `cor:centers` | WIP | stabilization/absorption assembly and disk automorphisms |
@@ -113,9 +113,9 @@ Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source 
 
 `NegligibleDerivatives.lean` proves uniform O(log M) bounds and genuine little-o limits for all derivative quotients. `AbsorptionWronskian.lean` selects actual maximizing points and proves the logarithmic lower bound with a uniform constant. `WronskianBoundary.lean` proves the exact column-replacement identity and determinant estimate. `WronskianMean.lean` integrates the estimates across all boundary zeros using codiscrete exceptional sets. `ConvergenceJets.lean` bounds all required derivatives of the convergent sum, and `BoundaryErrorLimit.lean` proves the total integrated boundary error is little-o of M. `AbsorptionComparison.lean` proves q ≤ 2, q²−1 ≤ 20η and the final contradiction using the original 1/8 constant.
 
-`AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem remains WIP pending assembly of the exact disk-radius base case and recursive radii.
+`AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem is now assembled and audited with the exact recursive radii.
 
-Latest audited checkpoint: 460 proof declarations; `lake build` successful (3628 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
+Latest audited checkpoint: 466 proof declarations; `lake build` successful (3629 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
 
 Sharp two-term preparation: `DiskAutomorphisms.lean` constructs the involutive disk automorphisms and proves their analyticity, derivatives, image and basic distance identities. `HarmonicComposition.lean` transports harmonicity through actual analytic maps and proves Harnack on open disks. `TwoPointHarnack.lean` proves the normalized real-segment comparison using the original kernel coefficients. `HyperbolicDiameter.lean` proves that compact subsets of any open set with diameter ≤ log 3 have a uniform strict pseudodistance bound, without connectedness. `SymmetricDiskSegments.lean` constructs symmetric coordinates and explicit maps for all endpoint pairs, including coincident endpoints. `FailurePointsAvoidZeros.lean` uses a finite circle cover and the maximum principle for reciprocals to move every failure point into one fixed compact zero-free set. The completed assembly is recorded below.
 
@@ -140,3 +140,5 @@ The fixed-domain endgame is being developed without any extra hypotheses in the 
 Major sharp-two connection: `sharp_two_rectangle_decay` now proves actual uniform Wronskian decay on one fixed rectangle from the constructed setup and convergent symmetric coordinates. It combines the genuine harmonic envelopes, the exact two-point threshold, scaled Harnack bounds, negative-neighborhood comparison, and the actual negligible derivative error. `sharpTwoSetupSubsequence` preserves all chosen endpoints and growth radii when passing to the extracted subsequence. `SharpTwoEndgame.lean` proves the actual endpoint contradiction, and `SharpTwoAbsorption.lean` assembles the complete original proposition.
 
 `sharp_two_absorption` and `sharpTwoAbsorption_proved` have passed the full 460-declaration audit. No connectedness assumption is imposed on Ω. The auxiliary zero-free rectangle is proved preconnected by removing the actual finite zero set of the analytic limit. The original non-strict diameter bound is retained.
+
+`AbsorptionTheorem.lean` proves the sharp-radius pseudohyperbolic diameter bound directly from the Blaschke norm identity and the exact quadratic equation for 2−√3. It derives the disk base case and completes induction for every m ≥ 1, producing valid Wronskian exponents. Both explicit-radius and existence formulations are VERIFIED at 466 declarations. Rank-adaptive absorption is a separate remaining corollary.

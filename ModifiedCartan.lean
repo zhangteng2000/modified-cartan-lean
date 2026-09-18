@@ -125,3 +125,4 @@ import ModifiedCartan.SharpTwoRectangleDecay
 import ModifiedCartan.SharpTwoSubsequence
 import ModifiedCartan.SharpTwoEndgame
 import ModifiedCartan.SharpTwoAbsorption
+import ModifiedCartan.AbsorptionTheorem

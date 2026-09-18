@@ -15,3 +15,5 @@ The existing `kobayashiRoyden` definition uses coordinatewise holomorphic disks 
 ## D4 — Status accounting (CORRECTED)
 
 The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, `lem:two-point-kernel`, and `lem:poisson-mean` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.
+
+D1 update: the exact recursive absorption radii are now proved, including r₂ = 2−√3 and ηₘ = 1/[1024(Kₘ+m)]. The explicit theorem produces valid exponents; no unspecified radius replaces the manuscript formula.
