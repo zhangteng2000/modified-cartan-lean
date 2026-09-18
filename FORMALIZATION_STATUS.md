@@ -13,7 +13,7 @@
 | `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺 Cartan 定理、两项吸收估计及组装过程。 |
 | `thm:torus-zero` | 一个方向完成 | `kobayashiRoyden_zero_of_orbit` 证明轨道包含推出零伪度量，使用环境坐标中的圆盘定义。反向蕴含未证明；与抽象复流形版本的识别未形式化。 |
 | `lem:cartan-circle` | 完整证明 | `cartanCircleEstimate_proved : CartanCircleEstimate`；有限零点分解、Blaschke 估计、零点计数、Harnack 比较、带重数选圆和最终幂次下界均已证明，覆盖 t = 1。 |
-| `prop:wronskian` | 单函数情形完成，一般命题仅陈述 | `quantitativeWronskian_one`；一般归纳、辅因子估计、Schur 补公式、圆弧积分和最大值原理的组合未证明。另有常数缩放及线性相关推出行列式为零的完整证明。 |
+| `prop:wronskian` | 单函数情形和一般辅助估计完成 | `quantitativeWronskian_one`；全纯性、Cauchy 一致上界、行列式上界、最小组合范数的归一化与子族单调性均已证明。一般下界仍缺矩阵系数导数恒等式、圆弧积分与归纳组合。 |
 | `lem:logderivative` | 精确命题已陈述 | `AnalyticStatements.lean` 的 `LogDerivativeEstimate`；证明尚未完成。 |
 | `lem:growth` | 完整证明 | `growthLemma_proved : GrowthLemma`。证明得到更强结果：连续与正性已足够，不需要单调性。 |
 | `lem:envelope` | 完整证明 | `envelope_lemma` 保留原稿所有参数范围、8 和 64 两个常数，以及闭圆盘上的上确界。`Harmonic.lean` 从 Poisson 公式证明所用 Harnack 比较。 |

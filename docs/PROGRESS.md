@@ -30,7 +30,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | Result | Status | Remaining proof work |
 |---|---|---|
 | `lem:cartan-circle` | VERIFIED | `cartanCircleEstimate_proved : CartanCircleEstimate`; exact t^γ, γ depending only on a,b,c, including t = 1 |
-| `prop:wronskian` | WIP | general induction; only m = 1 and structural determinant identities proved |
+| `prop:wronskian` | WIP | m = 1, structural identities, analyticity and uniform Cauchy/determinant upper bounds proved; general lower-bound induction remains |
 | `lem:logderivative` | WIP | exact `LogDerivativeEstimate` statement added; local bounds and pole integrability remain |
 | `lem:growth` | VERIFIED | `growthLemma_proved : GrowthLemma` |
 | `lem:envelope` | VERIFIED | `envelope_lemma`; exact 8δ and 64η constants and closed-disk supremum |
@@ -72,3 +72,5 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `Extraction.lean` proves simultaneous holomorphic-limit-or-compact-supremum-divergence alternatives, including their equivalence to boundedness/unboundedness after extraction. `FinitePreorder.lean` counts actual maximal equivalence classes as finite sets, constructs the injection between successive maximal-class sets, and proves incomparability when the counts agree. `QuotientStabilization.lean` combines them into the full `lem:stabilization` for the manuscript radii σ^k, 0 < σ < 1, on a nonempty finite family. No analytic or order-theoretic conclusion is supplied as an extra hypothesis.
 
 `CartanCircle.lean` proves the full Cartan circle estimate. `ZeroFactors.lean` removes all zeros with multiplicity in a fixed closed smaller disk while preserving analyticity on the whole unit disk. `BlaschkeDecomposition.lean` uses factors normalized on a larger circle, so boundary zeros of the smaller disk require no exceptional-radius choice. `Blaschke.lean` proves uniform contraction and the radial lower bound. `RadialLog.lean` proves integrability, a uniform integral estimate, and weighted radius selection avoiding all zero moduli. `CartanAux.lean` proves the logarithmic zero count and Harnack bound for the zero-free remainder. All constants depend only on the fixed radii. The final proof also works at t = 1 without a separate case.
+
+`CauchyBounds.lean` proves uniform bounds for every derivative jet, analyticity of Wronskians, and a positive explicit upper bound for all bounded holomorphic families on each smaller disk. `CombinationNorm.lean` proves attainment and homogeneity of the disk supremum, 0 ≤ Λ ≤ 1, the normalized and unnormalized coefficient inequalities, and monotonicity when the last function is removed. The general Wronskian lower estimate is still WIP: its matrix coefficient derivative identity, circle integration and induction have not yet been assembled.

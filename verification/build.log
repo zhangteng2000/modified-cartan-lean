@@ -1,13 +1,4 @@
-✔ [3514/3526] Built ModifiedCartan.Statements (11s)
-✔ [3515/3526] Built ModifiedCartan.RadialLog (15s)
-✔ [3516/3526] Built ModifiedCartan.Wronskian (16s)
-✔ [3517/3526] Built ModifiedCartan.AnalyticStatements (16s)
-✔ [3518/3526] Built ModifiedCartan.Growth (17s)
-✔ [3519/3526] Built ModifiedCartan.LogPoisson (20s)
-✔ [3520/3526] Built ModifiedCartan.ZeroFactors (16s)
-✔ [3521/3526] Built ModifiedCartan.CartanAux (34s)
-✔ [3522/3526] Built ModifiedCartan.Blaschke (35s)
-✔ [3523/3526] Built ModifiedCartan.BlaschkeDecomposition (20s)
-✔ [3524/3526] Built ModifiedCartan.CartanCircle (21s)
-✔ [3525/3526] Built ModifiedCartan (14s)
-Build completed successfully (3526 jobs).
+✔ [3526/3529] Built ModifiedCartan.CauchyBounds (12s)
+✔ [3527/3529] Built ModifiedCartan.CombinationNorm (12s)
+✔ [3528/3529] Built ModifiedCartan (14s)
+Build completed successfully (3529 jobs).
