@@ -49,4 +49,29 @@ theorem unitEnvelope_deficit_harmonic {m : ℕ} {A : Fin m → ℂ → ℂ} {R :
     HarmonicOnNhd (fun z => unitEnvelope A R z - Real.log ‖A i z‖) (disk R) :=
   (unitEnvelope_harmonic hA hR hR1).sub ((unit_log_harmonic (hA i)).mono (ball_subset_ball hR1.le))
 
+theorem poisson_scaled_kernel_bound {R p : ℝ} {z : ℂ} (hR : 0 < R)
+    (hp : 0 ≤ p) (hp1 : p < 1) (hz : ‖z‖ ≤ p) :
+    (R + ‖(R : ℂ) * z‖) / (R - ‖(R : ℂ) * z‖) ≤ (1 + p) / (1 - p) := by
+  have hzn : ‖z‖ < 1 := hz.trans_lt hp1
+  rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hR]
+  have hden : 0 < R - R * ‖z‖ := by nlinarith
+  rw [div_le_div_iff₀ hden (sub_pos.mpr hp1)]
+  nlinarith
+
+theorem unitEnvelope_scaled_lower {m : ℕ} {A : Fin m → ℂ → ℂ} {R p : ℝ}
+    (hA : ∀ i, IsHolomorphicUnit (A i) (disk 1)) (hR : 0 < R) (hR1 : R < 1)
+    (hp : 0 ≤ p) (hp1 : p < 1) {z : ℂ} (hz : ‖z‖ ≤ p) :
+    (1 - p) / (1 + p) * unitGrowthMean A R ≤ unitEnvelope A R ((R : ℂ) * z) := by
+  have hRp : R * p < R := by nlinarith
+  have hzn : ‖(R : ℂ) * z‖ ≤ R * p := by
+    rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hR]
+    exact mul_le_mul_of_nonneg_left hz hR.le
+  have hh := (poissonExtension_harnack_uniform (unitEnvelope_integrable hA hR.le hR1)
+    (fun _ _ => maxWithZero_nonneg _) (mul_nonneg hR.le hp) hRp hzn).1
+  rw [poissonExtension_zero hR (unitEnvelope_integrable hA hR.le hR1)] at hh
+  have he : (R - R * p) / (R + R * p) = (1 - p) / (1 + p) := by
+    rw [show R - R * p = R * (1 - p) by ring, show R + R * p = R * (1 + p) by ring]
+    exact mul_div_mul_left _ _ hR.ne'
+  rwa [he] at hh
+
 end ModifiedCartan

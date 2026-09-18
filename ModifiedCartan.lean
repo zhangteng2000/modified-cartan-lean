@@ -114,3 +114,10 @@ import ModifiedCartan.UnitEnvelope
 import ModifiedCartan.SharpTwoAnalyticBounds
 import ModifiedCartan.DiskSegmentCompact
 import ModifiedCartan.ExponentialDecay
+import ModifiedCartan.SharpTwoCoordinates
+import ModifiedCartan.ParameterUniformConvergence
+import ModifiedCartan.VaryingComposition
+import ModifiedCartan.SegmentNeighborhood
+import ModifiedCartan.DiskSegmentLimits
+import ModifiedCartan.HarmonicRectangle
+import ModifiedCartan.WronskianComposition

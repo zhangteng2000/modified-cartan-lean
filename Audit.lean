@@ -134,6 +134,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.diskSegmentMap_joint_continuousAt
 #print axioms ModifiedCartan.diskSegmentMap_uniform_norm
 #print axioms ModifiedCartan.disk_segment_harmonic_comparison
+#print axioms ModifiedCartan.scaledDiskSegment_joint_continuousAt
+#print axioms ModifiedCartan.scaledDiskSegment_compactConvergence
 #print axioms ModifiedCartan.harnack_defect_bound
 #print axioms ModifiedCartan.envelope_coefficient_bound
 #print axioms ModifiedCartan.envelope_pointwise
@@ -215,6 +217,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.harnack_negative_coefficient
 #print axioms ModifiedCartan.harmonic_negative_neighborhood
 #print axioms ModifiedCartan.harmonic_negative_neighborhood_unit
+#print axioms ModifiedCartan.harmonic_negative_rectangle
 #print axioms ModifiedCartan.nonzero_surrounding_circle
 #print axioms ModifiedCartan.compactConvergence_cancel_nontrivial
 #print axioms ModifiedCartan.absorption_one
@@ -287,6 +290,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.log_growth_error_isLittleO
 #print axioms ModifiedCartan.derivative_quotient_growth_bound
 #print axioms ModifiedCartan.derivative_quotient_growth_negligible
+#print axioms ModifiedCartan.continuous_parameter_uniformOn
+#print axioms ModifiedCartan.compactConvergence_of_parameter
 #print axioms ModifiedCartan.poisson_envelope_pointwise
 #print axioms ModifiedCartan.poissonExtension_eq_average
 #print axioms ModifiedCartan.poissonExtension_harmonic
@@ -346,7 +351,15 @@ import ModifiedCartan
 #print axioms ModifiedCartan.absorption_rescale
 #print axioms ModifiedCartan.compact_subset_unit_closedDisk
 #print axioms ModifiedCartan.compact_scaled_pseudodiameter
+#print axioms ModifiedCartan.segmentRectangle_open
+#print axioms ModifiedCartan.segmentRectangle_convex
+#print axioms ModifiedCartan.segmentRectangle_endpoints
+#print axioms ModifiedCartan.segmentRectangle_norm
+#print axioms ModifiedCartan.segmentRectangle_near_segment
+#print axioms ModifiedCartan.segmentRectangle_eventually_near
 #print axioms ModifiedCartan.sharp_two_analytic_bounds
+#print axioms ModifiedCartan.sharp_two_coordinates
+#print axioms ModifiedCartan.sharp_two_parameter_subsequence
 #print axioms ModifiedCartan.zero_free_finite_failure_points
 #print axioms ModifiedCartan.complement_quotient_tendsto_one
 #print axioms ModifiedCartan.two_term_failure_limits
@@ -377,6 +390,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.unitEnvelope_dominates
 #print axioms ModifiedCartan.unitEnvelope_positive
 #print axioms ModifiedCartan.unitEnvelope_deficit_harmonic
+#print axioms ModifiedCartan.poisson_scaled_kernel_bound
+#print axioms ModifiedCartan.unitEnvelope_scaled_lower
 #print axioms ModifiedCartan.unit_log_harmonic
 #print axioms ModifiedCartan.norm_le_exp_unitGrowthMean
 #print axioms ModifiedCartan.unitGrowthMean_continuousOn
@@ -386,6 +401,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.vanishingDerivative_moving_center
 #print axioms ModifiedCartan.vanishingDerivative_fixed_difference
 #print axioms ModifiedCartan.vanishingDerivative_moving_difference
+#print axioms ModifiedCartan.uniformOn_comp_varying
+#print axioms ModifiedCartan.compactConvergence_comp_varying
 #print axioms ModifiedCartan.wronskian_one
 #print axioms ModifiedCartan.wronskian_const_mul
 #print axioms ModifiedCartan.wronskian_common_const
@@ -410,6 +427,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.wronskianCoefficient_relation
 #print axioms ModifiedCartan.wronskianCoefficient_analyticAt
 #print axioms ModifiedCartan.wronskianCoefficient_deriv
+#print axioms ModifiedCartan.two_wronskian_comp
+#print axioms ModifiedCartan.compactConvergence_wronskian_comp_zero
 #print axioms ModifiedCartan.jet_relation_derivative
 #print axioms ModifiedCartan.wronskian_coefficient_derivative_system
 #print axioms ModifiedCartan.exists_wronskianExponents

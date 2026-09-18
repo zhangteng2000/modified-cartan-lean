@@ -1,21 +1,28 @@
-⚠ [3532/3617] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3624] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3617] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3624] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [3608/3617] Built ModifiedCartan.UnitEnvelope (15s)
-✔ [3609/3617] Built ModifiedCartan.SharpTwoSetup (17s)
-✔ [3610/3617] Built ModifiedCartan.VanishingDerivative (24s)
-✔ [3611/3617] Built ModifiedCartan.ConvexZeroAvoidance (24s)
-✔ [3612/3617] Built ModifiedCartan.ExponentialDecay (24s)
-✔ [3613/3617] Built ModifiedCartan.DiskSegmentCompact (24s)
-✔ [3614/3617] Built ModifiedCartan.SharpTwoAnalyticBounds (13s)
-✔ [3615/3617] Built ModifiedCartan.QuotientDerivativeDecay (18s)
-✔ [3616/3617] Built ModifiedCartan (14s)
-Build completed successfully (3617 jobs).
+✔ [3614/3624] Built ModifiedCartan.ParameterUniformConvergence (16s)
+✔ [3615/3624] Built ModifiedCartan.SegmentNeighborhood (16s)
+✔ [3616/3624] Built ModifiedCartan.SharpTwoCoordinates (16s)
+✔ [3617/3624] Built ModifiedCartan.VaryingComposition (16s)
+✔ [3618/3624] Built ModifiedCartan.WronskianComposition (16s)
+⚠ [3619/3624] Built ModifiedCartan.UnitEnvelope (16s)
+warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3620/3624] Built ModifiedCartan.SharpTwoAnalyticBounds (15s)
+✔ [3621/3624] Built ModifiedCartan.DiskSegmentLimits (16s)
+✔ [3622/3624] Built ModifiedCartan.HarmonicRectangle (17s)
+✔ [3623/3624] Built ModifiedCartan (16s)
+Build completed successfully (3624 jobs).
