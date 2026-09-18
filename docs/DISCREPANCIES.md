@@ -4,9 +4,9 @@
 
 The earlier `AbsorptionTheorem` definition only asserts existence of some positive radius. The manuscript specifies `r₁ = 1`, `r₂ = 2 - √3`, and `rₘ = rₘ₋₁ / (1024 (Kₘ + m))`. The existential statement is not an adequate final target. `ExplicitAbsorptionTheorem` in `AnalyticStatements.lean` now uses the exact recursion and includes the obligation to produce valid exponents for the Wronskian estimate at a = 1/4, b = 1/2. Both `explicitAbsorptionTheorem_proved` and the weaker corollary `absorptionTheorem_proved` now have complete proofs. The actual exponent sequence and the exact recursive radii are included.
 
-## D2 — Geometric model (OPEN)
+## D2 — Geometric model (RESOLVED)
 
-The existing `kobayashiRoyden` definition uses coordinatewise holomorphic disks in a subset of a complex vector space. The project still needs to justify its agreement with the smooth algebraic variety/tangent-space formulation used in the manuscript before claiming the geometric results in full.
+`manifoldKobayashiRoyden` now uses actual mathlib manifold differentials and tangent fibers. `manifold_metric_eq_coordinate_metric` proves equality with the coordinate disk infimum for a complex embedded manifold. Both disk translations and injectivity of the embedding differential are proved. The intrinsic torus statements, closedness, compact lower bound and exact polynomial zero-locus identification have passed the full audit. The finite Laurent presentation and embedded complex manifold data encode the manuscript smooth closed subvariety hypothesis; see GEOMETRIC_MODEL.md.
 
 ## D3 — Connectedness (CHECKED in current definitions)
 

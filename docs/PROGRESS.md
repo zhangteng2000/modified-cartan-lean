@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; sharp five-function theorem and counterexample, geodesic identification, and geometric applications.
+WIP: Full manuscript; sharp five-function theorem and counterexample, geodesic identification, and the remaining projective applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -48,8 +48,8 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `thm:main`, `cor:centers` | VERIFIED | `partitionTheorem_proved`, `partition_at_recursive_radius`, `partition_at_center`; exact εₚ and disk automorphism pullback |
 | `thm:sharp-five` | WIP | classical Cartan extraction and sharp absorption; arbitrary open U retained |
 | optimal five-function radius | WIP | Gaussian integral counterexample and exact extremal argument |
-| `thm:torus-zero` | WIP | both directions proved for the actual finite Laurent locus and ambient disk metric; intrinsic smooth-variety/tangent-space identification remains |
-| `prop:torus-null-set` | WIP | finite moment criterion and compact positive lower bound proved for the actual coordinate locus; closedness/algebraicity and intrinsic identification remain |
+| `thm:torus-zero` | VERIFIED | torus_manifold_metric_zero_iff; actual intrinsic manifold differential, exact metric equality under embedded-manifold coordinates, both directions |
+| `prop:torus-null-set` | VERIFIED | torus_manifold_nullDirections_isClosed, torus_manifold_compact_inf_pos, torus_manifold_null_image_eq_zeroLocus; genuine tangent bundle, explicit finite polynomial ideal, reverse tangent reconstruction |
 | `prop:projective-equivalence` | WIP | projective formalism and both implications |
 | `cor:projective-zero-directions` | WIP | quotient tangent-space identification and dimension bound |
 
@@ -115,7 +115,7 @@ Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source 
 
 `AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem is now assembled and audited with the exact recursive radii.
 
-Latest audited checkpoint: 526 proof declarations; `lake build` successful (3648 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
+Latest audited checkpoint: 541 proof declarations; `lake build` successful (3703 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
 
 Sharp two-term preparation: `DiskAutomorphisms.lean` constructs the involutive disk automorphisms and proves their analyticity, derivatives, image and basic distance identities. `HarmonicComposition.lean` transports harmonicity through actual analytic maps and proves Harnack on open disks. `TwoPointHarnack.lean` proves the normalized real-segment comparison using the original kernel coefficients. `HyperbolicDiameter.lean` proves that compact subsets of any open set with diameter ≤ log 3 have a uniform strict pseudodistance bound, without connectedness. `SymmetricDiskSegments.lean` constructs symmetric coordinates and explicit maps for all endpoint pairs, including coincident endpoints. `FailurePointsAvoidZeros.lean` uses a finite circle cover and the maximum principle for reciprocals to move every failure point into one fixed compact zero-free set. The completed assembly is recorded below.
 
@@ -154,3 +154,5 @@ Geometry analytic checkpoint: all SmallPartitions, CClassJets, PartitionJets, La
 TorusLocus is audited at 516 declarations: torus_locus_metric_zero_iff proves both directions for finite Laurent loci using the actual coordinate-disc infimum; torus_locus_metric_zero_iff_moments gives the exact finite equations; torus_locus_orbit_of_large_discs handles varying base points; torus_locus_compact_metric_lower proves a uniform positive lower bound on compact sets avoiding zero directions, without assuming lower semicontinuity. These are complete coordinate-model results, not yet a declaration that the intrinsic manifold theorem is finished.
 
 TorusNullTopology proves relative closedness of the actual null directions and a strictly positive compact infimum. TorusMomentPolynomials constructs a finite ideal in affine (x, x⁻¹, v) coordinates. TorusAlgebraicNull proves that its entire zero locus equals the image of the actual zero-metric directions, reconstructing the torus point and its defining equations from the polynomial equations. All ten new proof declarations are included in the 526-declaration audit. The intrinsic manifold bridge remains WIP.
+
+Intrinsic geometry checkpoint (541 audited declarations): ImmersionDifferential constructs a differentiable local left inverse and proves differential injectivity. ManifoldDiscs proves both disk translations and exact equality of the intrinsic mfderiv-based metric with the coordinate metric. TorusManifold establishes the intrinsic zero-orbit equivalence, tangent-bundle closedness and positive compact infimum. TorusTangentAlgebraic proves the image of intrinsic zero directions is exactly the explicit polynomial zero locus; arbitrary polynomial zeros are reconstructed as tangent vectors via a lifted actual exponential orbit. This resolves geometric discrepancy D2. See GEOMETRIC_MODEL.md for the encoding of the original smooth closed subvariety hypothesis.

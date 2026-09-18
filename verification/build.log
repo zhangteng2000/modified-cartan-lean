@@ -1,23 +1,49 @@
-⚠ [3532/3648] Replayed ModifiedCartan.CircleVariation
+⚠ [3531/3620] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3648] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3547/3620] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3612/3648] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3590/3620] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [3644/3648] Built ModifiedCartan.TorusNullTopology (16s)
-✔ [3645/3648] Built ModifiedCartan.TorusMomentPolynomials (16s)
-✔ [3646/3648] Built ModifiedCartan.TorusAlgebraicNull (16s)
-✔ [3647/3648] Built ModifiedCartan (17s)
-Build completed successfully (3648 jobs).
+⚠ [3698/3703] Built ModifiedCartan.ImmersionDifferential (17s)
+warning: ModifiedCartan/ImmersionDifferential.lean:18:0: automatically included section variable(s) unused in theorem `ModifiedCartan.immersion_local_left_inverse`:
+  [IsManifold 𝓘(ℂ, E) 1 M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3699/3703] Built ModifiedCartan.ManifoldDiscs (19s)
+warning: ModifiedCartan/ManifoldDiscs.lean:29:0: automatically included section variable(s) unused in theorem `ModifiedCartan.manifold_disc_embedding`:
+  [IsManifold 𝓘(ℂ, E) 1 M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ModifiedCartan/ManifoldDiscs.lean:50:31: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [F.center]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ModifiedCartan/ManifoldDiscs.lean:61:0: automatically included section variable(s) unused in theorem `ModifiedCartan.immersion_holomorphic_lift`:
+  [IsManifold 𝓘(ℂ, E) 1 M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3700/3703] Built ModifiedCartan.TorusManifold (19s)
+✔ [3701/3703] Built ModifiedCartan.TorusTangentAlgebraic (25s)
+✔ [3702/3703] Built ModifiedCartan (15s)
+Build completed successfully (3703 jobs).

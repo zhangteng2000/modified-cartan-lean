@@ -11,7 +11,7 @@
 | `def:cclass` 及两个主导指标断言 | 完整证明 | `CClass.lean` 的 `cclass_two_dominants_after_extraction` 已包含同时 Montel 抽取和 Hurwitz 步骤；仅此辅助断言要求连通性。定义、子列保持、更换主导指标判据均已完成。 |
 | `thm:main` | 完整证明 | `partitionTheorem_proved`；更强的 `partition_at_recursive_radius` 保留 εₚ = rₚ₋₁^(p−1)，实际构造分组并由吸收证明归一化极限为零。 |
 | `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺经典 Cartan 抽取及最终组装；两项吸收定理已完整证明。 |
-| `thm:torus-zero` | 坐标模型双向证明完成；几何识别待完成 | `torus_locus_metric_zero_iff` 对实际有限 Laurent 方程零集证明完整等价；与内在光滑子簇、切空间和圆盘定义的识别仍待完成。 |
+| `thm:torus-zero` | 完整证明 | `torus_manifold_metric_zero_iff`；使用实际流形微分和切空间，已证明坐标圆盘与内在圆盘的双向转换及度量相等。有限 Laurent 表示与复嵌入流形数据对应原稿假设，见 docs/GEOMETRIC_MODEL.md。 |
 | `lem:cartan-circle` | 完整证明 | `cartanCircleEstimate_proved : CartanCircleEstimate`；有限零点分解、Blaschke 估计、零点计数、Harnack 比较、带重数选圆和最终幂次下界均已证明，覆盖 t = 1。 |
 | `prop:wronskian` | 完整证明 | `quantitativeWronskian_proved`；全部 m ≥ 1，原稿的行列式、最小组合范数、正常数及 K ≥ m。 |
 | `lem:logderivative` | 完整证明 | `logDerivativeEstimate_proved`；所有阶数和允许半径，边界零点已处理，原稿估计保持不变。 |
@@ -26,7 +26,7 @@
 | `cor:geodesic-comparison` | 未形式化 | Harnack 比较、自同构归一化与测地段步骤未证明。 |
 | `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
 | `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
-| `prop:torus-null-set` | 坐标模型有限方程及紧集正下界完成 | `torus_locus_metric_zero_iff_moments`、`torus_locus_compact_metric_lower`；代数性、闭性和内在切丛识别仍在进行。 |
+| `prop:torus-null-set` | 完整证明 | 内在切丛中的闭性、紧集正下界和严格正下确界均已证明；`torus_manifold_null_image_eq_zeroLocus` 将全部内在零方向精确识别为显式有限多项式理想的零点集。 |
 | `prop:projective-equivalence` | 未形式化 | 尚缺射影映射、Montel/Hurwitz 及两种分割表述的等价。 |
 | `cor:projective-zero-directions` | 指数和分组工具完成 | `exponentialSum_zero_iff_grouped` 已证明；射影环面切空间与零方向的最终识别、维数界未证明。 |
 
@@ -36,10 +36,10 @@
 - 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
 - 已证明结果以本表及 docs/PROGRESS.md 为准，中心定理的证明项由 Audit.lean 审计。未证明的目标未被作为论文专属公理引入。
 - `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
-- `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。它本身不构造代数簇或切丛。
+- `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。`TorusEquations` 构造实际共同零集，`ManifoldDiscs`、`TorusManifold` 和 `TorusTangentAlgebraic` 完成内在切丛识别。
 
 ## 后续证明依赖
 
-分割主定理及其解析依赖已完成证明。剩余工作包括五函数尖锐结论、测地段表述的识别和几何应用。五函数最优性还需要正式处理高斯积分反例。几何应用的反向蕴含和紧集正下界最后依赖分割主定理及商函数导数估计。
+分割主定理及其解析依赖已完成证明。剩余工作包括五函数尖锐结论、测地段表述的识别和几何应用。五函数最优性还需要正式处理高斯积分反例。环面零方向定理及切丛零集的闭性、代数性与紧集严格正下界已完成；射影应用仍在进行。
 
 此文件记录尚未完成的工作，不代表这些结果已被 Lean 验证。

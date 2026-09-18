@@ -144,3 +144,7 @@ import ModifiedCartan.TorusLocus
 import ModifiedCartan.TorusNullTopology
 import ModifiedCartan.TorusMomentPolynomials
 import ModifiedCartan.TorusAlgebraicNull
+import ModifiedCartan.ImmersionDifferential
+import ModifiedCartan.ManifoldDiscs
+import ModifiedCartan.TorusManifold
+import ModifiedCartan.TorusTangentAlgebraic

@@ -79,3 +79,5 @@ Rank-adaptive proof assembled: functionRank_relation + finite_constant_subsequen
 Geometry analytic chain: partition_exists_positive_radius + cclass_jet_limits → exponentialSum_zero_of_unit_jet_limits; LaurentJets → laurent_orbit_zero_of_large_discs; LargeDiscs extracts actual unbounded derivative-scale discs from metric zero. All components through this chain audited at 512 declarations.
 
 TorusLocus → TorusNullTopology → TorusMomentPolynomials → TorusAlgebraicNull: actual relative closedness, positive compact infimum, and equality with an explicit affine polynomial zero locus.
+
+Intrinsic geometry: ImmersionDifferential → ManifoldDiscs (exact metric equality and analytic-curve tangent reconstruction); TorusLocus + ManifoldDiscs → TorusManifold; TorusAlgebraicNull + TorusManifold → TorusTangentAlgebraic (entire intrinsic null image equals the explicit affine zero locus).

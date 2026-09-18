@@ -3,12 +3,12 @@
   "full_paper_proved": false,
   "lean": "v4.34.0-rc1",
   "mathlib": "de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11",
-  "checked_theorems": 526,
+  "checked_theorems": 541,
   "allowed_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "verified_at_utc": "2026-09-18T06:03:54.9856721Z",
+  "verified_at_utc": "2026-09-18T06:22:01.5158707Z",
   "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-verified"
 }

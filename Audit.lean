@@ -250,6 +250,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.hyperbolicDistance_le_log_three_iff
 #print axioms ModifiedCartan.open_diameter_strict_pseudodistance
 #print axioms ModifiedCartan.compact_strict_pseudodiameter
+#print axioms ModifiedCartan.immersion_local_left_inverse
+#print axioms ModifiedCartan.immersion_mfderiv_injective
 #print axioms ModifiedCartan.interior_wronskian_boundary_error_negligible
 #print axioms ModifiedCartan.interior_derivative_quotient_growth_bound
 #print axioms ModifiedCartan.interior_derivative_quotient_growth_negligible
@@ -305,6 +307,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.log_norm_le_poisson
 #print axioms ModifiedCartan.poisson_mean_inequality
 #print axioms ModifiedCartan.poissonMeanEstimate_proved
+#print axioms ModifiedCartan.manifold_disc_embedding
+#print axioms ModifiedCartan.immersion_holomorphic_lift
+#print axioms ModifiedCartan.coordinate_disc_lift
+#print axioms ModifiedCartan.manifold_metric_eq_coordinate_metric
+#print axioms ModifiedCartan.ambient_curve_tangent_in_range
 #print axioms ModifiedCartan.matrix_det_analyticAt
 #print axioms ModifiedCartan.matrix_adjugate_entry_analyticAt
 #print axioms ModifiedCartan.matrix_inv_entry_analyticAt
@@ -442,6 +449,12 @@ import ModifiedCartan
 #print axioms ModifiedCartan.torus_locus_metric_zero_iff_moments
 #print axioms ModifiedCartan.torus_locus_orbit_of_large_discs
 #print axioms ModifiedCartan.torus_locus_compact_metric_lower
+#print axioms ModifiedCartan.continuous_tangentCoordinates
+#print axioms ModifiedCartan.torus_manifold_metric_zero_iff
+#print axioms ModifiedCartan.torus_manifold_nullDirections_isClosed
+#print axioms ModifiedCartan.torus_manifold_compact_metric_lower
+#print axioms ModifiedCartan.torus_manifold_compact_inf_pos
+#print axioms ModifiedCartan.torus_manifold_null_polynomial_criterion
 #print axioms ModifiedCartan.eval_torusIntegerPowerPolynomial
 #print axioms ModifiedCartan.eval_torusMonomialPolynomial
 #print axioms ModifiedCartan.eval_torusMomentPolynomial
@@ -449,6 +462,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.torus_moment_continuous
 #print axioms ModifiedCartan.torus_nullDirections_isClosed
 #print axioms ModifiedCartan.torus_locus_compact_inf_pos
+#print axioms ModifiedCartan.torus_manifold_null_tangent_image
+#print axioms ModifiedCartan.torus_manifold_null_image_eq_zeroLocus
 #print axioms ModifiedCartan.harmonic_harnack_two_points
 #print axioms ModifiedCartan.diskAutomorphism_real_norm
 #print axioms ModifiedCartan.twoPoint_coefficients
