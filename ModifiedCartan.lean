@@ -134,3 +134,9 @@ import ModifiedCartan.PartitionTheorem
 import ModifiedCartan.PartitionCenters
 import ModifiedCartan.FunctionRank
 import ModifiedCartan.RankAdaptiveAbsorption
+import ModifiedCartan.SmallPartitions
+import ModifiedCartan.CClassJets
+import ModifiedCartan.PartitionJets
+import ModifiedCartan.LaurentJets
+import ModifiedCartan.TorusLimits
+import ModifiedCartan.LargeDiscs

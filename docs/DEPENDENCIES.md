@@ -75,3 +75,5 @@ Completed thm:absorption: sharpRadius_pseudodiameter → sharpRadius_hyperbolicD
 Partition proof assembled: DominancePartition + NormalizedParts + finite_escape_points + normalized_limits_zero_of_pairwise_escape + stabilization_lemma → partition_at_recursive_radius → partitionTheorem_proved. PartitionCenters transports the actual C-partition through involutive disk automorphisms.
 
 Rank-adaptive proof assembled: functionRank_relation + finite_constant_subsequence + bounded coefficient elimination + functionRank_scaled_subfamily → induction on number of terms → rank_adaptive_absorption at the exact r_d. Rank is computed after restricting functions to the unit disk.
+
+Geometry analytic chain: partition_exists_positive_radius + cclass_jet_limits → exponentialSum_zero_of_unit_jet_limits; LaurentJets → laurent_orbit_zero_of_large_discs; LargeDiscs extracts actual unbounded derivative-scale discs from metric zero. All components through this chain audited at 512 declarations.
