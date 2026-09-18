@@ -42,7 +42,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | Result | Status | Remaining proof work |
 |---|---|---|
 | `prop:sharp-two-absorption` | WIP | harmonic comparison, path selection and contradiction |
-| `thm:absorption` | WIP | `ExplicitAbsorptionTheorem` now includes exact radii and valid Wronskian exponents; analytic induction remains |
+| `thm:absorption` | WIP | Exact m = 1 base and full analytic successor step proved; sharp m = 2 base at 2−√3 remains |
 | `cor:rank-adaptive-absorption` | WIP | minor selection and subsequence basis |
 | `lem:stabilization` | VERIFIED | `stabilization_lemma`; common extraction, actual quotient preorders, maximal-class counting and incomparability |
 | `thm:main`, `cor:centers` | WIP | stabilization/absorption assembly and disk automorphisms |
@@ -108,3 +108,11 @@ Git initialized in the deliverable directory; no remote is configured, so no pus
 `PoissonHarnack.lean` proves both centered Harnack bounds for the constructed extension. `PoissonEnvelope.lean` obtains the original 8δ and 64η constants directly from boundary data and failure points. `ZeroFreeAnnulus.lean` constructs an actual annulus avoiding every zero of the nontrivial limit and transfers a positive lower bound to the approximating sums. `UnitGrowth.lean` proves divergence of the circular growth mean from the absorption hypotheses. `GrowthSelection.lean` selects actual radii with the inverse-growth gap and doubling bound.
 
 Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source coverage in the axiom audit, and only the standard axioms `propext`, `Classical.choice`, `Quot.sound`. Full absorption, partition and geometric theorems remain WIP.
+
+`WronskianScaling.lean` proves the local analytic input-scaling identity with the exact exponent m(m−1)/2 and the corresponding combination-norm scaling. `AbsorptionGrowth.lean` assembles the actual fixed annulus and growth-controlled circles, including strictly positive boundary maxima. `AbsorptionEnvelope.lean` transfers the constructed envelope to the central and small-disk estimates, and bounds the proximity by the growth mean.
+
+`NegligibleDerivatives.lean` proves uniform O(log M) bounds and genuine little-o limits for all derivative quotients. `AbsorptionWronskian.lean` selects actual maximizing points and proves the logarithmic lower bound with a uniform constant. `WronskianBoundary.lean` proves the exact column-replacement identity and determinant estimate. `WronskianMean.lean` integrates the estimates across all boundary zeros using codiscrete exceptional sets. `ConvergenceJets.lean` bounds all required derivatives of the convergent sum, and `BoundaryErrorLimit.lean` proves the total integrated boundary error is little-o of M. `AbsorptionComparison.lean` proves q ≤ 2, q²−1 ≤ 20η and the final contradiction using the original 1/8 constant.
+
+`AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem remains WIP because the sharp two-term base case at 2−√3 is not yet proved.
+
+Latest audited checkpoint: 353 proof declarations; `lake build` successful (3593 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.

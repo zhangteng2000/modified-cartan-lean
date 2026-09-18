@@ -34,3 +34,7 @@ Used mathlib meromorphic closure under derivatives, local circle integrability o
 ## Absorption preparations and constructed Poisson extension
 
 The compact-exhaustion and locally uniform convergence APIs are used for the failure-point alternative, without a connectedness assumption. Compactness of the finite-dimensional coefficient sphere supplies actual minimizers. The Herglotz integral APIs `analyticOnNhd_circleAverage_herglotzRieszKernel_smul` and `re_circleAverage_herglotzRieszKernel_smul` construct the harmonic extension, while library kernel bounds and the harmonic mean-value property prove monotonicity of the growth mean. Finite holomorphic zero factorization provides the zero-free annulus. The full library axiom audit at this checkpoint covers 317 declarations.
+
+## Wronskian scaling, boundary integration and asymptotics
+
+`iteratedDeriv_comp_const_mul` requires global smoothness, so input scaling is instead proved locally from analytic jets, eventual equality and the derivative chain rule. Library determinant column scaling then yields the exact triangular exponent. `Matrix.det_updateCol_sum` supplies the sum-column replacement identity without a sign ambiguity. Library meromorphic logarithm integrability and codiscrete-circle measure comparison justify both mean estimates even with boundary zeros. `Real.isLittleO_log_id_atTop`, finite little-o sums and locally uniform derivative convergence supply the vanishing error.

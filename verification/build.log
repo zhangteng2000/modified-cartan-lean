@@ -1,29 +1,24 @@
-⚠ [3532/3582] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3593] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3550/3582] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3593] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [3565/3582] Built ModifiedCartan.FailurePoints (18s)
-✔ [3566/3582] Built ModifiedCartan.GrowthSelection (18s)
-✔ [3567/3582] Built ModifiedCartan.HolomorphicCancellation (18s)
-✔ [3568/3582] Built ModifiedCartan.Rescaling (19s)
-✔ [3569/3582] Built ModifiedCartan.PoissonExtension (19s)
-✔ [3570/3582] Built ModifiedCartan.ZeroFreeAnnulus (19s)
-✔ [3571/3582] Built ModifiedCartan.CombinationMinimum (19s)
-✔ [3572/3582] Built ModifiedCartan.FiniteFailurePoints (15s)
-✔ [3573/3582] Built ModifiedCartan.AbsorptionPreparations (15s)
-✔ [3574/3582] Built ModifiedCartan.HarmonicGrowth (15s)
-✔ [3575/3582] Built ModifiedCartan.AbsorptionLinearAlgebra (15s)
-✔ [3576/3582] Built ModifiedCartan.PoissonHarnack (16s)
-✔ [3577/3582] Built ModifiedCartan.AbsorptionReduction (16s)
-✔ [3578/3582] Built ModifiedCartan.UnitGrowth (18s)
-✔ [3579/3582] Built ModifiedCartan.PoissonEnvelope (26s)
-✔ [3580/3582] Built ModifiedCartan.AbsorptionGap (17s)
-✔ [3581/3582] Built ModifiedCartan (18s)
-Build completed successfully (3582 jobs).
+✔ [3581/3593] Built ModifiedCartan.WronskianScaling (22s)
+✔ [3582/3593] Built ModifiedCartan.AbsorptionGrowth (22s)
+✔ [3583/3593] Built ModifiedCartan.AbsorptionEnvelope (22s)
+✔ [3584/3593] Built ModifiedCartan.NegligibleDerivatives (22s)
+✔ [3585/3593] Built ModifiedCartan.WronskianBoundary (22s)
+✔ [3586/3593] Built ModifiedCartan.ConvergenceJets (22s)
+✔ [3587/3593] Built ModifiedCartan.AbsorptionComparison (23s)
+✔ [3588/3593] Built ModifiedCartan.WronskianMean (15s)
+✔ [3589/3593] Built ModifiedCartan.AbsorptionWronskian (15s)
+✔ [3590/3593] Built ModifiedCartan.BoundaryErrorLimit (14s)
+✔ [3591/3593] Built ModifiedCartan.AbsorptionInduction (20s)
+✔ [3592/3593] Built ModifiedCartan (16s)
+Build completed successfully (3593 jobs).

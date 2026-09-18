@@ -1,7 +1,23 @@
 [
   {
+    "file": "ModifiedCartan\\AbsorptionComparison.lean",
+    "sha256": "BFE7B86E0D25448B740934FAB25C5C98AD6125B4E8BCBCE69CA02EE3C47A4494"
+  },
+  {
+    "file": "ModifiedCartan\\AbsorptionEnvelope.lean",
+    "sha256": "F90E3FB0E3FBC364BEB0B8218B2814F85056150FE16D8D3AEB3A3999680F7FE1"
+  },
+  {
     "file": "ModifiedCartan\\AbsorptionGap.lean",
     "sha256": "52CE93745F76A0D57DFBFEADC5BBFBD6468AA48AB97FBEC4D3EEE5C3B9EB753E"
+  },
+  {
+    "file": "ModifiedCartan\\AbsorptionGrowth.lean",
+    "sha256": "43849EF61B819C15DA83243DCC6EC57E846742BD684EF6E95904CA1E8E7E33E7"
+  },
+  {
+    "file": "ModifiedCartan\\AbsorptionInduction.lean",
+    "sha256": "39C859E7B5BA53EAFE05E500815867CC36E312F3CD3927F5DDADD5627438E7AF"
   },
   {
     "file": "ModifiedCartan\\AbsorptionLinearAlgebra.lean",
@@ -14,6 +30,10 @@
   {
     "file": "ModifiedCartan\\AbsorptionReduction.lean",
     "sha256": "6E79734528F8390B3BD11C68442F341C2A0B850FF14C8C2978B7A2F97CADB6AD"
+  },
+  {
+    "file": "ModifiedCartan\\AbsorptionWronskian.lean",
+    "sha256": "F07B288758AFA54E23195425BB4E1E3D1D5590C5404BAD2E9F1B850CCBFE8C11"
   },
   {
     "file": "ModifiedCartan\\AnalyticStatements.lean",
@@ -42,6 +62,10 @@
   {
     "file": "ModifiedCartan\\BlaschkeQuantitative.lean",
     "sha256": "709B931DBBE07224ACABD5AC1A0B54264845BA399B40905BAC82DD8ABA54E60C"
+  },
+  {
+    "file": "ModifiedCartan\\BoundaryErrorLimit.lean",
+    "sha256": "54DFDD5E348AEFF6909FD1E02DDADB86ADF5F1B23635C975536002F4189048E7"
   },
   {
     "file": "ModifiedCartan\\CartanAux.lean",
@@ -82,6 +106,10 @@
   {
     "file": "ModifiedCartan\\Convergence.lean",
     "sha256": "EDACC666BB51017A9A74AC2825B9E3DAB967C15383B37F336C4A6CA9A8206FCF"
+  },
+  {
+    "file": "ModifiedCartan\\ConvergenceJets.lean",
+    "sha256": "84875F8EE32D9E3DE996B3AFC05590598842DDFD187EECCDEB9F018655B2473C"
   },
   {
     "file": "ModifiedCartan\\DerivativeQuotientRecurrence.lean",
@@ -204,6 +232,10 @@
     "sha256": "6D2595671D00A704F5F5BCD7E531FEF7D613B2743A367BDEEF579CA4E28C9614"
   },
   {
+    "file": "ModifiedCartan\\NegligibleDerivatives.lean",
+    "sha256": "705521A5C73CFDC23D5C8338EF5B88104BD376AA7423DFD55311628D14929DD0"
+  },
+  {
     "file": "ModifiedCartan\\PoissonEnvelope.lean",
     "sha256": "5ECEFF5C54B5E36166BFD462439F7CCB4151C8D9BB0AE0306591F1A3800C11E2"
   },
@@ -280,6 +312,10 @@
     "sha256": "3B97C236D530D6115E8132C41BE1DD18F1499FD5BA2ABC1A0C5FB057747758FC"
   },
   {
+    "file": "ModifiedCartan\\WronskianBoundary.lean",
+    "sha256": "30BE7A6C88C7CEA9D3349681DC8D753343FB3F64D5055A15B4C7D84EAF856AF2"
+  },
+  {
     "file": "ModifiedCartan\\WronskianCircle.lean",
     "sha256": "3A08F8B2372B5559FB4B49B6783F07E91723B3654B80E88A7DDFBBD39F877443"
   },
@@ -300,8 +336,16 @@
     "sha256": "ED5283D95E7B2824834070CB31BBFFDA9F88FED5C20394BC859EEE039EBD2646"
   },
   {
+    "file": "ModifiedCartan\\WronskianMean.lean",
+    "sha256": "E82ECB40449BB33769E788A0D8F75445768CA6EDC29489048D242B5E4C2461C0"
+  },
+  {
     "file": "ModifiedCartan\\WronskianPower.lean",
     "sha256": "FD76FD8E0740635FB997D2698EC32AB9560E93DB7DC85404D6FC66ED69ED759C"
+  },
+  {
+    "file": "ModifiedCartan\\WronskianScaling.lean",
+    "sha256": "513F69FEAEE1A9A3A56FDC5AFCA8A3433589299A4918D910BC77792D759A6584"
   },
   {
     "file": "ModifiedCartan\\ZeroCount.lean",
@@ -325,7 +369,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "AB397C7FF1ED5599B20D1E3854D21A86110BEA3DDB63B5D011D5387D247ADDBB"
+    "sha256": "E0817E5608DAE49CB7FD2CC6C92A81848899410D90CA8AB19F42E4AB9AB9DCB2"
   },
   {
     "file": "lake-manifest.json",
@@ -341,6 +385,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "4288122805445BB2E240057B3DF0A66622C5C57A65927432212D41F54F8A7470"
+    "sha256": "8D1C4FBF07CD0D55EFCC87A2357237D805FF487A430E0C1B47FF5FFE609283CD"
   }
 ]
