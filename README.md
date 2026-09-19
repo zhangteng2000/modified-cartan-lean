@@ -1,52 +1,46 @@
-# Modified Cartan — Lean 4 形式化项目
+# Modified Cartan — Lean 4 + mathlib
 
-**当前状态：修订稿全部主结果已有完整证明项，包括五函数锐定理与最优半径。正在执行最终新目录全量重建、全部定理公理审计和文档验收；进度见 docs/PROGRESS.md。**
+修订稿的全部 19 项带标签结果已有完整证明，定义和补充最优性结论也已核对。包括一般分割定理、精确递推半径吸收、五函数锐定理、R₅ = 2 − √3、完整高斯反例，以及环面和射影空间的几何应用。
 
-本项目依据用户提供的 `paper.tex`，使用 Lean 4.34.0-rc1 和固定版本的 mathlib。全部主结果已有实际 Lean 证明项；`Statements.lean` 中的 `Prop` 定义均有相应证明，未被当作公理使用。
+项目对应最新的 paper.tex；旧稿保存在 manuscripts/paper-2026-09-18.tex。[修订对比](docs/REVISION_2026-09-19.md)记录了表述修改和 C-class 的 region 用词。原稿常数、半径、不连通开集、直径 ≤ log 3 的端点和双向等价均予保留。
 
-`paper.tex` 已更新为 2026-09-19 修订稿，主要定理与常数保持不变。新版差异见 `docs/REVISION_2026-09-19.md`。当前工作目录为 `C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan`；Documents 下的副本因 Windows 受控文件夹写入限制保留为先前快照。
+- [最终报告](docs/FINAL_REPORT.md)：逐项论文标签、证明名称、来源文件、公理检查和差异说明。
+- [覆盖清单](FORMALIZATION_STATUS.md)及[机器可读对应表](verification/manuscript-coverage.json)。
+- [构建与审计结果](verification/result.json)、[全部定理公理清单](verification/axiom-summary.json)。
+- [证明依赖图](docs/DEPENDENCIES.md)、[完整编译依赖](verification/dependencies.json)。
+- [几何模型说明](docs/GEOMETRIC_MODEL.md)及[经典 Cartan 证明](docs/CARTAN_EXTRACTION.md)。
 
-已完成的主要内容：
-
-- 圆盘、全纯无零点函数列、紧集上一致收敛、固定主导指标、C-类和分割的定义；C-类至少含两个指标，限制区域保留分割。
-- Montel 抽取、Hurwitz 非零极限和连通区域上 C-类经子列抽取后存在两个不同主导指标的完整证明。
-- Borel–Nevanlinna 增长引理的完整证明。
-- Cartan 圆估计的完整证明，含有限零点分解、带重数的对数平均选圆，以及原稿的幂次下界 `t^γ`。
-- 原稿调和包络引理的完整证明，含常数 8、64 和闭圆盘上确界；所需 Harnack 比较直接由 mathlib 的 Poisson 公式推出。
-- 对数 Poisson 平均引理的完整证明，允许积分圆周上存在零点，保留精确系数 q 和 q²−1。
-- 半径 `2 - sqrt 3` 的代数恒等式和对数公式；递归半径的正性、单调性及吸收证明末尾的常数估计。
-- 五函数部分两点核引理的完整证明：核分解、统一正间隙、Poisson 积分和半径极限，适用于开单位圆盘上任意正调和函数。
-- 指数和的有限矩判据，包括重复指数的分组；Laurent 多项式沿指数轨道恒零与有限方程组的等价性。
-- 环面零方向定理的完整双向证明；实际内在 Kobayashi–Royden 度量与坐标圆盘度量相等，零方向为切丛中的闭代数集，补集上的紧集具有严格正下界。
-- 任意项数的定量 Wronskian 下界，以及允许边界零点的全阶对数导数平均估计。
-- 两项吸收定理：任意不连通开集，保留双曲直径 ≤ log 3 的端点；一般吸收定理使用原稿精确递推半径。
-- 分割主定理：实际构造 C-类分割，保留显式 εₚ = rₚ₋₁^(p−1)。
-- 预序稳定化引理的完整证明：同一子序列上的商函数收敛或紧集最大值发散、最大等价类计数和不可比较性。
-
-完整覆盖情况见 `FORMALIZATION_STATUS.md`，持续进度与依赖图见 `docs/PROGRESS.md`、`docs/DEPENDENCIES.md`。编译通过不表示所有论文命题已经证明。
+Lean 固定为 v4.34.0-rc1，mathlib 固定为 de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11。所有本地定理逐一运行 #print axioms，允许的基础公理仅为 propext、Classical.choice 和 Quot.sound；没有论文专属公理或未完成证明。
 
 ## 本机复核
 
-在此目录运行：
+在本项目目录运行：
 
 ```powershell
 .\verify.ps1 -Fresh
 ```
 
-脚本读取本机已有的 mathlib 依赖缓存，核对各仓库提交号，在临时目录复制并哈希核对源文件，执行真实的 `lake build`，然后用 `#print axioms` 审计每个本地定理。日志、源文件哈希和结果 JSON 写入脚本输出的临时目录。交付时的日志另存于 `verification/`。
+脚本核对稿件哈希、全部论文标签、证明项、依赖版本和依赖工作树，在新的临时目录全量重建本地模块，然后运行 ManuscriptCheck.lean 和 Audit.lean。默认每批至多编译四个就绪模块，避免本机高并发下的库文件读取失败。最后仍执行完整的 lake build。
 
-本机缓存默认为 `E:\Lean 4\Sendov_conjecture_explicit_n0\.lake\packages`；可通过 `-PackageRoot` 指定同版本缓存。构建采用临时目录，是因为本次操作中 PowerShell 在 Documents 下创建编译产物失败；Lean 源文件保留在交付目录。
+mathlib 缓存默认为 E:/Lean 4/Sendov_conjecture_explicit_n0/.lake/packages。可使用 -PackageRoot 指定其他同版本缓存的**绝对路径**。固定依赖的已编译缓存会复用，本地证明模块从空构建目录重建。日志和哈希保存在脚本输出的验证目录；本次交付的完整记录也存于 verification/。
 
-## 在其他电脑使用
+## 在其他电脑复核
 
-安装 elan 后，在项目目录运行：
+安装 elan 后，在项目目录执行：
 
 ```text
 lake exe cache get
 lake build
+lake env lean ManuscriptCheck.lean
 lake env lean Audit.lean
 ```
 
-`lean-toolchain`、`lakefile.toml` 和 `lake-manifest.json` 固定版本。`Audit.lean` 罗列所有本地定理。当前允许的基础公理仅为 `propext`、`Classical.choice`、`Quot.sound`。
+Windows 上也可在获得缓存后运行：
 
-局部一致收敛采用 mathlib 的标准定义，并证明了与本项目紧集表述的等价性：[mathlib 官方文档](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/LocallyUniformConvergence.html)。
+```powershell
+.\verify.ps1 -PackageRoot (Resolve-Path '.lake/packages').Path -Fresh
+```
+
+工具链、依赖配置和源文件都在仓库中。脚本不修改 Lean/mathlib 的保护或证明检查设置。
+
+当前完整工作副本位于 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan。Documents 下的原副本保留为先前快照；迁移原因与完整记录见修订说明。Git 历史保存在本地仓库中，未配置远程仓库。

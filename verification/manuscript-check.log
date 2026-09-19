@@ -1,0 +1,197 @@
+ModifiedCartan.partitionTheorem_proved : ModifiedCartan.PartitionTheorem
+ModifiedCartan.partition_at_recursive_radius {p : ℕ} (hp : 3 ≤ p) {K : ℕ → ℝ} (hK : ModifiedCartan.WronskianExponents K)
+  (hKm : ∀ (m : ℕ), ↑m ≤ K m) :
+  ModifiedCartan.PartitionProperty p (ModifiedCartan.disk (ModifiedCartan.absorptionRadius K (p - 1) ^ (p - 1)))
+ModifiedCartan.sharpFiveTheorem_proved : ModifiedCartan.SharpFiveTheorem
+ModifiedCartan.torus_manifold_metric_zero_iff.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  {M : Type u_2} [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : ℕ}
+  (L : ModifiedCartan.TorusEquations N) {e : M → Fin N → ℂ}
+  (he : Manifold.IsImmersion (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ (Fin N → ℂ)) 1 e)
+  (hemb : Topology.IsEmbedding e) (hrange : Set.range e = L.locus) (x : M)
+  (v : TangentSpace (modelWithCornersSelf ℂ E) x) :
+  ModifiedCartan.manifoldKobayashiRoyden x v = 0 ↔
+    ∀ (z : ℂ), ModifiedCartan.exponentialOrbit (e x) ((mfderiv% e x) v) z ∈ L.locus
+ModifiedCartan.cartanCircleEstimate_proved : ModifiedCartan.CartanCircleEstimate
+ModifiedCartan.quantitativeWronskian_proved : ModifiedCartan.QuantitativeWronskian
+ModifiedCartan.logDerivativeEstimate_proved : ModifiedCartan.LogDerivativeEstimate
+ModifiedCartan.growthLemma_proved : ModifiedCartan.GrowthLemma
+ModifiedCartan.envelope_lemma {m : ℕ} {u : Fin m → ℂ → ℝ} {U : ℂ → ℝ} {ρ δ η C₀ : ℝ} (hρ : 1 / 2 ≤ ρ) (hρ' : ρ ≤ 3 / 4)
+  (hδ : 0 < δ) (hδη : δ ≤ η) (hη : η ≤ 1 / 64) (hC : 0 ≤ C₀)
+  (hu : ∀ (i : Fin m), InnerProductSpace.HarmonicOnNhd (u i) (Metric.closedBall 0 ρ))
+  (hU : InnerProductSpace.HarmonicContOnCl U (Metric.ball 0 ρ))
+  (hboundary : ∀ z ∈ Metric.sphere 0 ρ, IsGreatest (Set.range fun i => u i z) (U z) ∧ 0 < U z)
+  (hpoints : ∀ (i : Fin m), ∃ z ∈ Metric.ball 0 δ, u i z ≤ C₀) (i : Fin m) :
+  u i 0 ≤ 8 * δ * U 0 + C₀ ∧ sSup (u i '' Metric.closedBall 0 (4 * η)) ≤ 64 * η * U 0 + C₀
+ModifiedCartan.poissonMeanEstimate_proved : ModifiedCartan.PoissonMeanEstimate
+ModifiedCartan.explicitAbsorptionTheorem_proved : ModifiedCartan.ExplicitAbsorptionTheorem
+ModifiedCartan.absorption_at_recursive_radius {K : ℕ → ℝ} (hK : ModifiedCartan.WronskianExponents K)
+  (hKm : ∀ (m : ℕ), ↑m ≤ K m) (m : ℕ) :
+  1 ≤ m → ModifiedCartan.AbsorptionAt m (ModifiedCartan.disk (ModifiedCartan.absorptionRadius K m))
+ModifiedCartan.rank_adaptive_absorption {K : ℕ → ℝ} (hK : ModifiedCartan.WronskianExponents K)
+  (hKm : ∀ (m : ℕ), ↑m ≤ K m) (m d : ℕ) :
+  1 ≤ d →
+    d ≤ m →
+      ∀ (A a : ModifiedCartan.Family m) (s : ℂ → ℂ),
+        ModifiedCartan.UnitFamily A →
+          (∀ (i : Fin m) (n : ℕ), DifferentiableOn ℂ (a i n) (ModifiedCartan.disk 1)) →
+            (∀ (i : Fin m),
+                ModifiedCartan.CompactConvergence (fun n z => a i n z / A i n z) (fun x => 0) (ModifiedCartan.disk 1)) →
+              ModifiedCartan.CompactConvergence (fun n z => ∑ i, a i n z) s (ModifiedCartan.disk 1) →
+                (∃ z ∈ ModifiedCartan.disk 1, s z ≠ 0) →
+                  (∀ (n : ℕ), ModifiedCartan.functionRank (fun i => a i n) (ModifiedCartan.disk 1) ≤ d) →
+                    ∃ i φ,
+                      StrictMono φ ∧
+                        ModifiedCartan.CompactConvergence (fun n z => (A i (φ n) z)⁻¹) (fun x => 0)
+                          (ModifiedCartan.disk (ModifiedCartan.absorptionRadius K d))
+ModifiedCartan.stabilization_lemma {p : ℕ} (hp : 1 ≤ p) {f : ModifiedCartan.Family p} (hf : ModifiedCartan.UnitFamily f)
+  {σ : ℝ} (hσ : 0 < σ) (hσ1 : σ < 1) :
+  ∃ φ,
+    ∃ (_ : StrictMono φ),
+      (∀ (i j k : Fin p),
+          ModifiedCartan.HolomorphicLimitOrEscape (fun n z => f i (φ n) z / f j (φ n) z)
+            (ModifiedCartan.disk (σ ^ ↑k))) ∧
+        have R := ModifiedCartan.diskQuotientPreorder (ModifiedCartan.subsequence f φ) ⋯ σ ⋯ ⋯;
+        ∃ l < p,
+          (ModifiedCartan.maximalClasses (R l)).card = 1 ∨
+            l + 1 < p ∧
+              ∀ (x y : Fin p),
+                ModifiedCartan.PreorderMaximal (R l) x →
+                  ModifiedCartan.PreorderMaximal (R l) y →
+                    ¬((R l).rel x y ∧ (R l).rel y x) → ¬(R (l + 1)).rel x y ∧ ¬(R (l + 1)).rel y x
+ModifiedCartan.partition_at_center {p : ℕ} (hp : 3 ≤ p) {K : ℕ → ℝ} (hK : ModifiedCartan.WronskianExponents K)
+  (hKm : ∀ (m : ℕ), ↑m ≤ K m) {a : ℂ} (ha : a ∈ ModifiedCartan.disk 1) :
+  ModifiedCartan.PartitionProperty p
+    {z | z ∈ ModifiedCartan.disk 1 ∧ ‖(z - a) / (1 - star a * z)‖ < ModifiedCartan.absorptionRadius K (p - 1) ^ (p - 1)}
+ModifiedCartan.two_point_harmonic {q : ℝ} (hq : 0 < q) (hqr : q < ModifiedCartan.sharpRadius) :
+  ∃ ε,
+    0 < ε ∧
+      ∀ (U : ℂ → ℝ),
+        InnerProductSpace.HarmonicOnNhd U (Metric.ball 0 1) →
+          (∀ z ∈ Metric.ball 0 1, 0 < U z) →
+            ∀ (t s : ℝ),
+              0 ≤ t →
+                t ≤ q →
+                  |s| ≤ t →
+                    (1 + ε) * U ↑s ≤ ModifiedCartan.twoPointMinus t s * U ↑(-t) + ModifiedCartan.twoPointPlus t s * U ↑t
+ModifiedCartan.geodesic_harmonic_comparison {d₀ : ℝ} (hd₀ : 0 < d₀) (hd₃ : d₀ < Real.log 3) :
+  ∃ ε,
+    0 < ε ∧
+      ∀ (a b : ℂ),
+        a ∈ ModifiedCartan.disk 1 →
+          b ∈ ModifiedCartan.disk 1 →
+            ModifiedCartan.hyperbolicDistance a b ≤ d₀ →
+              ∀ (U P Q : ℂ → ℝ) (C₀ : ℝ),
+                InnerProductSpace.HarmonicOnNhd U (ModifiedCartan.disk 1) →
+                  InnerProductSpace.HarmonicOnNhd P (ModifiedCartan.disk 1) →
+                    InnerProductSpace.HarmonicOnNhd Q (ModifiedCartan.disk 1) →
+                      (∀ z ∈ ModifiedCartan.disk 1, 0 < U z) →
+                        (∀ z ∈ ModifiedCartan.disk 1, 0 ≤ P z) →
+                          (∀ z ∈ ModifiedCartan.disk 1, 0 ≤ Q z) →
+                            0 ≤ C₀ →
+                              U a - C₀ ≤ Q a →
+                                U b - C₀ ≤ P b →
+                                  ∀ z ∈ ModifiedCartan.hyperbolicSegment a b, U z - P z - Q z ≤ -ε * U z + 2 * C₀
+ModifiedCartan.sharpTwoAbsorption_proved : ModifiedCartan.SharpTwoAbsorption
+ModifiedCartan.torus_manifold_nullDirections_isClosed.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  {M : Type u_2} [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : ℕ}
+  (L : ModifiedCartan.TorusEquations N) {e : M → Fin N → ℂ}
+  (he : Manifold.IsImmersion (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ (Fin N → ℂ)) 1 e)
+  (hemb : Topology.IsEmbedding e) (hrange : Set.range e = L.locus) : IsClosed ModifiedCartan.manifoldNullDirections
+ModifiedCartan.torus_manifold_compact_metric_lower.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  {M : Type u_2} [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : ℕ}
+  (L : ModifiedCartan.TorusEquations N) {e : M → Fin N → ℂ}
+  (he : Manifold.IsImmersion (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ (Fin N → ℂ)) 1 e)
+  (hemb : Topology.IsEmbedding e) (hrange : Set.range e = L.locus)
+  {K : Set (TangentBundle (modelWithCornersSelf ℂ E) M)} (hK : IsCompact K)
+  (hKsub : K ⊆ ModifiedCartan.manifoldNullDirectionsᶜ) :
+  ∃ ε, 0 < ε ∧ ∀ w ∈ K, ENNReal.ofReal ε ≤ ModifiedCartan.manifoldKobayashiRoyden w.proj w.snd
+ModifiedCartan.torus_manifold_compact_inf_pos.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  {M : Type u_2} [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : ℕ}
+  (L : ModifiedCartan.TorusEquations N) {e : M → Fin N → ℂ}
+  (he : Manifold.IsImmersion (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ (Fin N → ℂ)) 1 e)
+  (hemb : Topology.IsEmbedding e) (hrange : Set.range e = L.locus)
+  {K : Set (TangentBundle (modelWithCornersSelf ℂ E) M)} (hK : IsCompact K)
+  (hKsub : K ⊆ ModifiedCartan.manifoldNullDirectionsᶜ) :
+  0 < sInf ((fun w => ModifiedCartan.manifoldKobayashiRoyden w.proj w.snd) '' K)
+ModifiedCartan.torus_manifold_null_image_eq_zeroLocus.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  {M : Type u_2} [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : ℕ}
+  (L : ModifiedCartan.TorusEquations N) {e : M → Fin N → ℂ}
+  (he : Manifold.IsImmersion (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ (Fin N → ℂ)) 1 e)
+  (hemb : Topology.IsEmbedding e) (hrange : Set.range e = L.locus) :
+  (fun w =>
+        ModifiedCartan.torusJetCoordinates (ModifiedCartan.tangentCoordinates e w).1
+          (ModifiedCartan.tangentCoordinates e w).2) ''
+      ModifiedCartan.manifoldNullDirections =
+    MvPolynomial.zeroLocus ℂ L.nullIdeal
+ModifiedCartan.projective_equivalence {p : ℕ} (hp : 3 ≤ p) {R : ℝ} (hR : 0 < R) (hR1 : R ≤ 1) :
+  ModifiedCartan.PartitionProperty p (ModifiedCartan.disk R) ↔
+    ModifiedCartan.ProjectiveMapPartitionProperty ⟨0, ⋯⟩ (ModifiedCartan.disk R)
+ModifiedCartan.projective_zero_directions {p : ℕ} (k : Fin p) [Nonempty ↑(ModifiedCartan.ProjectiveX p)]
+  (x : ↑(ModifiedCartan.ProjectiveX p)) :
+  {v | ModifiedCartan.manifoldKobayashiRoyden x v = 0} =
+    ⋃ P,
+      ⋃ (hP : ModifiedCartan.IsAdmissiblePartition (ModifiedCartan.projectiveXNormalize k x) P),
+        ↑(ModifiedCartan.projectiveTorusTangentSpace k x P hP)
+ModifiedCartan.projectiveTorusTangentSpace_finrank_le {p : ℕ} (k : Fin p) [Nonempty ↑(ModifiedCartan.ProjectiveX p)]
+  (x : ↑(ModifiedCartan.ProjectiveX p)) (P : ModifiedCartan.IndexPartition p)
+  (hP : ModifiedCartan.IsAdmissiblePartition (ModifiedCartan.projectiveXNormalize k x) P) :
+  Module.finrank ℂ ↥(ModifiedCartan.projectiveTorusTangentSpace k x P hP) ≤ p / 2 - 1
+ModifiedCartan.cartanExtraction_three : ModifiedCartan.CartanExtractionAt 3
+ModifiedCartan.cartanExtraction_four : ModifiedCartan.CartanExtractionAt 4
+ModifiedCartan.cartanExtraction_five : ModifiedCartan.CartanExtractionAt 5
+ModifiedCartan.optimalFiveRadius_proved : ModifiedCartan.OptimalFiveRadius
+ModifiedCartan.partition_five_at_sharpRadius :
+  ModifiedCartan.PartitionProperty 5 (ModifiedCartan.disk ModifiedCartan.sharpRadius)
+ModifiedCartan.fivePhi_differentiable : DifferentiableOn ℂ ModifiedCartan.fivePhi (ModifiedCartan.disk 1)
+ModifiedCartan.fiveL_differentiable : DifferentiableOn ℂ ModifiedCartan.fiveL (ModifiedCartan.disk 1)
+ModifiedCartan.fivePhi_sq (z : ℂ) : ModifiedCartan.fivePhi z ^ 2 = 4 * z ^ 2 / (1 - z ^ 4)
+ModifiedCartan.five_majorant_positive_gap {z : ℂ} (hz : z ∈ ModifiedCartan.disk 1) :
+  -(ModifiedCartan.fivePhi z ^ 2).re < (ModifiedCartan.fiveL z).re
+ModifiedCartan.fiveL_re_pos_right {z : ℂ} (hz : z ∈ ModifiedCartan.disk 1) (hx : 0 ≤ z.re) :
+  0 < (ModifiedCartan.fiveL z).re
+ModifiedCartan.fivePhi_re_nonpos_iff {z : ℂ} (hz : z ∈ ModifiedCartan.disk 1) :
+  (ModifiedCartan.fivePhi z).re ≤ 0 ↔ z.re ≤ 0
+ModifiedCartan.fivePhi_re_nonneg_iff {z : ℂ} (hz : z ∈ ModifiedCartan.disk 1) :
+  0 ≤ (ModifiedCartan.fivePhi z).re ↔ 0 ≤ z.re
+ModifiedCartan.gaussianPrimitive_hasDerivAt (n : ℝ) (z : ℂ) :
+  HasDerivAt (ModifiedCartan.gaussianPrimitive n) (ModifiedCartan.gaussianKernel n z) z
+ModifiedCartan.gaussianTransition_left_bound {n : ℝ} (hn : 0 < n) {w : ℂ} (hw : w.re ≤ 0) :
+  ‖ModifiedCartan.gaussianTransition n w‖ ≤ 1 / 2 * Real.exp (-n * (w.re ^ 2 - w.im ^ 2))
+ModifiedCartan.gaussianTransition_right_bound {n : ℝ} (hn : 0 < n) {w : ℂ} (hw : 0 ≤ w.re) :
+  ‖ModifiedCartan.gaussianTransition n w‖ ≤ 1 + 1 / 2 * Real.exp (-n * (w.re ^ 2 - w.im ^ 2))
+ModifiedCartan.fivea_div_fiveA_bound {n : ℝ} (hn : 0 < n) {z : ℂ} (hz : z ∈ ModifiedCartan.disk 1) :
+  ‖ModifiedCartan.fivea n z / ModifiedCartan.fiveA n z‖ ≤ 3 / (4 * n)
+ModifiedCartan.fivea_complement (n : ℝ) (z : ℂ) : ModifiedCartan.fivea n z + ModifiedCartan.fivea n (-z) = 1
+ModifiedCartan.fiveCounterexample_units : ModifiedCartan.UnitFamily ModifiedCartan.fiveCounterexample
+ModifiedCartan.fiveCounterexample_zeroSum : ModifiedCartan.ZeroSum ModifiedCartan.fiveCounterexample
+ModifiedCartan.fiveCounterexample_grows_at_zero (j : Fin 5) (hj : j ≠ 4) :
+  Filter.Tendsto (fun n => ‖ModifiedCartan.fiveCounterexample j n 0‖) Filter.atTop Filter.atTop
+ModifiedCartan.fiveA_vanishes_negative_point {t : ℝ} (htr : ModifiedCartan.sharpRadius < t) (ht1 : t < 1) :
+  Filter.Tendsto (fun n => ModifiedCartan.fiveA (↑n + 1) ↑(-t)) Filter.atTop (nhds 0)
+ModifiedCartan.fivea_sub_fiveA_vanishes_negative_point {t : ℝ} (htr : ModifiedCartan.sharpRadius < t) (ht1 : t < 1) :
+  Filter.Tendsto (fun n => ModifiedCartan.fivea (↑n + 1) ↑(-t) - ModifiedCartan.fiveA (↑n + 1) ↑(-t)) Filter.atTop
+    (nhds 0)
+ModifiedCartan.fiveCounterexample_vanishing_points {R : ℝ} (hR : ModifiedCartan.sharpRadius < R) (hR1 : R ≤ 1)
+  (j : Fin 5) (hj : j ≠ 4) :
+  ∃ z ∈ ModifiedCartan.disk R, Filter.Tendsto (fun n => ModifiedCartan.fiveCounterexample j n z) Filter.atTop (nhds 0)
+ModifiedCartan.fiveCounterexample_no_partition {R : ℝ} (hR : ModifiedCartan.sharpRadius < R) (hR1 : R ≤ 1) {φ : ℕ → ℕ}
+  (hφ : StrictMono φ) :
+  ¬Nonempty
+      (ModifiedCartan.CPartition (ModifiedCartan.subsequence ModifiedCartan.fiveCounterexample φ)
+        (ModifiedCartan.disk R))
+ModifiedCartan.disk_hyperbolicDiameter_iff {R d : ℝ} (hR0 : 0 < R) (hR1 : R < 1) :
+  ModifiedCartan.HasHyperbolicDiameterLE (ModifiedCartan.disk R) d ↔ 2 * ModifiedCartan.hyperbolicRadialCoordinate R ≤ d
+ModifiedCartan.sharpRadius_log_diameter :
+  2 * Real.log ((1 + ModifiedCartan.sharpRadius) / (1 - ModifiedCartan.sharpRadius)) = Real.log 3
+ModifiedCartan.sharpRadius_hyperbolicDiameter :
+  ModifiedCartan.HasHyperbolicDiameterLE (ModifiedCartan.disk ModifiedCartan.sharpRadius) (Real.log 3)
+ModifiedCartan.five_partition_diameter_cannot_increase {d : ℝ} (hd : Real.log 3 < d) :
+  ∃ U,
+    U.Nonempty ∧
+      IsOpen U ∧
+        U ⊆ ModifiedCartan.disk 1 ∧ ModifiedCartan.HasHyperbolicDiameterLE U d ∧ ¬ModifiedCartan.PartitionProperty 5 U
+ModifiedCartan.two_absorption_diameter_cannot_increase {d : ℝ} (hd : Real.log 3 < d) :
+  ∃ U,
+    U.Nonempty ∧
+      IsOpen U ∧
+        U ⊆ ModifiedCartan.disk 1 ∧ ModifiedCartan.HasHyperbolicDiameterLE U d ∧ ¬ModifiedCartan.AbsorptionAt 2 U

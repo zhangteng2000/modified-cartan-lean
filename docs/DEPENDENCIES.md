@@ -1,113 +1,65 @@
-# Proof dependency graph
+# Completed proof dependencies
 
-Solid analytic nodes below are proof obligations until marked VERIFIED in PROGRESS.md. An arrow means the proof at the target uses the source.
+All manuscript nodes below have actual proof terms. The final kernel audit is recorded in ../verification/result.json and ../verification/axiom-summary.json. Arrows summarize the mathematical proof structure; the exact compiler import graph is in ../verification/dependencies.json.
 
 ```mermaid
 flowchart TD
-  Poisson[mathlib Poisson formula and kernel bounds] --> Harnack[Harnack comparison]
-  Harnack --> Envelope[lem:envelope]
-  Factor[mathlib zero orders and factorized rational functions] --> Circle[VERIFIED lem:cartan-circle]
-  Harnack --> Circle
-  Circle --> Wronskian[VERIFIED prop:wronskian]
-  Cauchy[VERIFIED derivative and cofactor bounds] --> Coeff[VERIFIED derivative of Y inverse v]
-  Coeff --> Variation[VERIFIED circle variation and combination bound]
-  Variation --> Wronskian
-  Factor --> LogDeriv[VERIFIED lem:logderivative]
-  Poisson --> Mean[lem:poisson-mean including boundary zeros]
-  Kernel[proved rational kernel inequalities] --> TwoPoint[lem:two-point-kernel for harmonic functions]
-  Poisson --> TwoPoint
-  TwoPoint --> Geodesic[cor:geodesic-comparison]
-  Geodesic --> TwoAbs[prop:sharp-two-absorption]
-  Envelope --> TwoAbs
-  Mean --> TwoAbs
-  LogDeriv --> TwoAbs
-  Wronskian --> Abs[thm:absorption at the exact recursive radii]
-  LogDeriv --> Abs
-  Growth[VERIFIED lem:growth] --> Abs
-  Envelope --> Abs
-  Mean --> Abs
-  TwoAbs --> Abs
-  Abs --> Rank[cor:rank-adaptive-absorption]
-  Normal[VERIFIED Montel and Hurwitz extraction] --> Stabilize[VERIFIED lem:stabilization]
-  Counts[proved integer count stabilization] --> Stabilize
-  Rank --> Main[thm:main]
-  Stabilize --> Main
-  Main --> Centers[cor:centers]
-  Classical[classical Cartan extraction] --> Five[thm:sharp-five on arbitrary open sets]
-  TwoAbs --> Five
-  Five --> Optimal[optimalRadius 5 = 2 - sqrt 3]
-  Gaussian[Gaussian integral counterexample] --> Optimal
-  Main --> Torus[thm:torus-zero converse]
-  Orbit[proved exponential orbit discs] --> Torus
-  Torus --> Null[prop:torus-null-set]
-  Finite[proved Laurent finite equations] --> Null
-  Main --> Projective[prop:projective-equivalence]
-  Normal --> Projective
-  Projective --> Directions[cor:projective-zero-directions]
-  Torus --> Directions
-  Finite --> Directions
+  ML[mathlib complex analysis and compactness] --> Normal[Montel and Hurwitz]
+  ML --> Circle[Cartan circle estimate]
+  ML --> Poisson[Poisson, Harnack and harmonic envelope]
+  Circle --> W[Quantitative Wronskian]
+  ML --> LD[All-order logarithmic derivative estimate]
+  Poisson --> TP[Two-point harmonic kernel]
+  TP --> Geo[Geodesic comparison]
+  Geo --> A2[Sharp two-term absorption]
+  LD --> A2
+  Poisson --> A2
+  W --> Abs[Absorption at exact recursive radii]
+  A2 --> Abs
+  LD --> Abs
+  Poisson --> Abs
+  Growth[Growth-radius lemma] --> Abs
+  Abs --> Rank[Rank-adaptive absorption]
+  Normal --> Stab[Quotient-preorder stabilization]
+  Stab --> Main[Main partition theorem]
+  Abs --> Main
+  Main --> Centers[Arbitrary-center corollary]
+  Normal --> C3[Three-function Cartan extraction]
+  C3 --> C4[Four-function Cartan extraction]
+  LD --> CW[Derived Wronskians and radial alternatives]
+  CW --> C4
+  C4 --> Ann[Actual holomorphic annular covering and descent]
+  Ann --> C5[Five-function Cartan extraction]
+  CW --> C5
+  Diag[Common strict diagonal and compact exhaustion] --> C4
+  Diag --> C5
+  C5 --> Five[Sharp five-function theorem]
+  A2 --> Five
+  Five --> R5[Optimal radius 2 minus sqrt 3]
+  G[Explicit Gaussian counterexample] --> R5
+  G --> Diam[Sharp diameter obstructions]
+  Main --> Torus[Intrinsic torus zero-direction equivalence]
+  Moment[Finite Laurent moment equations] --> Null[Closed algebraic null locus and compact positivity]
+  Torus --> Null
+  Torus --> ProjZero[Projective zero directions and dimension bound]
+  Normal --> ProjEq[Projective partition equivalence]
+  CP[C-class partition interface] --> ProjEq
 ```
 
-The sharp two-term absorption branch must remain independent of general absorption, avoiding a circular proof of the m = 2 base radius.
+## Acyclic absorption proof
 
-`DiskAutomorphisms + HarmonicComposition + HarmonicKernel → TwoPointHarnack` proves normalized harmonic comparison. `HyperbolicDiameter` retains the non-strict endpoint on arbitrary open sets and obtains a uniform strict bound on compact subsets. `SymmetricDiskSegments + TwoPointHarnack → DiskSegmentComparison` supplies actual paths and comparison on them. `FailurePointsAvoidZeros + MovingPointLimits` supplies the zero-free endpoint preparation. The full sharp two-term proof remains open.
+The sharp two-term proof uses the analytic toolbox and the two-point geometry. It does not assume general reciprocal absorption. Its exact sharp-radius consequence supplies the m = 2 base case. The higher-rank Wronskian induction then proves general absorption with r1 = 1, r2 = 2 - sqrt 3 and r_m = r_(m-1)/(1024*(K_m+m)). The Wronskian exponent sequence is constructed, not postulated.
 
-## Proved absorption preparations
+## Main partition proof
 
-`HolomorphicCancellation` proves the m = 1 base case. `CombinationMinimum + Rescaling + AbsorptionLinearAlgebra → AbsorptionReduction → AbsorptionGap` proves the positive combination gap from the lower-dimensional induction hypothesis and failure of the conclusion. `FailurePoints → FiniteFailurePoints` constructs actual failure points. `PoissonExtension → HarmonicGrowth + PoissonHarnack → PoissonEnvelope` constructs and bounds the harmonic majorant. `UnitGrowth + GrowthSelection + ZeroFreeAnnulus` supplies divergence and controlled radii.
+A single extraction stabilizes every quotient on the finitely many radii. Finite maximal-class counting supplies a stable layer. The actual assignment of indices to representatives gives bounded normalized sums. A nonzero limit contradicts absorption and compact escape; all normalized limits therefore vanish. This proves a genuine C-class partition at epsilon_p = r_(p-1)^(p-1). Bounded elimination gives the rank-adaptive corollary without an extra basis assumption.
 
-`WronskianScaling + QuantitativeWronskian → AbsorptionWronskian` supplies actual points with a uniform logarithmic lower bound. `WronskianBoundary + CircleExceptional → WronskianMean` supplies both mean upper bounds with boundary zeros allowed. `ConvergenceJets + NegligibleDerivatives → BoundaryErrorLimit` supplies a genuine little-o error. `LogPoisson + Radii → AbsorptionComparison` supplies the final numerical contradiction. `AbsorptionInduction` assembles all these results into the proved successor step with the exact η. Full absorption still depends on the sharp two-term base case.
+## Classical Cartan proof
 
-## Completed logarithmic derivative chain
+See CARTAN_EXTRACTION.md for the exhaustive quotient-limit, merging, annular, higher-Wronskian and diagonal chains. Branch conditions in auxiliary lemmas are eliminated in CartanFourLocal and CartanFiveLocal. The paper uses the proved p = 5 full-disk theorem.
 
-`ProximityGrowth → ZeroCount → LocalLogDerivativePoles → LogDerivativeConstants` supplies the actual finite poles and polynomial bounds. `AngularIntegrals + FractionalPowers + CircleExceptional + ProximityMoment → PoleMoments` supplies the mean estimate across boundary poles. Together with `LogarithmicGrowthAlgebra` these prove `IteratedLogDerivativeMean`. `ProximityLocal → DerivativeQuotientRecurrence`, followed by strong induction, proves the full `LogDerivativeEstimate`. The absorption proof can now use this lemma without a relative assumption.
+## Geometry and optimality
 
-Sharp two-term chain: FailurePointsAvoidZeros + FiniteFailurePoints + MovingPointLimits -> SharpTwoEndpoints. HyperbolicDiameter + SymmetricDiskSegments -> ScaledPseudodiameter. LogDerivativeEstimate -> InteriorDerivativeGrowth -> InteriorBoundaryError. LogPoisson + PoissonHarnack + CircleExceptional -> PoissonMajorant; WronskianMean + PoissonMajorant -> TwoWronskian. HarmonicComposition -> HarmonicNegativeNeighborhood. These are complete supporting proofs; the final sharp two-term contradiction remains open.
+The torus theorem uses the main partition theorem, differentiation of compactly bounded ratios and finite exponential moments. ManifoldDiscs proves equality of the intrinsic metric and the actual coordinate-disk infimum. TorusTangentAlgebraic identifies the full null image with an explicit polynomial zero locus. Projective constructions use the true quotient topology, complex charts, product uniformity and actual differentials. See GEOMETRIC_MODEL.md for the complete correspondence.
 
-SharpTwoSetup constructs the entire failure-point and growth configuration. SharpTwoAnalyticBounds derives the actual negligible error and Poisson bound. DiskSegmentCompact supplies uniform interior bounds. The proposed fixed-domain endgame uses HarmonicNegativeNeighborhood -> ExponentialDecay -> QuotientDerivativeDecay -> VanishingDerivative, with ConvexZeroAvoidance proving the needed zero-free-domain preconnectedness. The missing link is still actual fixed-domain Wronskian decay under moving disk maps.
-
-ParameterUniformConvergence -> DiskSegmentLimits; VaryingComposition transports the convergent sums through those maps. SegmentNeighborhood + HarmonicNegativeNeighborhood -> HarmonicRectangle. WronskianComposition transports actual determinant decay. SharpTwoCoordinates constructs maps and a common convergent parameter subsequence. These form the verified scaffold for the still-open sharp two-term conclusion.
-
-Completed sharp-two chain: SharpTwoSetup → SharpTwoCoordinates/Subsequence → SharpTwoRectangleDecay → SharpTwoEndgame → SharpTwoAbsorption. Every setup object is constructed from the original hypotheses; both endpoint limits and the actual Wronskian decay are proved.
-
-Completed thm:absorption: sharpRadius_pseudodiameter → sharpRadius_hyperbolicDiameter → absorption_two; absorption_one + absorption_two + absorption_successor + exists_wronskianExponents → absorption_at_recursive_radius → explicitAbsorptionTheorem_proved and absorptionTheorem_proved.
-
-Partition proof assembled: DominancePartition + NormalizedParts + finite_escape_points + normalized_limits_zero_of_pairwise_escape + stabilization_lemma → partition_at_recursive_radius → partitionTheorem_proved. PartitionCenters transports the actual C-partition through involutive disk automorphisms.
-
-Rank-adaptive proof assembled: functionRank_relation + finite_constant_subsequence + bounded coefficient elimination + functionRank_scaled_subfamily → induction on number of terms → rank_adaptive_absorption at the exact r_d. Rank is computed after restricting functions to the unit disk.
-
-Geometry analytic chain: partition_exists_positive_radius + cclass_jet_limits → exponentialSum_zero_of_unit_jet_limits; LaurentJets → laurent_orbit_zero_of_large_discs; LargeDiscs extracts actual unbounded derivative-scale discs from metric zero. All components through this chain audited at 512 declarations.
-
-TorusLocus → TorusNullTopology → TorusMomentPolynomials → TorusAlgebraicNull: actual relative closedness, positive compact infimum, and equality with an explicit affine polynomial zero locus.
-
-Intrinsic geometry: ImmersionDifferential → ManifoldDiscs (exact metric equality and analytic-curve tangent reconstruction); TorusLocus + ManifoldDiscs → TorusManifold; TorusAlgebraicNull + TorusManifold → TorusTangentAlgebraic (entire intrinsic null image equals the explicit affine zero locus).
-
-Projective branch: AdmissiblePartitions -> PartitionRateDimension -> PartitionVelocities -> NormalizedHyperplane -> PartitionTori; NormalizedHyperplane -> ProjectiveCoordinates. The finite union and dimension bound are proved in normalized coordinates; the projective topological/manifold bridges remain WIP.
-
-Completed projective null-direction chain: ProjectiveCoordinates -> ProjectiveTopology -> NormalizedHyperplaneChart/AffineSliceManifold -> ProjectiveManifold; PartitionTori -> PartitionTorusManifold; AffineSliceDifferential + ProjectiveScaling + ProjectiveManifold + PartitionTorusManifold -> ProjectiveTori. The result uses actual mfderiv images and the intrinsic disc infimum.
-
-Completed geodesic chain: SchwarzPick -> HyperbolicCoordinates -> HyperbolicRadialSegment -> HyperbolicRealSegment -> HyperbolicSegments; together with DiskSegmentComparison -> GeodesicComparison. Equality rigidity and the exact image of the complete segment are proved, not supplied as hypotheses.
-
-Counterexample preparation: GaussianPrimitive -> GaussianRealBounds -> GaussianContour; all estimates concern the actual complex integral. HyperbolicCoordinates -> DiskDiameter proves the exact disk diameter, including the open-boundary supremum.
-
-Completed Gaussian obstruction chain: FiveExampleFunctions -> FivePhiSign/FiveMajorant -> FiveExampleBounds (using GaussianContour) -> FiveExampleLimits; PartitionObstruction + those limits -> FiveCounterexample -> FiveOptimalityUpper. The same actual family and uniform ratio convergence -> TwoAbsorptionCounterexample. Positive SharpFiveTheorem remains independent unfinished work.
-
-Completed projective equivalence: ProjectiveKernel -> ProjectiveCompact -> ProjectiveConvergence -> ProjectiveHurwitz; UniformComposition + ProjectiveLift -> ProjectiveClass -> ProjectiveBlocks -> ProjectivePartitions; ProjectiveManifold -> ProjectiveHolomorphy -> ProjectiveCurves. ProjectiveEquivalence assembles the genuine X_p-map/product-projective-limit equivalence.
-
-Sharp-five assembly: CClassEnlargement + SharpTwoAbsorption -> TwoClassAbsorption -> FiveClassReduction. The remaining prerequisite is actual classical Cartan extraction on the full disk. HolomorphicLog + MeanValue + Montel + FailurePoints/Hurwitz -> LogDerivativeNormality proves the bounded-logarithmic-derivative normality branch.
-
-Cartan three-function base: positive-radius partition + center pullback -> three-part cardinality -> local projective limits -> equicontinuity -> Arzela-Ascoli in compact kernel image -> inverse projective coordinates -> global projective Hurwitz -> CartanExtractionAt 3. This chain does not use classical Cartan extraction.
-
-General-domain three-unit normality: CartanThree + ProjectiveNormality -> CartanThreeDomain -> OmittedValues. Bounded-pair branch: LogDerivativeNormality -> CartanPairs -> CartanPairOverlap -> CartanBoundedPairs. Finite-limit four-unit branch: ZeroFreeAnnulus -> CartanMergeAnnulus/AnnulusTopology; CartanUnmerge -> CartanPairIndex -> CartanPairUnmerge; HolomorphicExtension -> AnnulusFilling; these together with CartanThreeDomain -> CartanFourReduction. StrictLocalNormality + ProjectiveNormality upgrade this to CartanFourFiniteLimit on the full disk.
-
-Higher Cartan preparations: WronskianThreeIdentity -> WronskianFourIdentity; CircleVariation -> LogNormPaths; LogPoisson -> ReciprocalProximity; WronskianMean -> NormalizedWronskian. CartanCircle -> RadialLoss -> CartanRadialExceptional provides genuine radial exceptional-set measure control.
-
-GrowthExceptional -> GrowthBootstrap; UnitGrowth -> QuotientGrowth. WronskianCommonFactor + InteriorDerivativeGrowth -> NormalizedWronskianGrowth. WronskianThreeIdentity/FourIdentity + CircleLogProximity -> WronskianQuotients/FourProximity. ReciprocalProximity -> UniformReciprocalProximity. Local Blaschke factorization -> RadialLoss (local boundary bound) -> RadialProximityExceptional. Full audit at this checkpoint: 908 declarations.
-
-926-declaration checkpoint: RadialProximityExceptional -> RadialAnchors -> DerivedFractionGrowth. UniformWronskianGrowth + actual signed identities -> WronskianAnchorGrowth (orders three and four, anchors and reciprocal means). WronskianBoundary -> UnitSumWronskian; InteriorDerivativeGrowth -> BoundaryErrorGrowth. NoVanishingQuotientSubsequence + FiniteFailurePoints -> QuotientAnchors. These bounds -> CartanGrowthClosure; GrowthBootstrap + that closure -> CartanInverseEndgame (full-disk conditional C class).
-
-938-declaration checkpoint: UniformReciprocalProximity -> UnitProximityBalance; ZeroFactors -> RadialZeros. WronskianQuotients + normalized growth -> SmallThreeFractions; radial zero removal + GrowthBootstrap -> SmallThreeGrowth. Montel/Hurwitz + CartanPairOverlap -> CartanBoundedRatios. SmallThreeGrowth + that contradiction -> CartanSmallThree.
-
-948-declaration checkpoint: WronskianFourProximity + normalized growth + PairProximityAlternatives -> SmallFourFractions; RadialZeros + GrowthBootstrap -> SmallFourGrowth -> CartanSmallFour. Determinant column permutations -> WronskianPermutations. Finite union outer-measure bounds -> RadialMeasureDichotomy.
-
-988-declaration checkpoint: FiniteCaseExclusion + WronskianPairAnchors -> CartanPairSelection. DerivedFractionRadii + WronskianAnchorGrowth -> OrientedWronskianGrowth; CartanSmallThree/Four -> CartanRadialCases/CartanFourthRadialCase. These -> CartanFourWronskianEndgame -> CartanFourNoReductions. CartanFourDiskReduction + that branch -> CartanFourLocal. CountableExtraction + TailClasses + CClassExhaustion + UnitDiskExhaustion -> CartanDiagonal; CartanFourLocal + CartanDiagonal -> CartanFour (complete CartanExtractionAt 4).
+The Gaussian chain proves the holomorphic square-root branch, real-part identities and sign, contour-tail bounds, exact 3/(4n) quotient bounds, all five unit conditions, zero sum, growth at zero, vanishing at opposite points and impossibility of every extracted C-class partition beyond the sharp radius. SharpFive combines the lower and upper radius bounds; the disk-diameter formula also gives both diameter obstructions.

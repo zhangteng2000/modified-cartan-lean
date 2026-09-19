@@ -1,14 +1,27 @@
 {
-  "status": "partial_formalization_verified",
-  "full_paper_proved": false,
+  "status": "full_formalization_verified",
+  "full_paper_proved": true,
+  "manuscript_sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89",
+  "coverage_sha256": "25e292814ce1612379051ddf348846e580b626c9f55d2defd1103eb4bb1adac8",
+  "manuscript_correspondence_review": "complete",
+  "principal_manuscript_results": 19,
+  "checked_manuscript_entry_points": 54,
   "lean": "v4.34.0-rc1",
   "mathlib": "de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11",
-  "checked_theorems": 988,
+  "checked_theorems": 1020,
+  "local_lean_modules": 289,
   "allowed_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "verified_at_utc": "2026-09-19T22:23:55.1555714Z",
-  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-verified"
+  "sorry_count": 0,
+  "admit_count": 0,
+  "manuscript_specific_axioms": 0,
+  "relative_verified": 0,
+  "compilation_errors": 0,
+  "fresh_local_build": true,
+  "module_batch_size": 4,
+  "verified_at_utc": "2026-09-19T23:38:49.7170484Z",
+  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59"
 }

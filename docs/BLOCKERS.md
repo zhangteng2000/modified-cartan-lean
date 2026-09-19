@@ -1,6 +1,6 @@
 # Blockers
 
-No unresolved mathematical or external blocker remains. All principal proof terms and the required five-function Cartan extraction have been completed. The final fresh rebuild is running; ../verification/result.json currently retains the preceding audited checkpoint.
+No unresolved mathematical or external blocker remains. All principal proof terms and the required five-function Cartan extraction have been completed. Final verification results are recorded in ../verification/result.json.
 
 ## Resolved mathematical dependencies
 
@@ -15,4 +15,4 @@ No unresolved mathematical or external blocker remains. All principal proof term
 
 Defender controlled-folder access prevented further writes in Documents. The original checkout was preserved and work continued at C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan. No security setting was changed. See REVISION_2026-09-19.md.
 
-A first unrestricted fresh build encountered concurrent library-file read failures; the files existed and individual module builds had passed. The final rerun uses batches of at most four dependency-ready local modules. No source theorem or proof-checking setting was changed.
+A first unrestricted fresh build encountered concurrent library-file read failures; the files existed and individual module builds had passed. The final four-module batch build passed completely; see FINAL_REPORT.md and the verification artifacts.

@@ -1,0 +1,8158 @@
+[
+  {
+    "theorem": "ModifiedCartan.absorption_poisson_constants",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_mean_lower_from_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_growth_contradiction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_envelope_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_le_unitGrowthMean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_combination_gap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_compactConvergence_zero_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_unit_of_small_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.large_unit_of_nonvanishing_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_growth_radii",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_successor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_constant_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximal_unit_coefficient_inv_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.remove_one_coefficient_identity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_sub",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_of_diskSupNorm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.nonnegative_sequence_zero_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.nontrivial_on_smaller_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_of_vanishing_combination",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_pseudodiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_hyperbolicDiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_at_recursive_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.explicitAbsorptionTheorem_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorptionTheorem_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_congr",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_wronskian_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_wronskian_growth_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_fiber_coefficients",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.indexPartition_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_of_admissible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratePartition_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratePartition_constant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratePartition_admissible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_iff_admissible_partition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.admissible_part_card_ge_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.admissible_parts_card_le_half",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.affine_chart_mfderiv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.affine_open_slice_mfderiv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.translation_mem_maximalAtlas",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.affine_open_slice_isImmersion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.affine_open_slice_isEmbedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.affine_chart_isImmersion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_distance_real_sq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_distance_angular_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_distance_small_pole",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_inverse_power_domination",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_distance_rotate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.abs_rpow_intervalIntegrable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.angular_real_pole_integral",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.angularPowerConstant_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.angular_inverse_power_uniform",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.angular_inverse_powers_finite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_fill_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_fill_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_fill_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.complexAnnulus_isOpen",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.complexAnnulus_nonempty",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.complexAnnulus_preconnected",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_pointwise",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_nonempty",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_card_ge_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_analytic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_norm_le_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_norm_lt_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_norm_on_circle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_uniform_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_radial_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.bounded_blaschke_factorization_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.bounded_blaschke_factorization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeDecayConstant_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_exponential_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianBoundaryError_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_boundary_error_negligible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harnackPower_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_free_log_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.power_bound_zero_count",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.noVanishingQuotientSubsequence_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.onlyNegativeOneUnitLimits_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratio_neg_one_of_logDerivative_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_two_bounded_pairs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_montel_limit_of_no_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratio_neg_one_of_locallyBounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.no_locallyBounded_three_chain",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_quotients_of_pairGrowth_at_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschkeFactor_log_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_circle_at_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartanCircleEstimate_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_alternative_of_local_subsequences",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartanExtraction_of_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartanExtraction_five",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_disk_alternative_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_five_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_two_classes_of_no_reductions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_alternative_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_global_alternative_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_anchored_subfamily_impossible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartanExtraction_four",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_holomorphic_disk_annulus_cover",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_four_annulus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_disk_class_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishing_quotient_indices_ne",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_kernel_equicontinuous_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_global_class_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_global_class_of_vanishing_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_four_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_two_classes_of_no_reductions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_class_of_finite_ratio_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_class_of_vanishing_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_small_fourth_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.four_anchored_subfamily_impossible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_sum_pairGrowth_bound_of_inverseWronskian",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bounded_of_inverseWronskian_control",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_quotients_of_pairGrowth_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_univ_of_inverseWronskian_control",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pair_merge_on_annulus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.restore_eraseFinIndex",
+    "axioms": [
+      "propext",
+      "Classical.choice"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eraseFinIndex_eq_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairAssignment_eq_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairAssignment_rep",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairAssignment_fiber",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mergedFamily_pair",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratio_neg_one_symmetric",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cancelling_pairs_disjoint_or_ratio_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_pair_of_ratio_neg_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratio_one_of_overlapping_cancellations",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ratio_unit_limit_of_logDerivative_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.noVanishingQuotientSubsequence_reindex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.onlyNegativeOneUnitLimits_reindex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.anchored_pairs_after_omitting_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairAssignment_restore",
+    "axioms": [
+      "propext",
+      "Classical.choice"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mergedFamily_assigned_pair",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mergedFamily_pair_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_unmerge_pair",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_small_third_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialSmallValueSet_measure_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_small_value_radii",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_circle_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.small_four_fractions_excluded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.small_three_fractions_excluded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.three_global_projective_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartanExtraction_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.three_domain_kernel_equicontinuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.three_domain_cclass",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_three_univ",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.three_local_projective_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.three_projectiveKernel_equicontinuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_liftedIndices",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.liftedIndices_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.liftedIndices_disjoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.liftedIndices_univ",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mergedFamily_zeroSum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_unmerge",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iteratedDeriv_unit_disk_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iteratedDeriv_analyticOnNhd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_analyticOnNhd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_det_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianUpperBound_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_unit_disk_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_two_dominants_after_extraction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.dominant_insert_negligible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_single_class",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_two_classes",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.isDominant_of_compact_cover",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_alternative_of_exhaustion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_deriv_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.tendsto_div_real_atTop_zero_of_bounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_jet_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_codiscrete_ae",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circleAverage_mono_codiscrete",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.meromorphic_circle_norm_rpow_measurable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circleIntegrable_norm_rpow_of_codiscrete_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_logDerivative_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_le_of_circle_exp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_logDerivative_proximity_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_variation_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.continuous_coefficientNormSq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficient_norm_le_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficient_sphere_isCompact",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.continuous_combination_diskSupNorm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_attained",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_coefficients_have_maximum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_attained",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_const_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficientNormSq_single",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficientNormSq_const_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficientNormSq_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombination_values_bddBelow",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_le_coordinate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_le_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_le_unnormalized",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_initial_subfamily",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compact_lifts_of_open_surjection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_of_compact_lifts",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_of_compact_lifts",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_of_compact_lifts",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.equicontinuous_compact_range_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_congr",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_congr",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_subsequence_selection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitFamily_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zeroSum_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.subsequence_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.dominant_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_bounded_refl",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_bounded_trans",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.dominant_change_index",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.dominant_iff_reverse_quotient_bounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_locallyBounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_holomorphic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_deriv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_iteratedDeriv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_jet_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.convex_open_sdiff_countable_joined",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.convex_open_sdiff_countable_preconnected",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_zeros_finite_closedDisk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_nonzero_convex_preconnected",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diagonal_subsequence_of_nested",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.countable_subsequence_selection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivative_quotient_recurrence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_nonzero_codiscrete_circle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivative_quotient_proximity_recurrence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derived_fraction_anchor_and_reciprocal_growth",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.reciprocal_growth_of_large_derived_fraction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialCommonGoodSet_eq_complement",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_large_orientation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fin_three_pair_orientation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fin_four_pair_orientation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialGood_third_pairs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialGood_fourth_pairs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAnnulusCover_differentiableOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAnnulusCover_mapsTo",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAnnulusCover_surjOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_eq_blaschke",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_denominator_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_analytic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_mem_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_involutive",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_self",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_maps_onto",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_hasDerivAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_eq_automorphism",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_self",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_symm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicRadialCoordinate_neg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_opposite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_pseudodiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_hyperbolicDiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicRadialCoordinate_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_hyperbolicDiameter_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_continuousAt_pair",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_joint_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_uniform_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_segment_harmonic_comparison",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.scaledDiskSegment_joint_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.scaledDiskSegment_compactConvergence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskCayley_den_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskCayley_re_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskCayley_differentiableOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.halfPlaneCayley_den_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.halfPlaneCayleyInverse_mem_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskCayley_inverse",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_diskCayley_im_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_diskCayley_differentiableOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exp_re_pos_of_im_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_diskCayley_surj_strip",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_dominancePartition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_assignmentPart",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.assignmentPart_disjoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.assignmentPart_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_of_assignment",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harnack_defect_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.envelope_coefficient_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.envelope_pointwise",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.envelope_lemma",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coefficients_zero_of_moments",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_iteratedDeriv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_derivatives_at_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.moments_zero_of_exponentialSum_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_iff_coefficients",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_iff_finite_moments",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_grouping",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_iff_grouped",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.moment_grouping",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_iff_moments",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialOrbit_at_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialOrbit_nonzero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialOrbit_hasDerivAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exp_negative_growth_tendsto_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.uniform_zero_of_exp_negative_growth",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unbounded_real_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.escapesOnCompact_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.escapesOnCompact_not_locallyBounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.not_locallyBounded_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphicLimitOrEscape_limit_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphicLimitOrEscape_escape_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphicLimitOrEscape_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_limit_or_escape_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_holomorphic_limit_or_escape",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitFamily_quotient_extraction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_subsequence_of_frequently_small",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.reciprocal_failure_compact",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_failure_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.nonzero_surrounding_circle_in_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compact_failure_points_avoid_zeros",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_not_of_no_strict_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_all_not_of_no_strict_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_at_most_one_of_no_two_subsequences",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.subsequence_all_but_one_fail",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_escape_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_div_nat",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_unit_failure_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_pole_derivative_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_preorderClass",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_preorderClass_self",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.preorderClass_eq_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_preorderMaximal_above",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_maximalClasses",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.preorderMaximal_of_mem_class",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_nonempty",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_card_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClass_contains_old",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_eq_of_common",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_injection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_card_antitone",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.old_maximalClass_survives",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maximalClasses_bijection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.old_maximals_incomparable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_preorder_stabilization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_two_classes_complement",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_partition_from_cartan_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphicUnit_neg_input",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveCounterexample_units",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveCounterexample_zeroSum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveCounterexample_grows_at_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveCounterexample_vanishing_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveCounterexample_no_partition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.not_partitionProperty_five_above_sharpRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_differentiable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_div_fiveA_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_sub_fiveA_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_complement",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_one_sub_pow_re_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_one_add_pow_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.complex_sqrt_sq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_differentiable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_differentiable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_sq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_odd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_majorant_identity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_negative_real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_negative_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.scaled_linear_exp_decay",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_vanishes_of_negative_real_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_vanishes_negative_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveA_grows_at_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_sub_fiveA_grows_at_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_vanishes_of_fiveA_vanishes",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivea_sub_fiveA_vanishes_negative_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cayley_real_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_real_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fiveL_re_pos_right",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_majorant_positive_gap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.optimalFiveRadius_le_sharpRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_disk_above_sharp_below_diameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_partition_diameter_cannot_increase",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_re_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_re_nonpos_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.fivePhi_re_nonneg_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_sum_rpow_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.natCast_rpow_le_self",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.negative_integer_power_rpow",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.weighted_pole_sum_rpow_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.functionRank_scaled_subfamily",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.functionRank_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussian_horizontal_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussian_vertical_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianPrimitive_horizontal_shift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_left_finite_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_left_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_right_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianKernel_differentiable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianPrimitive_hasDerivAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianPrimitive_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_hasDerivAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_entire",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_symmetry",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianKernel_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianKernel_even",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianPrimitive_real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianPrimitive_sub",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussian_normalization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.integral_gaussian_Iic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussianTransition_real_tendsto_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussian_integral_zero_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.gaussian_interval_left_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.geodesic_harmonic_comparison",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.growth_lemma",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.growthLemma_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logarithmic_growth_bound_eventually_lt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.growth_bound_from_large_radius_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.growthBadRadii_measure_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.growthBadRadii_or_exit_measure_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_growth_radius_in_large_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.select_growth_radii",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_harnack_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_nonneg_of_boundary",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_harnack_uniform",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_comp_analytic_to_ball",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_harnack_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maxWithZero_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.le_maxWithZero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maxWithZero_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.continuousOn_maxWithZero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonicGrowthMean_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_max_le_poissonExtension",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonicGrowthMean_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonicGrowthMean_monotoneOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonicGrowthMean_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonKernel_real_on_circle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.twoPointKernel_eq_combination",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.scaled_real_mem_ball",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_two_point_on_closedBall",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_point_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harnack_negative_coefficient",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_negative_neighborhood",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_negative_neighborhood_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_negative_rectangle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.nonzero_surrounding_circle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_cancel_nontrivial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_of_local_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_extend_zeros",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_extend_zeros",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_extend_zeros",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_holomorphic_log_on_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_log_real_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hurwitz_nonvanishing",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hurwitz_reciprocal_locallyBounded",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_two_dominants_of_quotient_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicRadialCoordinate_le_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_real_of_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_real_additive",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_preserves_distance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.distance_bound_uniform_pseudoradius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_joint_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_image_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_le_log_three_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.open_diameter_strict_pseudodistance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compact_strict_pseudodiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_zero_left",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolic_radial_addition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_real_norm_square",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolic_radial_segment_rigidity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicSegment_zero_real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolic_real_endpoints_middle_im_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicSegment_real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_surjective_on",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicSegment_diskSegmentMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.immersion_local_left_inverse",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.immersion_mfderiv_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.interior_wronskian_boundary_error_negligible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.interior_derivative_quotient_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.interior_derivative_quotient_growth_negligible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.interior_absorption_growth_radii",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iterated_log_derivative_mean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonDenom_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonKernel_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.kernel_factorization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.kernel_boundary_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.weightedKernel_difference",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.weightedKernel_antitone",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.weightedKernel_strict",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.weightedKernel_at_sharp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.twoPointKernel_strict_aux",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.twoPointKernel_strict",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.twoPointKernel_uniform",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.kobayashiRoyden_le_of_disc",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.kobayashiRoyden_zero_of_orbit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_large_tangentDisc_of_metric_lt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.large_tangentDisc_sequence_of_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.metric_zero_of_large_tangentDiscs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurentMonomial_on_orbit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_eval_on_orbit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_orbit_zero_iff_finite_equations",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurentMonomial_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurentMonomial_holomorphicUnit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hasDerivAt_finsetProd_logarithmic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurentMonomial_hasDerivAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurentMonomial_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_term_hasDerivAt_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_orbitCoefficient_tendsto",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_orbitRate_tendsto",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.local_log_derivative_poles",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.equicontinuousAt_of_local_subsequence_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.rpow_le_one_add",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_polynomial_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_fractional_moment_growth",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iteratedDeriv_reciprocal_shift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_iteratedDeriv_reciprocal_shift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDeriv_blaschkeFactor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.reflected_pole_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDeriv_finite_factorization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivativeRegularBound_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivativeRegularBound_polynomial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_self_div",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.higher_derivative_quotient_mean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivativeEstimate_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_log_norm_difference_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_norm_le_of_logDerivative_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivative_bounded_montel",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivative_montel_of_no_reciprocal_decay",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDerivative_unit_limit_of_no_decay",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDeriv_analyticOnNhd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iterated_logDeriv_finite_factorization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iterated_logDeriv_eq_log_branch",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hasDerivAt_log_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.circle_log_norm_variation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radial_log_norm_variation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.annulus_log_norm_variation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.annulus_logDerivative_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschke_norm_identity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschke_numerator_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_factor_le_poisson",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_norm_le_poisson",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poisson_mean_inequality",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonMeanEstimate_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.manifold_disc_embedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.immersion_holomorphic_lift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coordinate_disc_lift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.manifold_metric_eq_coordinate_metric",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.ambient_curve_tangent_in_range",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_det_analyticAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_adjugate_entry_analyticAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_inv_entry_analyticAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_adjugate_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_inv_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.holomorphic_equicontinuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.montel_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_montel_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_eval_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.tendsto_zero_of_small_ratio_bounded_log",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_tendsto_zero_of_norm_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_growth_error_isLittleO",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivative_quotient_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivative_quotient_growth_negligible",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coordinateSumLaurent_eval",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.coordinateOneLaurent_eval",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_normalizedHyperplane",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedHyperplane_metric_zero_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedHyperplane_zero_finite_union",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalized_difference_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalized_add_direction_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_finset_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPart_holomorphic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPart_identity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPart_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_zero_of_limit_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_eq_det",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_analyticOnNhd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_three_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_posLog_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_proximity_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_proximity_quotients_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_omitting_minus_one_normal",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_omitting_minus_one_trichotomy",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_three_growth_of_small_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_four_growth_of_small_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bound_of_proximity_alternatives",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.continuous_parameter_uniformOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_of_parameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_congr",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_center",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_at_center",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialSum_zero_of_unit_jet_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.constant_coordinate_partition_obstruction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionRateSubspace_finrank_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.admissible_rate_finrank_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_at_recursive_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionTheorem_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.indexPart_eq_of_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPartitionTorus_mem_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPartitionTorus_contains_base",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPartitionTorus_subset_hyperplane",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponentialOrbit_mem_partitionTorus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_velocity_realized_by_entire_curve",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_torus_curve_velocity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_torus_tangent_curve_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedPartitionTorus_mem_affine_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionTorusModelMap_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionTorusModelMap_range",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionTorusModelMap_isImmersion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionTorusModelMap_isEmbedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalized_limit_zero_of_escape",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalized_limits_zero_of_pairwise_escape",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_partitionVelocitySubspace_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionVelocitySubspace_finrank_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.mem_admissiblePartitions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponential_zero_velocity_iff_partition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exponential_zero_velocity_finite_union",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_velocity_sum_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poisson_envelope_pointwise",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_eq_average",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_eq_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_le_poissonExtension",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_harnack_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_harnack_uniform",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_sub",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_add",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poissonExtension_mono_codiscrete",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_exp_poisson_majorant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logarithmic_mean_of_pole_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blockIndex_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blockIndex_surjective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blockIndex_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.restrictedFamily_cclass_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyUniform_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blockProjectiveLimit_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_blockProjectiveLimit_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_of_blockProjectiveLimit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_mem_hyperplane",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_normalized_eq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.familyProjective_holomorphic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.familyProjective_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.familyProjective_coordinate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_univ_projective_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_univ_of_projective_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_sphere_nonzero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveSphereMap_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveSphereMap_surjective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernel_component_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveCoordinate_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_convergence_coordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveHolomorphicOn_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_unit_coordinate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.homogeneousZeroSum_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.homogeneousZeroSum_projective_mk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizeCoordinates_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizeCoordinates_projective_mk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizeCoordinates_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizeCoordinates_fixed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_mk_normalizeCoordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveCurveFamily_units",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveCurveFamily_zeroSum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveProjection_curveFamily",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.familyProjectiveCurve_val",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.familyProjectiveCurve_holomorphic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveProjection_familyCurve",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_iff_projectiveMaps",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_equivalence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_holomorphic_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_limit_zero_set_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_limit_coordinate_dichotomy",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_limit_global_chart",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelCoordinates_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelCoordinates_mk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernel_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelCoordinates_diagonal_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelCoordinates_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernel_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelInverse_leftInverse",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernelInverse_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveKernel_lift_convergence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveHyperplane_isClosed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_eq_mk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_normalize",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_coordinate_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_holomorphic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePoint_convergence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_nonempty",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXModelMap_isOpenEmbedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_isManifold",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXNormalize_eq_affine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXNormalize_isImmersion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXNormalize_isEmbedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXNormalize_range",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_metric_eq_normalized",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_zero_finite_union",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_limit_of_kernel_equicontinuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_from_indexPartition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_projective_common_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_iff_familyProjective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.isAdmissiblePartition_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.isAdmissiblePartition_normalize",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalized_partition_projective_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.homogeneousPartitionTorus_subset_projectiveX",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_mk_isQuotientMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_mk_coordinate_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveChartSet_isOpen",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveChart_normalize_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveX_normalize_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveXNormalize_mem",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectivePartitionTorus_eq_homogeneous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_admissible_iff_rep",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_coordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_isEmbedding",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_contMDiff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_base",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_mfderiv_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_range",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusInclusion_mfderiv_coordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusTangentSpace_mem_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projective_zero_directions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.projectiveTorusTangentSpace_finrank_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_norm_le_proximity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_exp_proximity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_exp_proximity_on_closedBall",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_exp_proximity_midpoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.meromorphicOn_iteratedDeriv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_mul_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_sum_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_const_mul_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_congr_codiscrete",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.posLog_le_log_power",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_tangent_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximity_le_log_moment",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quantitativeWronskian_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_ge_exp_of_log_anchor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_anchors_on_disk_of_no_vanishing",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_anchors_of_no_vanishing",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_term_quotient_vanishingDerivative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishingDerivative_endpoint_contradiction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.maxWithZero_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_eq_harmonicGrowthMean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_proximityMean_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_proximityMean_monotoneOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowthMean_ge_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_quotient",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowthMean_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowthMean_monotoneOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quotient_proximity_le_pairGrowthMean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_pow_subset_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.disk_pow_succ_subset",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.stabilization_lemma",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_avoiding_finite_exceptional",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.log_anchor_of_product_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radial_product_anchor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.abs_mul_log_le_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialLog_integrable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialLog_integral_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialLog_select_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialLog_select_radius_with_weights",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialLog_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_integrable_radial_loss_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_integrable_radial_loss",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_large_component_of_small_complement",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_large_component_on_interval",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_small_value_radii_local",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_small_value_radii_log_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialSmallValueSet_antitone",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cartan_small_value_radii_proximity",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.large_value_point_of_small_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_three_nonzero_of_small_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_four_nonzero_of_small_good_set",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialZeroSet_finite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.radialZeroSet_volume_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_zero_free_circle_subset",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_lt_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_quadratic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_ratio",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_log_diameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eta_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eta_le_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorptionRadius_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorptionRadius_step",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorptionRadius_antitone",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_constant_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.rank_adaptive_absorption",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.iteratedDeriv_bound_of_real_part",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_sub_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_inv_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_inv_le_of_anchor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.reflectedPole_analytic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.reflectedPole_iteratedDeriv_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschke_logDeriv_iterated_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.real_scale_mem_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.real_div_mem_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.absorption_rescale",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compact_subset_unit_closedDisk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compact_scaled_pseudodiameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.schwarz_pick_pseudodistance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pseudodistance_eq_of_inverse",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_pseudodistance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.rotation_pseudodistance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_diskAutomorphism",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hyperbolicDistance_rotation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_convex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_endpoints",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_near_segment",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.segmentRectangle_eventually_near",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpFiveTheorem_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_five_at_sharpRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpRadius_le_optimalFiveRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.optimalFiveRadius_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_absorption",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpTwoAbsorption_proved",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_analytic_bounds",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_coordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_parameter_subsequence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_fixed_domain_contradiction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_free_finite_failure_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.complement_quotient_tendsto_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_term_failure_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_rectangle_decay",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharp_two_setup",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpTwoSetupSubsequence_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.sharpTwoSetupSubsequence_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bound_of_small_four_fractions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bounded_of_small_four_fractions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_univ_of_zeroSum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partitionProperty_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.partition_exists_positive_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bound_of_small_three_fractions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pairGrowth_bounded_of_small_three_fractions",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.descending_count_bound",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.count_stabilization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.equicontinuousAt_of_strict_local_subsequence_limits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.symmetricPseudodistance_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.symmetricPseudodistance_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.symmetricPseudodistance_sharpRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_symmetric_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_uniform_symmetric_radius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_real_opposite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_mem_disk",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_analytic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_left",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSegmentMap_right",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_diskSegmentMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyBounded_of_tail",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_of_tail",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.isDominant_of_tail",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cclass_of_tail",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torusJetCoordinates_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_null_zeroLocus_reconstruction",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_nullDirections_image_eq_zeroLocus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.laurent_orbit_zero_of_large_discs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_locus_metric_zero_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_locus_metric_zero_iff_moments",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_locus_orbit_of_large_discs",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_locus_compact_metric_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.continuous_tangentCoordinates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_metric_zero_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_nullDirections_isClosed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_compact_metric_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_compact_inf_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_null_polynomial_criterion",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eval_torusIntegerPowerPolynomial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eval_torusMonomialPolynomial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eval_torusMomentPolynomial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_metric_zero_iff_polynomial_zeroLocus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_moment_continuous",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_nullDirections_isClosed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_locus_compact_inf_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_null_tangent_image",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.torus_manifold_null_image_eq_zeroLocus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.eventually_uniform_triple_anchors",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.five_ratio_compactConvergence",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_limit_excludes_reciprocal_zero_limit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.not_absorption_two_above_sharpRadius",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_absorption_diameter_cannot_increase",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.cpartition_two_classes_one_remaining",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.harmonic_harnack_two_points",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskAutomorphism_real_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.twoPoint_coefficients",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.real_segment_harmonic_comparison",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.deriv_two_term_quotient",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_wronskian_poisson_majorant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.joint_tendsto_of_locallyUniform",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyUniform_of_joint_tendsto",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyUniform_comp_continuousAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.locallyUniform_pi",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_inv_le_uniform_anchor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_inv_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_bounded_order_growth_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitDiskExhaustionRadius_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitDiskExhaustionRadius_lt_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitDiskExhaustion_compact_cover",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_integrable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_dominates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_positive",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_deficit_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.poisson_scaled_kernel_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitEnvelope_scaled_lower",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_log_harmonic",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_le_exp_unitGrowthMean",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitGrowthMean_continuousOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitGrowthMean_monotoneOn",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unitGrowthMean_tendsto_atTop",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_proximity_pair_balance",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_posLog_le_normalizedWronskian_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_proximity_le_normalizedWronskian_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.constant_sum_proximity_le_normalizedWronskian_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishingDerivative_closedBall",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishingDerivative_moving_center",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishingDerivative_fixed_difference",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.vanishingDerivative_moving_difference",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.uniformOn_comp_varying",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_comp_varying",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_const_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_common_const",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_zero_of_linear_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_mono",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_le_first",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.quantitativeWronskian_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.determinant_last_column_residual",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_last_column_residual",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_three_anchor_and_reciprocal_growth",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_four_anchor_and_reciprocal_growth",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.matrix_det_norm_column_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_update_sum",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivativeColumnError_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.derivative_norm_le_column_exp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_boundary_log_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.jetUpperBound_one_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.jet_le_upperBound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianCircleConstant_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_circle_lower_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianCoefficient_deriv_norm_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.combinationNorm_le_of_circle_coefficients",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianCoefficient_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianCoefficient_analyticAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianCoefficient_deriv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_common_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_common_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_common_divisor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.two_wronskian_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_wronskian_comp_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.jet_relation_derivative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_coefficient_derivative_system",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_wronskianExponents",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hasDerivAt_wronskian_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDeriv_wronskian_ratio_four",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_logDeriv_wronskian_ratio_four",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_four_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_four_circle_proximity_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianBoundaryError_nonneg",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianBoundaryError_circleIntegrable",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskianBoundaryError_circleAverage",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_maxWithZero_eq",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_boundary_max_estimates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_boundary_mean_estimates",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_two_norm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.pair_anchor_of_not_logDerivative_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_comp_perm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_norm_comp_perm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_proximity_comp_perm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.normalizedWronskian_inv_proximity_comp_perm",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.scaled_cartan_power",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_power_algebra",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_congr_circle",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.proximityMean_div_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_quotient_wronskian_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.unit_quotient_three_wronskian_factor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_three_circle_proximity_alternative",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.analytic_iteratedDeriv_comp_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_comp_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.real_scale_mem_closedBall",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.diskSupNorm_input_scale",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_input_scale",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.leastCombinationNorm_const_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.wronskian_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.hasDerivAt_wronskian_two",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.logDeriv_wronskian_ratio_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.norm_logDeriv_wronskian_ratio_three",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.blaschke_factorization_zero_count",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.analytic_remove_finite_zeros",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.finite_zero_factorization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.interval_avoiding_finite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.exists_zero_free_annulus",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.compactConvergence_eventually_lower_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_free_log_deficit_at_origin",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "theorem": "ModifiedCartan.zero_free_log_derivatives",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

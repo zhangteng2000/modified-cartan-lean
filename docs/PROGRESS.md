@@ -1,28 +1,36 @@
-VERIFIED: All 19 labeled manuscript results have proof terms. Earlier principal results passed the 988-declaration audit; the new full-disk Cartan, sharp-five and optimal-radius proof chain has separately passed recursive axiom checks.
+VERIFIED: All 19 principal labeled manuscript results, the C-class definition, the complete Gaussian counterexample, exact optimal five-function radius, sharp diameter obstructions and projective tangent dimension bound; 1020 local theorem declarations passed the full recursive axiom audit.
 RELATIVE_VERIFIED: 0
-WIP: Final fresh build of every local module, full 1020-declaration audit, complete dependency inventory and final delivery report.
+WIP: 0
 BLOCKED: 0
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
 
-# Completion checkpoint
+# Completed formalization
 
-The revised manuscript is paper.tex, SHA-256 76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89. Its 19 labeled results and one C-class definition are mapped in verification/manuscript-coverage.json. The Gaussian construction, diameter obstructions, exact optimal radius and the Cartan instances needed in the proof are included in the supplemental map.
+The current manuscript is paper.tex, SHA-256 76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89. The 19 labeled results, one definition and supplemental conclusions are mapped in ../verification/manuscript-coverage.json. See ../FORMALIZATION_STATUS.md and FINAL_REPORT.md for exact theorem names and source locations.
 
-## New mathematics completed
+## Final acceptance
 
-- Explicit holomorphic disk-to-annulus covering, compact lifts and four-function annular extraction.
-- Uniform triple-Wronskian anchors, the five-function fourth-order endgame, and elimination of all quotient-reduction case assumptions.
-- A common strict diagonal subsequence on the entire unit disk: cartanExtraction_five : CartanExtractionAt 5.
-- sharpFiveTheorem_proved : SharpFiveTheorem, retaining arbitrary open subsets and the non-strict diameter endpoint.
-- optimalFiveRadius_proved : OptimalFiveRadius, using the actual partition-property supremum and the already proved Gaussian counterexample.
+- Fresh reconstruction of all 289 local Lean modules: passed.
+- Complete lake build: passed, with no compilation errors.
+- ManuscriptCheck.lean: 54 named proof entry points checked, plus typed examples for the proposition targets.
+- Audit.lean: all 1020 theorem declarations audited; only propext, Classical.choice and Quot.sound occur.
+- No local proof contains an unfinished placeholder, a manuscript-specific axiom, an opaque declaration, unsafe code or native_decide.
+- Exact source hashes and full logs are in ../verification/.
+- No principal result remains only as a Prop definition or under a missing mathematical assumption.
 
-All new modules passed individual Lean compilation. A recursive #print axioms check of cartan_four_annulus, cartanExtraction_five, sharpFiveTheorem_proved and optimalFiveRadius_proved returned only [propext, Classical.choice, Quot.sound]. The full fresh build is still running, so no final report has been created.
+Verified at 2026-09-19T23:38:49.7170484Z. Build directory: C:/Users/HUAWEI/AppData/Local/Temp/ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59.
 
-## Final verification work
+## Mathematical closure
 
-verify.ps1 checks exact manuscript label coverage and SHA-256, proof entry points, every theorem in Audit.lean, pinned dependency revisions and clean dependency working trees. It then builds all local modules in bounded topological batches, runs a complete lake build, checks ManuscriptCheck.lean and performs the full recursive axiom audit.
+CartanCircle, QuantitativeWronskian and LogDerivativeEstimate prove the exact analytic toolbox. SharpTwoAbsorption closes the non-strict sharp two-term endpoint on arbitrary open sets. AbsorptionTheorem constructs valid Wronskian exponents and the exact recursive radii. QuotientStabilization and PartitionTheorem prove the main partition statement and its corollaries.
 
-The first unrestricted fresh build encountered concurrent library-file read failures. Bounded four-module batches are being used for the final rerun; no mathematical statement or proof-checking setting was changed. The failed logs remain in the temporary build directory.
+The final Cartan chain covers all finite quotient limits, the annular merging transfer, uniform triple anchors, the fourth-order endgame and common strict diagonal extraction on the entire unit disk. CartanFive proves the precise classical p = 5 input required by the manuscript. SharpFive proves the sharp five-function theorem and R5 = 2 - sqrt 3 using the already proved Gaussian construction.
 
-The current published verification/result.json still describes the preceding 988-declaration checkpoint until the fresh run succeeds. Git history preserves all earlier progress reports. The final completion report will be generated only after the current build and audit pass.
+The geometry uses the intrinsic manifold metric and actual tangent bundle. The null locus is identified with an explicit polynomial zero locus; compact complements have a positive lower bound. The projective equivalence, tangent union and dimension bound use the genuine projective quotient topology and manifold differentials.
+
+## History and environment
+
+The source checkpoint is e84e54567afaa9ded782f6d3da0826311407ac55. Git history preserves the earlier development and audit checkpoints, including the 988-declaration four-function extraction checkpoint. The final verification documents are committed afterward. No remote is configured.
+
+The initial unrestricted fresh attempt had concurrent library-file read failures. The successful final run builds dependency-ready batches of at most 4 modules, then performs a normal full lake build. Fixed mathlib build artifacts are reused; every local module was rebuilt from source in a new directory. No mathematical or external blocker remains.

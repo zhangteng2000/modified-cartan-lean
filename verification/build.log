@@ -1,29 +1,496 @@
-⚠ [3531/3624] Replayed ModifiedCartan.CircleVariation
+Building batch: ModifiedCartan.Basic, ModifiedCartan.CircleVariation, ModifiedCartan.Exponential, ModifiedCartan.Harmonic
+✔ [3416/3419] Built ModifiedCartan.Exponential (15s)
+✔ [3417/3419] Built ModifiedCartan.Basic (15s)
+✔ [3418/3419] Built ModifiedCartan.CircleVariation (15s)
+✔ [3419/3419] Built ModifiedCartan.Harmonic (17s)
+Build completed successfully (3419 jobs).
+Building batch: ModifiedCartan.AdmissiblePartitions, ModifiedCartan.Convergence, ModifiedCartan.DiskStripCover, ModifiedCartan.Envelope
+✔ [3428/3431] Built ModifiedCartan.AdmissiblePartitions (14s)
+✔ [3429/3431] Built ModifiedCartan.DiskStripCover (16s)
+✔ [3430/3431] Built ModifiedCartan.Convergence (16s)
+✔ [3431/3431] Built ModifiedCartan.Envelope (23s)
+Build completed successfully (3431 jobs).
+Building batch: ModifiedCartan.CClassEnlargement, ModifiedCartan.CountableExtraction, ModifiedCartan.FailurePoints, ModifiedCartan.GaussianPrimitive
+✔ [3449/3452] Built ModifiedCartan.CClassEnlargement (15s)
+✔ [3450/3452] Built ModifiedCartan.CountableExtraction (15s)
+✔ [3451/3452] Built ModifiedCartan.FailurePoints (15s)
+✔ [3452/3452] Built ModifiedCartan.GaussianPrimitive (16s)
+Build completed successfully (3452 jobs).
+Building batch: ModifiedCartan.FiniteFailurePoints, ModifiedCartan.GaussianRealBounds, ModifiedCartan.HarmonicComposition, ModifiedCartan.Hurwitz
+✔ [3485/3488] Built ModifiedCartan.FiniteFailurePoints (15s)
+✔ [3486/3488] Built ModifiedCartan.GaussianRealBounds (17s)
+✔ [3487/3488] Built ModifiedCartan.HarmonicComposition (17s)
+✔ [3488/3488] Built ModifiedCartan.Hurwitz (17s)
+Build completed successfully (3488 jobs).
+Building batch: ModifiedCartan.AbsorptionPreparations, ModifiedCartan.GaussianContour, ModifiedCartan.HarmonicNegativeNeighborhood, ModifiedCartan.ImmersionDifferential
+✔ [3518/3521] Built ModifiedCartan.ImmersionDifferential (15s)
+✔ [3519/3521] Built ModifiedCartan.HarmonicNegativeNeighborhood (17s)
+✔ [3520/3521] Built ModifiedCartan.AbsorptionPreparations (17s)
+✔ [3521/3521] Built ModifiedCartan.GaussianContour (17s)
+Build completed successfully (3521 jobs).
+Building batch: ModifiedCartan.Laurent, ModifiedCartan.Montel, ModifiedCartan.MovingPointLimits, ModifiedCartan.ParameterUniformConvergence
+✔ [3406/3409] Built ModifiedCartan.Laurent (15s)
+✔ [3407/3409] Built ModifiedCartan.MovingPointLimits (16s)
+✔ [3408/3409] Built ModifiedCartan.ParameterUniformConvergence (18s)
+✔ [3409/3409] Built ModifiedCartan.Montel (18s)
+Build completed successfully (3409 jobs).
+Building batch: ModifiedCartan.CClass, ModifiedCartan.Extraction, ModifiedCartan.Kobayashi, ModifiedCartan.LaurentJets
+✔ [3409/3412] Built ModifiedCartan.Kobayashi (16s)
+✔ [3410/3412] Built ModifiedCartan.CClass (16s)
+✔ [3411/3412] Built ModifiedCartan.Extraction (16s)
+✔ [3412/3412] Built ModifiedCartan.LaurentJets (17s)
+Build completed successfully (3412 jobs).
+Building batch: ModifiedCartan.LargeDiscs, ModifiedCartan.ManifoldDiscs, ModifiedCartan.PartitionObstruction, ModifiedCartan.PartitionRateDimension
+✔ [3442/3445] Built ModifiedCartan.LargeDiscs (15s)
+✔ [3443/3445] Built ModifiedCartan.PartitionRateDimension (15s)
+✔ [3444/3445] Built ModifiedCartan.PartitionObstruction (15s)
+✔ [3445/3445] Built ModifiedCartan.ManifoldDiscs (16s)
+Build completed successfully (3445 jobs).
+Building batch: ModifiedCartan.AffineSliceManifold, ModifiedCartan.PartitionVelocities, ModifiedCartan.PoissonExtension, ModifiedCartan.RadialLog
+✔ [3513/3516] Built ModifiedCartan.PoissonExtension (15s)
+✔ [3514/3516] Built ModifiedCartan.PartitionVelocities (16s)
+✔ [3515/3516] Built ModifiedCartan.AffineSliceManifold (16s)
+✔ [3516/3516] Built ModifiedCartan.RadialLog (17s)
+Build completed successfully (3516 jobs).
+Building batch: ModifiedCartan.AffineSliceDifferential, ModifiedCartan.HarmonicGrowth, ModifiedCartan.PoissonHarnack, ModifiedCartan.Radii
+✔ [3482/3485] Built ModifiedCartan.HarmonicGrowth (16s)
+✔ [3483/3485] Built ModifiedCartan.PoissonHarnack (16s)
+✔ [3484/3485] Built ModifiedCartan.Radii (16s)
+✔ [3485/3485] Built ModifiedCartan.AffineSliceDifferential (17s)
+Build completed successfully (3485 jobs).
+Building batch: ModifiedCartan.Kernel, ModifiedCartan.PoissonEnvelope, ModifiedCartan.SegmentNeighborhood, ModifiedCartan.Stabilization
+✔ [3432/3435] Built ModifiedCartan.Stabilization (14s)
+✔ [3433/3435] Built ModifiedCartan.Kernel (17s)
+✔ [3434/3435] Built ModifiedCartan.SegmentNeighborhood (23s)
+✔ [3435/3435] Built ModifiedCartan.PoissonEnvelope (23s)
+Build completed successfully (3435 jobs).
+Building batch: ModifiedCartan.FinitePreorder, ModifiedCartan.HarmonicKernel, ModifiedCartan.HarmonicRectangle, ModifiedCartan.Statements
+✔ [3434/3437] Built ModifiedCartan.FinitePreorder (15s)
+✔ [3435/3437] Built ModifiedCartan.HarmonicKernel (18s)
+✔ [3436/3437] Built ModifiedCartan.Statements (18s)
+✔ [3437/3437] Built ModifiedCartan.HarmonicRectangle (18s)
+Build completed successfully (3437 jobs).
+Building batch: ModifiedCartan.AnalyticStatements, ModifiedCartan.FractionalPowers, ModifiedCartan.Growth, ModifiedCartan.HolomorphicCancellation
+✔ [3435/3438] Built ModifiedCartan.AnalyticStatements (14s)
+✔ [3436/3438] Built ModifiedCartan.FractionalPowers (17s)
+✔ [3437/3438] Built ModifiedCartan.HolomorphicCancellation (17s)
+✔ [3438/3438] Built ModifiedCartan.Growth (17s)
+Build completed successfully (3438 jobs).
+Building batch: ModifiedCartan.CircleExceptional, ModifiedCartan.FailurePointsAvoidZeros, ModifiedCartan.GrowthExceptional, ModifiedCartan.GrowthSelection
+✔ [3438/3441] Built ModifiedCartan.GrowthSelection (15s)
+✔ [3439/3441] Built ModifiedCartan.CircleExceptional (16s)
+✔ [3440/3441] Built ModifiedCartan.FailurePointsAvoidZeros (16s)
+✔ [3441/3441] Built ModifiedCartan.GrowthExceptional (17s)
+Build completed successfully (3441 jobs).
+Building batch: ModifiedCartan.HolomorphicExtension, ModifiedCartan.LogPoisson, ModifiedCartan.ProximityLocal, ModifiedCartan.ProximityMoment
+✔ [3493/3496] Built ModifiedCartan.HolomorphicExtension (14s)
+✔ [3494/3496] Built ModifiedCartan.ProximityMoment (15s)
+✔ [3495/3496] Built ModifiedCartan.ProximityLocal (17s)
+✔ [3496/3496] Built ModifiedCartan.LogPoisson (17s)
+Build completed successfully (3496 jobs).
+Building batch: ModifiedCartan.AbsorptionComparison, ModifiedCartan.AnnulusFilling, ModifiedCartan.Blaschke, ModifiedCartan.CartanAux
+✔ [3496/3499] Built ModifiedCartan.AnnulusFilling (14s)
+✔ [3497/3499] Built ModifiedCartan.AbsorptionComparison (36s)
+✔ [3498/3499] Built ModifiedCartan.CartanAux (36s)
+✔ [3499/3499] Built ModifiedCartan.Blaschke (37s)
+Build completed successfully (3499 jobs).
+Building batch: ModifiedCartan.BlaschkeQuantitative, ModifiedCartan.DiskAutomorphisms, ModifiedCartan.PoissonMajorant, ModifiedCartan.ProximityGrowth
+✔ [3492/3495] Built ModifiedCartan.DiskAutomorphisms (33s)
+✔ [3493/3495] Built ModifiedCartan.PoissonMajorant (33s)
+✔ [3494/3495] Built ModifiedCartan.ProximityGrowth (33s)
+✔ [3495/3495] Built ModifiedCartan.BlaschkeQuantitative (34s)
+Build completed successfully (3495 jobs).
+Building batch: ModifiedCartan.HyperbolicDiameter, ModifiedCartan.QuotientStabilization, ModifiedCartan.ReciprocalProximity, ModifiedCartan.Rescaling
+✔ [3512/3515] Built ModifiedCartan.QuotientStabilization (17s)
+✔ [3513/3515] Built ModifiedCartan.ReciprocalProximity (17s)
+✔ [3514/3515] Built ModifiedCartan.Rescaling (17s)
+✔ [3515/3515] Built ModifiedCartan.HyperbolicDiameter (17s)
+Build completed successfully (3515 jobs).
+Building batch: ModifiedCartan.DominancePartition, ModifiedCartan.FiniteEscape, ModifiedCartan.SchwarzPick, ModifiedCartan.SymmetricDiskSegments
+✔ [3513/3516] Built ModifiedCartan.FiniteEscape (15s)
+✔ [3514/3516] Built ModifiedCartan.DominancePartition (15s)
+✔ [3515/3516] Built ModifiedCartan.SchwarzPick (17s)
+✔ [3516/3516] Built ModifiedCartan.SymmetricDiskSegments (17s)
+Build completed successfully (3516 jobs).
+Building batch: ModifiedCartan.DiskSegmentCompact, ModifiedCartan.HyperbolicCoordinates, ModifiedCartan.NormalizedParts, ModifiedCartan.ScaledPseudodiameter
+✔ [3515/3518] Built ModifiedCartan.HyperbolicCoordinates (16s)
+✔ [3516/3518] Built ModifiedCartan.NormalizedParts (22s)
+✔ [3517/3518] Built ModifiedCartan.ScaledPseudodiameter (22s)
+✔ [3518/3518] Built ModifiedCartan.DiskSegmentCompact (22s)
+Build completed successfully (3518 jobs).
+Building batch: ModifiedCartan.CartanUnmerge, ModifiedCartan.DiskDiameter, ModifiedCartan.DiskSegmentLimits, ModifiedCartan.HyperbolicRadialSegment
+✔ [3519/3522] Built ModifiedCartan.CartanUnmerge (15s)
+✔ [3520/3522] Built ModifiedCartan.DiskDiameter (26s)
+✔ [3521/3522] Built ModifiedCartan.DiskSegmentLimits (26s)
+✔ [3522/3522] Built ModifiedCartan.HyperbolicRadialSegment (26s)
+Build completed successfully (3522 jobs).
+Building batch: ModifiedCartan.CartanPairIndex, ModifiedCartan.FiveExampleFunctions, ModifiedCartan.HyperbolicRealSegment, ModifiedCartan.TailClasses
+✔ [3522/3525] Built ModifiedCartan.CartanPairIndex (15s)
+✔ [3523/3525] Built ModifiedCartan.TailClasses (15s)
+✔ [3524/3525] Built ModifiedCartan.HyperbolicRealSegment (17s)
+✔ [3525/3525] Built ModifiedCartan.FiveExampleFunctions (17s)
+Build completed successfully (3525 jobs).
+Building batch: ModifiedCartan.CartanPairUnmerge, ModifiedCartan.FiveMajorant, ModifiedCartan.FivePhiSign, ModifiedCartan.HyperbolicSegments
+✔ [3525/3528] Built ModifiedCartan.CartanPairUnmerge (14s)
+✔ [3526/3528] Built ModifiedCartan.FiveMajorant (19s)
+✔ [3527/3528] Built ModifiedCartan.HyperbolicSegments (19s)
+✔ [3528/3528] Built ModifiedCartan.FivePhiSign (19s)
+Build completed successfully (3528 jobs).
+Building batch: ModifiedCartan.FiveExampleBounds, ModifiedCartan.TwoPointHarnack, ModifiedCartan.UniformComposition, ModifiedCartan.UniformReciprocalProximity
+✔ [3542/3545] Built ModifiedCartan.TwoPointHarnack (16s)
+✔ [3543/3545] Built ModifiedCartan.UniformComposition (16s)
+✔ [3544/3545] Built ModifiedCartan.UniformReciprocalProximity (16s)
+✔ [3545/3545] Built ModifiedCartan.FiveExampleBounds (16s)
+Build completed successfully (3545 jobs).
+Building batch: ModifiedCartan.DiskSegmentComparison, ModifiedCartan.FiveExampleLimits, ModifiedCartan.LocalNormality, ModifiedCartan.UnitDiskExhaustion
+✔ [3543/3546] Built ModifiedCartan.DiskSegmentComparison (17s)
+✔ [3544/3546] Built ModifiedCartan.LocalNormality (17s)
+✔ [3545/3546] Built ModifiedCartan.UnitDiskExhaustion (17s)
+✔ [3546/3546] Built ModifiedCartan.FiveExampleLimits (17s)
+Build completed successfully (3546 jobs).
+Building batch: ModifiedCartan.CompactNormality, ModifiedCartan.FiveCounterexample, ModifiedCartan.GeodesicComparison, ModifiedCartan.StrictLocalNormality
+✔ [3552/3555] Built ModifiedCartan.CompactNormality (16s)
+✔ [3553/3555] Built ModifiedCartan.GeodesicComparison (18s)
+✔ [3554/3555] Built ModifiedCartan.StrictLocalNormality (18s)
+✔ [3555/3555] Built ModifiedCartan.FiveCounterexample (18s)
+Build completed successfully (3555 jobs).
+Building batch: ModifiedCartan.UnitGrowth, ModifiedCartan.VanishingDerivative, ModifiedCartan.VaryingComposition, ModifiedCartan.Wronskian
+✔ [3442/3445] Built ModifiedCartan.VanishingDerivative (17s)
+✔ [3443/3445] Built ModifiedCartan.VaryingComposition (17s)
+✔ [3444/3445] Built ModifiedCartan.Wronskian (17s)
+✔ [3445/3445] Built ModifiedCartan.UnitGrowth (17s)
+Build completed successfully (3445 jobs).
+Building batch: ModifiedCartan.CauchyBounds, ModifiedCartan.CombinationNorm, ModifiedCartan.QuotientGrowth, ModifiedCartan.UnitEnvelope
+✔ [3475/3478] Built ModifiedCartan.QuotientGrowth (16s)
+✔ [3476/3478] Built ModifiedCartan.CauchyBounds (17s)
+✔ [3477/3478] Built ModifiedCartan.CombinationNorm (17s)
+✔ [3478/3478] Built ModifiedCartan.UnitEnvelope (17s)
+Build completed successfully (3478 jobs).
+Building batch: ModifiedCartan.AbsorptionEnvelope, ModifiedCartan.AngularGeometry, ModifiedCartan.CombinationMinimum, ModifiedCartan.ConvergenceJets
+✔ [3486/3489] Built ModifiedCartan.AbsorptionEnvelope (19s)
+✔ [3487/3489] Built ModifiedCartan.CombinationMinimum (19s)
+✔ [3488/3489] Built ModifiedCartan.ConvergenceJets (19s)
+✔ [3489/3489] Built ModifiedCartan.AngularGeometry (19s)
+Build completed successfully (3489 jobs).
+Building batch: ModifiedCartan.AbsorptionLinearAlgebra, ModifiedCartan.AngularIntegrals, ModifiedCartan.DerivativeQuotientRecurrence, ModifiedCartan.HolomorphicLog
+✔ [3449/3452] Built ModifiedCartan.DerivativeQuotientRecurrence (14s)
+✔ [3450/3452] Built ModifiedCartan.HolomorphicLog (15s)
+✔ [3451/3452] Built ModifiedCartan.AbsorptionLinearAlgebra (15s)
+✔ [3452/3452] Built ModifiedCartan.AngularIntegrals (16s)
+Build completed successfully (3452 jobs).
+Building batch: ModifiedCartan.AbsorptionReduction, ModifiedCartan.CClassExhaustion, ModifiedCartan.FiniteCaseExclusion, ModifiedCartan.LogarithmicPoles
+✔ [3498/3501] Built ModifiedCartan.CClassExhaustion (15s)
+✔ [3499/3501] Built ModifiedCartan.FiniteCaseExclusion (15s)
+✔ [3500/3501] Built ModifiedCartan.AbsorptionReduction (15s)
+✔ [3501/3501] Built ModifiedCartan.LogarithmicPoles (16s)
+Build completed successfully (3501 jobs).
+Building batch: ModifiedCartan.AbsorptionGap, ModifiedCartan.LogDerivativeNormality, ModifiedCartan.LogDerivativeProducts, ModifiedCartan.MatrixAnalytic
+✔ [3520/3523] Built ModifiedCartan.LogDerivativeProducts (15s)
+✔ [3521/3523] Built ModifiedCartan.AbsorptionGap (16s)
+✔ [3522/3523] Built ModifiedCartan.MatrixAnalytic (16s)
+✔ [3523/3523] Built ModifiedCartan.LogDerivativeNormality (16s)
+Build completed successfully (3523 jobs).
+Building batch: ModifiedCartan.CartanPairs, ModifiedCartan.PoleMoments, ModifiedCartan.RealPartCauchy, ModifiedCartan.ReflectedDerivatives
+✔ [3527/3530] Built ModifiedCartan.CartanPairs (17s)
+✔ [3528/3530] Built ModifiedCartan.RealPartCauchy (17s)
+✔ [3529/3530] Built ModifiedCartan.ReflectedDerivatives (17s)
+✔ [3530/3530] Built ModifiedCartan.PoleMoments (18s)
+Build completed successfully (3530 jobs).
+Building batch: ModifiedCartan.CartanPairOverlap, ModifiedCartan.FinitePoleBounds, ModifiedCartan.LogarithmicGrowthAlgebra, ModifiedCartan.UnitProximityBalance
+✔ [3539/3542] Built ModifiedCartan.CartanPairOverlap (15s)
+✔ [3540/3542] Built ModifiedCartan.FinitePoleBounds (15s)
+✔ [3541/3542] Built ModifiedCartan.LogarithmicGrowthAlgebra (17s)
+✔ [3542/3542] Built ModifiedCartan.UnitProximityBalance (17s)
+Build completed successfully (3542 jobs).
+Building batch: ModifiedCartan.CartanBoundedPairs, ModifiedCartan.WronskianAlgebra, ModifiedCartan.WronskianBoundary, ModifiedCartan.WronskianPower
+✔ [3464/3467] Built ModifiedCartan.CartanBoundedPairs (16s)
+✔ [3465/3467] Built ModifiedCartan.WronskianAlgebra (16s)
+✔ [3466/3467] Built ModifiedCartan.WronskianPower (16s)
+✔ [3467/3467] Built ModifiedCartan.WronskianBoundary (17s)
+Build completed successfully (3467 jobs).
+Building batch: ModifiedCartan.CartanBoundedRatios, ModifiedCartan.QuotientAnchors, ModifiedCartan.WronskianDifferentiation, ModifiedCartan.WronskianMean
+✔ [3533/3536] Built ModifiedCartan.CartanBoundedRatios (16s)
+✔ [3534/3536] Built ModifiedCartan.QuotientAnchors (17s)
+✔ [3535/3536] Built ModifiedCartan.WronskianDifferentiation (17s)
+✔ [3536/3536] Built ModifiedCartan.WronskianMean (17s)
+Build completed successfully (3536 jobs).
+Building batch: ModifiedCartan.TwoWronskian, ModifiedCartan.WronskianCoefficients, ModifiedCartan.WronskianScaling, ModifiedCartan.ZeroFactors
+✔ [3512/3515] Built ModifiedCartan.WronskianCoefficients (16s)
+✔ [3513/3515] Built ModifiedCartan.WronskianScaling (17s)
+✔ [3514/3515] Built ModifiedCartan.ZeroFactors (17s)
+✔ [3515/3515] Built ModifiedCartan.TwoWronskian (18s)
+Build completed successfully (3515 jobs).
+Building batch: ModifiedCartan.BlaschkeDecomposition, ModifiedCartan.ConvexZeroAvoidance, ModifiedCartan.RadialZeros, ModifiedCartan.WronskianCoefficientBounds
+✔ [3503/3506] Built ModifiedCartan.BlaschkeDecomposition (18s)
+✔ [3504/3506] Built ModifiedCartan.RadialZeros (18s)
+✔ [3505/3506] Built ModifiedCartan.WronskianCoefficientBounds (18s)
+✔ [3506/3506] Built ModifiedCartan.ConvexZeroAvoidance (20s)
+Build completed successfully (3506 jobs).
+Building batch: ModifiedCartan.CartanCircle, ModifiedCartan.WronskianCircle, ModifiedCartan.WronskianComposition, ModifiedCartan.WronskianThreeIdentity
+✔ [3526/3529] Built ModifiedCartan.WronskianThreeIdentity (15s)
+✔ [3527/3529] Built ModifiedCartan.WronskianComposition (15s)
+✔ [3528/3529] Built ModifiedCartan.WronskianCircle (17s)
+✔ [3529/3529] Built ModifiedCartan.CartanCircle (17s)
+Build completed successfully (3529 jobs).
+Building batch: ModifiedCartan.CartanScaled, ModifiedCartan.RadialLoss, ModifiedCartan.WronskianFourIdentity, ModifiedCartan.ZeroCount
+✔ [3522/3525] Built ModifiedCartan.WronskianFourIdentity (18s)
+✔ [3523/3525] Built ModifiedCartan.CartanScaled (18s)
+✔ [3524/3525] Built ModifiedCartan.ZeroCount (18s)
+✔ [3525/3525] Built ModifiedCartan.RadialLoss (19s)
+Build completed successfully (3525 jobs).
+Building batch: ModifiedCartan.CartanRadialExceptional, ModifiedCartan.NormalizedWronskian, ModifiedCartan.QuantitativeWronskian, ModifiedCartan.ZeroFreeAnnulus
+✔ [3532/3535] Built ModifiedCartan.NormalizedWronskian (16s)
+✔ [3533/3535] Built ModifiedCartan.ZeroFreeAnnulus (16s)
+✔ [3534/3535] Built ModifiedCartan.CartanRadialExceptional (17s)
+✔ [3535/3535] Built ModifiedCartan.QuantitativeWronskian (17s)
+Build completed successfully (3535 jobs).
+Building batch: ModifiedCartan.AbsorptionGrowth, ModifiedCartan.CartanMergeAnnulus, ModifiedCartan.QuotientDerivativeDecay, ModifiedCartan.RadialProximityExceptional
+✔ [3526/3529] Built ModifiedCartan.CartanMergeAnnulus (17s)
+✔ [3527/3529] Built ModifiedCartan.QuotientDerivativeDecay (17s)
+✔ [3528/3529] Built ModifiedCartan.RadialProximityExceptional (17s)
+✔ [3529/3529] Built ModifiedCartan.AbsorptionGrowth (18s)
+Build completed successfully (3529 jobs).
+Building batch: ModifiedCartan.InteriorGrowthRadii, ModifiedCartan.LogNormPaths, ModifiedCartan.RadialAnchors, ModifiedCartan.SharpTwoEndgame
+✔ [3536/3539] Built ModifiedCartan.RadialAnchors (16s)
+✔ [3537/3539] Built ModifiedCartan.SharpTwoEndgame (17s)
+✔ [3538/3539] Built ModifiedCartan.InteriorGrowthRadii (17s)
+✔ [3539/3539] Built ModifiedCartan.LogNormPaths (18s)
+Build completed successfully (3539 jobs).
+Building batch: ModifiedCartan.CircleLogProximity, ModifiedCartan.DerivedFractionGrowth, ModifiedCartan.RadialMeasureDichotomy, ModifiedCartan.SharpTwoEndpoints
+✔ [3518/3521] Built ModifiedCartan.CircleLogProximity (17s)
+✔ [3519/3521] Built ModifiedCartan.SharpTwoEndpoints (17s)
+✔ [3520/3521] Built ModifiedCartan.RadialMeasureDichotomy (21s)
+✔ [3521/3521] Built ModifiedCartan.DerivedFractionGrowth (21s)
+Build completed successfully (3521 jobs).
+Building batch: ModifiedCartan.SharpTwoSetup, ModifiedCartan.UnitSumWronskian, ModifiedCartan.WronskianCommonFactor, ModifiedCartan.WronskianExponents
+✔ [3549/3552] Built ModifiedCartan.UnitSumWronskian (16s)
+✔ [3550/3552] Built ModifiedCartan.WronskianCommonFactor (17s)
+✔ [3551/3552] Built ModifiedCartan.WronskianExponents (17s)
+✔ [3552/3552] Built ModifiedCartan.SharpTwoSetup (17s)
+Build completed successfully (3552 jobs).
+Building batch: ModifiedCartan.AbsorptionWronskian, ModifiedCartan.SharpTwoCoordinates, ModifiedCartan.SharpTwoSubsequence, ModifiedCartan.WronskianPairAnchors
+✔ [3578/3581] Built ModifiedCartan.WronskianPairAnchors (15s)
+✔ [3579/3581] Built ModifiedCartan.SharpTwoSubsequence (15s)
+✔ [3580/3581] Built ModifiedCartan.SharpTwoCoordinates (15s)
+✔ [3581/3581] Built ModifiedCartan.AbsorptionWronskian (17s)
+Build completed successfully (3581 jobs).
+Building batch: ModifiedCartan.CartanPairSelection, ModifiedCartan.WronskianPermutations, ModifiedCartan.WronskianQuotients, ModifiedCartan.ZeroFreeGrowth
+✔ [3554/3557] Built ModifiedCartan.WronskianQuotients (16s)
+✔ [3555/3557] Built ModifiedCartan.CartanPairSelection (16s)
+✔ [3556/3557] Built ModifiedCartan.WronskianPermutations (16s)
+✔ [3557/3557] Built ModifiedCartan.ZeroFreeGrowth (17s)
+Build completed successfully (3557 jobs).
+Building batch: ModifiedCartan.DerivedFractionRadii, ModifiedCartan.PairProximityAlternatives, ModifiedCartan.WronskianFourProximity, ModifiedCartan.ZeroFreeLogDerivatives
+✔ [3552/3555] Built ModifiedCartan.WronskianFourProximity (17s)
+✔ [3553/3555] Built ModifiedCartan.ZeroFreeLogDerivatives (18s)
+✔ [3554/3555] Built ModifiedCartan.DerivedFractionRadii (20s)
+✔ [3555/3555] Built ModifiedCartan.PairProximityAlternatives (20s)
+Build completed successfully (3555 jobs).
+Building batch: ModifiedCartan.LocalLogDerivativePoles, ModifiedCartan.RadialWronskianNonzero
+✔ [3549/3550] Built ModifiedCartan.RadialWronskianNonzero (17s)
+✔ [3550/3550] Built ModifiedCartan.LocalLogDerivativePoles (17s)
+Build completed successfully (3550 jobs).
+Building batch: ModifiedCartan.LogDerivativeConstants
+✔ [3523/3523] Built ModifiedCartan.LogDerivativeConstants (28s)
+Build completed successfully (3523 jobs).
+Building batch: ModifiedCartan.IteratedLogDerivativeMean
+✔ [3532/3532] Built ModifiedCartan.IteratedLogDerivativeMean (25s)
+Build completed successfully (3532 jobs).
+Building batch: ModifiedCartan.LogDerivativeEstimate
+✔ [3534/3534] Built ModifiedCartan.LogDerivativeEstimate (22s)
+Build completed successfully (3534 jobs).
+Building batch: ModifiedCartan.NegligibleDerivatives
+✔ [3535/3535] Built ModifiedCartan.NegligibleDerivatives (19s)
+Build completed successfully (3535 jobs).
+Building batch: ModifiedCartan.BoundaryErrorLimit, ModifiedCartan.ExponentialDecay, ModifiedCartan.GrowthBootstrap, ModifiedCartan.InteriorDerivativeGrowth
+✔ [3548/3551] Built ModifiedCartan.ExponentialDecay (19s)
+✔ [3549/3551] Built ModifiedCartan.GrowthBootstrap (19s)
+✔ [3550/3551] Built ModifiedCartan.BoundaryErrorLimit (19s)
+✔ [3551/3551] Built ModifiedCartan.InteriorDerivativeGrowth (19s)
+Build completed successfully (3551 jobs).
+Building batch: ModifiedCartan.AbsorptionInduction, ModifiedCartan.BoundaryErrorGrowth, ModifiedCartan.InteriorBoundaryError, ModifiedCartan.NormalizedWronskianGrowth
+✔ [3590/3593] Built ModifiedCartan.BoundaryErrorGrowth (21s)
+✔ [3591/3593] Built ModifiedCartan.InteriorBoundaryError (21s)
+✔ [3592/3593] Built ModifiedCartan.NormalizedWronskianGrowth (21s)
+✔ [3593/3593] Built ModifiedCartan.AbsorptionInduction (21s)
+Build completed successfully (3593 jobs).
+Building batch: ModifiedCartan.CartanGrowthClosure, ModifiedCartan.SharpTwoAnalyticBounds, ModifiedCartan.SmallFourFractions, ModifiedCartan.SmallThreeFractions
+✔ [3603/3606] Built ModifiedCartan.CartanGrowthClosure (26s)
+✔ [3604/3606] Built ModifiedCartan.SharpTwoAnalyticBounds (26s)
+✔ [3605/3606] Built ModifiedCartan.SmallFourFractions (26s)
+✔ [3606/3606] Built ModifiedCartan.SmallThreeFractions (26s)
+Build completed successfully (3606 jobs).
+Building batch: ModifiedCartan.SharpTwoRectangleDecay, ModifiedCartan.SmallFourGrowth, ModifiedCartan.SmallThreeGrowth, ModifiedCartan.UniformWronskianGrowth
+✔ [3619/3622] Built ModifiedCartan.UniformWronskianGrowth (16s)
+✔ [3620/3622] Built ModifiedCartan.SmallFourGrowth (16s)
+✔ [3621/3622] Built ModifiedCartan.SmallThreeGrowth (16s)
+✔ [3622/3622] Built ModifiedCartan.SharpTwoRectangleDecay (18s)
+Build completed successfully (3622 jobs).
+Building batch: ModifiedCartan.CartanSmallFour, ModifiedCartan.CartanSmallThree, ModifiedCartan.SharpTwoAbsorption, ModifiedCartan.WronskianAnchorGrowth
+✔ [3639/3642] Built ModifiedCartan.WronskianAnchorGrowth (18s)
+✔ [3640/3642] Built ModifiedCartan.CartanSmallFour (19s)
+✔ [3641/3642] Built ModifiedCartan.CartanSmallThree (19s)
+✔ [3642/3642] Built ModifiedCartan.SharpTwoAbsorption (19s)
+Build completed successfully (3642 jobs).
+Building batch: ModifiedCartan.AbsorptionTheorem, ModifiedCartan.CartanRadialCases, ModifiedCartan.OrientedWronskianGrowth, ModifiedCartan.TwoClassAbsorption
+✔ [3663/3666] Built ModifiedCartan.CartanRadialCases (17s)
+✔ [3664/3666] Built ModifiedCartan.OrientedWronskianGrowth (17s)
+✔ [3665/3666] Built ModifiedCartan.TwoClassAbsorption (17s)
+✔ [3666/3666] Built ModifiedCartan.AbsorptionTheorem (20s)
+Build completed successfully (3666 jobs).
+Building batch: ModifiedCartan.CartanFourthRadialCase, ModifiedCartan.FiveClassReduction, ModifiedCartan.FunctionRank, ModifiedCartan.PartitionVanishing
+✔ [3668/3671] Built ModifiedCartan.FunctionRank (16s)
+✔ [3669/3671] Built ModifiedCartan.CartanFourthRadialCase (18s)
+✔ [3670/3671] Built ModifiedCartan.FiveClassReduction (18s)
+✔ [3671/3671] Built ModifiedCartan.PartitionVanishing (18s)
+Build completed successfully (3671 jobs).
+Building batch: ModifiedCartan.CartanDiagonal, ModifiedCartan.PartitionTheorem, ModifiedCartan.RankAdaptiveAbsorption, ModifiedCartan.TripleAnchorsFromCases
+✔ [3678/3681] Built ModifiedCartan.CartanDiagonal (16s)
+✔ [3679/3681] Built ModifiedCartan.TripleAnchorsFromCases (16s)
+✔ [3680/3681] Built ModifiedCartan.PartitionTheorem (17s)
+✔ [3681/3681] Built ModifiedCartan.RankAdaptiveAbsorption (18s)
+Build completed successfully (3681 jobs).
+Building batch: ModifiedCartan.CClassJets, ModifiedCartan.FiveOptimalityUpper, ModifiedCartan.PartitionCenters, ModifiedCartan.SmallPartitions
+✔ [3662/3665] Built ModifiedCartan.FiveOptimalityUpper (16s)
+✔ [3663/3665] Built ModifiedCartan.PartitionCenters (16s)
+✔ [3664/3665] Built ModifiedCartan.SmallPartitions (17s)
+✔ [3665/3665] Built ModifiedCartan.CClassJets (17s)
+Build completed successfully (3665 jobs).
+Building batch: ModifiedCartan.CartanInverseEndgame, ModifiedCartan.CompactLifts, ModifiedCartan.PartitionJets, ModifiedCartan.TwoAbsorptionCounterexample
+✔ [3689/3692] Built ModifiedCartan.CompactLifts (17s)
+✔ [3690/3692] Built ModifiedCartan.PartitionJets (17s)
+✔ [3691/3692] Built ModifiedCartan.TwoAbsorptionCounterexample (17s)
+✔ [3692/3692] Built ModifiedCartan.CartanInverseEndgame (17s)
+Build completed successfully (3692 jobs).
+Building batch: ModifiedCartan.CartanFiveWronskianEndgame, ModifiedCartan.CartanFourWronskianEndgame, ModifiedCartan.TorusLimits
+✔ [3688/3690] Built ModifiedCartan.CartanFourWronskianEndgame (17s)
+✔ [3689/3690] Built ModifiedCartan.TorusLimits (17s)
+✔ [3690/3690] Built ModifiedCartan.CartanFiveWronskianEndgame (17s)
+Build completed successfully (3690 jobs).
+Building batch: ModifiedCartan.CartanFiveNoReductions, ModifiedCartan.CartanFourNoReductions, ModifiedCartan.TorusLocus
+✔ [3692/3694] Built ModifiedCartan.TorusLocus (16s)
+✔ [3693/3694] Built ModifiedCartan.CartanFourNoReductions (18s)
+✔ [3694/3694] Built ModifiedCartan.CartanFiveNoReductions (18s)
+Build completed successfully (3694 jobs).
+Building batch: ModifiedCartan.NormalizedHyperplane, ModifiedCartan.TorusNullTopology
+✔ [3643/3644] Built ModifiedCartan.TorusNullTopology (17s)
+✔ [3644/3644] Built ModifiedCartan.NormalizedHyperplane (17s)
+Build completed successfully (3644 jobs).
+Building batch: ModifiedCartan.NormalizedHyperplaneChart, ModifiedCartan.PartitionTori, ModifiedCartan.ProjectiveCoordinates, ModifiedCartan.TorusMomentPolynomials
+✔ [3647/3650] Built ModifiedCartan.NormalizedHyperplaneChart (16s)
+✔ [3648/3650] Built ModifiedCartan.ProjectiveCoordinates (16s)
+✔ [3649/3650] Built ModifiedCartan.TorusMomentPolynomials (16s)
+✔ [3650/3650] Built ModifiedCartan.PartitionTori (16s)
+Build completed successfully (3650 jobs).
+Building batch: ModifiedCartan.PartitionTorusManifold, ModifiedCartan.ProjectiveScaling, ModifiedCartan.ProjectiveTopology, ModifiedCartan.TorusAlgebraicNull
+✔ [3699/3702] Built ModifiedCartan.ProjectiveScaling (15s)
+✔ [3700/3702] Built ModifiedCartan.ProjectiveTopology (15s)
+✔ [3701/3702] Built ModifiedCartan.TorusAlgebraicNull (15s)
+✔ [3702/3702] Built ModifiedCartan.PartitionTorusManifold (16s)
+Build completed successfully (3702 jobs).
+Building batch: ModifiedCartan.ProjectiveKernel, ModifiedCartan.ProjectiveManifold, ModifiedCartan.TorusManifold
+✔ [3706/3708] Built ModifiedCartan.ProjectiveKernel (14s)
+✔ [3707/3708] Built ModifiedCartan.TorusManifold (14s)
+✔ [3708/3708] Built ModifiedCartan.ProjectiveManifold (16s)
+Build completed successfully (3708 jobs).
+Building batch: ModifiedCartan.ProjectiveCompact, ModifiedCartan.ProjectiveTori, ModifiedCartan.TorusTangentAlgebraic
+✔ [3714/3716] Built ModifiedCartan.ProjectiveCompact (21s)
+✔ [3715/3716] Built ModifiedCartan.ProjectiveTori (21s)
+✔ [3716/3716] Built ModifiedCartan.TorusTangentAlgebraic (21s)
+Build completed successfully (3716 jobs).
+Building batch: ModifiedCartan.ProjectiveConvergence
+✔ [3650/3650] Built ModifiedCartan.ProjectiveConvergence (18s)
+Build completed successfully (3650 jobs).
+Building batch: ModifiedCartan.ProjectiveHurwitz, ModifiedCartan.ProjectiveLift
+✔ [3652/3653] Built ModifiedCartan.ProjectiveHurwitz (14s)
+✔ [3653/3653] Built ModifiedCartan.ProjectiveLift (16s)
+Build completed successfully (3653 jobs).
+Building batch: ModifiedCartan.ProjectiveClass
+✔ [3654/3654] Built ModifiedCartan.ProjectiveClass (19s)
+Build completed successfully (3654 jobs).
+Building batch: ModifiedCartan.CartanThreeLocal, ModifiedCartan.ProjectiveBlocks, ModifiedCartan.ProjectiveHolomorphy, ModifiedCartan.ProjectiveKernelInverse
+✔ [3708/3711] Built ModifiedCartan.CartanThreeLocal (17s)
+✔ [3709/3711] Built ModifiedCartan.ProjectiveBlocks (17s)
+✔ [3710/3711] Built ModifiedCartan.ProjectiveKernelInverse (17s)
+✔ [3711/3711] Built ModifiedCartan.ProjectiveHolomorphy (17s)
+Build completed successfully (3711 jobs).
+Building batch: ModifiedCartan.CartanThree, ModifiedCartan.ProjectiveCurves, ModifiedCartan.ProjectiveNormality, ModifiedCartan.ProjectivePartitions
+✔ [3716/3719] Built ModifiedCartan.CartanThree (15s)
+✔ [3717/3719] Built ModifiedCartan.ProjectiveNormality (15s)
+✔ [3718/3719] Built ModifiedCartan.ProjectivePartitions (15s)
+✔ [3719/3719] Built ModifiedCartan.ProjectiveCurves (16s)
+Build completed successfully (3719 jobs).
+Building batch: ModifiedCartan.CartanThreeDomain, ModifiedCartan.ProjectiveEquivalence
+✔ [3720/3721] Built ModifiedCartan.ProjectiveEquivalence (13s)
+✔ [3721/3721] Built ModifiedCartan.CartanThreeDomain (14s)
+Build completed successfully (3721 jobs).
+Building batch: ModifiedCartan.AnnulusTopology, ModifiedCartan.OmittedValues
+✔ [3667/3668] Built ModifiedCartan.AnnulusTopology (18s)
+✔ [3668/3668] Built ModifiedCartan.OmittedValues (18s)
+Build completed successfully (3668 jobs).
+Building batch: ModifiedCartan.CartanFourReduction, ModifiedCartan.DiskAnnulusCover
+✔ [3674/3675] Built ModifiedCartan.CartanFourReduction (19s)
+✔ [3675/3675] Built ModifiedCartan.DiskAnnulusCover (19s)
+Build completed successfully (3675 jobs).
+Building batch: ModifiedCartan.CartanFourFiniteLimit
+✔ [3675/3675] Built ModifiedCartan.CartanFourFiniteLimit (17s)
+Build completed successfully (3675 jobs).
+Building batch: ModifiedCartan.CartanFourDiskReduction
+✔ [3676/3676] Built ModifiedCartan.CartanFourDiskReduction (16s)
+Build completed successfully (3676 jobs).
+Building batch: ModifiedCartan.CartanFourLocal
+✔ [3725/3725] Built ModifiedCartan.CartanFourLocal (16s)
+Build completed successfully (3725 jobs).
+Building batch: ModifiedCartan.CartanFour
+✔ [3731/3731] Built ModifiedCartan.CartanFour (18s)
+Build completed successfully (3731 jobs).
+Building batch: ModifiedCartan.CartanFourAnnulus
+✔ [3740/3740] Built ModifiedCartan.CartanFourAnnulus (19s)
+Build completed successfully (3740 jobs).
+Building batch: ModifiedCartan.CartanFiveReduction
+✔ [3741/3741] Built ModifiedCartan.CartanFiveReduction (19s)
+Build completed successfully (3741 jobs).
+Building batch: ModifiedCartan.CartanFiveDiskReduction
+✔ [3742/3742] Built ModifiedCartan.CartanFiveDiskReduction (20s)
+Build completed successfully (3742 jobs).
+Building batch: ModifiedCartan.CartanFiveLocal
+✔ [3751/3751] Built ModifiedCartan.CartanFiveLocal (20s)
+Build completed successfully (3751 jobs).
+Building batch: ModifiedCartan.CartanFive
+✔ [3752/3752] Built ModifiedCartan.CartanFive (16s)
+Build completed successfully (3752 jobs).
+Building batch: ModifiedCartan.SharpFive
+✔ [3788/3788] Built ModifiedCartan.SharpFive (14s)
+Build completed successfully (3788 jobs).
+Building batch: ModifiedCartan
+✔ [3870/3871] Built ModifiedCartan (15s)
+Build completed successfully (3871 jobs).
+⚠ [3531/3826] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3549/3624] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3549/3826] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3601/3624] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3611/3826] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3678/3854] Replayed ModifiedCartan.ImmersionDifferential
+⚠ [3677/3826] Replayed ModifiedCartan.ImmersionDifferential
 warning: ModifiedCartan/ImmersionDifferential.lean:18:0: automatically included section variable(s) unused in theorem `ModifiedCartan.immersion_local_left_inverse`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3694/3854] Replayed ModifiedCartan.ManifoldDiscs
+⚠ [3693/3826] Replayed ModifiedCartan.ManifoldDiscs
 warning: ModifiedCartan/ManifoldDiscs.lean:29:0: automatically included section variable(s) unused in theorem `ModifiedCartan.manifold_disc_embedding`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -43,18 +510,18 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3710/3854] Replayed ModifiedCartan.ProjectiveCoordinates
+⚠ [3709/3826] Replayed ModifiedCartan.ProjectiveCoordinates
 warning: ModifiedCartan/ProjectiveCoordinates.lean:60:5: Variable name `hx` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hx
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3712/3854] Replayed ModifiedCartan.NormalizedHyperplaneChart
+⚠ [3711/3826] Replayed ModifiedCartan.NormalizedHyperplaneChart
 warning: ModifiedCartan/NormalizedHyperplaneChart.lean:15:6: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3713/3854] Replayed ModifiedCartan.AffineSliceManifold
+⚠ [3712/3826] Replayed ModifiedCartan.AffineSliceManifold
 warning: ModifiedCartan/AffineSliceManifold.lean:55:2: Try this: 
   letI̵
 
@@ -71,7 +538,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3714/3854] Replayed ModifiedCartan.ProjectiveManifold
+⚠ [3713/3826] Replayed ModifiedCartan.ProjectiveManifold
 warning: ModifiedCartan/ProjectiveManifold.lean:18:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
 warning: ModifiedCartan/ProjectiveManifold.lean:69:2: Try this: 
   letI̵
@@ -125,7 +592,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3715/3854] Replayed ModifiedCartan.AffineSliceDifferential
+⚠ [3714/3826] Replayed ModifiedCartan.AffineSliceDifferential
 warning: ModifiedCartan/AffineSliceDifferential.lean:16:2: Try this: 
   letI̵
 
@@ -172,11 +639,11 @@ Hint: Omit it from the simp argument list.
   [apply] simp [extChartAt_coe, TopologicalSpace.Opens.chartAt_eq, chartAt_self_eq]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3716/3854] Replayed ModifiedCartan.PartitionTorusManifold
+⚠ [3715/3826] Replayed ModifiedCartan.PartitionTorusManifold
 warning: ModifiedCartan/PartitionTorusManifold.lean:39:24: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3718/3854] Replayed ModifiedCartan.ProjectiveTori
+⚠ [3717/3826] Replayed ModifiedCartan.ProjectiveTori
 warning: ModifiedCartan/ProjectiveTori.lean:19:0: automatically included section variable(s) unused in theorem `ModifiedCartan.projectiveXNormalize_mem`:
   [Nonempty ↑(ProjectiveX p)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -189,22 +656,22 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [Nonempty ↑(ProjectiveX p)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3719/3854] Replayed ModifiedCartan.SchwarzPick
+⚠ [3718/3826] Replayed ModifiedCartan.SchwarzPick
 warning: ModifiedCartan/SchwarzPick.lean:53:33: Try `simp at hξ` instead of `simpa using hξ`
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3720/3854] Replayed ModifiedCartan.HyperbolicCoordinates
+⚠ [3719/3826] Replayed ModifiedCartan.HyperbolicCoordinates
 warning: ModifiedCartan/HyperbolicCoordinates.lean:45:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3744/3854] Replayed ModifiedCartan.GaussianPrimitive
+⚠ [3743/3826] Replayed ModifiedCartan.GaussianPrimitive
 warning: ModifiedCartan/GaussianPrimitive.lean:50:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
 warning: ModifiedCartan/GaussianPrimitive.lean:79:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3751/3854] Replayed ModifiedCartan.FiveMajorant
+⚠ [3750/3826] Replayed ModifiedCartan.FiveMajorant
 warning: ModifiedCartan/FiveMajorant.lean:23:54: This simp argument is unused:
   Complex.div_re
 
@@ -219,7 +686,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3752/3854] Replayed ModifiedCartan.FiveExampleBounds
+⚠ [3751/3826] Replayed ModifiedCartan.FiveExampleBounds
 warning: ModifiedCartan/FiveExampleBounds.lean:25:15: This simp argument is unused:
   norm_mul
 
@@ -227,7 +694,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [fiveA, Complex.norm_exp, Complex.mul_re, abs_of_nonneg hn]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3760/3854] Replayed ModifiedCartan.ProjectiveCompact
+⚠ [3756/3826] Replayed ModifiedCartan.ProjectiveCompact
 warning: ModifiedCartan/ProjectiveCompact.lean:41:2: Try this: 
   letI̵
 
@@ -236,7 +703,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3768/3854] Replayed ModifiedCartan.ProjectiveHolomorphy
+⚠ [3764/3826] Replayed ModifiedCartan.ProjectiveHolomorphy
 warning: ModifiedCartan/ProjectiveHolomorphy.lean:18:2: Try this: 
   letI̵
 
@@ -253,7 +720,21 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3770/3854] Replayed ModifiedCartan.ProjectiveEquivalence
+⚠ [3786/3826] Replayed ModifiedCartan.LogNormPaths
+warning: ModifiedCartan/LogNormPaths.lean:28:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ModifiedCartan/LogNormPaths.lean:32:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3790/3826] Replayed ModifiedCartan.NormalizedWronskian
+warning: ModifiedCartan/NormalizedWronskian.lean:41:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ModifiedCartan/NormalizedWronskian.lean:41:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3807/3871] Replayed ModifiedCartan.ProjectiveEquivalence
 warning: ModifiedCartan/ProjectiveEquivalence.lean:43:2: Try this: 
   letI̵
 
@@ -270,32 +751,18 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3797/3854] Replayed ModifiedCartan.LogNormPaths
-warning: ModifiedCartan/LogNormPaths.lean:28:4: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-warning: ModifiedCartan/LogNormPaths.lean:32:4: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3801/3854] Replayed ModifiedCartan.NormalizedWronskian
-warning: ModifiedCartan/NormalizedWronskian.lean:41:6: Unused tactic linter: `ring` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: ModifiedCartan/NormalizedWronskian.lean:41:6: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-⚠ [3805/3854] Replayed ModifiedCartan.WronskianQuotients
+⚠ [3813/3871] Replayed ModifiedCartan.WronskianQuotients
 warning: ModifiedCartan/WronskianQuotients.lean:36:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3823/3854] Replayed ModifiedCartan.UnitProximityBalance
+⚠ [3823/3871] Replayed ModifiedCartan.UnitProximityBalance
 warning: ModifiedCartan/UnitProximityBalance.lean:13:18: Variable name `hL` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hL
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3836/3854] Replayed ModifiedCartan.WronskianPairAnchors
+⚠ [3836/3871] Replayed ModifiedCartan.WronskianPairAnchors
 warning: ModifiedCartan/WronskianPairAnchors.lean:21:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
@@ -303,7 +770,7 @@ open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [3837/3854] Replayed ModifiedCartan.DerivedFractionRadii
+⚠ [3837/3871] Replayed ModifiedCartan.DerivedFractionRadii
 warning: ModifiedCartan/DerivedFractionRadii.lean:19:53: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
 warning: ModifiedCartan/DerivedFractionRadii.lean:19:66: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
 warning: ModifiedCartan/DerivedFractionRadii.lean:68:28: This simp argument is unused:
@@ -320,7 +787,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [h2, h3]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3840/3854] Replayed ModifiedCartan.CartanPairSelection
+⚠ [3840/3871] Replayed ModifiedCartan.CartanPairSelection
 warning: ModifiedCartan/CartanPairSelection.lean:31:2: Try this: 
   haveI̵
 
@@ -329,6 +796,21 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [3852/3854] Built ModifiedCartan.CartanFour (11s)
-✔ [3853/3854] Built ModifiedCartan (11s)
-Build completed successfully (3854 jobs).
+⚠ [3854/3871] Replayed ModifiedCartan.DiskStripCover
+warning: ModifiedCartan/DiskStripCover.lean:17:2: Try `simp at hh` instead of `simpa using hh`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ModifiedCartan/DiskStripCover.lean:55:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3855/3871] Replayed ModifiedCartan.DiskAnnulusCover
+warning: ModifiedCartan/DiskAnnulusCover.lean:53:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ModifiedCartan/DiskAnnulusCover.lean:68:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ModifiedCartan/DiskAnnulusCover.lean:69:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (3871 jobs).

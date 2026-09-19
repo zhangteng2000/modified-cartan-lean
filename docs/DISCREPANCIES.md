@@ -24,3 +24,11 @@ result. See `REVISION_2026-09-19.md`.
 The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, `lem:two-point-kernel`, and `lem:poisson-mean` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.
 
 D1 update: the exact recursive absorption radii are now proved, including r₂ = 2−√3 and ηₘ = 1/[1024(Kₘ+m)]. The explicit theorem produces valid exponents; no unspecified radius replaces the manuscript formula.
+
+## D5 — Scope of the classical input (CHECKED)
+
+The manuscript cites the historical arbitrary-p Cartan theorem in its introduction. Its sharp-five proof needs only p = 5. In accordance with the execution requirement to prove the precise classical theorem required by the paper, CartanExtractionAt 5 is proved, with p = 3 and p = 4 as supporting instances. The unused general all-p proposition target was removed during cleanup. No principal manuscript statement was weakened, and no all-p extraction theorem or Yamanoi theorem is claimed or assumed. The revised Yamanoi paragraph remains bibliographic background.
+
+## Final correspondence review
+
+The revised paper has 19 labeled theorem/lemma/proposition/corollary environments plus def:cclass. Every one is mapped to its actual Lean proof or definitions in ../verification/manuscript-coverage.json. The complete Gaussian construction, exact optimal radius, disk diameter formula, both diameter obstructions and projective tangent dimension bound are mapped as well. All mathematical discrepancies affecting those results have been resolved; D3 records the retained terminology distinction.
