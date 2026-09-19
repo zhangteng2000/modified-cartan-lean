@@ -120,6 +120,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.radialSmallValueSet_measure_le
 #print axioms ModifiedCartan.cartan_small_value_radii
 #print axioms ModifiedCartan.cartan_circle_scaled
+#print axioms ModifiedCartan.small_four_fractions_excluded
 #print axioms ModifiedCartan.small_three_fractions_excluded
 #print axioms ModifiedCartan.three_global_projective_limit
 #print axioms ModifiedCartan.cartanExtraction_three
@@ -540,6 +541,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.normalizedWronskian_growth_bound
 #print axioms ModifiedCartan.unit_omitting_minus_one_normal
 #print axioms ModifiedCartan.unit_omitting_minus_one_trichotomy
+#print axioms ModifiedCartan.pairGrowth_bound_of_proximity_alternatives
 #print axioms ModifiedCartan.continuous_parameter_uniformOn
 #print axioms ModifiedCartan.compactConvergence_of_parameter
 #print axioms ModifiedCartan.locallyBounded_comp
@@ -725,6 +727,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.radialLog_nonneg
 #print axioms ModifiedCartan.cartan_integrable_radial_loss_local
 #print axioms ModifiedCartan.cartan_integrable_radial_loss
+#print axioms ModifiedCartan.exists_large_component_of_small_complement
+#print axioms ModifiedCartan.exists_large_component_on_interval
 #print axioms ModifiedCartan.cartan_small_value_radii_local
 #print axioms ModifiedCartan.cartan_small_value_radii_log_bound
 #print axioms ModifiedCartan.radialSmallValueSet_antitone
@@ -782,6 +786,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.sharp_two_setup
 #print axioms ModifiedCartan.sharpTwoSetupSubsequence_point
 #print axioms ModifiedCartan.sharpTwoSetupSubsequence_radius
+#print axioms ModifiedCartan.pairGrowth_bound_of_small_four_fractions
+#print axioms ModifiedCartan.pairGrowth_bounded_of_small_four_fractions
 #print axioms ModifiedCartan.cclass_univ_of_zeroSum
 #print axioms ModifiedCartan.partitionProperty_zero
 #print axioms ModifiedCartan.partitionProperty_one
@@ -913,6 +919,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.exists_maxWithZero_eq
 #print axioms ModifiedCartan.wronskian_boundary_max_estimates
 #print axioms ModifiedCartan.wronskian_boundary_mean_estimates
+#print axioms ModifiedCartan.normalizedWronskian_comp_perm
+#print axioms ModifiedCartan.normalizedWronskian_norm_comp_perm
+#print axioms ModifiedCartan.normalizedWronskian_proximity_comp_perm
+#print axioms ModifiedCartan.normalizedWronskian_inv_proximity_comp_perm
 #print axioms ModifiedCartan.scaled_cartan_power
 #print axioms ModifiedCartan.wronskian_power_algebra
 #print axioms ModifiedCartan.proximityMean_congr_circle

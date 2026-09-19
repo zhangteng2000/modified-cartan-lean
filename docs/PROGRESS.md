@@ -259,3 +259,20 @@ exclusion. QuotientAnchors also constructs anchors on any local reduction disk.
 The fourth-order bounded branch and the exhaustive subsequence/index/annulus/
 diagonal assembly remain under construction. Full CartanExtractionAt 5,
 SharpFiveTheorem and the positive optimal-radius equality remain WIP.
+
+## Bounded fourth-fraction checkpoint — 948 declarations
+
+The full build and recursive axiom audit passed for 948 declarations, with only
+standard logical axioms and no placeholders. SmallFourFractions proves the
+fourth-order circle estimate; SmallFourGrowth removes zero circles and obtains
+a uniform inner growth bound. CartanSmallFour connects that branch to the actual
+contradiction of two bounded quotient edges under the excluded reduction cases.
+PairProximityAlternatives provides the shared whole-family growth conversion.
+WronskianPermutations proves exact signed determinant identities and invariance
+of the normalized norm and both proximity means. RadialMeasureDichotomy proves
+the finite exceptional-set alternatives with outer measure, without adding
+measurability assumptions.
+
+These conditional branches are now verified. The exhaustive extraction and
+local-to-global induction remain WIP, as do the positive sharp-five theorem and
+exact optimal-radius equality.
