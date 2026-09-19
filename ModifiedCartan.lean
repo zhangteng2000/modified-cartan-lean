@@ -193,3 +193,7 @@ import ModifiedCartan.ProjectivePartitions
 import ModifiedCartan.ProjectiveHolomorphy
 import ModifiedCartan.ProjectiveCurves
 import ModifiedCartan.ProjectiveEquivalence
+import ModifiedCartan.CClassEnlargement
+import ModifiedCartan.TwoClassAbsorption
+import ModifiedCartan.FiveClassReduction
+import ModifiedCartan.LogDerivativeNormality

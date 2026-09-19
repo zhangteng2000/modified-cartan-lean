@@ -85,6 +85,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.wronskianUpperBound_pos
 #print axioms ModifiedCartan.wronskian_unit_disk_bound
 #print axioms ModifiedCartan.cclass_two_dominants_after_extraction
+#print axioms ModifiedCartan.dominant_insert_negligible
+#print axioms ModifiedCartan.cpartition_single_class
+#print axioms ModifiedCartan.cpartition_two_classes
 #print axioms ModifiedCartan.locallyBounded_deriv_zero
 #print axioms ModifiedCartan.tendsto_div_real_atTop_zero_of_bounded
 #print axioms ModifiedCartan.cclass_jet_limits
@@ -225,6 +228,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.maximalClasses_bijection
 #print axioms ModifiedCartan.old_maximals_incomparable
 #print axioms ModifiedCartan.finite_preorder_stabilization
+#print axioms ModifiedCartan.five_two_classes_complement
+#print axioms ModifiedCartan.five_partition_from_cartan_alternative
 #print axioms ModifiedCartan.holomorphicUnit_neg_input
 #print axioms ModifiedCartan.fiveCounterexample_units
 #print axioms ModifiedCartan.fiveCounterexample_zeroSum
@@ -402,6 +407,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.proximityMean_self_div
 #print axioms ModifiedCartan.higher_derivative_quotient_mean
 #print axioms ModifiedCartan.logDerivativeEstimate_proved
+#print axioms ModifiedCartan.unit_log_norm_difference_le
+#print axioms ModifiedCartan.unit_norm_le_of_logDerivative_bound
+#print axioms ModifiedCartan.logDerivative_bounded_montel
+#print axioms ModifiedCartan.logDerivative_montel_of_no_reciprocal_decay
+#print axioms ModifiedCartan.logDerivative_unit_limit_of_no_decay
 #print axioms ModifiedCartan.logDeriv_analyticOnNhd
 #print axioms ModifiedCartan.iterated_logDeriv_finite_factorization
 #print axioms ModifiedCartan.iterated_logDeriv_eq_log_branch
@@ -696,6 +706,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.zero_limit_excludes_reciprocal_zero_limit
 #print axioms ModifiedCartan.not_absorption_two_above_sharpRadius
 #print axioms ModifiedCartan.two_absorption_diameter_cannot_increase
+#print axioms ModifiedCartan.cpartition_two_classes_one_remaining
 #print axioms ModifiedCartan.harmonic_harnack_two_points
 #print axioms ModifiedCartan.diskAutomorphism_real_norm
 #print axioms ModifiedCartan.twoPoint_coefficients

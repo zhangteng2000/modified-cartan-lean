@@ -1,29 +1,29 @@
-⚠ [3531/3728] Replayed ModifiedCartan.CircleVariation
+⚠ [3532/3776] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3549/3728] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3550/3776] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3611/3728] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3612/3776] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3677/3728] Replayed ModifiedCartan.ImmersionDifferential
+⚠ [3678/3776] Replayed ModifiedCartan.ImmersionDifferential
 warning: ModifiedCartan/ImmersionDifferential.lean:18:0: automatically included section variable(s) unused in theorem `ModifiedCartan.immersion_local_left_inverse`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3693/3728] Replayed ModifiedCartan.ManifoldDiscs
+⚠ [3694/3776] Replayed ModifiedCartan.ManifoldDiscs
 warning: ModifiedCartan/ManifoldDiscs.lean:29:0: automatically included section variable(s) unused in theorem `ModifiedCartan.manifold_disc_embedding`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -43,26 +43,18 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3705/3728] Replayed ModifiedCartan.ProjectiveCoordinates
+⚠ [3710/3776] Replayed ModifiedCartan.ProjectiveCoordinates
 warning: ModifiedCartan/ProjectiveCoordinates.lean:60:5: Variable name `hx` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hx
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3707/3728] Replayed ModifiedCartan.NormalizedHyperplaneChart
+⚠ [3712/3776] Replayed ModifiedCartan.NormalizedHyperplaneChart
 warning: ModifiedCartan/NormalizedHyperplaneChart.lean:15:6: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3709/3728] Replayed ModifiedCartan.SchwarzPick
-warning: ModifiedCartan/SchwarzPick.lean:53:33: Try `simp at hξ` instead of `simpa using hξ`
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3710/3728] Replayed ModifiedCartan.HyperbolicCoordinates
-warning: ModifiedCartan/HyperbolicCoordinates.lean:45:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3724/3772] Replayed ModifiedCartan.AffineSliceManifold
+⚠ [3713/3776] Replayed ModifiedCartan.AffineSliceManifold
 warning: ModifiedCartan/AffineSliceManifold.lean:55:2: Try this: 
   letI̵
 
@@ -79,7 +71,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3725/3772] Replayed ModifiedCartan.ProjectiveManifold
+⚠ [3714/3776] Replayed ModifiedCartan.ProjectiveManifold
 warning: ModifiedCartan/ProjectiveManifold.lean:18:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
 warning: ModifiedCartan/ProjectiveManifold.lean:69:2: Try this: 
   letI̵
@@ -133,7 +125,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3726/3772] Replayed ModifiedCartan.AffineSliceDifferential
+⚠ [3715/3776] Replayed ModifiedCartan.AffineSliceDifferential
 warning: ModifiedCartan/AffineSliceDifferential.lean:16:2: Try this: 
   letI̵
 
@@ -180,11 +172,11 @@ Hint: Omit it from the simp argument list.
   [apply] simp [extChartAt_coe, TopologicalSpace.Opens.chartAt_eq, chartAt_self_eq]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3727/3772] Replayed ModifiedCartan.PartitionTorusManifold
+⚠ [3716/3776] Replayed ModifiedCartan.PartitionTorusManifold
 warning: ModifiedCartan/PartitionTorusManifold.lean:39:24: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3728/3772] Replayed ModifiedCartan.ProjectiveTori
+⚠ [3718/3776] Replayed ModifiedCartan.ProjectiveTori
 warning: ModifiedCartan/ProjectiveTori.lean:19:0: automatically included section variable(s) unused in theorem `ModifiedCartan.projectiveXNormalize_mem`:
   [Nonempty ↑(ProjectiveX p)]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -197,14 +189,22 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [Nonempty ↑(ProjectiveX p)] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3744/3772] Replayed ModifiedCartan.GaussianPrimitive
+⚠ [3719/3776] Replayed ModifiedCartan.SchwarzPick
+warning: ModifiedCartan/SchwarzPick.lean:53:33: Try `simp at hξ` instead of `simpa using hξ`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3720/3776] Replayed ModifiedCartan.HyperbolicCoordinates
+warning: ModifiedCartan/HyperbolicCoordinates.lean:45:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3744/3776] Replayed ModifiedCartan.GaussianPrimitive
 warning: ModifiedCartan/GaussianPrimitive.lean:50:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
 warning: ModifiedCartan/GaussianPrimitive.lean:79:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3751/3772] Replayed ModifiedCartan.FiveMajorant
+⚠ [3751/3776] Replayed ModifiedCartan.FiveMajorant
 warning: ModifiedCartan/FiveMajorant.lean:23:54: This simp argument is unused:
   Complex.div_re
 
@@ -219,7 +219,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3752/3772] Replayed ModifiedCartan.FiveExampleBounds
+⚠ [3752/3776] Replayed ModifiedCartan.FiveExampleBounds
 warning: ModifiedCartan/FiveExampleBounds.lean:25:15: This simp argument is unused:
   norm_mul
 
@@ -227,9 +227,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [fiveA, Complex.norm_exp, Complex.mul_re, abs_of_nonneg hn]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [3759/3772] Built ModifiedCartan.UniformComposition (10s)
-✔ [3760/3772] Built ModifiedCartan.ProjectiveKernel (11s)
-⚠ [3761/3772] Built ModifiedCartan.ProjectiveCompact (10s)
+⚠ [3760/3776] Replayed ModifiedCartan.ProjectiveCompact
 warning: ModifiedCartan/ProjectiveCompact.lean:41:2: Try this: 
   letI̵
 
@@ -238,12 +236,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [3762/3772] Built ModifiedCartan.ProjectiveConvergence (10s)
-✔ [3763/3772] Built ModifiedCartan.ProjectiveLift (10s)
-✔ [3764/3772] Built ModifiedCartan.ProjectiveHurwitz (10s)
-✔ [3765/3772] Built ModifiedCartan.ProjectiveClass (11s)
-✔ [3766/3772] Built ModifiedCartan.ProjectiveBlocks (11s)
-⚠ [3767/3772] Built ModifiedCartan.ProjectiveHolomorphy (11s)
+⚠ [3768/3776] Replayed ModifiedCartan.ProjectiveHolomorphy
 warning: ModifiedCartan/ProjectiveHolomorphy.lean:18:2: Try this: 
   letI̵
 
@@ -260,9 +253,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [3768/3772] Built ModifiedCartan.ProjectivePartitions (10s)
-✔ [3769/3772] Built ModifiedCartan.ProjectiveCurves (10s)
-⚠ [3770/3772] Built ModifiedCartan.ProjectiveEquivalence (11s)
+⚠ [3770/3776] Replayed ModifiedCartan.ProjectiveEquivalence
 warning: ModifiedCartan/ProjectiveEquivalence.lean:43:2: Try this: 
   letI̵
 
@@ -279,5 +270,9 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [3771/3772] Built ModifiedCartan (10s)
-Build completed successfully (3772 jobs).
+✔ [3771/3776] Built ModifiedCartan.CClassEnlargement (13s)
+✔ [3772/3776] Built ModifiedCartan.LogDerivativeNormality (13s)
+✔ [3773/3776] Built ModifiedCartan.TwoClassAbsorption (14s)
+✔ [3774/3776] Built ModifiedCartan.FiveClassReduction (13s)
+✔ [3775/3776] Built ModifiedCartan (13s)
+Build completed successfully (3776 jobs).
