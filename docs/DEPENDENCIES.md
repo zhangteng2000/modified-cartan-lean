@@ -87,3 +87,5 @@ Projective branch: AdmissiblePartitions -> PartitionRateDimension -> PartitionVe
 Completed projective null-direction chain: ProjectiveCoordinates -> ProjectiveTopology -> NormalizedHyperplaneChart/AffineSliceManifold -> ProjectiveManifold; PartitionTori -> PartitionTorusManifold; AffineSliceDifferential + ProjectiveScaling + ProjectiveManifold + PartitionTorusManifold -> ProjectiveTori. The result uses actual mfderiv images and the intrinsic disc infimum.
 
 Completed geodesic chain: SchwarzPick -> HyperbolicCoordinates -> HyperbolicRadialSegment -> HyperbolicRealSegment -> HyperbolicSegments; together with DiskSegmentComparison -> GeodesicComparison. Equality rigidity and the exact image of the complete segment are proved, not supplied as hypotheses.
+
+Counterexample preparation: GaussianPrimitive -> GaussianRealBounds -> GaussianContour; all estimates concern the actual complex integral. HyperbolicCoordinates -> DiskDiameter proves the exact disk diameter, including the open-boundary supremum.

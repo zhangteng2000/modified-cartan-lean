@@ -168,3 +168,7 @@ import ModifiedCartan.HyperbolicRadialSegment
 import ModifiedCartan.HyperbolicRealSegment
 import ModifiedCartan.HyperbolicSegments
 import ModifiedCartan.GeodesicComparison
+import ModifiedCartan.DiskDiameter
+import ModifiedCartan.GaussianPrimitive
+import ModifiedCartan.GaussianRealBounds
+import ModifiedCartan.GaussianContour

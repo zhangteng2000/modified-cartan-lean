@@ -60,3 +60,5 @@ The missing immersion differential injectivity result is now proved locally, wit
 Projective geometry now constructed: standard quotient topology via mathlib IsQuotientMap, open affine charts, singleton complex manifold atlas, finite-dimensional complementary subspaces for immersion charts, and actual mfderiv chain rule. The derived immersion injectivity and affine differential statements fill the missing pinned-library bridges. No projective metric equivalence is assumed.
 
 Geodesic comparison uses Mathlib.Analysis.Complex.Schwarz for Schwarz-Pick via conjugation, then explicit real logarithmic distance formulas and complex norm identities. Both directions of the exact geodesic image identity are proved locally; no metric-segment identification is assumed.
+
+Gaussian estimates reuse mathlib Complex.wedgeIntegral, its holomorphic primitive theorem, integral_gaussian_Ioi, improper-integral convergence and Gaussian exponential decay. The contour-shift identity, finite contour estimates and exact limiting half-plane bounds are proved in project modules.

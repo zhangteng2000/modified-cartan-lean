@@ -25,7 +25,7 @@
 | `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
 | `cor:geodesic-comparison` | 完整证明 | `geodesic_harmonic_comparison`；距离加法等式刻画的全部双曲测地段，严格阈值 d₀ < log 3，统一正 ε 和原稿的 2C₀，包含端点重合情形。 |
 | `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
-| `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
+| `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`disk_hyperbolicDiameter_iff` 已证明一般开圆盘的精确双曲直径。实际高斯积分的整函数性、对称性和精确半平面估计均已证明；完整五函数反例及最优性组装仍未完成。 |
 | `prop:torus-null-set` | 完整证明 | 内在切丛中的闭性、紧集正下界和严格正下确界均已证明；`torus_manifold_null_image_eq_zeroLocus` 将全部内在零方向精确识别为显式有限多项式理想的零点集。 |
 | `prop:projective-equivalence` | 部分工具已证明 | 真正的 mathlib 射影空间、商拓扑、仿射坐标卡、X_p 的复流形与归一化模型均已构造；射影局部一致收敛及两种分割表述的双向等价尚未完成。 |
 | `cor:projective-zero-directions` | 完整证明 | `projective_zero_directions`：实际射影流形的内在零方向等于各可容许环面包含映射在 x 的微分像之并。环面模型与齐次分块缩放定义完全对应，包含映射全纯、拓扑嵌入且微分单射；`projectiveTorusTangentSpace_finrank_le` 保留维数 ≤ ⌊p/2⌋−1。 |
