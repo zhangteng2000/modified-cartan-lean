@@ -85,6 +85,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.onlyNegativeOneUnitLimits_subsequence
 #print axioms ModifiedCartan.ratio_neg_one_of_logDerivative_bound
 #print axioms ModifiedCartan.cartan_two_bounded_pairs
+#print axioms ModifiedCartan.unit_montel_limit_of_no_zero
+#print axioms ModifiedCartan.ratio_neg_one_of_locallyBounded
+#print axioms ModifiedCartan.no_locallyBounded_three_chain
+#print axioms ModifiedCartan.locallyBounded_quotients_of_pairGrowth_at_radius
 #print axioms ModifiedCartan.blaschkeFactor_log_lower
 #print axioms ModifiedCartan.cartan_circle_at_point
 #print axioms ModifiedCartan.cartanCircleEstimate_proved
@@ -116,6 +120,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.radialSmallValueSet_measure_le
 #print axioms ModifiedCartan.cartan_small_value_radii
 #print axioms ModifiedCartan.cartan_circle_scaled
+#print axioms ModifiedCartan.small_three_fractions_excluded
 #print axioms ModifiedCartan.three_global_projective_limit
 #print axioms ModifiedCartan.cartanExtraction_three
 #print axioms ModifiedCartan.partitionProperty_three
@@ -693,6 +698,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.proximity_le_log_moment
 #print axioms ModifiedCartan.quantitativeWronskian_proved
 #print axioms ModifiedCartan.diskSupNorm_ge_exp_of_log_anchor
+#print axioms ModifiedCartan.quotient_anchors_on_disk_of_no_vanishing
 #print axioms ModifiedCartan.quotient_anchors_of_no_vanishing
 #print axioms ModifiedCartan.two_term_quotient_vanishingDerivative
 #print axioms ModifiedCartan.vanishingDerivative_endpoint_contradiction
@@ -723,6 +729,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.cartan_small_value_radii_log_bound
 #print axioms ModifiedCartan.radialSmallValueSet_antitone
 #print axioms ModifiedCartan.cartan_small_value_radii_proximity
+#print axioms ModifiedCartan.radialZeroSet_finite
+#print axioms ModifiedCartan.radialZeroSet_volume_zero
+#print axioms ModifiedCartan.exists_zero_free_circle_subset
 #print axioms ModifiedCartan.sharpRadius_pos
 #print axioms ModifiedCartan.sharpRadius_lt_one
 #print axioms ModifiedCartan.sharpRadius_quadratic
@@ -778,6 +787,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.partitionProperty_one
 #print axioms ModifiedCartan.partitionProperty_two
 #print axioms ModifiedCartan.partition_exists_positive_radius
+#print axioms ModifiedCartan.pairGrowth_bound_of_small_three_fractions
+#print axioms ModifiedCartan.pairGrowth_bounded_of_small_three_fractions
 #print axioms ModifiedCartan.descending_count_bound
 #print axioms ModifiedCartan.count_stabilization
 #print axioms ModifiedCartan.equicontinuousAt_of_strict_local_subsequence_limits
@@ -847,6 +858,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.unitGrowthMean_continuousOn
 #print axioms ModifiedCartan.unitGrowthMean_monotoneOn
 #print axioms ModifiedCartan.unitGrowthMean_tendsto_atTop
+#print axioms ModifiedCartan.unit_proximity_pair_balance
 #print axioms ModifiedCartan.unit_posLog_le_normalizedWronskian_inv
 #print axioms ModifiedCartan.unit_proximity_le_normalizedWronskian_inv
 #print axioms ModifiedCartan.constant_sum_proximity_le_normalizedWronskian_inv

@@ -265,3 +265,9 @@ import ModifiedCartan.BoundaryErrorGrowth
 import ModifiedCartan.QuotientAnchors
 import ModifiedCartan.CartanGrowthClosure
 import ModifiedCartan.CartanInverseEndgame
+import ModifiedCartan.UnitProximityBalance
+import ModifiedCartan.SmallThreeFractions
+import ModifiedCartan.RadialZeros
+import ModifiedCartan.SmallThreeGrowth
+import ModifiedCartan.CartanBoundedRatios
+import ModifiedCartan.CartanSmallThree

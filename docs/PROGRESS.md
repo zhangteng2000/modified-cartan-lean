@@ -239,3 +239,23 @@ higher-fraction branches, exhaustive subsequence case selection, induction on
 removed indices over annuli, and full-disk diagonal assembly still need to be
 connected into an unconditional CartanExtractionAt 5 proof. Consequently the
 positive sharp-five theorem and exact optimal-radius equality are not verified.
+
+## Bounded third-fraction branch checkpoint — 938 declarations
+
+The full build and recursive axiom audit passed for 938 declarations with only
+standard logical axioms. No principal WIP result is reclassified as complete.
+
+UnitProximityBalance turns either circle orientation into bounds for both
+quotient means. RadialZeros proves that all zero circles in a compact inner
+band form a finite set and can be removed without loss of outer measure.
+SmallThreeFractions and SmallThreeGrowth prove actual uniform growth bounds
+from bounded third-order fractions on radius sets of fixed positive outer
+measure, with the zero-circle premise discharged. CartanBoundedRatios proves
+Montel unit limits and the contradiction of two bounded quotient edges on
+three distinct indices after the earlier reduction cases have been excluded.
+CartanSmallThree connects these results into the bounded third-fraction
+exclusion. QuotientAnchors also constructs anchors on any local reduction disk.
+
+The fourth-order bounded branch and the exhaustive subsequence/index/annulus/
+diagonal assembly remain under construction. Full CartanExtractionAt 5,
+SharpFiveTheorem and the positive optimal-radius equality remain WIP.

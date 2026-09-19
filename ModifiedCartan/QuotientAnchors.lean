@@ -23,20 +23,20 @@ theorem diskSupNorm_ge_exp_of_log_anchor {f : ℂ → ℂ} {η A : ℝ}
 
 /-- Exclusion of every vanishing quotient subsequence constructs one common
 inner disk and a uniform logarithmic anchor for every ordered pair. -/
-theorem quotient_anchors_of_no_vanishing {p : ℕ} {f : Family p}
-    (hf : UnitFamily f) (hno : NoVanishingQuotientSubsequence f (disk 1)) :
-    ∃ η A : ℝ, 0 < η ∧ η < 1 ∧ 0 ≤ A ∧ ∀ᶠ n in atTop, ∀ i j : Fin p,
+theorem quotient_anchors_on_disk_of_no_vanishing {p : ℕ} {f : Family p} {T : ℝ}
+    (hT : 0 < T) (hf : ∀ i n, IsHolomorphicUnit (f i n) (disk T)) (hno : NoVanishingQuotientSubsequence f (disk T)) :
+    ∃ η A : ℝ, 0 < η ∧ η < T ∧ 0 ≤ A ∧ ∀ᶠ n in atTop, ∀ i j : Fin p,
       ∃ w : ℂ, ‖w‖ ≤ η ∧ f i n w/f j n w ≠ 0 ∧ -A ≤ Real.log ‖f i n w/f j n w‖ := by
   let q : (Fin p × Fin p) → ℕ → ℂ → ℂ := fun ij n z => f ij.1 n z/f ij.2 n z
-  have hq : ∀ ij n z, z ∈ disk 1 → q ij n z ≠ 0 :=
+  have hq : ∀ ij n z, z ∈ disk T → q ij n z ≠ 0 :=
     fun ij n => (unit_quotient (hf ij.1 n) (hf ij.2 n)).2
   have hqn : ∀ ij, ¬ ∃ φ : ℕ → ℕ, StrictMono φ ∧ CompactConvergence
-      (fun n z => (q ij (φ n) z)⁻¹) (fun _ => 0) (disk 1) := by
+      (fun n z => (q ij (φ n) z)⁻¹) (fun _ => 0) (disk T) := by
     intro ij hh
     apply hno ij.2 ij.1
     simpa only [q,inv_div] using hh
   obtain ⟨K,hK,hcK,A,hA,he⟩ := finite_unit_failure_points q isOpen_ball hq hqn
-  obtain ⟨η,⟨hη,hη1⟩,hKη⟩ := exists_pos_lt_subset_ball (by norm_num : (0 : ℝ) < 1) hcK.isClosed hK
+  obtain ⟨η,⟨hη,hη1⟩,hKη⟩ := exists_pos_lt_subset_ball hT hcK.isClosed hK
   refine ⟨η,A,hη,hη1,hA,?_⟩
   filter_upwards [he] with n hn
   intro i j
@@ -48,5 +48,12 @@ theorem quotient_anchors_of_no_vanishing {p : ℕ} {f : Family p}
   change Real.log ‖f j n w/f i n w‖ ≤ A at hl
   rw [hlog] at hl
   exact ⟨w,hnorm,hi,by linarith⟩
+
+
+theorem quotient_anchors_of_no_vanishing {p : ℕ} {f : Family p}
+    (hf : UnitFamily f) (hno : NoVanishingQuotientSubsequence f (disk 1)) :
+    ∃ η A : ℝ, 0 < η ∧ η < 1 ∧ 0 ≤ A ∧ ∀ᶠ n in atTop, ∀ i j : Fin p,
+      ∃ w : ℂ, ‖w‖ ≤ η ∧ f i n w/f j n w ≠ 0 ∧ -A ≤ Real.log ‖f i n w/f j n w‖ :=
+  quotient_anchors_on_disk_of_no_vanishing (by norm_num) hf hno
 
 end ModifiedCartan
