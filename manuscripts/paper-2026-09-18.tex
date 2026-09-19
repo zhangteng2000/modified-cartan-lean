@@ -46,8 +46,6 @@
 \setlist[enumerate]{label=\textup{(\roman*)},leftmargin=2.2em,itemsep=2pt,topsep=4pt}
 \emergencystretch=1.5em
 
-% Hyperlinks inherit their surrounding text colour.
-\hypersetup{allcolors=.}
 \begin{document}
 	\title{The modified Cartan conjecture}
 	\author[A.~Eremenko]{Alexandre Eremenko}
@@ -62,13 +60,12 @@
 	\address{School of Mathematics and Statistics, Xi'an Jiaotong University,
 		Xi'an 710049, P.~R.~China}
 	\email{teng.zhang@stu.xjtu.edu.cn}
-	\subjclass[2020]{Primary 32Q45; Secondary 30D35, 32D45}
-	\keywords{holomorphic curve, Bloch's Principle, Nevanlinna theory, Wronskian,
-         Kobayashi--Royden pseudometric, Cartan's 1928 conjecture}
+	\subjclass[2020]{Primary 30D45; Secondary 30D35, 32Q45}
+	\keywords{Cartan's conjecture; normal families; Wronskians;
+		holomorphic curves; Kobayashi--Royden pseudometric}
 	\date{September 14, 2026}
 	\begin{abstract}
-	In 1928 H. Cartan stated a conjecture about holomorphic curves in
-         $\PP^n$
+		In 1928 H. Cartan stated a conjecture about holomorphic curves in $\PP^n$
 		parametrized by the unit disc, omitting $n+2$ hyperplanes in general position.
 		He proved it for $n=2$. In 1996 the first-named author constructed
 		counterexamples for all $n\geq 3$, and proposed a modified form of Cartan's
@@ -77,8 +74,7 @@
 		As a byproduct we prove a quantitative version of the classical theorem that
 		analytic functions are linearly dependent iff their Wronskian determinant is
 		zero. We interpret our results in
-		terms of the Kobayashi metric on the complement of $n+2$
-hyperplanes, and on smooth algebraic varieties in the algebraic torus.
+		terms of the Kobayashi metric of the complement of $n+2$ hyperplanes.
 	\end{abstract}
 	\maketitle
 	
@@ -111,7 +107,7 @@ hyperplanes, and on smooth algebraic varieties in the algebraic torus.
 		that a meromorphic function in the plane is constant, when imposed on
 		a family of meromorphic functions in an arbitrary region, must imply
 		normality (pre-compactness) of this family.} The prototype is Montel's
-	normality criterion \cite{Mon27} which says that a family of holomorphic functions
+	normality criterion \cite{Mo27} which says that a family of holomorphic functions
 	omitting $0$ and $1$ is normal in the spherical metric.
 	For a general discussion of Bloch's Principle
 	we refer to the original exposition \cite{Blo26a} and to
@@ -141,22 +137,59 @@ hyperplanes, and on smooth algebraic varieties in the algebraic torus.
 	notion, introduced in \cite{Ere96b}.
 	
 	\begin{defin}\label{def:cclass}
-		{\em Let $\Omega\subset\D$ be a region. A subset
-		$I\subseteq\{1,\ldots,p\}$ is called a {\em $C$-class}
-on $\Omega$ if there is an
+		Let $\Omega\subset\D$ be a nonempty open set. A nonempty set
+		$I\subseteq\{1,\ldots,p\}$ is a $C$-class on $\Omega$ if there is an
 		index $k\in I$ such that the quotients $f_{j,n}/f_{k,n}$, $j\in I$,
 		are locally uniformly bounded on $\Omega$ and
 		\begin{equation}\label{cclass}
 			\sum_{j\in I}\frac{f_{j,n}}{f_{k,n}}\longrightarrow0
-			\quad\text{locally uniformly on }\Omega,\quad\mbox{as}\quad n\to\infty.
+			\quad\text{locally uniformly on }\Omega.
 		\end{equation}
-		Such an index $k$ is called a \emph{dominant index} of the $C$-class.}
+		Such an index $k$ is called a \emph{dominant index} of the $C$-class.
 	\end{defin}
 	
-	The dominant index is fixed (independent of $n$).
-	Every $C$-class has cardinality at least two, since for a singleton
-	$I=\{k\}$ the normalized sum in \eqref{cclass} is identically equal to $1$.
-
+	The dominant index is fixed (independent of $n$). It follows from
+	\eqref{cclass} that each $C$-class contains at least two elements.
+If $\Omega$ is connected\footnote{The connectedness
+assumption is essential for this assertion. For example, let
+\[
+\Omega_-=\left\{z:\left|z+\frac12\right|<\frac18\right\},\qquad
+\Omega_+=\left\{z:\left|z-\frac12\right|<\frac18\right\},\qquad
+\Omega=\Omega_-\cup\Omega_+.
+\]
+Put
+\[
+G_n(z)=\frac12+\sqrt{\frac n\pi}\int_0^z e^{-n\zeta^2}\,d\zeta,
+\qquad
+U_n=e^{-nG_n},\qquad V_n=e^{-n(1-G_n)}.
+\]
+Since $\Re(z^2)\ge1/8$ on $\Omega_-\cup\Omega_+$, the standard Gaussian
+tail estimate gives, locally uniformly,
+\[
+(U_n,V_n)\longrightarrow(1,0)\quad\hbox{on }\Omega_-,
+\qquad
+(U_n,V_n)\longrightarrow(0,1)\quad\hbox{on }\Omega_+.
+\]
+Thus
+\[
+(1,-U_n,-V_n,-1,U_n,V_n)
+\]
+is a six-tuple of units with zero sum, and $I=\{1,2,3\}$ is a $C$-class
+on $\Omega$, with the first index dominant, since
+$1-U_n-V_n\to0$ locally uniformly. However, the second index is not
+dominant because $1/U_n$ is unbounded on compact subsets of $\Omega_+$,
+and the third is not dominant because $1/V_n$ is unbounded on compact
+subsets of $\Omega_-$. The same obstruction persists along every
+subsequence.}, then, after passage to a further subsequence,
+every $C$-class on $\Omega$ has at least two dominant indices.
+Indeed, after extracting so that all bounded
+	quotients $f_{j,n}/f_{k,n}$ converge, their limits $g_j$ satisfy
+	$g_k=1$ and $\sum_{j\in I}g_j=0$. Hence $g_j\not\equiv0$ for some
+	$j\ne k$. Hurwitz's theorem \cite[Chapter~VII, Corollary~2.6]{Con78}
+shows that this $g_j$ has no zeros. Hence
+$f_{j,n}/f_{k,n}$ is bounded away from zero on compact subsets, and it
+follows that $j$ is also a dominant index.
+	
 	In \cite[pp.~312--318]{Car28},
 	Cartan proved:
 	
@@ -181,29 +214,14 @@ on $\Omega$ if there is an
 		radius depending only on $p$.
 	\end{modifiedconjecture}
 	
-	This assertion was proved for $p=5$ 
-	in \cite{Ere96b}.
-	More recently, Yamanoi \cite[Theorem~1.7]{Yam26} obtained, after passage
-	to a subsequence, disjoint nonempty $C$-classes $I_1,\ldots,I_q$ on the
-	whole disk, together with control of the remaining indices away from
-	exceptional sets of arbitrarily small total radius. More precisely, set
-$
-		I=I_1\sqcup\cdots\sqcup I_q.
-$
-	Then, for every $j\notin I$, every $0<s<1$, every $\gamma>0$, and every
-	$\varepsilon>0$, one has, for all sufficiently large $n$,
-	\[
-		\frac{|f_{j,n}(z)|}
-		{\left(\sum_{k\in I}|f_{k,n}(z)|^2\right)^{1/2}}
-		<\varepsilon
-	\]
-	for $\gamma$-almost all $z\in D(s)$, where ``$\gamma$-almost all'' means
-	outside a set covered by at most countably many closed disks whose sum of
-	radii is less than $\gamma$.
-
- This result does not imply that every index belongs to one of
-	the $C$-classes. Our main theorem establishes the full partition of $\{1,\ldots,p\}$ into $C$-classes after a
-	restriction to a fixed disk, and proves the Modified Conjecture.
+	The first-named author proved this assertion for five
+	functions \cite{Ere96b}.
+	More recently, Yamanoi \cite[Theorem~1.7]{Yam26} obtained disjoint
+	$C$-classes on the whole disk, together with control of the
+	remaining terms away from exceptional sets of arbitrarily small total
+	radius. This result does not claim that every index belongs to one of
+	the $C$-classes. Our main theorem establishes the full partition after a
+	fixed restriction of the disk, and proves this conjecture.
 	
 	\begin{thm}[Partition theorem]\label{thm:main}
 		For every integer $p\ge3$ there is $\varepsilon_p\in(0,1)$ such that
@@ -266,7 +284,7 @@ $
 	beginning with Kiernan and
 	Kobayashi \cite{KK73}; Lang \cite[Chapter~VIII]{Lan87} gives a
 	systematic account. Our Theorem~\ref{thm:main} also has an application
-	to the Kobayashi--Royden pseudometric on
+	to the Kobayashi-Royden metric on
 	arbitrary smooth closed algebraic subvarieties of the algebraic torus
 	$(\C^*)^N$ (that is, a product of copies of $\C^*$). For a complex
 	manifold $Y$, we use the normalization
@@ -276,14 +294,12 @@ $
 	\]
 	of the Kobayashi--Royden pseudometric \cite{Roy71}.
 	Here $\OO(\D,Y)$ denotes the set of holomorphic maps from $\D$ to $Y$.
-	Yamanoi \cite[Theorem~1.5]{Yam26} proved that a zero direction
-	for this pseudometric is realized by an entire curve when $Y$ is a smooth
-	closed subvariety of an abelian variety. He
-	\cite[p.~459 and Remark~14.4 on p.~604]{Yam26} notes that it is unknown
-	whether the same conclusion holds for noncompact semi-abelian varieties. The following theorem
-answers Yamanoi's question for smooth closed  algebraic subvarieties of the
-algebraic
-torus and specifies the entire curve.
+	Yamanoi  \cite[Theorem~1.5]{Yam26} proved that a zero direction for this pseudometric is realized
+	by an entire curve when $Y$ is a smooth closed subvariety of an Abelian
+	variety. He 	\cite[p.~459 and Remark~14.4 on p.~604]{Yam26} asks whether the same conclusion
+	holds for noncompact semi-Abelian varieties. The following theorem answers
+	the algebraic-torus case of smooth subvarieties and specifies the
+	entire curve.
 	
 	For $x=(x_1,\ldots,x_N)\in(\C^*)^N$ and
 	$v=(v_1,\ldots,v_N)\in T_x(\C^*)^N$, put
@@ -308,8 +324,7 @@ torus and specifies the entire curve.
 	complement. These additional properties are proved in
 	Section~\ref{sec:geometry}. For the complement of $p$ hyperplanes in
 	$\mathbb P^{p-2}$ associated with \eqref{eq:zero-sum}, the theorem
-	gives an explicit description in terms of
-independently rescaled
+	gives an explicit description in terms of independently rescaling
 	groups of coordinates whose sums are zero.
 	
 	The main analytic step in the proof of Theorem~\ref{thm:main} is the following estimate
@@ -322,7 +337,7 @@ independently rescaled
 		\frac{a_{i,n}}{A_{i,n}}\longrightarrow0\quad(1\le i\le m),
 		\qquad s_n:=\sum_{i=1}^m a_{i,n}\longrightarrow s\not\equiv0
 		\]
-		locally uniformly on $\D$. Then there exist an index $i$ and a
+		locally uniformly on $\D$. Then there are an index $i$ and a
 		subsequence such that $1/A_{i,n}\longrightarrow0$ locally uniformly on $D(r_m)$,
 		where $r_m>0$ depends only on $m$.}
 	\vspace{.1in}
@@ -343,19 +358,19 @@ independently rescaled
 	in the sense that there is a linear combination, whose coefficients
 	have unit $\ell^2$-norm, which is small (in a smaller disk).
 	
-	To derive this, we use the tools employed by Cartan:
+	To derive this, we use all tools employed by Cartan:
 	the Bloch--Cartan estimate
-	(Lemma~\ref{lem:cartan-circle}), the lemma on the logarithmic derivative
-	(Lemma~\ref{lem:logderivative}), the Borel--Nevanlinna growth lemma
-	(Lemma~\ref{lem:growth}), Harnack's inequality
-	(Lemma~\ref{lem:envelope}), and Jensen's inequality
-	(Lemma~\ref{lem:poisson-mean}).
+	(Lemma~\ref{lem:cartan-circle}), Lemma on the logarithmic derivative
+	(Lemma~\ref{lem:logderivative}), Theorem of Borel-Nevanlinna
+	(Lemma~\ref{lem:growth}),
+	Harnack's (Lemma~\ref{lem:envelope})
+	and Jensen's inequalities (Lemma~\ref{lem:poisson-mean}).
 	
-	We mention that there is an alternative method
+We mention that there is an alternative methods
 of proving Proposition~\ref{prop:wronskian}
 based on the recent Universal
 Pl\"ucker-coordinate theorem of Karp and Purbhoo~\cite{KP26}, but we choose
-an exposition in the classical spirit. 
+an exposition in the classical spirit.
 	
 	Lang notes in \cite[Chapter~VIII, p.~225]{Lan87} that he was unable
 	to simplify Cartan's arguments. Theorem~\ref{thm:main} does not imply
@@ -387,10 +402,10 @@ In Section~\ref{sec:wronskian} we establish the analytic estimates.
 	by $n$. Constants denoted by $C$ may change from line to line, with
 	their fixed parameters indicated when needed.
 
-  \medskip
+    \medskip
 \noindent\textbf{Acknowledgments and AI tools disclosure. } Teng Zhang is supported by the China Scholarship Council, the Young Elite Scientists Sponsorship Program for PhD Students of the China Association for Science and Technology, and the Fundamental Research Funds for the Central Universities at Xi'an Jiaotong University (Grant No.~xzy022024045).
 
-ChatGPT was used for English-language editing, proofreading, grammatical corrections, and as an exploratory tool for discussing possible approaches to selected parts of this paper. The mathematical arguments and proofs in the original manuscript were independently developed, checked, and written by the authors. 
+ChatGPT was used for English-language editing, proofreading, grammatical corrections, and as an exploratory tool for discussing possible approaches to selected parts of this paper. The mathematical arguments and proofs in the original manuscript were independently developed, checked, and written by the author.
 	
 	\section{Quantitative analytic estimates}\label{sec:wronskian}
 	
@@ -403,7 +418,7 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 	The Wronskian vanishes identically precisely when the functions are
 	linearly dependent over the constants; see \cite[Theorem~1]{BD10}.
 	The main result of this section is a quantitative estimate of the
-	Wronskian from below.
+	Wronskian.
 	
 	We first state a lower estimate of
 	Bloch--Cartan type; compare Cartan's lemma in
@@ -754,7 +769,7 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 		integrable.
 	\end{proof}
 	
-	\section{Growth estimate for units}\label{sec:absorption}
+	\section{An estimate for reciprocals}\label{sec:absorption}
 	
 	With the exponents $K_m$ fixed in Proposition~\ref{prop:wronskian}, put
 	\begin{equation}\label{eq:recursive-radii}
@@ -776,7 +791,7 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 			\qquad
 			s_n:=\sum_{i=1}^{m}a_{i,n}\longrightarrow s\not\equiv0
 		\end{equation}
-		locally uniformly on $\D$. There exist an index $i$ and a subsequence
+		locally uniformly on $\D$. There are an index $i$ and a subsequence
 		such that $1/A_{i,n}\to0$ locally uniformly on $D(r_m)$, where $r_m$
 		is defined by \eqref{eq:recursive-radii}.
 	\end{prop}
@@ -975,10 +990,10 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 		$\overline{D(3/4)}$. Factoring the remaining columns and expanding the
 		determinant, we obtain a nonnegative function $E_n$ on $|z|=\rho$,
 		independent of $j$, such that, almost everywhere,
-		\begin{equation}\label{eq:wronskian-pointwise-upper}
+		\begin{equation*}
 			\log|W_n|\le\sum_{i\ne j}u_{i,n}+E_n,
 			\qquad \mean{E_n}{\rho}=o(M).
-		\end{equation}
+		\end{equation*}
 		For instance, one may take a sufficiently large fixed constant plus
 		\begin{equation*}
 			\sum_i\sum_{k=1}^{m-1}
@@ -993,18 +1008,16 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 			\le\sum_i u_{i,n}(0)-M+o(M).
 		\end{equation}
 		For the positive part, put $v_n=\max_i u_{i,n}$ on $|z|=\rho$. Since
-		$v_n>0$ and $E_n\ge0$, \eqref{eq:wronskian-pointwise-upper} implies
-		\begin{equation}\label{eq:wronskian-positive-pointwise}
-			\log^+|W_n|\le(m-1)v_n+E_n.
-		\end{equation}
+		$v_n>0$ and $E_n\ge0$, the preceding pointwise estimate implies
+		\begin{equation*}
+			\log^+|W_n|\le(m-1)v_n+E_n
+		\end{equation*}
 		almost everywhere on this circle. Averaging gives
 		\begin{equation}\label{eq:wronskian-positive-mean}
 			m(\rho,W_n)\le(m-1)M+o(M).
 		\end{equation}
-		The logarithmic singularities in \eqref{eq:wronskian-pointwise-upper}
-		and \eqref{eq:wronskian-positive-pointwise} are integrable, so the means
-		in \eqref{eq:wronskian-mean-upper} and
-		\eqref{eq:wronskian-positive-mean} are well-defined.
+		All logarithmic singularities are integrable, and the preceding
+		relations are understood in this sense.
 		
 		Apply Lemma~\ref{lem:poisson-mean} at $w_n$. With
 		$t=|w_n|/\rho\le4\eta$ and $q=(1+t)/(1-t)$, the bound
@@ -1037,8 +1050,8 @@ ChatGPT was used for English-language editing, proofreading, grammatical correct
 	
 	\medskip\noindent\textbf{Reduction under linear dependence.}
 	
-	Linear relations among the functions $a_{i,n}$ in
-	Proposition~\ref{thm:absorption} allow a slight improvement of its conclusion:
+Linear relations among the functions $a_{i,n}$ in
+Proposition~\ref{thm:absorption} allow a slight improvement of its conclusion:
 	
 	\begin{cor}\label{cor:rank-adaptive-absorption}
 		Under the hypotheses of Proposition~\ref{thm:absorption}, suppose
@@ -1126,7 +1139,7 @@ is maximal if its elements are maximal. Two elements are
     For each of the finitely many pairs $(i,j)$ and integers $k$,
     consider the current sequence of quotients on $D(\rho_k)$.
    If it is locally uniformly bounded, Montel's theorem
-\cite[Ch.~V, Theorem~15]{Ahl79}
+\cite[Theorem~2.9]{Con78}
 gives a subsequence converging locally uniformly to a holomorphic function.
     If it is not locally uniformly bounded, there is a fixed compact
     subset on which the suprema are unbounded; choose a subsequence
@@ -1168,7 +1181,7 @@ gives a subsequence converging locally uniformly to a holomorphic function.
 
 We now prove Theorem~\ref{thm:main}.
 
-\begin{proof}[Proof of Theorem~\ref{thm:main}]
+\begin{proof}
     Set
     \[
         \sigma=r_{p-1},\qquad \varepsilon_p=\sigma^{p-1},
@@ -1708,7 +1721,7 @@ We now prove Theorem~\ref{thm:main}.
 	We now prove Theorem~\ref{thm:sharp-five} and the optimality assertions
 	following it.
 	
-	\begin{proof}[Proof of Theorem~\ref{thm:sharp-five}]
+	\begin{proof}
 		Apply Cartan's theorem to the given sequence of five units.
 		After extraction, either all indices form a $C$-class, or there are
 		two disjoint $C$-classes. In the latter case, if these classes do not
@@ -1762,7 +1775,7 @@ We now prove Theorem~\ref{thm:main}.
 	coordinate functions, so both positive and negative powers are
 	holomorphic on $\D$.
 	
-	\begin{proof}[Proof of Theorem~\ref{thm:torus-zero}]
+	\begin{proof}
 		Let $Y\subset(\C^*)^N$ be as in Theorem~\ref{thm:torus-zero}.
 		If $\gamma_{x,\bm{v}}(\C)\subset Y$, the discs
 		$z\mapsto\gamma_{x,\bm{v}}(nz)$ show that $\kappa_Y(x;\bm{v})=0$.
@@ -2016,9 +2029,6 @@ We now prove Theorem~\ref{thm:main}.
 	\raggedright
 	\begin{thebibliography}{Ere96b}
 		
-\bibitem[Ahl79]{Ahl79}
-L.~V.~Ahlfors, \emph{Complex Analysis}, 3rd ed.,
-McGraw--Hill, New York, 1979.
 		\bibitem[Ber06]{Ber06}
 		W.~Bergweiler, \emph{Bloch's principle}, Comput. Methods Funct. Theory
 		\textbf{6} (2006), no.~1, 77--108.
@@ -2027,8 +2037,7 @@ McGraw--Hill, New York, 1979.
 		\bibitem[Blo26]{Blo26}
 		A.~Bloch, \emph{Sur les syst\`emes de fonctions holomorphes \`a
 			vari\'et\'es lin\'eaires lacunaires}, Ann. Sci. \'Ecole Norm. Sup. (3)
-		\textbf{43} (1926), 309--362.
-		\doi{10.24033/asens.772}.
+		\textbf{43} (1926), 309--362. \doi{10.24033/asens.772}.
 		
 		\bibitem[Blo26a]{Blo26a}
 		A.~Bloch, \emph{La conception actuelle de la th\'eorie des fonctions enti\`eres
@@ -2049,11 +2058,11 @@ McGraw--Hill, New York, 1979.
 		\'Ecole Norm. Sup. (3) \textbf{45} (1928), 255--346.
 		\doi{10.24033/asens.786}.
 
-        %\bibitem[Con78]{Con78}
-        % J.~B.~Conway, \emph{Functions of One Complex Variable I},
-        % 2nd ed., Graduate Texts in Mathematics, vol.~11,
-        % Springer-Verlag, New York, 1978.
-        %\doi{10.1007/978-1-4612-6313-5}.
+        \bibitem[Con78]{Con78}
+         J.~B.~Conway, \emph{Functions of One Complex Variable I},
+         2nd ed., Graduate Texts in Mathematics, vol.~11,
+         Springer-Verlag, New York, 1978.
+        \doi{10.1007/978-1-4612-6313-5}.
 		
 		%\bibitem[Dra69]{Dra69}
 		%D.~Drasin, \emph{Normal families and the Nevanlinna theory},
@@ -2063,8 +2072,7 @@ McGraw--Hill, New York, 1979.
 		\bibitem[Ere96a]{Ere96a}
 		A.~Eremenko, \emph{A counterexample to Cartan's conjecture on holomorphic
 			curves omitting hyperplanes}, Proc. Amer. Math. Soc. \textbf{124} (1996),
-		no.~10, 3097--3100.
-		\doi{10.1090/S0002-9939-96-03392-8}.
+		no.~10, 3097--3100. \doi{10.1090/S0002-9939-96-03392-8}.
 		
 		\bibitem[Ere96b]{Ere96b}
 		A.~Eremenko, \emph{Holomorphic curves omitting five planes in projective
@@ -2087,13 +2095,11 @@ J. Amer. Math. Soc. (2026), in press.
 		\bibitem[KK73]{KK73}
 		P.~Kiernan and S.~Kobayashi, \emph{Holomorphic mappings into projective
 			space with lacunary hyperplanes}, Nagoya Math. J. \textbf{50} (1973),
-		199--216.
-		\doi{10.1017/S0027763000015646}.
+		199--216. \doi{10.1017/S0027763000015646}.
 		
 		\bibitem[Lan87]{Lan87}
 		S.~Lang, \emph{Introduction to complex hyperbolic spaces}, Springer-Verlag,
-		New York, 1987.
-		\doi{10.1007/978-1-4757-1945-1}.
+		New York, 1987. \doi{10.1007/978-1-4757-1945-1}.
 		
 		\bibitem[Mil92]{Mil92}
 		J.~Miles, \emph{A sharp form of the lemma on the logarithmic derivative},
@@ -2103,9 +2109,9 @@ J. Amer. Math. Soc. (2026), in press.
 		%\bibitem[Mon12]{Mon12}
 		%P.~Montel, \emph{Sur les familles de fonctions analytiques qui admettent
 			%des valeurs exceptionnelles dans un domaine}, Ann. Sci. \'Ecole Norm.
-		%Sup. (3) \textbf{29} (1912), 487--535. %\doi{10.24033/asens.652}.
+		%Sup. (3) \textbf{29} (1912), 487--535. \doi{10.24033/asens.652}.
 		
-	\bibitem[Mon27]{Mon27}
+	\bibitem[Mo27]{Mo27}
 P.~Montel, \emph{Le\c{c}ons sur les Familles normales
     de fonctions analytiques et leurs applications},
 Paris, Gauthier-Villars, 1927.

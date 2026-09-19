@@ -12,6 +12,13 @@ The earlier `AbsorptionTheorem` definition only asserts existence of some positi
 
 `IsCClass`, `CPartition`, `SharpFiveTheorem`, and `SharpTwoAbsorption` do not assume connectedness. Connectedness may be used only where the manuscript uses it, such as the auxiliary result about two dominant indices after extraction. Endpoint diameter is `≤ log 3`, not a strict bound.
 
+Revision 2026-09-19: `def:cclass` now says “region”, whereas the unchanged
+`thm:sharp-five` still allows arbitrary nonempty open sets. The more general Lean
+predicate is retained and applies in particular to regions. No connectedness
+assumption is added to a theorem. The two-dominant-index discussion was removed
+from the manuscript and its existing Lean proof is now solely an auxiliary
+result. See `REVISION_2026-09-19.md`.
+
 ## D4 — Status accounting (CORRECTED)
 
 The current theorem count includes auxiliary facts. `lem:growth`, `lem:envelope`, `lem:two-point-kernel`, and `lem:poisson-mean` now have complete proofs. Proposition definitions, one-direction implications, special cases, and algebraic ingredients are not counted as complete manuscript results.

@@ -4,6 +4,8 @@
 
 本项目依据用户提供的 `paper.tex`，使用 Lean 4.34.0-rc1 和固定版本的 mathlib。已证明的结果有实际 Lean 证明项；未完成的中心命题在 `Statements.lean` 中仅定义为 `Prop`，没有被当作公理或已证明定理使用。
 
+`paper.tex` 已更新为 2026-09-19 修订稿，主要定理与常数保持不变。新版差异见 `docs/REVISION_2026-09-19.md`。当前工作目录为 `C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan`；Documents 下的副本因 Windows 受控文件夹写入限制保留为先前快照。
+
 已完成的主要内容：
 
 - 圆盘、全纯无零点函数列、紧集上一致收敛、固定主导指标、C-类和分割的定义；C-类至少含两个指标，限制区域保留分割。

@@ -148,3 +148,9 @@ import ModifiedCartan.ImmersionDifferential
 import ModifiedCartan.ManifoldDiscs
 import ModifiedCartan.TorusManifold
 import ModifiedCartan.TorusTangentAlgebraic
+import ModifiedCartan.AdmissiblePartitions
+import ModifiedCartan.PartitionRateDimension
+import ModifiedCartan.PartitionVelocities
+import ModifiedCartan.NormalizedHyperplane
+import ModifiedCartan.PartitionTori
+import ModifiedCartan.ProjectiveCoordinates

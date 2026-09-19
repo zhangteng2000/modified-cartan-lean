@@ -81,3 +81,5 @@ Geometry analytic chain: partition_exists_positive_radius + cclass_jet_limits �
 TorusLocus → TorusNullTopology → TorusMomentPolynomials → TorusAlgebraicNull: actual relative closedness, positive compact infimum, and equality with an explicit affine polynomial zero locus.
 
 Intrinsic geometry: ImmersionDifferential → ManifoldDiscs (exact metric equality and analytic-curve tangent reconstruction); TorusLocus + ManifoldDiscs → TorusManifold; TorusAlgebraicNull + TorusManifold → TorusTangentAlgebraic (entire intrinsic null image equals the explicit affine zero locus).
+
+Projective branch: AdmissiblePartitions -> PartitionRateDimension -> PartitionVelocities -> NormalizedHyperplane -> PartitionTori; NormalizedHyperplane -> ProjectiveCoordinates. The finite union and dimension bound are proved in normalized coordinates; the projective topological/manifold bridges remain WIP.

@@ -8,7 +8,7 @@
 
 | 原稿结果 | 当前状态 | Lean 对应及剩余工作 |
 |---|---|---|
-| `def:cclass` 及两个主导指标断言 | 完整证明 | `CClass.lean` 的 `cclass_two_dominants_after_extraction` 已包含同时 Montel 抽取和 Hurwitz 步骤；仅此辅助断言要求连通性。定义、子列保持、更换主导指标判据均已完成。 |
+| `def:cclass` | 定义及配套性质完成 | 定义、子列保持、更换主导指标判据均已完成。新版改用 region 一词；Lean 保留适用于一般开集的谓词，见 docs/REVISION_2026-09-19.md。新版删除的两个主导指标断言仍作为已证明的辅助引理保留。 |
 | `thm:main` | 完整证明 | `partitionTheorem_proved`；更强的 `partition_at_recursive_radius` 保留 εₚ = rₚ₋₁^(p−1)，实际构造分组并由吸收证明归一化极限为零。 |
 | `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺经典 Cartan 抽取及最终组装；两项吸收定理已完整证明。 |
 | `thm:torus-zero` | 完整证明 | `torus_manifold_metric_zero_iff`；使用实际流形微分和切空间，已证明坐标圆盘与内在圆盘的双向转换及度量相等。有限 Laurent 表示与复嵌入流形数据对应原稿假设，见 docs/GEOMETRIC_MODEL.md。 |
@@ -23,12 +23,12 @@
 | `lem:stabilization` | 完整证明 | `stabilization_lemma`；同时分析抽取、固定紧集上的最大值发散、实际商函数预序、极大等价类计数及下一层不可比较性均已证明。 |
 | `cor:centers` | 完整证明 | `partition_at_center`；实际 C-类分割通过圆盘自同构拉回，保留同一显式半径。 |
 | `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
-| `cor:geodesic-comparison` | 未形式化 | Harnack 比较、自同构归一化与测地段步骤未证明。 |
+| `cor:geodesic-comparison` | 部分工具已证明 | Harnack 比较、自同构归一化与实际圆盘段上的比较均已证明；尚缺双曲测地段表述的最终识别。 |
 | `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
 | `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
 | `prop:torus-null-set` | 完整证明 | 内在切丛中的闭性、紧集正下界和严格正下确界均已证明；`torus_manifold_null_image_eq_zeroLocus` 将全部内在零方向精确识别为显式有限多项式理想的零点集。 |
-| `prop:projective-equivalence` | 未形式化 | 尚缺射影映射、Montel/Hurwitz 及两种分割表述的等价。 |
-| `cor:projective-zero-directions` | 指数和分组工具完成 | `exponentialSum_zero_iff_grouped` 已证明；射影环面切空间与零方向的最终识别、维数界未证明。 |
+| `prop:projective-equivalence` | 部分工具已证明 | 真正的 mathlib 射影空间与归一化超平面的双射已证明；商拓扑、全纯映射及两种分割表述的等价仍在进行。 |
+| `cor:projective-zero-directions` | 归一化坐标结果完成 | 零方向是可容许分割对应线性子空间的有限并，每个子空间维数 ≤ ⌊p/2⌋−1；已证明这些空间恰为分块环面上全纯曲线的速度集合。尚缺标准射影流形及切空间的最终识别。 |
 
 ## 证明边界
 

@@ -1,4 +1,4 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, and the connected two-dominant-index assertion fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
 WIP: Full manuscript; sharp five-function theorem and counterexample, geodesic identification, and the remaining projective applications.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
@@ -6,6 +6,12 @@ SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
 
 # Full formalization progress
+
+Current manuscript: revised attachment received 2026-09-19. Principal statements
+and constants are unchanged. The old manuscript is archived; see
+`REVISION_2026-09-19.md` for the full comparison, the C-class terminology issue,
+and the new writable working directory. The removed two-dominant-index assertion
+is retained only as a proved auxiliary lemma.
 
 The goal is the full manuscript, with the original hypotheses, constants, explicit radii, endpoint inequalities, and equivalences. A definition of a proposition is not a proof. Declaration counts include elementary auxiliary results and do not measure a percentage of manuscript completion.
 
@@ -115,7 +121,7 @@ Checkpoint: 317 proof declarations, 3582 successful build jobs, complete source 
 
 `AbsorptionInduction.lean` proves `absorption_successor`: from actual m-term absorption on D(r), with 0 < r ≤ 1, it derives (m+1)-term absorption on D(ηₘ₊₁ r), with η exactly 1/[1024(Kₘ₊₁+m+1)]. All failure points, radii, envelopes, Wronskians and error limits are constructed in the proof. This completes the general analytic induction step. The full manuscript absorption theorem is now assembled and audited with the exact recursive radii.
 
-Latest audited checkpoint: 541 proof declarations; `lake build` successful (3703 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
+Latest audited checkpoint: 578 proof declarations; `lake build` successful (3712 jobs); standard axioms only; no placeholders or user axioms. The declaration count is not a completion percentage.
 
 Sharp two-term preparation: `DiskAutomorphisms.lean` constructs the involutive disk automorphisms and proves their analyticity, derivatives, image and basic distance identities. `HarmonicComposition.lean` transports harmonicity through actual analytic maps and proves Harnack on open disks. `TwoPointHarnack.lean` proves the normalized real-segment comparison using the original kernel coefficients. `HyperbolicDiameter.lean` proves that compact subsets of any open set with diameter ≤ log 3 have a uniform strict pseudodistance bound, without connectedness. `SymmetricDiskSegments.lean` constructs symmetric coordinates and explicit maps for all endpoint pairs, including coincident endpoints. `FailurePointsAvoidZeros.lean` uses a finite circle cover and the maximum principle for reciprocals to move every failure point into one fixed compact zero-free set. The completed assembly is recorded below.
 
@@ -156,3 +162,5 @@ TorusLocus is audited at 516 declarations: torus_locus_metric_zero_iff proves bo
 TorusNullTopology proves relative closedness of the actual null directions and a strictly positive compact infimum. TorusMomentPolynomials constructs a finite ideal in affine (x, x⁻¹, v) coordinates. TorusAlgebraicNull proves that its entire zero locus equals the image of the actual zero-metric directions, reconstructing the torus point and its defining equations from the polynomial equations. All ten new proof declarations are included in the 526-declaration audit. The intrinsic manifold bridge remains WIP.
 
 Intrinsic geometry checkpoint (541 audited declarations): ImmersionDifferential constructs a differentiable local left inverse and proves differential injectivity. ManifoldDiscs proves both disk translations and exact equality of the intrinsic mfderiv-based metric with the coordinate metric. TorusManifold establishes the intrinsic zero-orbit equivalence, tangent-bundle closedness and positive compact infimum. TorusTangentAlgebraic proves the image of intrinsic zero directions is exactly the explicit polynomial zero locus; arbitrary polynomial zeros are reconstructed as tangent vectors via a lifted actual exponential orbit. This resolves geometric discrepancy D2. See GEOMETRIC_MODEL.md for the encoding of the original smooth closed subvariety hypothesis.
+
+2026-09-19 projective checkpoint: `AdmissiblePartitions` identifies vanishing exponential sums with actual admissible finite partitions. `PartitionRateDimension` and `PartitionVelocities` prove the exact dimension bound floor(p/2)-1 and finite-union description. `NormalizedHyperplane` applies the proved torus theorem to the zero-sum, x_k=1 locus. `PartitionTori` proves both directions of the holomorphic-curve tangent characterization using explicit entire exponential curves. `ProjectiveCoordinates` constructs a genuine equivalence with mathlib projectivization. Standard quotient topology and intrinsic projective tangent identification remain WIP. All six modules are included in the 578-declaration audit.

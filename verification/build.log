@@ -1,29 +1,29 @@
-⚠ [3531/3620] Replayed ModifiedCartan.CircleVariation
+⚠ [3482/3712] Replayed ModifiedCartan.CircleVariation
 warning: ModifiedCartan/CircleVariation.lean:18:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: ModifiedCartan/CircleVariation.lean:22:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [3547/3620] Replayed ModifiedCartan.AngularIntegrals
+⚠ [3553/3712] Replayed ModifiedCartan.AngularIntegrals
 warning: ModifiedCartan/AngularIntegrals.lean:82:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [3590/3620] Replayed ModifiedCartan.UnitEnvelope
+⚠ [3584/3712] Replayed ModifiedCartan.UnitEnvelope
 warning: ModifiedCartan/UnitEnvelope.lean:53:5: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3698/3703] Built ModifiedCartan.ImmersionDifferential (17s)
+⚠ [3669/3712] Replayed ModifiedCartan.ImmersionDifferential
 warning: ModifiedCartan/ImmersionDifferential.lean:18:0: automatically included section variable(s) unused in theorem `ModifiedCartan.immersion_local_left_inverse`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3699/3703] Built ModifiedCartan.ManifoldDiscs (19s)
+⚠ [3700/3712] Replayed ModifiedCartan.ManifoldDiscs
 warning: ModifiedCartan/ManifoldDiscs.lean:29:0: automatically included section variable(s) unused in theorem `ModifiedCartan.manifold_disc_embedding`:
   [IsManifold 𝓘(ℂ, E) 1 M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -43,7 +43,13 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [IsManifold 𝓘(ℂ, E) 1 M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [3700/3703] Built ModifiedCartan.TorusManifold (19s)
-✔ [3701/3703] Built ModifiedCartan.TorusTangentAlgebraic (25s)
-✔ [3702/3703] Built ModifiedCartan (15s)
-Build completed successfully (3703 jobs).
+⚠ [3709/3712] Built ModifiedCartan.ProjectiveCoordinates (15s)
+warning: ModifiedCartan/ProjectiveCoordinates.lean:60:5: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3710/3712] Built ModifiedCartan.PartitionTori (15s)
+✔ [3711/3712] Built ModifiedCartan (13s)
+Build completed successfully (3712 jobs).
