@@ -83,3 +83,5 @@ TorusLocus → TorusNullTopology → TorusMomentPolynomials → TorusAlgebraicNu
 Intrinsic geometry: ImmersionDifferential → ManifoldDiscs (exact metric equality and analytic-curve tangent reconstruction); TorusLocus + ManifoldDiscs → TorusManifold; TorusAlgebraicNull + TorusManifold → TorusTangentAlgebraic (entire intrinsic null image equals the explicit affine zero locus).
 
 Projective branch: AdmissiblePartitions -> PartitionRateDimension -> PartitionVelocities -> NormalizedHyperplane -> PartitionTori; NormalizedHyperplane -> ProjectiveCoordinates. The finite union and dimension bound are proved in normalized coordinates; the projective topological/manifold bridges remain WIP.
+
+Completed projective null-direction chain: ProjectiveCoordinates -> ProjectiveTopology -> NormalizedHyperplaneChart/AffineSliceManifold -> ProjectiveManifold; PartitionTori -> PartitionTorusManifold; AffineSliceDifferential + ProjectiveScaling + ProjectiveManifold + PartitionTorusManifold -> ProjectiveTori. The result uses actual mfderiv images and the intrinsic disc infimum.

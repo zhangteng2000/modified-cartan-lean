@@ -44,6 +44,14 @@
     "sha256": "4E3B3064A71DB8E2B45E6A1AC995C0CB65FAF9101D317F25EE1DB01F7F0752B8"
   },
   {
+    "file": "ModifiedCartan\\AffineSliceDifferential.lean",
+    "sha256": "3D8EB38C41B73D1A71F48393CB5F21258864D711E8FDA54620C8E63BE51D78AA"
+  },
+  {
+    "file": "ModifiedCartan\\AffineSliceManifold.lean",
+    "sha256": "241EC2BDB20EA3CAA2B20AA842910A4EDEEEEE6967A0CF8BCC635524C4FA261C"
+  },
+  {
     "file": "ModifiedCartan\\AnalyticStatements.lean",
     "sha256": "707F68E81C10A5A33F7659077F44A8ADFC2C9D66F0A37CF26AA0AAA12DB244B6"
   },
@@ -340,6 +348,10 @@
     "sha256": "D8C45C4F82A6A29427E8884F1A8557F7DE18172E49E064C5AF9F63395C72A96C"
   },
   {
+    "file": "ModifiedCartan\\NormalizedHyperplaneChart.lean",
+    "sha256": "12BC4F65299C05C4384A8900FA17F4C4036D5F6436FEA072CD03ABEF933C1A92"
+  },
+  {
     "file": "ModifiedCartan\\NormalizedParts.lean",
     "sha256": "F4B7A582DDBD1303D7288CC2704338494B8962994543D8EE76211D6ED0F6A562"
   },
@@ -366,6 +378,10 @@
   {
     "file": "ModifiedCartan\\PartitionTori.lean",
     "sha256": "39FBEF629972F156FD43E36E1CD691935D56351EB75E93818DD509335F7549A1"
+  },
+  {
+    "file": "ModifiedCartan\\PartitionTorusManifold.lean",
+    "sha256": "15623847745D2798F8367317B2DC7214EAA2E8EA772937E456435819EC19D1D8"
   },
   {
     "file": "ModifiedCartan\\PartitionVanishing.lean",
@@ -398,6 +414,22 @@
   {
     "file": "ModifiedCartan\\ProjectiveCoordinates.lean",
     "sha256": "A2DEA9164AF34986581F1424C812915414517D62E1B49DEBD0902F50280F9031"
+  },
+  {
+    "file": "ModifiedCartan\\ProjectiveManifold.lean",
+    "sha256": "A0B1E3B4364C154B89FB0B0093AA55C4124438D6D95620CEFB3F29B2F4D806D8"
+  },
+  {
+    "file": "ModifiedCartan\\ProjectiveScaling.lean",
+    "sha256": "DD2693B6FFCD903FAEAF44D4EB042B49CAC44D31DAE897D3008F3BFCDDE19AC1"
+  },
+  {
+    "file": "ModifiedCartan\\ProjectiveTopology.lean",
+    "sha256": "46C37FBFDB11C93E202C82D8DB815570E403146D78E1498BD42DAE726E5DD375"
+  },
+  {
+    "file": "ModifiedCartan\\ProjectiveTori.lean",
+    "sha256": "188486BBEAC1E1FE56E6C98F22F59D0A2D4308DBDF7EFA4B5352C9C1374898F8"
   },
   {
     "file": "ModifiedCartan\\ProximityGrowth.lean",
@@ -625,7 +657,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "2D6775CBBFAEBF2355BA13437504B5D7B013FFDC83D6176F564366A91D42C378"
+    "sha256": "0030BDCEB715D85878759F325F905ECF7AA82B64831A5A638693AB0B2EFE6613"
   },
   {
     "file": "lake-manifest.json",
@@ -641,6 +673,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "05CE8F123E777FDFFC8C6140C1B15C5EA50B71B23655D5F943205D3D5359CF1C"
+    "sha256": "E9E2E6B55E20C8C32D4AE6D2871DFFD4A315E722C9DE4093818F33377F57309F"
   }
 ]

@@ -154,3 +154,11 @@ import ModifiedCartan.PartitionVelocities
 import ModifiedCartan.NormalizedHyperplane
 import ModifiedCartan.PartitionTori
 import ModifiedCartan.ProjectiveCoordinates
+import ModifiedCartan.ProjectiveTopology
+import ModifiedCartan.NormalizedHyperplaneChart
+import ModifiedCartan.AffineSliceManifold
+import ModifiedCartan.ProjectiveManifold
+import ModifiedCartan.AffineSliceDifferential
+import ModifiedCartan.PartitionTorusManifold
+import ModifiedCartan.ProjectiveScaling
+import ModifiedCartan.ProjectiveTori

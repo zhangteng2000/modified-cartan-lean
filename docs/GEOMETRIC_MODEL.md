@@ -14,3 +14,9 @@ Theorem torus_manifold_metric_zero_iff is the original two-way zero-direction cr
 For algebraicity, the affine coordinates are (x, x⁻¹, v). The explicit ideal contains xⱼ yⱼ − 1 and the first q moment polynomials for every defining Laurent equation with q terms. TorusTangentAlgebraic proves equality of the entire polynomial zero locus with the image of the intrinsic null directions. The reverse inclusion constructs an actual exponential curve, lifts it to M, and differentiates it to recover an intrinsic tangent vector. Thus it is not merely a list of candidate equations or a conditional finite-moment lemma.
 
 These results concern thm:torus-zero and prop:torus-null-set. The projective charts, projective convergence equivalence and projective torus tangent/dimension assertions still require separate proofs.
+
+## Projective application
+
+`ProjectiveX p` is the zero-sum, coordinate-hyperplane-complement subset of mathlib projectivization. `ProjectiveTopology` uses the quotient topology of nonzero complex vectors; it does not assign a topology by an unverified bijection. The affine chart is proved to be a homeomorphism. Subtracting a fixed normalized point identifies X_p with an open set in the complex linear space {v_k=0, sum v_j=0}; this supplies the standard complex manifold. Nonemptiness is proved for p >= 2, so the manuscript p >= 3 introduces no extra assumption.
+
+The projective tori are actual holomorphic topological embeddings of open affine subspaces, with injective manifold differential at every point. Their images agree with the manuscript nonzero part-scaling parameterization. Their tangent spaces are defined as images of these actual differentials at the point mapped to x. The exact zero-direction set and the dimension bound floor(p/2)-1 are proved, including one-part partitions and diagonal hyperplanes.
