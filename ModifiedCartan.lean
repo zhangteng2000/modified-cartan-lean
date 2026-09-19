@@ -181,3 +181,15 @@ import ModifiedCartan.PartitionObstruction
 import ModifiedCartan.FiveCounterexample
 import ModifiedCartan.FiveOptimalityUpper
 import ModifiedCartan.TwoAbsorptionCounterexample
+import ModifiedCartan.ProjectiveKernel
+import ModifiedCartan.ProjectiveCompact
+import ModifiedCartan.ProjectiveConvergence
+import ModifiedCartan.ProjectiveHurwitz
+import ModifiedCartan.UniformComposition
+import ModifiedCartan.ProjectiveLift
+import ModifiedCartan.ProjectiveClass
+import ModifiedCartan.ProjectiveBlocks
+import ModifiedCartan.ProjectivePartitions
+import ModifiedCartan.ProjectiveHolomorphy
+import ModifiedCartan.ProjectiveCurves
+import ModifiedCartan.ProjectiveEquivalence

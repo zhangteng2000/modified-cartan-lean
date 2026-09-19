@@ -91,3 +91,5 @@ Completed geodesic chain: SchwarzPick -> HyperbolicCoordinates -> HyperbolicRadi
 Counterexample preparation: GaussianPrimitive -> GaussianRealBounds -> GaussianContour; all estimates concern the actual complex integral. HyperbolicCoordinates -> DiskDiameter proves the exact disk diameter, including the open-boundary supremum.
 
 Completed Gaussian obstruction chain: FiveExampleFunctions -> FivePhiSign/FiveMajorant -> FiveExampleBounds (using GaussianContour) -> FiveExampleLimits; PartitionObstruction + those limits -> FiveCounterexample -> FiveOptimalityUpper. The same actual family and uniform ratio convergence -> TwoAbsorptionCounterexample. Positive SharpFiveTheorem remains independent unfinished work.
+
+Completed projective equivalence: ProjectiveKernel -> ProjectiveCompact -> ProjectiveConvergence -> ProjectiveHurwitz; UniformComposition + ProjectiveLift -> ProjectiveClass -> ProjectiveBlocks -> ProjectivePartitions; ProjectiveManifold -> ProjectiveHolomorphy -> ProjectiveCurves. ProjectiveEquivalence assembles the genuine X_p-map/product-projective-limit equivalence.
