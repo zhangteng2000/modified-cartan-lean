@@ -211,3 +211,31 @@ the previous theorem unchanged. RadialProximityExceptional controls the outer
 measure of small-value circles by an actual outer proximity mean and a nonzero
 inner anchor; every zero circle is included. These are proved analytic steps,
 not assertions of full Cartan extraction or sharp-five completion.
+
+## Higher derived-fraction induction checkpoint — 926 declarations
+
+Full build and recursive axiom audit passed for 926 declarations, with only
+standard logical axioms. The full paper remains WIP.
+
+RadialAnchors proves actual simultaneous avoidance of finitely many exceptional
+radius sets and the quantitative product-ratio anchor inequality.
+DerivedFractionGrowth constructs both a new nonzero logarithmic anchor and a
+reciprocal proximity bound from large derived fractions on a positive amount of
+radial length. UniformWronskianGrowth and WronskianAnchorGrowth specialize this
+to the actual third- and fourth-order Wronskians, with the original signed
+fraction identities and genuine derivative-based upper bounds.
+
+UnitSumWronskian proves column-replacement proximity bounds for every original
+unit, including Wronskian zeros on integration circles. BoundaryErrorGrowth
+controls the full determinant derivative error. QuotientAnchors constructs one
+common anchor disk from the exclusion of vanishing quotient subsequences.
+CartanGrowthClosure proves that the inverse-Wronskian logarithmic bound forces
+a logarithmic bound for all pairwise quotients of a zero-sum family.
+CartanInverseEndgame applies the proved growth-radius selection and obtains a
+full-unit-disk C class under explicit inverse-growth branch conditions.
+
+This completes the analytic closure of that conditional branch. The bounded
+higher-fraction branches, exhaustive subsequence case selection, induction on
+removed indices over annuli, and full-disk diagonal assembly still need to be
+connected into an unconditional CartanExtractionAt 5 proof. Consequently the
+positive sharp-five theorem and exact optimal-radius equality are not verified.

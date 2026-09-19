@@ -74,6 +74,7 @@
 'ModifiedCartan.bounded_blaschke_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.blaschkeDecayConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.blaschkeFactor_exponential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.wronskianBoundaryError_growth_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.wronskian_boundary_error_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.harnackPower_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.zero_free_log_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -92,6 +93,16 @@
 'ModifiedCartan.four_global_class_of_vanishing_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.four_class_of_finite_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.four_class_of_vanishing_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.zero_sum_pairGrowth_bound_of_inverseWronskian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ModifiedCartan.pairGrowth_bounded_of_inverseWronskian_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ModifiedCartan.locallyBounded_quotients_of_pairGrowth_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ModifiedCartan.cclass_univ_of_inverseWronskian_control' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.pair_merge_on_annulus' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.restore_eraseFinIndex' depends on axioms: [propext, Classical.choice]
 'ModifiedCartan.eraseFinIndex_eq_iff' depends on axioms: [propext, Classical.choice]
@@ -195,6 +206,10 @@
 'ModifiedCartan.derivative_quotient_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.holomorphic_nonzero_codiscrete_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.derivative_quotient_proximity_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.derived_fraction_anchor_and_reciprocal_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ModifiedCartan.reciprocal_growth_of_large_derived_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.diskAutomorphism_eq_blaschke' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.diskAutomorphism_denominator_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.diskAutomorphism_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -691,6 +706,8 @@
 'ModifiedCartan.log_tangent_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.proximity_le_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.quantitativeWronskian_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.diskSupNorm_ge_exp_of_log_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.quotient_anchors_of_no_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.two_term_quotient_vanishingDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.vanishingDerivative_endpoint_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.maxWithZero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -705,6 +722,9 @@
 'ModifiedCartan.disk_pow_subset_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.disk_pow_succ_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.stabilization_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.exists_avoiding_finite_exceptional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.log_anchor_of_product_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.radial_product_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.abs_mul_log_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.radialLog_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.radialLog_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -829,6 +849,9 @@
 'ModifiedCartan.locallyUniform_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.proximityMean_inv_le_uniform_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.proximityMean_inv_growth_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.normalizedWronskian_bounded_order_growth_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'ModifiedCartan.unitEnvelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.unitEnvelope_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.unitEnvelope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -842,6 +865,11 @@
 'ModifiedCartan.unitGrowthMean_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.unitGrowthMean_monotoneOn' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.unitGrowthMean_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.unit_posLog_le_normalizedWronskian_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.unit_proximity_le_normalizedWronskian_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.constant_sum_proximity_le_normalizedWronskian_inv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'ModifiedCartan.vanishingDerivative_closedBall' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.vanishingDerivative_moving_center' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.vanishingDerivative_fixed_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -858,6 +886,8 @@
 'ModifiedCartan.quantitativeWronskian_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.determinant_last_column_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.wronskian_last_column_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.wronskian_three_anchor_and_reciprocal_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.wronskian_four_anchor_and_reciprocal_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.matrix_det_norm_column_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.wronskian_update_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ModifiedCartan.derivativeColumnError_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]

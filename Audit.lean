@@ -76,6 +76,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.bounded_blaschke_factorization
 #print axioms ModifiedCartan.blaschkeDecayConstant_pos
 #print axioms ModifiedCartan.blaschkeFactor_exponential_bound
+#print axioms ModifiedCartan.wronskianBoundaryError_growth_bound
 #print axioms ModifiedCartan.wronskian_boundary_error_negligible
 #print axioms ModifiedCartan.harnackPower_pos
 #print axioms ModifiedCartan.zero_free_log_lower
@@ -92,6 +93,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.four_global_class_of_vanishing_ratio
 #print axioms ModifiedCartan.four_class_of_finite_ratio_limit
 #print axioms ModifiedCartan.four_class_of_vanishing_ratio
+#print axioms ModifiedCartan.zero_sum_pairGrowth_bound_of_inverseWronskian
+#print axioms ModifiedCartan.pairGrowth_bounded_of_inverseWronskian_control
+#print axioms ModifiedCartan.locallyBounded_quotients_of_pairGrowth_bounds
+#print axioms ModifiedCartan.cclass_univ_of_inverseWronskian_control
 #print axioms ModifiedCartan.pair_merge_on_annulus
 #print axioms ModifiedCartan.restore_eraseFinIndex
 #print axioms ModifiedCartan.eraseFinIndex_eq_iff
@@ -195,6 +200,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.derivative_quotient_recurrence
 #print axioms ModifiedCartan.holomorphic_nonzero_codiscrete_circle
 #print axioms ModifiedCartan.derivative_quotient_proximity_recurrence
+#print axioms ModifiedCartan.derived_fraction_anchor_and_reciprocal_growth
+#print axioms ModifiedCartan.reciprocal_growth_of_large_derived_fraction
 #print axioms ModifiedCartan.diskAutomorphism_eq_blaschke
 #print axioms ModifiedCartan.diskAutomorphism_denominator_ne_zero
 #print axioms ModifiedCartan.diskAutomorphism_analytic
@@ -685,6 +692,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.log_tangent_bound
 #print axioms ModifiedCartan.proximity_le_log_moment
 #print axioms ModifiedCartan.quantitativeWronskian_proved
+#print axioms ModifiedCartan.diskSupNorm_ge_exp_of_log_anchor
+#print axioms ModifiedCartan.quotient_anchors_of_no_vanishing
 #print axioms ModifiedCartan.two_term_quotient_vanishingDerivative
 #print axioms ModifiedCartan.vanishingDerivative_endpoint_contradiction
 #print axioms ModifiedCartan.maxWithZero_unit
@@ -699,6 +708,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.disk_pow_subset_unit
 #print axioms ModifiedCartan.disk_pow_succ_subset
 #print axioms ModifiedCartan.stabilization_lemma
+#print axioms ModifiedCartan.exists_avoiding_finite_exceptional
+#print axioms ModifiedCartan.log_anchor_of_product_ratio
+#print axioms ModifiedCartan.radial_product_anchor
 #print axioms ModifiedCartan.abs_mul_log_le_one
 #print axioms ModifiedCartan.radialLog_integrable
 #print axioms ModifiedCartan.radialLog_integral_bound
@@ -821,6 +833,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.locallyUniform_pi
 #print axioms ModifiedCartan.proximityMean_inv_le_uniform_anchor
 #print axioms ModifiedCartan.proximityMean_inv_growth_bound
+#print axioms ModifiedCartan.normalizedWronskian_bounded_order_growth_bound
 #print axioms ModifiedCartan.unitEnvelope_integrable
 #print axioms ModifiedCartan.unitEnvelope_harmonic
 #print axioms ModifiedCartan.unitEnvelope_zero
@@ -834,6 +847,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.unitGrowthMean_continuousOn
 #print axioms ModifiedCartan.unitGrowthMean_monotoneOn
 #print axioms ModifiedCartan.unitGrowthMean_tendsto_atTop
+#print axioms ModifiedCartan.unit_posLog_le_normalizedWronskian_inv
+#print axioms ModifiedCartan.unit_proximity_le_normalizedWronskian_inv
+#print axioms ModifiedCartan.constant_sum_proximity_le_normalizedWronskian_inv
 #print axioms ModifiedCartan.vanishingDerivative_closedBall
 #print axioms ModifiedCartan.vanishingDerivative_moving_center
 #print axioms ModifiedCartan.vanishingDerivative_fixed_difference
@@ -850,6 +866,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.quantitativeWronskian_one
 #print axioms ModifiedCartan.determinant_last_column_residual
 #print axioms ModifiedCartan.wronskian_last_column_residual
+#print axioms ModifiedCartan.wronskian_three_anchor_and_reciprocal_growth
+#print axioms ModifiedCartan.wronskian_four_anchor_and_reciprocal_growth
 #print axioms ModifiedCartan.matrix_det_norm_column_bound
 #print axioms ModifiedCartan.wronskian_update_sum
 #print axioms ModifiedCartan.derivativeColumnError_nonneg
