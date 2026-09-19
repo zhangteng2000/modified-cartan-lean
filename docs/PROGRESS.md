@@ -276,3 +276,28 @@ measurability assumptions.
 These conditional branches are now verified. The exhaustive extraction and
 local-to-global induction remain WIP, as do the positive sharp-five theorem and
 exact optimal-radius equality.
+
+## Complete four-function extraction checkpoint — 988 declarations
+
+The full build and recursive axiom audit passed for 988 declarations.
+CartanFour.cartanExtraction_four proves CartanExtractionAt 4 on the entire open
+unit disk with one strict subsequence. There are no extra branch assumptions in
+this result and no change to the manuscript statements. Only propext,
+Classical.choice and Quot.sound occur in the audit.
+
+FiniteCaseExclusion and CartanPairSelection construct a fixed omitted index
+and actual pair anchors. DerivedFractionRadii, OrientedWronskianGrowth and
+RadialWronskianNonzero turn radial case exclusion into higher anchors and
+nonzero Wronskians. CartanRadialCases and CartanFourthRadialCase prove eventual
+exclusion of positive-size good-radius sets. CartanFourWronskianEndgame and
+CartanFourNoReductions discharge the full higher branch for four functions.
+CartanFourDiskReduction and CartanFourLocal include every initial quotient
+reduction and prove unconditional extraction on each strict interior disk.
+CountableExtraction constructs a genuine strict diagonal subsequence;
+TailClasses restores finite initial terms, and CClassExhaustion fixes both the
+class pattern and its dominant indices. UnitDiskExhaustion and CartanDiagonal
+then yield the full open-disk result.
+
+Still WIP: four-function extraction on the annuli needed by five-function
+merging, the five-function induction/endgame, positive sharp-five, and the
+positive half of the optimal-radius equality. No final report is created.

@@ -36,3 +36,9 @@ At 926 audited declarations, the quantitative anchor induction is proved through
 At 938 audited declarations, the bounded third-fraction circle branch is linked to an actual contradiction under the previously excluded quotient-limit cases. SmallThreeGrowth removes all zero-circle assumptions using RadialZeros, and CartanSmallThree supplies the case connection. The remaining bounded fourth-fraction step and the exhaustive local-to-global induction/diagonal assembly are still required.
 
 At 948 audited declarations, the bounded fourth-fraction branch is also connected to its actual reduction contradiction. Normalized Wronskians and both proximity means are proved invariant under index permutations. The finite radial outer-measure dichotomy is available for selecting a large orientation. Exhaustive case selection, actual full-disk extraction, and the annular induction remain unfinished.
+
+## Complete four-function extraction
+
+The 988-declaration full audit verifies cartanExtraction_four : CartanExtractionAt 4. All quotient-reduction and Wronskian cases are discharged. The proof constructs the single strict diagonal subsequence and fixes actual dominant indices across an exhaustion of the whole open unit disk. It is no longer a conditional or fixed-radius assertion.
+
+The remaining five-function work is the annular transfer of this four-function result, merging and recovery of original indices, the fourth-order endgame, and the final unconditional extraction. The generic diagonal step is now available. The positive sharp-five theorem is still unproved.

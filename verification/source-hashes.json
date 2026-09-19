@@ -112,12 +112,40 @@
     "sha256": "84C7E8AB65F6A69E6057073F49CFAA81415630F8CE3E633A5FD7A030C92892E0"
   },
   {
+    "file": "ModifiedCartan\\CartanDiagonal.lean",
+    "sha256": "46571C4343A76A07CBFB375E2D49BBB2210D72C23D1CDBB8408CF177A0D5F978"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFour.lean",
+    "sha256": "E4F07C137F7593A8CBBE7CC3A60852934DEA148FD937ED1058249E2F9703F700"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourDiskReduction.lean",
+    "sha256": "730872DEF8122B798625A59014F1B44C6E85FD8AD8A85DF88A5659B8BEEBE185"
+  },
+  {
     "file": "ModifiedCartan\\CartanFourFiniteLimit.lean",
     "sha256": "9BD50BA466FBE9DE961E37035CD5D03FCC3306B11BFF424F751929A0A9124F84"
   },
   {
+    "file": "ModifiedCartan\\CartanFourLocal.lean",
+    "sha256": "CB4087E6F5E0F7D126F8ABF478304A3EC909B46DA7FD631A8B5F1FF50C92A5AE"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourNoReductions.lean",
+    "sha256": "2E79E7068508A14B40848B5F9BC488077BC5B24534BF9394146D17B411A9B7D5"
+  },
+  {
     "file": "ModifiedCartan\\CartanFourReduction.lean",
     "sha256": "AE5D016C7345CF40A45C170F69848C7D9A2134AE7A4F36DB67D155F8CC357EFC"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourthRadialCase.lean",
+    "sha256": "30F51B7791878D419CB8BCBB8FB5C424E21B53E9048AB4654CE74E0E7FC5B231"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourWronskianEndgame.lean",
+    "sha256": "174F4350FB53C3BCD656903118389FA924656814599E24873D6AB2341E96DAD8"
   },
   {
     "file": "ModifiedCartan\\CartanGrowthClosure.lean",
@@ -144,8 +172,16 @@
     "sha256": "B4F20CA4808C9B55BB2FECD0863DB8F44A7B3ABEA60EC180FAC84E5D0467E57C"
   },
   {
+    "file": "ModifiedCartan\\CartanPairSelection.lean",
+    "sha256": "2DC3A1344709BF2CD08844F2BC2FFEA61517302EF7CF26653FBF6FDC8CA19758"
+  },
+  {
     "file": "ModifiedCartan\\CartanPairUnmerge.lean",
     "sha256": "E84751EB2ECBACFE7DDEEA1324B270160F7223F691A572D5CEC6102132BF4EA1"
+  },
+  {
+    "file": "ModifiedCartan\\CartanRadialCases.lean",
+    "sha256": "9930FD4248B496E0832BFCDC64802E2FFF673046E74850587F5E2448FF5A44F1"
   },
   {
     "file": "ModifiedCartan\\CartanRadialExceptional.lean",
@@ -192,6 +228,10 @@
     "sha256": "D5117821E56381901AAEA3FC4FE665E5E151BA033006ADB8EEBED2A4979C4C63"
   },
   {
+    "file": "ModifiedCartan\\CClassExhaustion.lean",
+    "sha256": "D0B5AFCA0A9BFEC22470547931AA1A2DE0D390236F4FBA6459561EF81766A057"
+  },
+  {
     "file": "ModifiedCartan\\CClassJets.lean",
     "sha256": "B70FCEFFFF9124E54835B289E2B4C30D4DA6BB30A8BA5954C80352ECDC7EEB06"
   },
@@ -232,12 +272,20 @@
     "sha256": "03A608F4054376A4D2C18F7B773A481A4075779A210B12729DA74F95B078598A"
   },
   {
+    "file": "ModifiedCartan\\CountableExtraction.lean",
+    "sha256": "482CBD5D1217DC72F9430C1BB4C370E2EB56C69ED749ED75656502A4208BEA64"
+  },
+  {
     "file": "ModifiedCartan\\DerivativeQuotientRecurrence.lean",
     "sha256": "BF6819F9CB7CABA6FAD3E35E93B29033904C51A75FC6D82CE9C5B90599965C9A"
   },
   {
     "file": "ModifiedCartan\\DerivedFractionGrowth.lean",
     "sha256": "936D538268C944C4291C006E87F32E899C8885D8A9F206E17118F17EBECE3E22"
+  },
+  {
+    "file": "ModifiedCartan\\DerivedFractionRadii.lean",
+    "sha256": "8F2D5B7347833D9056F4E07739871E40A2885A7C9C47F4077C6386B6AB5DB461"
   },
   {
     "file": "ModifiedCartan\\DiskAutomorphisms.lean",
@@ -286,6 +334,10 @@
   {
     "file": "ModifiedCartan\\FailurePointsAvoidZeros.lean",
     "sha256": "A23FC5CD3B69D6FC982C9B2292EC6E1077E0B58818F78D9651A282FF2C89A719"
+  },
+  {
+    "file": "ModifiedCartan\\FiniteCaseExclusion.lean",
+    "sha256": "3B22A61EF795011120EEB4CE5CECB4F1F6EF119214ED84CF9772CD151DCFCC9B"
   },
   {
     "file": "ModifiedCartan\\FiniteEscape.lean",
@@ -560,6 +612,10 @@
     "sha256": "9C25ADACA10B4DB0622F032CFE7C7B2DB84096721108999030F4AFC9498F428E"
   },
   {
+    "file": "ModifiedCartan\\OrientedWronskianGrowth.lean",
+    "sha256": "A7A27C7B1CC012474A295FCEA1E5E5009DBB8B711DE1325036C626B548EF15DD"
+  },
+  {
     "file": "ModifiedCartan\\PairProximityAlternatives.lean",
     "sha256": "3D93A8A69CF8EF74C1535825FA1F84184504DAB0E27F7AA0F6A32CF56C53C5DF"
   },
@@ -748,6 +804,10 @@
     "sha256": "CF3AEFA01B22F15AD1E0E656DC3E1FA037573776954B527B756A0D7FA206935F"
   },
   {
+    "file": "ModifiedCartan\\RadialWronskianNonzero.lean",
+    "sha256": "8BE2B7347AA7BB48306AEB91C92FEBA776A617C99B45AF6FE9F8D285F8453F94"
+  },
+  {
     "file": "ModifiedCartan\\RadialZeros.lean",
     "sha256": "FFC343FA0F79B0D57ED233EEF929F6F65555EE2A59B9B1F3D87C2F04BA4AE280"
   },
@@ -856,6 +916,10 @@
     "sha256": "836005EB27E860DCBE0420F852C427D1B675BBB6B91E52C2767E8BB1CD4133F2"
   },
   {
+    "file": "ModifiedCartan\\TailClasses.lean",
+    "sha256": "5A9BB046E3D6C40E158F882ED82C90B22BE2E1B84875718956AC902D79589601"
+  },
+  {
     "file": "ModifiedCartan\\TorusAlgebraicNull.lean",
     "sha256": "B1FAA501D1B9B5375D2AA5874D737D1F17B54DFC4A999D27893CD53085942E17"
   },
@@ -910,6 +974,10 @@
   {
     "file": "ModifiedCartan\\UniformWronskianGrowth.lean",
     "sha256": "D4EEDC4166059EA3129BF8C1EBDDF08B20AC1A60960121D4AD19E0DE72B910DC"
+  },
+  {
+    "file": "ModifiedCartan\\UnitDiskExhaustion.lean",
+    "sha256": "CE468457182ED9FBFF9A023824E5D2773550A460FA6B302FF87C6904C2D54876"
   },
   {
     "file": "ModifiedCartan\\UnitEnvelope.lean",
@@ -992,6 +1060,10 @@
     "sha256": "E82ECB40449BB33769E788A0D8F75445768CA6EDC29489048D242B5E4C2461C0"
   },
   {
+    "file": "ModifiedCartan\\WronskianPairAnchors.lean",
+    "sha256": "D071EF66DCE2B2CF257C1FD42597C7DC9DAC9C72361D59CD4464E4225EE21B67"
+  },
+  {
     "file": "ModifiedCartan\\WronskianPermutations.lean",
     "sha256": "3048193600498B188F1619FABC1487B25E1F72D843644A5A23371A98D947961A"
   },
@@ -1033,7 +1105,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "DB77481EC0C610A68E3C7854F0B8A3FAB1754AA93FF8F9B90B8474B9BD8BA1CD"
+    "sha256": "1856A84DADB507F832FA236CFB38B0EC59095CCFF3B5B8187756028D387B38F0"
   },
   {
     "file": "lake-manifest.json",
@@ -1049,6 +1121,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "83A801D9FE9E6EDA51E8DB6260AA40F841BE1775F5DC35DA423ADD34771D5A02"
+    "sha256": "2D899D51B6C080191FF7A4A6EA196AE6D4B7F1710E29B7A0344BE12DE01FC496"
   }
 ]
