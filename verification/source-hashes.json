@@ -64,6 +64,14 @@
     "sha256": "5AE5029F29396244C422A914714CC71F16D28B71A43CFB3E4867D1DF67B34E31"
   },
   {
+    "file": "ModifiedCartan\\AnnulusFilling.lean",
+    "sha256": "F5866DD22FA7EA8383E58730AF16E8B9306826B49E46DA57DCAAD413C73B7907"
+  },
+  {
+    "file": "ModifiedCartan\\AnnulusTopology.lean",
+    "sha256": "04AEC01A82B69726FF6870BE21BAD8BDAC458087CF9D193BF5016632BE043AC3"
+  },
+  {
     "file": "ModifiedCartan\\Basic.lean",
     "sha256": "CCE80B9D31E3D3D03246297F247B22B7F8829EA4C77019BD404B8F6C002A310C"
   },
@@ -88,8 +96,40 @@
     "sha256": "D601538E2743E481BA2521D255EC03C6ED341EA00B9C09CA2BF3D8E7B0109827"
   },
   {
+    "file": "ModifiedCartan\\CartanBoundedPairs.lean",
+    "sha256": "1F2A19C05F8DF0650D0B418941A3498FDFF4B6854CA54616767F9B644184D5AC"
+  },
+  {
     "file": "ModifiedCartan\\CartanCircle.lean",
     "sha256": "84C7E8AB65F6A69E6057073F49CFAA81415630F8CE3E633A5FD7A030C92892E0"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourFiniteLimit.lean",
+    "sha256": "9BD50BA466FBE9DE961E37035CD5D03FCC3306B11BFF424F751929A0A9124F84"
+  },
+  {
+    "file": "ModifiedCartan\\CartanFourReduction.lean",
+    "sha256": "AE5D016C7345CF40A45C170F69848C7D9A2134AE7A4F36DB67D155F8CC357EFC"
+  },
+  {
+    "file": "ModifiedCartan\\CartanMergeAnnulus.lean",
+    "sha256": "3ED826437530F2C17C6BFAAE31824421A7E6B840D25FC10ADD1E12830EA8D326"
+  },
+  {
+    "file": "ModifiedCartan\\CartanPairIndex.lean",
+    "sha256": "18F7CF563BC2A34395DA80013C6E731E1406F24E33E9533F5AE28B2B99B50ADB"
+  },
+  {
+    "file": "ModifiedCartan\\CartanPairOverlap.lean",
+    "sha256": "15D2BBA4483F3794FF6F1ED4C78FA16BF8FED46282ACD1B1EBE38AA23021C1B1"
+  },
+  {
+    "file": "ModifiedCartan\\CartanPairs.lean",
+    "sha256": "B4F20CA4808C9B55BB2FECD0863DB8F44A7B3ABEA60EC180FAC84E5D0467E57C"
+  },
+  {
+    "file": "ModifiedCartan\\CartanPairUnmerge.lean",
+    "sha256": "E84751EB2ECBACFE7DDEEA1324B270160F7223F691A572D5CEC6102132BF4EA1"
   },
   {
     "file": "ModifiedCartan\\CartanScaled.lean",
@@ -100,8 +140,16 @@
     "sha256": "A5B3B0207A211ECC169E40DF35CB0531D04F69E64446AE544B22304FCA0DAC34"
   },
   {
+    "file": "ModifiedCartan\\CartanThreeDomain.lean",
+    "sha256": "B133CFB853CA88690F00B87458F571A4476AE1F77DC0337336DCF467514AF7C7"
+  },
+  {
     "file": "ModifiedCartan\\CartanThreeLocal.lean",
     "sha256": "D4492F301EC909275C296EBD5BFA8F013A8C93C58276AD393D960335C343A5DE"
+  },
+  {
+    "file": "ModifiedCartan\\CartanUnmerge.lean",
+    "sha256": "A53ACA3B93B8465897A54173947ADE2EB15A99ED4F7BC264C5D668E46A75E3A4"
   },
   {
     "file": "ModifiedCartan\\CauchyBounds.lean",
@@ -312,6 +360,10 @@
     "sha256": "DAAA4CBC2D16306B5FDED5A102A1EF3D46B1FF47C155CF51312BB3F51A6450D7"
   },
   {
+    "file": "ModifiedCartan\\HolomorphicExtension.lean",
+    "sha256": "F5D70ABF17842853F8349D93D43FEBA2C3CD09F5C6C96216DD53A65BCD191007"
+  },
+  {
     "file": "ModifiedCartan\\HolomorphicLog.lean",
     "sha256": "22F3235170F7F903F1817FD0F8E6559139FB38F68BFD93237E3494C81F8A5AF2"
   },
@@ -448,6 +500,10 @@
     "sha256": "F4B7A582DDBD1303D7288CC2704338494B8962994543D8EE76211D6ED0F6A562"
   },
   {
+    "file": "ModifiedCartan\\OmittedValues.lean",
+    "sha256": "9C25ADACA10B4DB0622F032CFE7C7B2DB84096721108999030F4AFC9498F428E"
+  },
+  {
     "file": "ModifiedCartan\\ParameterUniformConvergence.lean",
     "sha256": "8F7D182DFB392033614BB3C59C04AE8439B1925504F9EFA0E98E6190D843F8CB"
   },
@@ -558,6 +614,10 @@
   {
     "file": "ModifiedCartan\\ProjectiveManifold.lean",
     "sha256": "A0B1E3B4364C154B89FB0B0093AA55C4124438D6D95620CEFB3F29B2F4D806D8"
+  },
+  {
+    "file": "ModifiedCartan\\ProjectiveNormality.lean",
+    "sha256": "E6644E9614712942F62CF116162114A3E8528CAFFF11DBEBB6C8A0588F5169F3"
   },
   {
     "file": "ModifiedCartan\\ProjectivePartitions.lean",
@@ -678,6 +738,10 @@
   {
     "file": "ModifiedCartan\\Statements.lean",
     "sha256": "4E14D540C6110B8AE8F6B5C6BBE6DA631CF6A0BC043C37F389C25716430A6840"
+  },
+  {
+    "file": "ModifiedCartan\\StrictLocalNormality.lean",
+    "sha256": "9FE37C35F0356D10376390E3E307CB461CD8B89AA0059420AF31FB4FF8CCCB2A"
   },
   {
     "file": "ModifiedCartan\\SymmetricDiskSegments.lean",
@@ -817,7 +881,7 @@
   },
   {
     "file": "Audit.lean",
-    "sha256": "29D3FD77EE7DF79B0BA0E34B1130564CCDBC9BA7733AD75781980D746A6A9621"
+    "sha256": "F0696151B5E85C2911297400A6AF5BE2BDAD75A09B776CAD3618C22E8A549FE4"
   },
   {
     "file": "lake-manifest.json",
@@ -833,6 +897,6 @@
   },
   {
     "file": "ModifiedCartan.lean",
-    "sha256": "8102AB6C1AAF6888EF900827B8F3BFAE4D42AB4507F9006AFD7688DF341E9358"
+    "sha256": "175FBC3AB2F21ED59B3464C6ED90D1015D251C82F84A585A1FFADC6FD3216708"
   }
 ]
