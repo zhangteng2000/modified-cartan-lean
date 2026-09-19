@@ -1,45 +1,53 @@
 # 形式化覆盖状态
 
-**全文尚未证明。当前交付是可编译的部分形式化项目。**
+修订稿的 19 项带标签结果全部有完整 Lean 证明。最终新目录全量重建与全部定理公理复核正在运行；最终报告将在验收通过后生成。下表将每个原稿结果映射到实际证明项；Prop 定义本身不作为完成依据。验证脚本另行核对稿件哈希、证明入口和全部定理的递归公理依赖。
 
-论文中的主定理没有被替换成 `axiom`、假设或占位证明。`Statements.lean` 中定义为 `Prop` 的目标，只有存在相应的证明项才算完成。`PartitionTheorem`、`QuantitativeWronskian`、`ExplicitAbsorptionTheorem`、`AbsorptionTheorem` 和 `SharpTwoAbsorption` 已有完整证明项。`SharpFiveTheorem` 和 `OptimalFiveRadius` 仍未证明。
-
-下表用原稿的 LaTeX 标签定位，避免共享编号造成误会。
-
-| 原稿结果 | 当前状态 | Lean 对应及剩余工作 |
+| 原稿标签 | 状态 | Lean 证明及保留内容 |
 |---|---|---|
-| `def:cclass` | 定义及配套性质完成 | 定义、子列保持、更换主导指标判据均已完成。新版改用 region 一词；Lean 保留适用于一般开集的谓词，见 docs/REVISION_2026-09-19.md。新版删除的两个主导指标断言仍作为已证明的辅助引理保留。 |
-| `thm:main` | 完整证明 | `partitionTheorem_proved`；更强的 `partition_at_recursive_radius` 保留 εₚ = rₚ₋₁^(p−1)，实际构造分组并由吸收证明归一化极限为零。 |
-| `thm:sharp-five` | 仅主命题陈述，部分工具已证明 | `SharpFiveTheorem`；尚缺经典 Cartan 抽取及最终组装；两项吸收定理已完整证明。 |
-| `thm:torus-zero` | 完整证明 | `torus_manifold_metric_zero_iff`；使用实际流形微分和切空间，已证明坐标圆盘与内在圆盘的双向转换及度量相等。有限 Laurent 表示与复嵌入流形数据对应原稿假设，见 docs/GEOMETRIC_MODEL.md。 |
-| `lem:cartan-circle` | 完整证明 | `cartanCircleEstimate_proved : CartanCircleEstimate`；有限零点分解、Blaschke 估计、零点计数、Harnack 比较、带重数选圆和最终幂次下界均已证明，覆盖 t = 1。 |
-| `prop:wronskian` | 完整证明 | `quantitativeWronskian_proved`；全部 m ≥ 1，原稿的行列式、最小组合范数、正常数及 K ≥ m。 |
-| `lem:logderivative` | 完整证明 | `logDerivativeEstimate_proved`；所有阶数和允许半径，边界零点已处理，原稿估计保持不变。 |
-| `lem:growth` | 完整证明 | `growthLemma_proved : GrowthLemma`。证明得到更强结果：连续与正性已足够，不需要单调性。 |
-| `lem:envelope` | 完整证明 | `envelope_lemma` 保留原稿所有参数范围、8 和 64 两个常数，以及闭圆盘上的上确界。`Harmonic.lean` 从 Poisson 公式证明所用 Harnack 比较。 |
-| `lem:poisson-mean` | 完整证明 | `poissonMeanEstimate_proved : PoissonMeanEstimate`，允许边界零点，保留原稿的 q 和 q²−1 系数。 |
-| `thm:absorption` | 完整证明 | `explicitAbsorptionTheorem_proved` 构造有效指数序列并证明精确递推半径上的吸收；`absorptionTheorem_proved` 为存在形式推论。 |
-| `cor:rank-adaptive-absorption` | 完整证明 | `rank_adaptive_absorption`；单位圆盘上限制函数的秩，有界消元及共同子列，精确半径 r_d。 |
-| `lem:stabilization` | 完整证明 | `stabilization_lemma`；同时分析抽取、固定紧集上的最大值发散、实际商函数预序、极大等价类计数及下一层不可比较性均已证明。 |
-| `cor:centers` | 完整证明 | `partition_at_center`；实际 C-类分割通过圆盘自同构拉回，保留同一显式半径。 |
-| `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
-| `cor:geodesic-comparison` | 完整证明 | `geodesic_harmonic_comparison`；距离加法等式刻画的全部双曲测地段，严格阈值 d₀ < log 3，统一正 ε 和原稿的 2C₀，包含端点重合情形。 |
-| `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
-| `R_5 = 2 - sqrt(3)` 与尖锐反例 | 反例及上界完整证明；等式尚缺正面结论 | 实际高斯五函数反例已完整证明，覆盖每个 2−√3 < R ≤ 1 和任意子列；已证明 R₅ ≤ 2−√3，以及五函数分割和两项吸收的直径都不能超过 log 3。`OptimalFiveRadius` 的等式仍缺五函数正面结论。 |
-| `prop:torus-null-set` | 完整证明 | 内在切丛中的闭性、紧集正下界和严格正下确界均已证明；`torus_manifold_null_image_eq_zeroLocus` 将全部内在零方向精确识别为显式有限多项式理想的零点集。 |
-| `prop:projective-equivalence` | 完整证明 | `projective_equivalence`；真实商拓扑及一致结构、X_p 的流形全纯性、共同子列、乘积射影空间中的局部一致收敛，以及全局超平面 Hurwitz 论证均已证明。保留 p ≥ 3 与 0 < R ≤ 1。 |
-| `cor:projective-zero-directions` | 完整证明 | `projective_zero_directions`：实际射影流形的内在零方向等于各可容许环面包含映射在 x 的微分像之并。环面模型与齐次分块缩放定义完全对应，包含映射全纯、拓扑嵌入且微分单射；`projectiveTorusTangentSpace_finrank_le` 保留维数 ≤ ⌊p/2⌋−1。 |
+| `thm:main` | VERIFIED | [partitionTheorem_proved](ModifiedCartan/PartitionTheorem.lean)；[partition_at_recursive_radius](ModifiedCartan/PartitionTheorem.lean)。All p >= 3; actual C-class partition after a common strict subsequence. The explicit radius r_(p-1)^(p-1) is proved as well. |
+| `thm:sharp-five` | VERIFIED | [sharpFiveTheorem_proved](ModifiedCartan/SharpFive.lean)。Arbitrary nonempty open subset of the unit disk, including disconnected sets; diameter <= log 3, with its endpoint. |
+| `thm:torus-zero` | VERIFIED | [torus_manifold_metric_zero_iff](ModifiedCartan/TorusManifold.lean)。Two-way equivalence for the intrinsic manifold Kobayashi-Royden metric. Finite Laurent equations plus an embedded complex manifold present the smooth closed subvariety; see GEOMETRIC_MODEL.md. |
+| `lem:cartan-circle` | VERIFIED | [cartanCircleEstimate_proved](ModifiedCartan/CartanCircle.lean)。0 < a < b < c < 1; 0 < t <= 1 including t = 1; exact power t^gamma and radius in (b,c). |
+| `prop:wronskian` | VERIFIED | [quantitativeWronskian_proved](ModifiedCartan/QuantitativeWronskian.lean)。All m >= 1, normalized coefficient sphere, actual iterated-derivative determinant, c > 0 and K >= m. |
+| `lem:logderivative` | VERIFIED | [logDerivativeEstimate_proved](ModifiedCartan/LogDerivativeEstimate.lean)。All derivative orders k >= 1 and original radius intervals; exact logarithmic expression; boundary zeros allowed. |
+| `lem:growth` | VERIFIED | [growthLemma_proved](ModifiedCartan/Growth.lean)。The stated positive continuous nondecreasing case is proved; the internal construction also works without monotonicity. |
+| `lem:envelope` | VERIFIED | [envelope_lemma](ModifiedCartan/Envelope.lean)。Exact 8 and 64 constants, closed-disk supremum and all original parameter ranges; harmonic extension is separately constructed. |
+| `lem:poisson-mean` | VERIFIED | [poissonMeanEstimate_proved](ModifiedCartan/LogPoisson.lean)。Exact q and q^2 - 1 coefficients, analytic neighborhood of the closed disk, boundary zeros allowed. |
+| `thm:absorption` | VERIFIED | [explicitAbsorptionTheorem_proved](ModifiedCartan/AbsorptionTheorem.lean)；[absorption_at_recursive_radius](ModifiedCartan/AbsorptionTheorem.lean)。Actual Wronskian exponent sequence is constructed; r1 = 1, r2 = 2 - sqrt 3 and r_m = r_(m-1)/(1024*(K_m+m)). |
+| `cor:rank-adaptive-absorption` | VERIFIED | [rank_adaptive_absorption](ModifiedCartan/RankAdaptiveAbsorption.lean)。Rank is the dimension of the span of restricted functions on the unit disk, for each n; exact r_d and one common subsequence. |
+| `lem:stabilization` | VERIFIED | [stabilization_lemma](ModifiedCartan/QuotientStabilization.lean)。Common subsequence on every sigma^k, actual quotient preorder, compact escape in sup norm and the stated maximal-class alternative. |
+| `cor:centers` | VERIFIED | [partition_at_center](ModifiedCartan/PartitionCenters.lean)。Pullback by the actual disk automorphism; same explicit epsilon_p. The partition and strict subsequence may depend on the center. |
+| `lem:two-point-kernel` | VERIFIED | [two_point_harmonic](ModifiedCartan/HarmonicKernel.lean)。All positive harmonic functions on the open unit disk; uniform positive epsilon_q, exact two weights. |
+| `cor:geodesic-comparison` | VERIFIED | [geodesic_harmonic_comparison](ModifiedCartan/GeodesicComparison.lean)。Entire distance-additive hyperbolic segment, including coincident endpoints; exact 2*C0 and uniform epsilon for d0 < log 3. |
+| `prop:sharp-two-absorption` | VERIFIED | [sharpTwoAbsorption_proved](ModifiedCartan/SharpTwoAbsorption.lean)。Arbitrary nonempty open sets; no connectedness requirement; non-strict diameter <= log 3. |
+| `prop:torus-null-set` | VERIFIED | [torus_manifold_nullDirections_isClosed](ModifiedCartan/TorusManifold.lean)；[torus_manifold_compact_metric_lower](ModifiedCartan/TorusManifold.lean)；[torus_manifold_compact_inf_pos](ModifiedCartan/TorusManifold.lean)；[torus_manifold_null_image_eq_zeroLocus](ModifiedCartan/TorusTangentAlgebraic.lean)。Closed in the actual tangent bundle, equal to an explicit polynomial zero locus in (x,x^-1,v) coordinates, with a positive infimum on every compact set in the complement. |
+| `prop:projective-equivalence` | VERIFIED | [projective_equivalence](ModifiedCartan/ProjectiveEquivalence.lean)。Both directions, p >= 3 and 0 < R <= 1; genuine projective quotient topology, product uniformity and manifold holomorphic maps. |
+| `cor:projective-zero-directions` | VERIFIED | [projective_zero_directions](ModifiedCartan/ProjectiveTori.lean)；[projectiveTorusTangentSpace_finrank_le](ModifiedCartan/ProjectiveTori.lean)。Exact union of differential images of actual holomorphic torus embeddings, with dimension <= floor(p/2)-1. |
 
-## 证明边界
+`def:cclass` 对应 Basic.lean 中的 IsDominant、IsCClass 和 CPartition。主导指标属于该类，保证非空；有界性对每个紧集及所有项成立，收敛是紧集上一致收敛。该谓词适用于一般集合，其在 region 上的限制覆盖修订稿定义。
 
-- 当前证明声明总数记录于 `verification/result.json`。它们包含辅助引理，不能把数量当作论文完成比例。
-- 已证明的结果直接使用实际复数、导数、行列式、紧集收敛、指数函数和 Laurent 单项式定义。
-- 已证明结果以本表及 docs/PROGRESS.md 为准，中心定理的证明项由 Audit.lean 审计。未证明的目标未被作为论文专属公理引入。
-- `kobayashiRoyden` 取值于非负扩展实数，使不存在符合条件的圆盘时下确界为正无穷，避免实数空集下确界误判为零。
-- `LaurentData` 是有限 Laurent 多项式表示，允许重复幂向量；有限方程判据对这种表示仍成立。`TorusEquations` 构造实际共同零集，`ManifoldDiscs`、`TorusManifold` 和 `TorusTangentAlgebraic` 完成内在切丛识别。
+## 补充结果
 
-## 后续证明依赖
+- **cartan-extraction-required-by-paper**：`cartanExtraction_three`，`cartanExtraction_four`，`cartanExtraction_five`。
+- **optimal-five-radius**：`optimalFiveRadius_proved`，`partition_five_at_sharpRadius`。
+- **gaussian-holomorphic-branch**：`fivePhi_differentiable`，`fiveL_differentiable`，`fivePhi_sq`。
+- **gaussian-majorants-and-sign**：`five_majorant_positive_gap`，`fiveL_re_pos_right`，`fivePhi_re_nonpos_iff`，`fivePhi_re_nonneg_iff`。
+- **gaussian-integral-and-tail**：`gaussianPrimitive_hasDerivAt`，`gaussianTransition_left_bound`，`gaussianTransition_right_bound`。
+- **gaussian-exact-ratio-estimate**：`fivea_div_fiveA_bound`，`fivea_complement`。
+- **gaussian-five-units-and-zero-sum**：`fiveCounterexample_units`，`fiveCounterexample_zeroSum`。
+- **gaussian-growth-and-vanishing**：`fiveCounterexample_grows_at_zero`，`fiveA_vanishes_negative_point`，`fivea_sub_fiveA_vanishes_negative_point`，`fiveCounterexample_vanishing_points`。
+- **gaussian-no-partition-any-subsequence**：`fiveCounterexample_no_partition`。
+- **disk-diameter-formula**：`disk_hyperbolicDiameter_iff`，`sharpRadius_log_diameter`，`sharpRadius_hyperbolicDiameter`。
+- **sharp-diameter-obstructions**：`five_partition_diameter_cannot_increase`，`two_absorption_diameter_cannot_increase`。
 
-分割主定理及其解析依赖已完成证明。剩余工作为经典 Cartan 抽取、五函数尖锐正面结论及半径等式。射影分割等价性现已完整证明。高斯积分反例、半径上界及两项吸收的不可改进性现已完整证明；五函数正面结论仍需经典 Cartan 抽取及组装。环面零方向定理及切丛零集的闭性、代数性与紧集严格正下界已完成；射影应用的两项结果现均有完整证明。
+经典 Cartan 的 p = 5 全单位圆盘抽取已完整证明，并已接入五函数锐定理；p = 3、4 也有证明。本文未使用的历史一般 p 版本不在完成声明中。
 
-此文件记录尚未完成的工作，不代表这些结果已被 Lean 验证。
+## 数学对应
+
+- 递推半径的有效 Wronskian 指数由 exists_wronskianExponents 构造；不是额外分析假设。
+- 一般开集不被改成连通区域，直径条件保留 ≤ log 3，射影结论保留 0 < R ≤ 1。
+- 所有子列均严格递增，所有局部一致极限均使用实际紧集一致收敛。
+- 几何结果使用真正的 mathlib 流形切空间、微分、射影商拓扑和乘积一致结构；有限 Laurent 方程提供闭代数子簇的坐标表示。完整说明见 docs/GEOMETRIC_MODEL.md。
+- Kobayashi–Royden 度量取值于非负扩展实数，使空下确界按通常扩展值约定为正无穷。
+
+最终计数、全量重建与公理审计见 verification/result.json 和 docs/FINAL_REPORT.md。证明数量包含辅助引理，不是论文完成比例。

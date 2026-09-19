@@ -1,0 +1,73 @@
+import ModifiedCartan
+
+/-! Independent entry-point checks for the reviewed manuscript coverage. -/
+
+#check ModifiedCartan.partitionTheorem_proved
+#check ModifiedCartan.partition_at_recursive_radius
+#check ModifiedCartan.sharpFiveTheorem_proved
+#check ModifiedCartan.torus_manifold_metric_zero_iff
+#check ModifiedCartan.cartanCircleEstimate_proved
+#check ModifiedCartan.quantitativeWronskian_proved
+#check ModifiedCartan.logDerivativeEstimate_proved
+#check ModifiedCartan.growthLemma_proved
+#check ModifiedCartan.envelope_lemma
+#check ModifiedCartan.poissonMeanEstimate_proved
+#check ModifiedCartan.explicitAbsorptionTheorem_proved
+#check ModifiedCartan.absorption_at_recursive_radius
+#check ModifiedCartan.rank_adaptive_absorption
+#check ModifiedCartan.stabilization_lemma
+#check ModifiedCartan.partition_at_center
+#check ModifiedCartan.two_point_harmonic
+#check ModifiedCartan.geodesic_harmonic_comparison
+#check ModifiedCartan.sharpTwoAbsorption_proved
+#check ModifiedCartan.torus_manifold_nullDirections_isClosed
+#check ModifiedCartan.torus_manifold_compact_metric_lower
+#check ModifiedCartan.torus_manifold_compact_inf_pos
+#check ModifiedCartan.torus_manifold_null_image_eq_zeroLocus
+#check ModifiedCartan.projective_equivalence
+#check ModifiedCartan.projective_zero_directions
+#check ModifiedCartan.projectiveTorusTangentSpace_finrank_le
+#check ModifiedCartan.cartanExtraction_three
+#check ModifiedCartan.cartanExtraction_four
+#check ModifiedCartan.cartanExtraction_five
+#check ModifiedCartan.optimalFiveRadius_proved
+#check ModifiedCartan.partition_five_at_sharpRadius
+#check ModifiedCartan.fivePhi_differentiable
+#check ModifiedCartan.fiveL_differentiable
+#check ModifiedCartan.fivePhi_sq
+#check ModifiedCartan.five_majorant_positive_gap
+#check ModifiedCartan.fiveL_re_pos_right
+#check ModifiedCartan.fivePhi_re_nonpos_iff
+#check ModifiedCartan.fivePhi_re_nonneg_iff
+#check ModifiedCartan.gaussianPrimitive_hasDerivAt
+#check ModifiedCartan.gaussianTransition_left_bound
+#check ModifiedCartan.gaussianTransition_right_bound
+#check ModifiedCartan.fivea_div_fiveA_bound
+#check ModifiedCartan.fivea_complement
+#check ModifiedCartan.fiveCounterexample_units
+#check ModifiedCartan.fiveCounterexample_zeroSum
+#check ModifiedCartan.fiveCounterexample_grows_at_zero
+#check ModifiedCartan.fiveA_vanishes_negative_point
+#check ModifiedCartan.fivea_sub_fiveA_vanishes_negative_point
+#check ModifiedCartan.fiveCounterexample_vanishing_points
+#check ModifiedCartan.fiveCounterexample_no_partition
+#check ModifiedCartan.disk_hyperbolicDiameter_iff
+#check ModifiedCartan.sharpRadius_log_diameter
+#check ModifiedCartan.sharpRadius_hyperbolicDiameter
+#check ModifiedCartan.five_partition_diameter_cannot_increase
+#check ModifiedCartan.two_absorption_diameter_cannot_increase
+
+open ModifiedCartan
+
+example : PartitionTheorem := partitionTheorem_proved
+example : CartanCircleEstimate := cartanCircleEstimate_proved
+example : QuantitativeWronskian := quantitativeWronskian_proved
+example : LogDerivativeEstimate := logDerivativeEstimate_proved
+example : GrowthLemma := growthLemma_proved
+example : PoissonMeanEstimate := poissonMeanEstimate_proved
+example : ExplicitAbsorptionTheorem := explicitAbsorptionTheorem_proved
+example : AbsorptionTheorem := absorptionTheorem_proved
+example : SharpTwoAbsorption := sharpTwoAbsorption_proved
+example : CartanExtractionAt 5 := cartanExtraction_five
+example : SharpFiveTheorem := sharpFiveTheorem_proved
+example : OptimalFiveRadius := optimalFiveRadius_proved

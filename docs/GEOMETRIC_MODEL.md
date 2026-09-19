@@ -13,7 +13,7 @@ Theorem torus_manifold_metric_zero_iff is the original two-way zero-direction cr
 
 For algebraicity, the affine coordinates are (x, x⁻¹, v). The explicit ideal contains xⱼ yⱼ − 1 and the first q moment polynomials for every defining Laurent equation with q terms. TorusTangentAlgebraic proves equality of the entire polynomial zero locus with the image of the intrinsic null directions. The reverse inclusion constructs an actual exponential curve, lifts it to M, and differentiates it to recover an intrinsic tangent vector. Thus it is not merely a list of candidate equations or a conditional finite-moment lemma.
 
-These results concern thm:torus-zero and prop:torus-null-set. The projective charts, projective convergence equivalence and projective torus tangent/dimension assertions still require separate proofs.
+These results prove thm:torus-zero and prop:torus-null-set. The projective charts, convergence equivalence and torus tangent/dimension assertions have also been proved, as described below.
 
 ## Projective application
 

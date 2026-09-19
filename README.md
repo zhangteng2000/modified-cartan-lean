@@ -1,8 +1,8 @@
 # Modified Cartan — Lean 4 形式化项目
 
-**当前状态：全文形式化进行中。定量 Wronskian 估计、对数导数估计、精确半径吸收定理和分割主定理已有完整 Lean 证明；任意中心与秩自适应推论也已完整证明；五函数最优性及几何应用尚未全部完成。最新审计记录见 docs/PROGRESS.md。**
+**当前状态：修订稿全部主结果已有完整证明项，包括五函数锐定理与最优半径。正在执行最终新目录全量重建、全部定理公理审计和文档验收；进度见 docs/PROGRESS.md。**
 
-本项目依据用户提供的 `paper.tex`，使用 Lean 4.34.0-rc1 和固定版本的 mathlib。已证明的结果有实际 Lean 证明项；未完成的中心命题在 `Statements.lean` 中仅定义为 `Prop`，没有被当作公理或已证明定理使用。
+本项目依据用户提供的 `paper.tex`，使用 Lean 4.34.0-rc1 和固定版本的 mathlib。全部主结果已有实际 Lean 证明项；`Statements.lean` 中的 `Prop` 定义均有相应证明，未被当作公理使用。
 
 `paper.tex` 已更新为 2026-09-19 修订稿，主要定理与常数保持不变。新版差异见 `docs/REVISION_2026-09-19.md`。当前工作目录为 `C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan`；Documents 下的副本因 Windows 受控文件夹写入限制保留为先前快照。
 

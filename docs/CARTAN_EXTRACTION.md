@@ -1,44 +1,32 @@
-# Classical extraction proof status
+# Classical Cartan extraction — completed
 
-The outstanding manuscript dependency is Cartan extraction sufficient for the five-function sharp theorem. No declaration of classical extraction is postulated as an axiom. CartanExtractionAt and ClassicalCartanExtraction are proposition targets, not proof terms.
+The precise classical theorem required by the manuscript is proved by `cartanExtraction_five : CartanExtractionAt 5` in `ModifiedCartan/CartanFive.lean`. The p = 3 and p = 4 instances are also proved. The conclusion uses one common strict subsequence on the entire open unit disk: either all indices form one C-class, or there are two disjoint nonempty C-classes. No extraction theorem is postulated.
 
-## Proved base and normality tools
+The historical theorem for arbitrary p is not needed by the paper's five-function argument and is not claimed here. Its unused initial proposition target was removed; none of the paper's theorem statements was changed.
 
-- CartanThree proves CartanExtractionAt 3 and the full unit-disk three-function partition theorem. This chain passed the 800-declaration full audit.
-- ProjectiveNormality uses genuine projective compactness and actual kernel coordinates; CartanThreeDomain proves the base on any nonempty connected open plane domain.
-- OmittedValues derives the two-omitted-value normal-family theorem and its zero / infinity / nonzero holomorphic-limit alternatives.
-- StrictLocalNormality proves that continuous individual functions and local subsequence limits for strict subsequences imply equicontinuity. This supports full-domain conclusions rather than fixed-radius substitutes.
+## Proof chain
 
-## Proved conditional induction branches
+1. Montel, Hurwitz, omitted-value normality and the three-function extraction are proved from mathlib compactness, complex analysis and the project definitions.
+2. Finite quotient limits and vanishing quotients give an actual zero-free annulus on which two indices can be merged. C-classes and disjointness are transferred back to the original indices; the maximum principle fills the inner disk.
+3. The remaining cases give actual pair-Wronskian anchors. Radial outer-measure alternatives for the third and fourth derived fractions either force a previously excluded quotient limit or provide quantitative higher-Wronskian anchors and inverse-proximity bounds.
+4. The zero-sum identity and logarithmic derivative estimates close the growth inequality. The four-function and five-function endgames prove the contradiction in the case with no earlier reduction. No auxiliary case hypothesis is retained in the unconditional local theorems.
+5. An explicit holomorphic disk-to-annulus covering, open mapping and compact lifts transfer the four-function theorem to each annulus needed in the five-function reduction.
+6. A nested strict diagonal subsequence, a countable exhaustion and finite stabilization of both classes and dominant indices give the full-unit-disk theorem. Bounds for finite initial terms are restored using continuity.
+7. `FiveClassReduction` and the proved sharp two-term absorption combine this with the one remaining index. `sharpFiveTheorem_proved` preserves arbitrary open sets and diameter <= log 3. `optimalFiveRadius_proved` combines it with the genuine Gaussian counterexample.
 
-- CartanPairs and CartanPairOverlap give two-index C classes from minus-one ratios and prove the overlap alternative with a plus-one quotient.
-- CartanBoundedPairs proves the first logarithmic-derivative branch. NoVanishingQuotientSubsequence and OnlyNegativeOneUnitLimits are explicit branch conditions: they encode exclusion of Cartan's earlier reducible cases. They are not assumptions added to the manuscript's principal results.
-- CartanUnmerge, CartanPairIndex, and CartanPairUnmerge construct the index merging, exact sum identities, and recovery of the original C classes and their disjointness.
-- HolomorphicExtension proves boundedness and zero convergence across isolated zeros, including recovery of C classes.
-- CartanMergeAnnulus constructs an actual zero-free annular region and a finite shift from any finite quotient limit not identically minus one. It proves the three ratio bounds needed for recovery of original indices.
-- AnnulusTopology supplies openness, nonemptiness and connectedness. AnnulusFilling uses the maximum principle to fill the interior using the original holomorphic units.
-- CartanFourReduction proves the finite-limit and vanishing-quotient reduction cases for four functions on each prescribed interior disk. CartanFourFiniteLimit proves both cases on the entire unit disk via strict local subsequence normality and the genuine projective limit.
+## Entry points
 
-## Remaining work
+| Result | Lean module / theorem |
+|---|---|
+| Three functions | CartanThree / cartanExtraction_three |
+| Four functions | CartanFour / cartanExtraction_four |
+| Four functions on annuli | CartanFourAnnulus / cartan_four_annulus |
+| Uniform triple anchors | TripleAnchorsFromCases / eventually_uniform_triple_anchors |
+| Five-function higher-Wronskian contradiction | CartanFiveWronskianEndgame / five_anchored_subfamily_impossible |
+| All local five-function cases | CartanFiveLocal / cartan_five_local |
+| Five functions on the entire disk | CartanFive / cartanExtraction_five |
+| Sharp theorem and optimal radius | SharpFive / sharpFiveTheorem_proved, optimalFiveRadius_proved |
 
-The remaining classical proof must handle the higher derived-Wronskian branches after the initial reducible cases and the two bounded logarithmic derivatives have been excluded. It must then assemble actual extraction for five functions on the full unit disk. The sharp five-function assembly from such an extraction has already been proved in FiveClassReduction. SharpFiveTheorem and the positive half of OptimalFiveRadius remain WIP until this missing extraction is proved.
+## Provenance
 
-All additional assumptions displayed in auxiliary induction lemmas belong only to their specific cases. No connectedness, weakened radius, changed endpoint, or stronger hypothesis has been inserted into the manuscript's C-class, absorption, or sharp-five statements.
-
-## Higher-order analytic preparations
-
-WronskianThreeIdentity and WronskianFourIdentity prove the exact signed logarithmic-derivative identities through order four. LogNormPaths proves real log-modulus variation on circles and annuli without a global logarithm assumption. ReciprocalProximity proves local-circle reciprocal mean estimates from moving anchors, including boundary zeros. NormalizedWronskian proves actual determinant identities, holomorphy and proximity control by the already proved logarithmic-derivative means. RadialLoss and CartanRadialExceptional strengthen the one-circle estimate to a controlled outer measure of small-value radii, with all zero circles included. These are preparations for the remaining Cartan cases, not the full extraction theorem.
-
-The 908-declaration audit also verifies uniform higher-Wronskian growth, common-unit normalization, both derived-fraction circle alternatives, and the passage from local boundary bounds to proximity-controlled radial exceptional sets. The next missing connection is the quantitative anchor induction and the complete case/extraction assembly.
-
-At 926 audited declarations, the quantitative anchor induction is proved through the actual fourth-order Wronskian. CartanGrowthClosure and CartanInverseEndgame close the final analytic branch on the full disk under explicit uniform inverse-growth estimates. The unconditional theorem still requires the bounded higher-fraction branches and the exhaustive index/subsequence/annulus/diagonal assembly.
-
-At 938 audited declarations, the bounded third-fraction circle branch is linked to an actual contradiction under the previously excluded quotient-limit cases. SmallThreeGrowth removes all zero-circle assumptions using RadialZeros, and CartanSmallThree supplies the case connection. The remaining bounded fourth-fraction step and the exhaustive local-to-global induction/diagonal assembly are still required.
-
-At 948 audited declarations, the bounded fourth-fraction branch is also connected to its actual reduction contradiction. Normalized Wronskians and both proximity means are proved invariant under index permutations. The finite radial outer-measure dichotomy is available for selecting a large orientation. Exhaustive case selection, actual full-disk extraction, and the annular induction remain unfinished.
-
-## Complete four-function extraction
-
-The 988-declaration full audit verifies cartanExtraction_four : CartanExtractionAt 4. All quotient-reduction and Wronskian cases are discharged. The proof constructs the single strict diagonal subsequence and fixes actual dominant indices across an exhaustion of the whole open unit disk. It is no longer a conditional or fixed-radius assertion.
-
-The remaining five-function work is the annular transfer of this four-function result, merging and recovery of original indices, the fourth-order endgame, and the final unconditional extraction. The generic diagonal step is now available. The positive sharp-five theorem is still unproved.
+Henri Cartan, *Annales scientifiques de l'École Normale Supérieure*, 45 (1928), Theorem VII, pp. 312–315, [DOI 10.24033/asens.786](https://www.numdam.org/articles/10.24033/asens.786/). The original pages were consulted. The required mathematics is proved in local Lean modules; the reference contributes no logical assumption. The radial outer-measure argument implements the quantitative case analysis without relying on an unformalized exceptional-disk lemma.

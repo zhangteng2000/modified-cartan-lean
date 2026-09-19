@@ -75,7 +75,8 @@ def hyperbolicDistance (z w : ℂ) : ℝ :=
 def HasHyperbolicDiameterLE (U : Set ℂ) (d : ℝ) : Prop :=
   ∀ z ∈ U, ∀ w ∈ U, hyperbolicDistance z w ≤ d
 
-/-- Theorem `thm:sharp-five`, including disconnected open sets and the endpoint. OPEN proof target. -/
+/-- Theorem `thm:sharp-five`, including disconnected open sets and the endpoint.
+Proved by `sharpFiveTheorem_proved` in SharpFive.lean. -/
 def SharpFiveTheorem : Prop :=
   ∀ U : Set ℂ, U.Nonempty → IsOpen U → U ⊆ disk 1 →
     HasHyperbolicDiameterLE U (Real.log 3) → PartitionProperty 5 U
@@ -88,7 +89,8 @@ def SharpTwoAbsorption : Prop :=
 def optimalRadius (p : ℕ) : ℝ :=
   sSup {r : ℝ | 0 < r ∧ r < 1 ∧ PartitionProperty p (disk r)}
 
-/-- Numerical equality for the genuine partition property. OPEN proof target. -/
+/-- Numerical equality for the genuine partition property, proved by
+`optimalFiveRadius_proved` in SharpFive.lean. -/
 def OptimalFiveRadius : Prop := optimalRadius 5 = sharpRadius
 
 end ModifiedCartan

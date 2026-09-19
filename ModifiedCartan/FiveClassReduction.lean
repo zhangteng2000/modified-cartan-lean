@@ -5,16 +5,14 @@ set_option autoImplicit false
 open Filter Topology Finset
 namespace ModifiedCartan
 
-/-- Exact classical extraction conclusion on the full unit disk. This is a
-proof target, not an axiom; no assertion here states that it has been proved. -/
+/-- Classical extraction on the full unit disk. The instances for three, four,
+and five functions are proved in CartanThree, CartanFour, and CartanFive. -/
 def CartanExtractionAt (p : ℕ) : Prop :=
   ∀ f : Family p, UnitFamily f → ZeroSum f →
     ∃ φ : ℕ → ℕ, StrictMono φ ∧
       (IsCClass (subsequence f φ) univ (disk 1) ∨
        ∃ I J : Finset (Fin p), Disjoint I J ∧
          IsCClass (subsequence f φ) I (disk 1) ∧ IsCClass (subsequence f φ) J (disk 1))
-
-def ClassicalCartanExtraction : Prop := ∀ p : ℕ, 3 ≤ p → CartanExtractionAt p
 
 theorem five_two_classes_complement {f : Family 5} (hf : UnitFamily f)
     {I J : Finset (Fin 5)} (hd : Disjoint I J)
@@ -48,9 +46,8 @@ theorem five_two_classes_complement {f : Family 5} (hf : UnitFamily f)
         rw [hl] at hjs
         exact mem_insert.mpr (Or.inl (mem_singleton.mp hjs))
 
-/-- The full sharp-domain assembly after the classical alternative has been
-obtained for this particular sequence. This lemma does not assume or claim
-an unproved global Cartan extraction theorem. -/
+/-- Assemble the sharp-domain partition from the classical alternative.
+SharpFive applies this to the proved five-function extraction. -/
 theorem five_partition_from_cartan_alternative {f : Family 5}
     (hf : UnitFamily f) (hs : ZeroSum f)
     (halt : IsCClass f univ (disk 1) ∨ ∃ I J : Finset (Fin 5),

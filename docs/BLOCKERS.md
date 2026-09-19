@@ -1,17 +1,18 @@
 # Blockers
 
-No unresolved external blocker currently prevents work.
+No unresolved mathematical or external blocker remains. All principal proof terms and the required five-function Cartan extraction have been completed. The final fresh rebuild is running; ../verification/result.json currently retains the preceding audited checkpoint.
 
-Unproved dependencies are listed in PROGRESS.md and are not treated as completed results or as user obligations. If three genuinely different approaches to a specific technical obstacle fail, record the attempts, exact Lean errors or mathematical obstruction, and independent work that can proceed here.
+## Resolved mathematical dependencies
 
-## Resolved environment issue
+- General-order Wronskian and logarithmic derivative estimates, including boundary zeros.
+- Sharp two-term absorption on arbitrary open sets at diameter <= log 3.
+- Exact recursive absorption radii and the main partition theorem.
+- Intrinsic tangent-bundle/coordinate metric equivalence, algebraic null locus and actual projective geometry.
+- All Cartan quotient and higher-Wronskian branches, annular transfer and a common full-disk diagonal subsequence.
+- Sharp five-function assembly and exact optimal-radius equality.
 
-Direct shell Git initialization could not write into the Documents output directory. Invoking Git from the bundled Node runtime successfully initialized the actual output repository. No mathematical assumption or source relocation was needed.
+## Resolved environment issues
 
-## Current mathematical dependency
+Defender controlled-folder access prevented further writes in Documents. The original checkout was preserved and work continued at C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan. No security setting was changed. See REVISION_2026-09-19.md.
 
-The original classical Cartan extraction theorem (Theorem VII, 1928, pp. 312-315) remains unproved in Lean. It is the outstanding analytic dependency of the positive five-function theorem; it is not assumed as an axiom or counted as verified. The projective equivalence has now passed the 777-declaration audit. The two-class absorption assembly has passed the 788-declaration audit. The full-disk three-function base passed the 800-declaration audit. General-domain three-function extraction, the bounded-pair branch, and the full-disk four-function finite-limit reduction are now compiled. The complete four-function full-disk extraction has now passed the 988-declaration audit. Five-function annular induction and assembly remain under construction; see CARTAN_EXTRACTION.md.
-
-## Later environment resolution
-
-The subsequent Defender controlled-folder block was resolved by preserving the original checkout and continuing in the Local application-data working copy. See REVISION_2026-09-19.md for the current absolute repository path. No protection was disabled.
+A first unrestricted fresh build encountered concurrent library-file read failures; the files existed and individual module builds had passed. The final rerun uses batches of at most four dependency-ready local modules. No source theorem or proof-checking setting was changed.

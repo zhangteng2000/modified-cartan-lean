@@ -1,7 +1,7 @@
 import ModifiedCartan.Statements
 import Mathlib.Analysis.Complex.ValueDistribution.Proximity.Basic
 
-/-! Exact remaining analytic proof targets. These are proposition definitions,
+/-! Exact analytic statements, with proof terms in their corresponding modules. These are proposition definitions,
 not assumed mathematical facts. In particular, the explicit absorption target
 includes the obligation to produce valid Wronskian exponents. -/
 noncomputable section

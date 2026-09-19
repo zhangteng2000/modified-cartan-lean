@@ -1,0 +1,530 @@
+{
+  "schema_version": 1,
+  "manuscript": {
+    "file": "paper.tex",
+    "sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89"
+  },
+  "review": {
+    "status": "complete",
+    "reviewed_at_utc": "2026-09-19T22:57:33.792Z",
+    "method": "Compare all labeled result statements and definitions with their Lean types, including surrounding parameters; check explicit radii, constants, endpoints, compact convergence, strict subsequences and both directions of equivalences.",
+    "geometric_encoding": "Finite Laurent presentation of the closed algebraic locus, with an actual embedded complex manifold, tangent bundle and intrinsic metric; see docs/GEOMETRIC_MODEL.md.",
+    "classical_cartan_scope": "The precise p=5 instance required by the manuscript is proved, together with p=3 and p=4. The general historical all-p extraction is not claimed and is not required by any principal theorem."
+  },
+  "definitions": [
+    {
+      "label": "def:cclass",
+      "status": "reviewed",
+      "declarations": [
+        {
+          "name": "ModifiedCartan.IsDominant",
+          "file": "ModifiedCartan/Basic.lean",
+          "line": 44
+        },
+        {
+          "name": "ModifiedCartan.IsCClass",
+          "file": "ModifiedCartan/Basic.lean",
+          "line": 48
+        },
+        {
+          "name": "ModifiedCartan.CPartition",
+          "file": "ModifiedCartan/Basic.lean",
+          "line": 51
+        }
+      ],
+      "notes": "The revised definition says region; the Lean predicate applies to arbitrary sets and therefore to regions. No connectedness is added to the sharp open-set theorems. Dominant-index membership makes each C-class nonempty."
+    }
+  ],
+  "principal_results": [
+    {
+      "label": "thm:main",
+      "kind": "thm",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.partitionTheorem_proved",
+          "file": "ModifiedCartan/PartitionTheorem.lean",
+          "line": 104
+        },
+        {
+          "name": "ModifiedCartan.partition_at_recursive_radius",
+          "file": "ModifiedCartan/PartitionTheorem.lean",
+          "line": 10
+        }
+      ],
+      "notes": "All p >= 3; actual C-class partition after a common strict subsequence. The explicit radius r_(p-1)^(p-1) is proved as well."
+    },
+    {
+      "label": "thm:sharp-five",
+      "kind": "thm",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.sharpFiveTheorem_proved",
+          "file": "ModifiedCartan/SharpFive.lean",
+          "line": 12
+        }
+      ],
+      "notes": "Arbitrary nonempty open subset of the unit disk, including disconnected sets; diameter <= log 3, with its endpoint."
+    },
+    {
+      "label": "thm:torus-zero",
+      "kind": "thm",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.torus_manifold_metric_zero_iff",
+          "file": "ModifiedCartan/TorusManifold.lean",
+          "line": 30
+        }
+      ],
+      "notes": "Two-way equivalence for the intrinsic manifold Kobayashi-Royden metric. Finite Laurent equations plus an embedded complex manifold present the smooth closed subvariety; see GEOMETRIC_MODEL.md."
+    },
+    {
+      "label": "lem:cartan-circle",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.cartanCircleEstimate_proved",
+          "file": "ModifiedCartan/CartanCircle.lean",
+          "line": 123
+        }
+      ],
+      "notes": "0 < a < b < c < 1; 0 < t <= 1 including t = 1; exact power t^gamma and radius in (b,c)."
+    },
+    {
+      "label": "prop:wronskian",
+      "kind": "prop",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.quantitativeWronskian_proved",
+          "file": "ModifiedCartan/QuantitativeWronskian.lean",
+          "line": 11
+        }
+      ],
+      "notes": "All m >= 1, normalized coefficient sphere, actual iterated-derivative determinant, c > 0 and K >= m."
+    },
+    {
+      "label": "lem:logderivative",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.logDerivativeEstimate_proved",
+          "file": "ModifiedCartan/LogDerivativeEstimate.lean",
+          "line": 95
+        }
+      ],
+      "notes": "All derivative orders k >= 1 and original radius intervals; exact logarithmic expression; boundary zeros allowed."
+    },
+    {
+      "label": "lem:growth",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.growthLemma_proved",
+          "file": "ModifiedCartan/Growth.lean",
+          "line": 52
+        }
+      ],
+      "notes": "The stated positive continuous nondecreasing case is proved; the internal construction also works without monotonicity."
+    },
+    {
+      "label": "lem:envelope",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.envelope_lemma",
+          "file": "ModifiedCartan/Envelope.lean",
+          "line": 122
+        }
+      ],
+      "notes": "Exact 8 and 64 constants, closed-disk supremum and all original parameter ranges; harmonic extension is separately constructed."
+    },
+    {
+      "label": "lem:poisson-mean",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.poissonMeanEstimate_proved",
+          "file": "ModifiedCartan/LogPoisson.lean",
+          "line": 246
+        }
+      ],
+      "notes": "Exact q and q^2 - 1 coefficients, analytic neighborhood of the closed disk, boundary zeros allowed."
+    },
+    {
+      "label": "thm:absorption",
+      "kind": "prop",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.explicitAbsorptionTheorem_proved",
+          "file": "ModifiedCartan/AbsorptionTheorem.lean",
+          "line": 72
+        },
+        {
+          "name": "ModifiedCartan.absorption_at_recursive_radius",
+          "file": "ModifiedCartan/AbsorptionTheorem.lean",
+          "line": 60
+        }
+      ],
+      "notes": "Actual Wronskian exponent sequence is constructed; r1 = 1, r2 = 2 - sqrt 3 and r_m = r_(m-1)/(1024*(K_m+m))."
+    },
+    {
+      "label": "cor:rank-adaptive-absorption",
+      "kind": "cor",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.rank_adaptive_absorption",
+          "file": "ModifiedCartan/RankAdaptiveAbsorption.lean",
+          "line": 10
+        }
+      ],
+      "notes": "Rank is the dimension of the span of restricted functions on the unit disk, for each n; exact r_d and one common subsequence."
+    },
+    {
+      "label": "lem:stabilization",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.stabilization_lemma",
+          "file": "ModifiedCartan/QuotientStabilization.lean",
+          "line": 30
+        }
+      ],
+      "notes": "Common subsequence on every sigma^k, actual quotient preorder, compact escape in sup norm and the stated maximal-class alternative."
+    },
+    {
+      "label": "cor:centers",
+      "kind": "cor",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.partition_at_center",
+          "file": "ModifiedCartan/PartitionCenters.lean",
+          "line": 63
+        }
+      ],
+      "notes": "Pullback by the actual disk automorphism; same explicit epsilon_p. The partition and strict subsequence may depend on the center."
+    },
+    {
+      "label": "lem:two-point-kernel",
+      "kind": "lem",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.two_point_harmonic",
+          "file": "ModifiedCartan/HarmonicKernel.lean",
+          "line": 89
+        }
+      ],
+      "notes": "All positive harmonic functions on the open unit disk; uniform positive epsilon_q, exact two weights."
+    },
+    {
+      "label": "cor:geodesic-comparison",
+      "kind": "cor",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.geodesic_harmonic_comparison",
+          "file": "ModifiedCartan/GeodesicComparison.lean",
+          "line": 11
+        }
+      ],
+      "notes": "Entire distance-additive hyperbolic segment, including coincident endpoints; exact 2*C0 and uniform epsilon for d0 < log 3."
+    },
+    {
+      "label": "prop:sharp-two-absorption",
+      "kind": "prop",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.sharpTwoAbsorption_proved",
+          "file": "ModifiedCartan/SharpTwoAbsorption.lean",
+          "line": 87
+        }
+      ],
+      "notes": "Arbitrary nonempty open sets; no connectedness requirement; non-strict diameter <= log 3."
+    },
+    {
+      "label": "prop:torus-null-set",
+      "kind": "prop",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.torus_manifold_nullDirections_isClosed",
+          "file": "ModifiedCartan/TorusManifold.lean",
+          "line": 40
+        },
+        {
+          "name": "ModifiedCartan.torus_manifold_compact_metric_lower",
+          "file": "ModifiedCartan/TorusManifold.lean",
+          "line": 59
+        },
+        {
+          "name": "ModifiedCartan.torus_manifold_compact_inf_pos",
+          "file": "ModifiedCartan/TorusManifold.lean",
+          "line": 84
+        },
+        {
+          "name": "ModifiedCartan.torus_manifold_null_image_eq_zeroLocus",
+          "file": "ModifiedCartan/TorusTangentAlgebraic.lean",
+          "line": 51
+        }
+      ],
+      "notes": "Closed in the actual tangent bundle, equal to an explicit polynomial zero locus in (x,x^-1,v) coordinates, with a positive infimum on every compact set in the complement."
+    },
+    {
+      "label": "prop:projective-equivalence",
+      "kind": "prop",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.projective_equivalence",
+          "file": "ModifiedCartan/ProjectiveEquivalence.lean",
+          "line": 78
+        }
+      ],
+      "notes": "Both directions, p >= 3 and 0 < R <= 1; genuine projective quotient topology, product uniformity and manifold holomorphic maps."
+    },
+    {
+      "label": "cor:projective-zero-directions",
+      "kind": "cor",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.projective_zero_directions",
+          "file": "ModifiedCartan/ProjectiveTori.lean",
+          "line": 175
+        },
+        {
+          "name": "ModifiedCartan.projectiveTorusTangentSpace_finrank_le",
+          "file": "ModifiedCartan/ProjectiveTori.lean",
+          "line": 197
+        }
+      ],
+      "notes": "Exact union of differential images of actual holomorphic torus embeddings, with dimension <= floor(p/2)-1."
+    }
+  ],
+  "supplemental_results": [
+    {
+      "id": "cartan-extraction-required-by-paper",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.cartanExtraction_three",
+          "file": "ModifiedCartan/CartanThree.lean",
+          "line": 33
+        },
+        {
+          "name": "ModifiedCartan.cartanExtraction_four",
+          "file": "ModifiedCartan/CartanFour.lean",
+          "line": 10
+        },
+        {
+          "name": "ModifiedCartan.cartanExtraction_five",
+          "file": "ModifiedCartan/CartanFive.lean",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "id": "optimal-five-radius",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.optimalFiveRadius_proved",
+          "file": "ModifiedCartan/SharpFive.lean",
+          "line": 30
+        },
+        {
+          "name": "ModifiedCartan.partition_five_at_sharpRadius",
+          "file": "ModifiedCartan/SharpFive.lean",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "id": "gaussian-holomorphic-branch",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.fivePhi_differentiable",
+          "file": "ModifiedCartan/FiveExampleFunctions.lean",
+          "line": 34
+        },
+        {
+          "name": "ModifiedCartan.fiveL_differentiable",
+          "file": "ModifiedCartan/FiveExampleFunctions.lean",
+          "line": 52
+        },
+        {
+          "name": "ModifiedCartan.fivePhi_sq",
+          "file": "ModifiedCartan/FiveExampleFunctions.lean",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "id": "gaussian-majorants-and-sign",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.five_majorant_positive_gap",
+          "file": "ModifiedCartan/FiveMajorant.lean",
+          "line": 51
+        },
+        {
+          "name": "ModifiedCartan.fiveL_re_pos_right",
+          "file": "ModifiedCartan/FiveMajorant.lean",
+          "line": 28
+        },
+        {
+          "name": "ModifiedCartan.fivePhi_re_nonpos_iff",
+          "file": "ModifiedCartan/FivePhiSign.lean",
+          "line": 56
+        },
+        {
+          "name": "ModifiedCartan.fivePhi_re_nonneg_iff",
+          "file": "ModifiedCartan/FivePhiSign.lean",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "id": "gaussian-integral-and-tail",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.gaussianPrimitive_hasDerivAt",
+          "file": "ModifiedCartan/GaussianPrimitive.lean",
+          "line": 24
+        },
+        {
+          "name": "ModifiedCartan.gaussianTransition_left_bound",
+          "file": "ModifiedCartan/GaussianContour.lean",
+          "line": 100
+        },
+        {
+          "name": "ModifiedCartan.gaussianTransition_right_bound",
+          "file": "ModifiedCartan/GaussianContour.lean",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "id": "gaussian-exact-ratio-estimate",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.fivea_div_fiveA_bound",
+          "file": "ModifiedCartan/FiveExampleBounds.lean",
+          "line": 48
+        },
+        {
+          "name": "ModifiedCartan.fivea_complement",
+          "file": "ModifiedCartan/FiveExampleBounds.lean",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "id": "gaussian-five-units-and-zero-sum",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.fiveCounterexample_units",
+          "file": "ModifiedCartan/FiveCounterexample.lean",
+          "line": 26
+        },
+        {
+          "name": "ModifiedCartan.fiveCounterexample_zeroSum",
+          "file": "ModifiedCartan/FiveCounterexample.lean",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "id": "gaussian-growth-and-vanishing",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.fiveCounterexample_grows_at_zero",
+          "file": "ModifiedCartan/FiveCounterexample.lean",
+          "line": 43
+        },
+        {
+          "name": "ModifiedCartan.fiveA_vanishes_negative_point",
+          "file": "ModifiedCartan/FiveExampleLimits.lean",
+          "line": 32
+        },
+        {
+          "name": "ModifiedCartan.fivea_sub_fiveA_vanishes_negative_point",
+          "file": "ModifiedCartan/FiveExampleLimits.lean",
+          "line": 74
+        },
+        {
+          "name": "ModifiedCartan.fiveCounterexample_vanishing_points",
+          "file": "ModifiedCartan/FiveCounterexample.lean",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "id": "gaussian-no-partition-any-subsequence",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.fiveCounterexample_no_partition",
+          "file": "ModifiedCartan/FiveCounterexample.lean",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "id": "disk-diameter-formula",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.disk_hyperbolicDiameter_iff",
+          "file": "ModifiedCartan/DiskDiameter.lean",
+          "line": 81
+        },
+        {
+          "name": "ModifiedCartan.sharpRadius_log_diameter",
+          "file": "ModifiedCartan/Radii.lean",
+          "line": 32
+        },
+        {
+          "name": "ModifiedCartan.sharpRadius_hyperbolicDiameter",
+          "file": "ModifiedCartan/AbsorptionTheorem.lean",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "id": "sharp-diameter-obstructions",
+      "status": "proof_complete",
+      "proofs": [
+        {
+          "name": "ModifiedCartan.five_partition_diameter_cannot_increase",
+          "file": "ModifiedCartan/FiveOptimalityUpper.lean",
+          "line": 35
+        },
+        {
+          "name": "ModifiedCartan.two_absorption_diameter_cannot_increase",
+          "file": "ModifiedCartan/TwoAbsorptionCounterexample.lean",
+          "line": 87
+        }
+      ]
+    }
+  ]
+}

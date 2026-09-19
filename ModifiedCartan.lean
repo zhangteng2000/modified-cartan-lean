@@ -295,3 +295,15 @@ import ModifiedCartan.CClassExhaustion
 import ModifiedCartan.UnitDiskExhaustion
 import ModifiedCartan.CartanDiagonal
 import ModifiedCartan.CartanFour
+import ModifiedCartan.CompactLifts
+import ModifiedCartan.DiskStripCover
+import ModifiedCartan.DiskAnnulusCover
+import ModifiedCartan.TripleAnchorsFromCases
+import ModifiedCartan.CartanFourAnnulus
+import ModifiedCartan.CartanFiveReduction
+import ModifiedCartan.CartanFiveWronskianEndgame
+import ModifiedCartan.CartanFiveDiskReduction
+import ModifiedCartan.CartanFiveNoReductions
+import ModifiedCartan.CartanFiveLocal
+import ModifiedCartan.CartanFive
+import ModifiedCartan.SharpFive

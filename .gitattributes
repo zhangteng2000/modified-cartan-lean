@@ -1,0 +1,12 @@
+*.lean text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=lf
+*.toml text eol=lf
+*.mjs text eol=lf
+lean-toolchain text eol=lf
+# Preserve the exact uploaded manuscript bytes across platforms.
+paper.tex -text diff
+manuscripts/*.tex -text diff
+# Keep the delivered compiler logs byte-for-byte.
+verification/*.log -text
