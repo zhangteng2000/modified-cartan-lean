@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, cor:projective-zero-directions, cor:geodesic-comparison fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, cor:projective-zero-directions, cor:geodesic-comparison, explicit Gaussian five-function counterexample, upper optimal-radius bound and both diameter obstructions fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; sharp five-function theorem and counterexample, and prop:projective-equivalence.
+WIP: Full manuscript; positive sharp five-function theorem, exact optimal-radius equality, and prop:projective-equivalence.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -54,7 +54,9 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 | `lem:stabilization` | VERIFIED | `stabilization_lemma`; common extraction, actual quotient preorders, maximal-class counting and incomparability |
 | `thm:main`, `cor:centers` | VERIFIED | `partitionTheorem_proved`, `partition_at_recursive_radius`, `partition_at_center`; exact εₚ and disk automorphism pullback |
 | `thm:sharp-five` | WIP | classical Cartan extraction and sharp absorption; arbitrary open U retained |
-| optimal five-function radius | WIP | Gaussian integral counterexample and exact extremal argument |
+| explicit five-function counterexample | VERIFIED | `fiveCounterexample_no_partition`; all larger disks, every subsequence, actual Gaussian functions and exact 3/(4n) bounds |
+| optimal five-function radius | WIP | upper bound `optimalFiveRadius_le_sharpRadius` proved; positive sharp-five assertion still needed for equality |
+| diameter optimality obstructions | VERIFIED | `five_partition_diameter_cannot_increase`, `two_absorption_diameter_cannot_increase`; every proposed diameter > log 3, even on round disks |
 | `thm:torus-zero` | VERIFIED | torus_manifold_metric_zero_iff; actual intrinsic manifold differential, exact metric equality under embedded-manifold coordinates, both directions |
 | `prop:torus-null-set` | VERIFIED | torus_manifold_nullDirections_isClosed, torus_manifold_compact_inf_pos, torus_manifold_null_image_eq_zeroLocus; genuine tangent bundle, explicit finite polynomial ideal, reverse tangent reconstruction |
 | `prop:projective-equivalence` | WIP | projective formalism and both implications |
@@ -171,3 +173,7 @@ Completed projective zero directions: `ProjectiveTopology` equips mathlib projec
 Completed geodesic comparison: `SchwarzPick` proves actual disk isometries using the library Schwarz lemma; `HyperbolicCoordinates` proves real-line distance addition and a uniform symmetric radius from d₀ < log 3. `HyperbolicRadialSegment` proves equality rigidity, `HyperbolicRealSegment` identifies every real-endpoint segment, and `HyperbolicSegments` identifies its exact automorphism image. `GeodesicComparison` proves the original full-segment harmonic estimate, including coincident endpoints. The full checkpoint audit passed: 643 declarations, zero sorry/admit and user axioms; standard axioms only.
 
 Gaussian counterexample preparations: DiskDiameter proves the exact supremal diameter of every open disk of radius R < 1. GaussianPrimitive defines the actual normalized entire integral and proves its derivative, symmetry and path increments. GaussianRealBounds proves normalization and the real tail estimate. GaussianContour proves the horizontal contour shift, the vanishing vertical-edge bound and both half-plane estimates with the exact one-half coefficient. These are supporting lemmas; the five-function counterexample remains WIP. Checkpoint audit passed: 672 declarations, standard axioms only.
+
+Counterexample construction now fully audited: FiveExampleFunctions proves the actual square-root branch, holomorphy, the complex majorant identity and the exact real-axis sign threshold. FivePhiSign proves the real-part sign by an explicit positive factor. FiveMajorant proves strict positivity and comparison. FiveExampleBounds proves the uniform 3/(4n) ratio bound and absence of zeros. FiveExampleLimits proves actual growth and vanishing limits. PartitionObstruction proves persistence under every extraction, and FiveCounterexample proves the complete five-unit zero-sum counterexample for every sharpRadius < R <= 1. The full 722-declaration checkpoint audit passed for these additions. The positive SharpFiveTheorem and exact radius equality remain WIP.
+
+FiveOptimalityUpper proves R₅ <= 2-sqrt(3) and the five-function diameter obstruction using continuity of the exact disk diameter. TwoAbsorptionCounterexample proves the original sum-identically-one two-term counterexample, actual compact convergence of normalized numerators, and failure of absorption on every larger disk; its diameter obstruction is also proved. Full checkpoint audit passed: 722 declarations, standard axioms only, zero sorry/admit and user axioms.

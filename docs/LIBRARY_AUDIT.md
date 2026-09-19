@@ -62,3 +62,5 @@ Projective geometry now constructed: standard quotient topology via mathlib IsQu
 Geodesic comparison uses Mathlib.Analysis.Complex.Schwarz for Schwarz-Pick via conjugation, then explicit real logarithmic distance formulas and complex norm identities. Both directions of the exact geodesic image identity are proved locally; no metric-segment identification is assumed.
 
 Gaussian estimates reuse mathlib Complex.wedgeIntegral, its holomorphic primitive theorem, integral_gaussian_Ioi, improper-integral convergence and Gaussian exponential decay. The contour-shift identity, finite contour estimates and exact limiting half-plane bounds are proved in project modules.
+
+The explicit square-root branch uses Complex.sqrt from the pinned RCLike/Pow API and Complex.differentiableAt_sqrt on the slit plane, with Re(1-z^4)>0 proved on the unit disk. Real-part sign is proved by an explicit positive algebraic factor. The five-function nonpartition argument handles every strictly increasing extraction and uses the exact project C-class predicate. No counterexample existence assumption is introduced.

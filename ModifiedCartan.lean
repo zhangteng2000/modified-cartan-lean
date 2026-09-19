@@ -172,3 +172,12 @@ import ModifiedCartan.DiskDiameter
 import ModifiedCartan.GaussianPrimitive
 import ModifiedCartan.GaussianRealBounds
 import ModifiedCartan.GaussianContour
+import ModifiedCartan.FiveExampleFunctions
+import ModifiedCartan.FivePhiSign
+import ModifiedCartan.FiveMajorant
+import ModifiedCartan.FiveExampleBounds
+import ModifiedCartan.FiveExampleLimits
+import ModifiedCartan.PartitionObstruction
+import ModifiedCartan.FiveCounterexample
+import ModifiedCartan.FiveOptimalityUpper
+import ModifiedCartan.TwoAbsorptionCounterexample

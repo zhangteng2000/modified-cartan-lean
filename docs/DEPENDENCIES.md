@@ -89,3 +89,5 @@ Completed projective null-direction chain: ProjectiveCoordinates -> ProjectiveTo
 Completed geodesic chain: SchwarzPick -> HyperbolicCoordinates -> HyperbolicRadialSegment -> HyperbolicRealSegment -> HyperbolicSegments; together with DiskSegmentComparison -> GeodesicComparison. Equality rigidity and the exact image of the complete segment are proved, not supplied as hypotheses.
 
 Counterexample preparation: GaussianPrimitive -> GaussianRealBounds -> GaussianContour; all estimates concern the actual complex integral. HyperbolicCoordinates -> DiskDiameter proves the exact disk diameter, including the open-boundary supremum.
+
+Completed Gaussian obstruction chain: FiveExampleFunctions -> FivePhiSign/FiveMajorant -> FiveExampleBounds (using GaussianContour) -> FiveExampleLimits; PartitionObstruction + those limits -> FiveCounterexample -> FiveOptimalityUpper. The same actual family and uniform ratio convergence -> TwoAbsorptionCounterexample. Positive SharpFiveTheorem remains independent unfinished work.
