@@ -23,7 +23,7 @@
 | `lem:stabilization` | 完整证明 | `stabilization_lemma`；同时分析抽取、固定紧集上的最大值发散、实际商函数预序、极大等价类计数及下一层不可比较性均已证明。 |
 | `cor:centers` | 完整证明 | `partition_at_center`；实际 C-类分割通过圆盘自同构拉回，保留同一显式半径。 |
 | `lem:two-point-kernel` | 完整证明 | `two_point_harmonic`：统一正间隙、一般圆周上的 Poisson 积分和半径趋近 1 的极限均已证明，对开单位圆盘内任意正调和函数成立。 |
-| `cor:geodesic-comparison` | 部分工具已证明 | Harnack 比较、自同构归一化与实际圆盘段上的比较均已证明；尚缺双曲测地段表述的最终识别。 |
+| `cor:geodesic-comparison` | 完整证明 | `geodesic_harmonic_comparison`；距离加法等式刻画的全部双曲测地段，严格阈值 d₀ < log 3，统一正 ε 和原稿的 2C₀，包含端点重合情形。 |
 | `prop:sharp-two-absorption` | 完整证明 | `sharpTwoAbsorption_proved`；任意不连通开集及 ≤ log 3 端点，实际失败点、坐标、Wronskian 衰减和端点矛盾均已证明。 |
 | `R_5 = 2 - sqrt(3)` 与尖锐反例 | 仅最优性目标陈述，数值恒等式已证明 | `OptimalFiveRadius` 未证明。`sharpRadius_log_diameter` 只证明对数表达式的代数值；尚未证明该表达式等于圆盘双曲直径，也没有形式化高斯积分反例。 |
 | `prop:torus-null-set` | 完整证明 | 内在切丛中的闭性、紧集正下界和严格正下确界均已证明；`torus_manifold_null_image_eq_zeroLocus` 将全部内在零方向精确识别为显式有限多项式理想的零点集。 |
@@ -40,6 +40,6 @@
 
 ## 后续证明依赖
 
-分割主定理及其解析依赖已完成证明。剩余工作包括五函数尖锐结论、测地段表述的识别和几何应用。五函数最优性还需要正式处理高斯积分反例。环面零方向定理及切丛零集的闭性、代数性与紧集严格正下界已完成；射影应用仍在进行。
+分割主定理及其解析依赖已完成证明。剩余工作包括五函数尖锐结论及射影分割等价性。五函数最优性还需要正式处理高斯积分反例。环面零方向定理及切丛零集的闭性、代数性与紧集严格正下界已完成；射影应用仍在进行。
 
 此文件记录尚未完成的工作，不代表这些结果已被 Lean 验证。

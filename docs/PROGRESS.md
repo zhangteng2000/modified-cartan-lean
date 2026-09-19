@@ -1,6 +1,6 @@
-VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, cor:projective-zero-directions fully proved; declaration count in verification/result.json.
+VERIFIED: Manuscript lem:cartan-circle, prop:wronskian, lem:logderivative, lem:growth, lem:envelope, lem:two-point-kernel, lem:poisson-mean, lem:stabilization, prop:sharp-two-absorption, thm:absorption (exact recursive radii), cor:rank-adaptive-absorption, thm:main, cor:centers, thm:torus-zero, prop:torus-null-set, cor:projective-zero-directions, cor:geodesic-comparison fully proved; declaration count in verification/result.json.
 RELATIVE_VERIFIED: 0
-WIP: Full manuscript; sharp five-function theorem and counterexample, geodesic identification, and prop:projective-equivalence.
+WIP: Full manuscript; sharp five-function theorem and counterexample, and prop:projective-equivalence.
 BLOCKED: No external blocker. Unproved mathematical dependencies are recorded below.
 SORRY_COUNT: 0
 USER_AXIOM_COUNT: 0
@@ -47,6 +47,7 @@ The goal is the full manuscript, with the original hypotheses, constants, explic
 
 | Result | Status | Remaining proof work |
 |---|---|---|
+| `cor:geodesic-comparison` | VERIFIED | `geodesic_harmonic_comparison`; full actual distance-additive segment, uniform positive constant for d₀ < log 3, original 2C₀ |
 | `prop:sharp-two-absorption` | VERIFIED | `sharpTwoAbsorption_proved`; arbitrary disconnected open sets, diameter ≤ log 3, actual Wronskian decay and endpoint contradiction |
 | `thm:absorption` | VERIFIED | `explicitAbsorptionTheorem_proved` and `absorptionTheorem_proved`; actual exponent sequence, sharp m = 2 base, exact recursive radii |
 | `cor:rank-adaptive-absorption` | VERIFIED | `rank_adaptive_absorption`; rank of restrictions to D, bounded elimination and exact r_d |
@@ -166,3 +167,5 @@ Intrinsic geometry checkpoint (541 audited declarations): ImmersionDifferential 
 2026-09-19 projective checkpoint: `AdmissiblePartitions` identifies vanishing exponential sums with actual admissible finite partitions. `PartitionRateDimension` and `PartitionVelocities` prove the exact dimension bound floor(p/2)-1 and finite-union description. `NormalizedHyperplane` applies the proved torus theorem to the zero-sum, x_k=1 locus. `PartitionTori` proves both directions of the holomorphic-curve tangent characterization using explicit entire exponential curves. `ProjectiveCoordinates` constructs a genuine equivalence with mathlib projectivization. Standard quotient topology and intrinsic projective tangent identification remain WIP. All six modules are included in the 578-declaration audit.
 
 Completed projective zero directions: `ProjectiveTopology` equips mathlib projectivization with the standard quotient topology and proves the affine-chart homeomorphisms. `NormalizedHyperplaneChart`, `AffineSliceManifold`, and `ProjectiveManifold` construct the actual complex manifold and prove its intrinsic metric equals the normalized torus metric. `AffineSliceDifferential` computes the actual differential. `PartitionTorusManifold` and `ProjectiveTori` construct the embedded complex tori, prove injectivity of their differentials, identify their tangent images, and prove `projective_zero_directions` with the exact dimension bound. `ProjectiveScaling` proves agreement with homogeneous part scalings and invariance of admissibility under nonzero scalar changes. All statements passed the 622-declaration audit.
+
+Completed geodesic comparison: `SchwarzPick` proves actual disk isometries using the library Schwarz lemma; `HyperbolicCoordinates` proves real-line distance addition and a uniform symmetric radius from d₀ < log 3. `HyperbolicRadialSegment` proves equality rigidity, `HyperbolicRealSegment` identifies every real-endpoint segment, and `HyperbolicSegments` identifies its exact automorphism image. `GeodesicComparison` proves the original full-segment harmonic estimate, including coincident endpoints. The full checkpoint audit passed: 643 declarations, zero sorry/admit and user axioms; standard axioms only.

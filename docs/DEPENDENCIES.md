@@ -85,3 +85,5 @@ Intrinsic geometry: ImmersionDifferential → ManifoldDiscs (exact metric equali
 Projective branch: AdmissiblePartitions -> PartitionRateDimension -> PartitionVelocities -> NormalizedHyperplane -> PartitionTori; NormalizedHyperplane -> ProjectiveCoordinates. The finite union and dimension bound are proved in normalized coordinates; the projective topological/manifold bridges remain WIP.
 
 Completed projective null-direction chain: ProjectiveCoordinates -> ProjectiveTopology -> NormalizedHyperplaneChart/AffineSliceManifold -> ProjectiveManifold; PartitionTori -> PartitionTorusManifold; AffineSliceDifferential + ProjectiveScaling + ProjectiveManifold + PartitionTorusManifold -> ProjectiveTori. The result uses actual mfderiv images and the intrinsic disc infimum.
+
+Completed geodesic chain: SchwarzPick -> HyperbolicCoordinates -> HyperbolicRadialSegment -> HyperbolicRealSegment -> HyperbolicSegments; together with DiskSegmentComparison -> GeodesicComparison. Equality rigidity and the exact image of the complete segment are proved, not supplied as hypotheses.

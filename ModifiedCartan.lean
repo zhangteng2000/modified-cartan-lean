@@ -162,3 +162,9 @@ import ModifiedCartan.AffineSliceDifferential
 import ModifiedCartan.PartitionTorusManifold
 import ModifiedCartan.ProjectiveScaling
 import ModifiedCartan.ProjectiveTori
+import ModifiedCartan.SchwarzPick
+import ModifiedCartan.HyperbolicCoordinates
+import ModifiedCartan.HyperbolicRadialSegment
+import ModifiedCartan.HyperbolicRealSegment
+import ModifiedCartan.HyperbolicSegments
+import ModifiedCartan.GeodesicComparison
