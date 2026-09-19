@@ -189,3 +189,25 @@ Further classical extraction work: the three-function base is now proved on arbi
 CartanFourFiniteLimit now proves the finite-limit reduction case, including a vanishing quotient, on the entire unit disk. The full 847-declaration audit passed; only the standard logical axioms occur, with no placeholders. The result has explicit quotient-limit hypotheses and is not claimed as the complete four-function or five-function extraction theorem.
 
 Higher Cartan analytic checkpoint: exact three- and four-function derived Wronskian identities; branch-independent logarithmic modulus comparisons on circles and annuli; reciprocal proximity from moving anchors; normalized Wronskian determinant, analyticity and derivative-mean control; integrable radial loss and actual small-value-radius outer-measure bound. CircleLogProximity supplies the choice of bounded function or bounded reciprocal on each admissible circle. The complete 875-declaration build and recursive axiom audit passed with only standard logical axioms. These estimates do not yet prove full Cartan extraction or the positive sharp-five result.
+
+## Uniform higher-Wronskian growth checkpoint — 908 declarations
+
+The full build and recursive axiom audit passed for 908 theorem declarations,
+with only propext, Classical.choice and Quot.sound. The paper remains incomplete.
+
+GrowthExceptional constructs the dyadic interval cover of fast-growth radii and
+proves the exact 2/M and 3/M outer-measure bounds. GrowthBootstrap turns a
+logarithmic estimate on a radius set of positive outer measure into an actual
+uniform inner bound. QuotientGrowth provides continuous monotone growth for all
+pairwise unit quotients. WronskianCommonFactor proves common-factor invariance
+by the full Leibniz determinant calculation. WronskianQuotients and
+WronskianFourProximity prove the two-sided circle proximity alternatives from
+actual third- and fourth-order identities. NormalizedWronskianGrowth supplies
+uniform O(log M) bounds after any common unit normalization.
+
+UniformReciprocalProximity gives radius-independent reciprocal bounds from
+moving anchors. RadialLoss now also has a local-boundary version while retaining
+the previous theorem unchanged. RadialProximityExceptional controls the outer
+measure of small-value circles by an actual outer proximity mean and a nonzero
+inner anchor; every zero circle is included. These are proved analytic steps,
+not assertions of full Cartan extraction or sharp-five completion.

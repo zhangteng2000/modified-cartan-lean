@@ -15,11 +15,11 @@ theorem radialLog_nonneg {u r : ℝ} (hu : 0 ≤ u) (hu1 : u ≤ 1)
 
 /-- A quantitative lower bound on almost every concentric circle, with an
 integrable loss whose total is controlled by one nonzero interior value. -/
-theorem cartan_integrable_radial_loss {a b c T R : ℝ}
+theorem cartan_integrable_radial_loss_local {a b c T R : ℝ}
     (ha : 0 < a) (hb : 0 ≤ b) (hbc : b < c)
     (haT : a < T) (hcT : c < T) (hTR : T < R) (hR1 : R < 1) :
     ∃ K : ℝ, 0 < K ∧ ∀ (F : ℂ → ℂ) (t : ℝ) (w : ℂ),
-      DifferentiableOn ℂ F (disk 1) → (∀ z ∈ disk 1, ‖F z‖ ≤ 1) →
+      DifferentiableOn ℂ F (disk 1) → (∀ z ∈ sphere (0 : ℂ) R, ‖F z‖ ≤ 1) →
       0 < t → t ≤ 1 → ‖w‖ ≤ a → t ≤ ‖F w‖ →
       ∃ E : ℝ → ℝ, IntervalIntegrable E volume b c ∧
         (∀ ρ ∈ Icc b c, 0 ≤ E ρ) ∧
@@ -49,7 +49,7 @@ theorem cartan_integrable_radial_loss {a b c T R : ℝ}
   have hRsub : closedBall (0 : ℂ) R ⊆ disk 1 := closedBall_subset_ball hR1
   have hFw : F w ≠ 0 := norm_pos_iff.mp (ht.trans_le htF)
   obtain ⟨s,m,Q,hs,hQ,hQnz,hQbound,hfact⟩ :=
-    bounded_blaschke_factorization hF hbound (hRsub hwR) hFw hT.le hTR hR1
+    bounded_blaschke_factorization_local hF hbound (hRsub hwR) hFw hT.le hTR hR1
   let N : ℕ := ∑ v ∈ s, m v
   have hprodq : ‖∏ v ∈ s, blaschkeFactor R v w ^ m v‖ ≤ q^N := by
     simp only [norm_prod,norm_pow]
@@ -142,5 +142,24 @@ theorem cartan_integrable_radial_loss {a b c T R : ℝ}
   rw [hlogF]
   dsimp [E]
   linarith
+
+
+/-- The original globally bounded version follows from the local boundary
+bound, with exactly the same parameters and conclusion. -/
+theorem cartan_integrable_radial_loss {a b c T R : ℝ}
+    (ha : 0 < a) (hb : 0 ≤ b) (hbc : b < c)
+    (haT : a < T) (hcT : c < T) (hTR : T < R) (hR1 : R < 1) :
+    ∃ K : ℝ, 0 < K ∧ ∀ (F : ℂ → ℂ) (t : ℝ) (w : ℂ),
+      DifferentiableOn ℂ F (disk 1) → (∀ z ∈ disk 1, ‖F z‖ ≤ 1) →
+      0 < t → t ≤ 1 → ‖w‖ ≤ a → t ≤ ‖F w‖ →
+      ∃ E : ℝ → ℝ, IntervalIntegrable E volume b c ∧
+        (∀ ρ ∈ Icc b c, 0 ≤ E ρ) ∧
+        (∫ ρ in b..c, E ρ) ≤ K * (-Real.log t) ∧
+        ∀ᵐ ρ ∂volume.restrict (Icc b c),
+          ∀ z : ℂ, ‖z‖ = ρ → F z ≠ 0 ∧ -Real.log ‖F z‖ ≤ E ρ := by
+  obtain ⟨K,hK,h⟩ := cartan_integrable_radial_loss_local ha hb hbc haT hcT hTR hR1
+  refine ⟨K,hK,?_⟩
+  intro F t w hF hbound ht ht1 hw htF
+  exact h F t w hF (fun z hz => hbound z (sphere_subset_ball hR1 hz)) ht ht1 hw htF
 
 end ModifiedCartan
