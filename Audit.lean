@@ -108,6 +108,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.mergedFamily_assigned_pair
 #print axioms ModifiedCartan.mergedFamily_pair_unit
 #print axioms ModifiedCartan.cclass_unmerge_pair
+#print axioms ModifiedCartan.radialSmallValueSet_measure_le
+#print axioms ModifiedCartan.cartan_small_value_radii
 #print axioms ModifiedCartan.cartan_circle_scaled
 #print axioms ModifiedCartan.three_global_projective_limit
 #print axioms ModifiedCartan.cartanExtraction_three
@@ -140,6 +142,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.circleAverage_mono_codiscrete
 #print axioms ModifiedCartan.meromorphic_circle_norm_rpow_measurable
 #print axioms ModifiedCartan.circleIntegrable_norm_rpow_of_codiscrete_le
+#print axioms ModifiedCartan.circle_logDerivative_alternative
+#print axioms ModifiedCartan.proximityMean_le_of_circle_exp
+#print axioms ModifiedCartan.circle_logDerivative_proximity_alternative
 #print axioms ModifiedCartan.circle_variation_bound
 #print axioms ModifiedCartan.continuous_coefficientNormSq
 #print axioms ModifiedCartan.coefficient_norm_le_one
@@ -466,6 +471,11 @@ import ModifiedCartan
 #print axioms ModifiedCartan.logDeriv_analyticOnNhd
 #print axioms ModifiedCartan.iterated_logDeriv_finite_factorization
 #print axioms ModifiedCartan.iterated_logDeriv_eq_log_branch
+#print axioms ModifiedCartan.hasDerivAt_log_norm
+#print axioms ModifiedCartan.circle_log_norm_variation
+#print axioms ModifiedCartan.radial_log_norm_variation
+#print axioms ModifiedCartan.annulus_log_norm_variation
+#print axioms ModifiedCartan.annulus_logDerivative_alternative
 #print axioms ModifiedCartan.blaschke_norm_identity
 #print axioms ModifiedCartan.blaschke_numerator_ne_zero
 #print axioms ModifiedCartan.log_factor_le_poisson
@@ -503,6 +513,12 @@ import ModifiedCartan
 #print axioms ModifiedCartan.normalizedPart_identity
 #print axioms ModifiedCartan.normalizedPart_limits
 #print axioms ModifiedCartan.compactConvergence_zero_of_limit_zero
+#print axioms ModifiedCartan.normalizedWronskian_eq_det
+#print axioms ModifiedCartan.normalizedWronskian_analyticOnNhd
+#print axioms ModifiedCartan.normalizedWronskian_two
+#print axioms ModifiedCartan.normalizedWronskian_three_factor
+#print axioms ModifiedCartan.normalizedWronskian_posLog_bound
+#print axioms ModifiedCartan.normalizedWronskian_proximity_bound
 #print axioms ModifiedCartan.unit_omitting_minus_one_normal
 #print axioms ModifiedCartan.unit_omitting_minus_one_trichotomy
 #print axioms ModifiedCartan.continuous_parameter_uniformOn
@@ -672,6 +688,8 @@ import ModifiedCartan
 #print axioms ModifiedCartan.radialLog_integral_bound
 #print axioms ModifiedCartan.radialLog_select_radius
 #print axioms ModifiedCartan.radialLog_select_radius_with_weights
+#print axioms ModifiedCartan.radialLog_nonneg
+#print axioms ModifiedCartan.cartan_integrable_radial_loss
 #print axioms ModifiedCartan.sharpRadius_pos
 #print axioms ModifiedCartan.sharpRadius_lt_one
 #print axioms ModifiedCartan.sharpRadius_quadratic
@@ -685,6 +703,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.absorption_constant_bound
 #print axioms ModifiedCartan.rank_adaptive_absorption
 #print axioms ModifiedCartan.iteratedDeriv_bound_of_real_part
+#print axioms ModifiedCartan.proximityMean_sub_inv
+#print axioms ModifiedCartan.proximityMean_inv_le
+#print axioms ModifiedCartan.proximityMean_inv_le_of_anchor
 #print axioms ModifiedCartan.reflectedPole_analytic
 #print axioms ModifiedCartan.reflectedPole_iteratedDeriv_bound
 #print axioms ModifiedCartan.blaschke_logDeriv_iterated_bound
@@ -825,6 +846,9 @@ import ModifiedCartan
 #print axioms ModifiedCartan.jet_relation_derivative
 #print axioms ModifiedCartan.wronskian_coefficient_derivative_system
 #print axioms ModifiedCartan.exists_wronskianExponents
+#print axioms ModifiedCartan.hasDerivAt_wronskian_three
+#print axioms ModifiedCartan.logDeriv_wronskian_ratio_four
+#print axioms ModifiedCartan.norm_logDeriv_wronskian_ratio_four
 #print axioms ModifiedCartan.wronskianBoundaryError_nonneg
 #print axioms ModifiedCartan.wronskianBoundaryError_circleIntegrable
 #print axioms ModifiedCartan.wronskianBoundaryError_circleAverage
@@ -839,6 +863,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.diskSupNorm_input_scale
 #print axioms ModifiedCartan.leastCombinationNorm_input_scale
 #print axioms ModifiedCartan.leastCombinationNorm_const_mul
+#print axioms ModifiedCartan.wronskian_three
+#print axioms ModifiedCartan.hasDerivAt_wronskian_two
+#print axioms ModifiedCartan.logDeriv_wronskian_ratio_three
+#print axioms ModifiedCartan.norm_logDeriv_wronskian_ratio_three
 #print axioms ModifiedCartan.blaschke_factorization_zero_count
 #print axioms ModifiedCartan.analytic_remove_finite_zeros
 #print axioms ModifiedCartan.finite_zero_factorization
