@@ -78,6 +78,12 @@ import ModifiedCartan
 #print axioms ModifiedCartan.cartan_circle_at_point
 #print axioms ModifiedCartan.cartanCircleEstimate_proved
 #print axioms ModifiedCartan.cartan_circle_scaled
+#print axioms ModifiedCartan.three_global_projective_limit
+#print axioms ModifiedCartan.cartanExtraction_three
+#print axioms ModifiedCartan.partitionProperty_three
+#print axioms ModifiedCartan.cpartition_three_univ
+#print axioms ModifiedCartan.three_local_projective_limit
+#print axioms ModifiedCartan.three_projectiveKernel_equicontinuous
 #print axioms ModifiedCartan.iteratedDeriv_unit_disk_bound
 #print axioms ModifiedCartan.iteratedDeriv_analyticOnNhd
 #print axioms ModifiedCartan.wronskian_analyticOnNhd
@@ -114,6 +120,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.leastCombinationNorm_le_one
 #print axioms ModifiedCartan.leastCombinationNorm_le_unnormalized
 #print axioms ModifiedCartan.leastCombinationNorm_initial_subfamily
+#print axioms ModifiedCartan.equicontinuous_compact_range_subsequence
 #print axioms ModifiedCartan.locallyBounded_mono
 #print axioms ModifiedCartan.locallyBounded_subsequence
 #print axioms ModifiedCartan.locallyBounded_congr
@@ -394,6 +401,7 @@ import ModifiedCartan
 #print axioms ModifiedCartan.laurent_orbitCoefficient_tendsto
 #print axioms ModifiedCartan.laurent_orbitRate_tendsto
 #print axioms ModifiedCartan.local_log_derivative_poles
+#print axioms ModifiedCartan.equicontinuousAt_of_local_subsequence_limits
 #print axioms ModifiedCartan.rpow_le_one_add
 #print axioms ModifiedCartan.log_polynomial_growth_bound
 #print axioms ModifiedCartan.log_fractional_moment_growth
@@ -551,6 +559,10 @@ import ModifiedCartan
 #print axioms ModifiedCartan.projectiveKernelCoordinates_diagonal_ne_zero
 #print axioms ModifiedCartan.projectiveKernelCoordinates_ratio
 #print axioms ModifiedCartan.projectiveKernel_injective
+#print axioms ModifiedCartan.projectiveKernelInverse_leftInverse
+#print axioms ModifiedCartan.projectiveKernelInverse_continuousOn
+#print axioms ModifiedCartan.projectiveKernel_lift_convergence
+#print axioms ModifiedCartan.projectiveHyperplane_isClosed
 #print axioms ModifiedCartan.projectivePoint_eq_mk
 #print axioms ModifiedCartan.projectivePoint_continuousAt
 #print axioms ModifiedCartan.projectivePoint_normalize

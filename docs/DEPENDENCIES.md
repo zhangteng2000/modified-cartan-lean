@@ -95,3 +95,5 @@ Completed Gaussian obstruction chain: FiveExampleFunctions -> FivePhiSign/FiveMa
 Completed projective equivalence: ProjectiveKernel -> ProjectiveCompact -> ProjectiveConvergence -> ProjectiveHurwitz; UniformComposition + ProjectiveLift -> ProjectiveClass -> ProjectiveBlocks -> ProjectivePartitions; ProjectiveManifold -> ProjectiveHolomorphy -> ProjectiveCurves. ProjectiveEquivalence assembles the genuine X_p-map/product-projective-limit equivalence.
 
 Sharp-five assembly: CClassEnlargement + SharpTwoAbsorption -> TwoClassAbsorption -> FiveClassReduction. The remaining prerequisite is actual classical Cartan extraction on the full disk. HolomorphicLog + MeanValue + Montel + FailurePoints/Hurwitz -> LogDerivativeNormality proves the bounded-logarithmic-derivative normality branch.
+
+Cartan three-function base: positive-radius partition + center pullback -> three-part cardinality -> local projective limits -> equicontinuity -> Arzela-Ascoli in compact kernel image -> inverse projective coordinates -> global projective Hurwitz -> CartanExtractionAt 3. This chain does not use classical Cartan extraction.

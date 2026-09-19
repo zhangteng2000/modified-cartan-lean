@@ -197,3 +197,13 @@ import ModifiedCartan.CClassEnlargement
 import ModifiedCartan.TwoClassAbsorption
 import ModifiedCartan.FiveClassReduction
 import ModifiedCartan.LogDerivativeNormality
+
+import ModifiedCartan.LocalNormality
+
+import ModifiedCartan.CompactNormality
+
+import ModifiedCartan.ProjectiveKernelInverse
+
+import ModifiedCartan.CartanThreeLocal
+
+import ModifiedCartan.CartanThree

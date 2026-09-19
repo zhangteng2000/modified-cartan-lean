@@ -10,7 +10,7 @@ Direct shell Git initialization could not write into the Documents output direct
 
 ## Current mathematical dependency
 
-The original classical Cartan extraction theorem (Theorem VII, 1928, pp. 312-315) remains unproved in Lean. It is the outstanding analytic dependency of the positive five-function theorem; it is not assumed as an axiom or counted as verified. The projective equivalence has now passed the 777-declaration audit. Work continues on the extraction proof and the independent two-class absorption assembly.
+The original classical Cartan extraction theorem (Theorem VII, 1928, pp. 312-315) remains unproved in Lean. It is the outstanding analytic dependency of the positive five-function theorem; it is not assumed as an axiom or counted as verified. The projective equivalence has now passed the 777-declaration audit. The two-class absorption assembly has passed the 788-declaration audit. The full-disk three-function base has now been compiled; general extraction remains under construction.
 
 ## Later environment resolution
 
