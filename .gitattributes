@@ -5,7 +5,7 @@
 *.toml text eol=lf
 *.mjs text eol=lf
 lean-toolchain text eol=lf
-# Preserve the exact uploaded manuscript bytes across platforms.
-paper.tex -text diff
+# Preserve the compiled manuscript bytes across platforms.
+*.pdf binary
 # Keep the delivered compiler logs byte-for-byte.
 verification/*.log -text

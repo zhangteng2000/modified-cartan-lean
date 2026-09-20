@@ -1,6 +1,6 @@
 # Manuscript correspondence
 
-This document describes the correspondence between [paper.tex](../paper.tex) and the verified Lean statements. Every principal result has a complete proof.
+This document describes the correspondence between [Modified Cartan conjecture.pdf](../Modified%20Cartan%20conjecture.pdf) and the verified Lean statements. Every principal result has a complete proof.
 
 ## Explicit absorption radii
 

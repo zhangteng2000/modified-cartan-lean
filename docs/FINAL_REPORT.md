@@ -1,54 +1,56 @@
-# 完整形式化验收报告
+# Final formalization verification report
 
-论文全部 19 项带标签的作者结果，以及最优半径、完整高斯反例、直径不可改进性和射影切空间维数结论均已有 Lean 证明项。289 个本地模块在新的构建目录中重建成功，1020 个本地定理逐一通过递归公理审计。
+All 19 labeled manuscript results have complete Lean proof terms, together with the exact optimal radius, the full Gaussian counterexample, sharp diameter obstructions, and the projective tangent-space dimension bound. All 289 local modules were rebuilt successfully, and all 1,020 local theorems passed the recursive axiom audit.
 
-验收时间：2026-09-19T23:38:49.7170484Z。源码证明检查点：`e84e54567afaa9ded782f6d3da0826311407ac55`。以下结论由真实的 Lean 编译和审计输出支持；完整记录见 [result.json](../verification/result.json)、[构建日志](../verification/build.log)、[证明入口检查](../verification/manuscript-check.log)和[公理日志](../verification/axioms.log)。
+Proof verification completed at `2026-09-19T23:38:49.7170484Z`. The verified proof source checkpoint is `e84e54567afaa9ded782f6d3da0826311407ac55`. The evidence is available in [result.json](../verification/result.json), the [build log](../verification/build.log), the [manuscript entry-point checks](../verification/manuscript-check.log), and the [axiom log](../verification/axioms.log).
 
-## 稿件及形式化范围
+## Manuscript and scope
 
-本项目以 [paper.tex](../paper.tex) 为唯一稿件，SHA-256 为 `76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89`。
+The manuscript is [Modified Cartan conjecture.pdf](../Modified%20Cartan%20conjecture.pdf), a 25-page PDF with SHA-256 `ca86a110643c3ba6502b7af2cd501c40414d1f0db6dead36d446223728f3e4eb`.
 
-下表覆盖 19 项带标签结果；另有 def:cclass，对应 Basic.lean 中的 IsDominant、IsCClass 和 CPartition。实际商函数有界性、紧集一致收敛、固定主导指标和严格子列均保留。
+The PDF was compiled directly from the manuscript covered by the proof audit. The [compilation record](../verification/manuscript-pdf.json) binds the PDF to the source hash and records the number, page, and PDF destination of each labeled result and definition. The definitions and theorem types were checked against the manuscript; the compiled index provides navigation and artifact-integrity checks.
 
-经典 Cartan 定理只形式化本文实际需要的 p = 5 全单位圆盘版本，另已证明 p = 3、4。论文文献综述中的任意 p 历史版本、Borel/Picard 的历史叙述和 Yamanoi 结果不作为本项目新增的作者定理，也没有被作为公理导入。
+The table below covers the 19 labeled results. Definition 1.1 (`def:cclass`) corresponds to `IsDominant`, `IsCClass`, and `CPartition` in [Basic.lean](../ModifiedCartan/Basic.lean). The formalization retains actual bounded quotient functions, uniform convergence on compact sets, a fixed dominant index, and strictly increasing subsequences.
 
-## 每项主要结果及公理依赖
+The classical Cartan input used by the paper is proved for p = 5 on the entire unit disk, with p = 3 and p = 4 as supporting results. The historical arbitrary-p theorem, Borel/Picard discussion, and Yamanoi result in the introduction are bibliographic background, not additional author results claimed here or axioms imported into the development.
 
-列出的名称均为实际定理证明项。公理列来自本次 #print axioms 输出，是递归依赖检查，不是对 Prop 定义的检查。三项标准逻辑公理 propext、Classical.choice、Quot.sound 符合用户验收要求。
+## Principal results and axiom dependencies
 
-| 论文标签 | 精确 Lean 名称 | 源文件与行号 | #print axioms 结果 |
+Every listed declaration is an actual theorem proof term. The axiom column is taken from the recursive `#print axioms` output. The permitted foundational axioms are `propext`, `Classical.choice`, and `Quot.sound`.
+
+| Manuscript result | Exact Lean name | Source and line | Axiom dependencies |
 |---|---|---|---|
-| `thm:main` | `ModifiedCartan.partitionTheorem_proved` | [ModifiedCartan/PartitionTheorem.lean:104](../ModifiedCartan/PartitionTheorem.lean#L104) | `[propext, Classical.choice, Quot.sound]` |
-| `thm:main` | `ModifiedCartan.partition_at_recursive_radius` | [ModifiedCartan/PartitionTheorem.lean:10](../ModifiedCartan/PartitionTheorem.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
-| `thm:sharp-five` | `ModifiedCartan.sharpFiveTheorem_proved` | [ModifiedCartan/SharpFive.lean:12](../ModifiedCartan/SharpFive.lean#L12) | `[propext, Classical.choice, Quot.sound]` |
-| `thm:torus-zero` | `ModifiedCartan.torus_manifold_metric_zero_iff` | [ModifiedCartan/TorusManifold.lean:30](../ModifiedCartan/TorusManifold.lean#L30) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:cartan-circle` | `ModifiedCartan.cartanCircleEstimate_proved` | [ModifiedCartan/CartanCircle.lean:123](../ModifiedCartan/CartanCircle.lean#L123) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:wronskian` | `ModifiedCartan.quantitativeWronskian_proved` | [ModifiedCartan/QuantitativeWronskian.lean:11](../ModifiedCartan/QuantitativeWronskian.lean#L11) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:logderivative` | `ModifiedCartan.logDerivativeEstimate_proved` | [ModifiedCartan/LogDerivativeEstimate.lean:95](../ModifiedCartan/LogDerivativeEstimate.lean#L95) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:growth` | `ModifiedCartan.growthLemma_proved` | [ModifiedCartan/Growth.lean:52](../ModifiedCartan/Growth.lean#L52) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:envelope` | `ModifiedCartan.envelope_lemma` | [ModifiedCartan/Envelope.lean:122](../ModifiedCartan/Envelope.lean#L122) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:poisson-mean` | `ModifiedCartan.poissonMeanEstimate_proved` | [ModifiedCartan/LogPoisson.lean:246](../ModifiedCartan/LogPoisson.lean#L246) | `[propext, Classical.choice, Quot.sound]` |
-| `thm:absorption` | `ModifiedCartan.explicitAbsorptionTheorem_proved` | [ModifiedCartan/AbsorptionTheorem.lean:72](../ModifiedCartan/AbsorptionTheorem.lean#L72) | `[propext, Classical.choice, Quot.sound]` |
-| `thm:absorption` | `ModifiedCartan.absorption_at_recursive_radius` | [ModifiedCartan/AbsorptionTheorem.lean:60](../ModifiedCartan/AbsorptionTheorem.lean#L60) | `[propext, Classical.choice, Quot.sound]` |
-| `cor:rank-adaptive-absorption` | `ModifiedCartan.rank_adaptive_absorption` | [ModifiedCartan/RankAdaptiveAbsorption.lean:10](../ModifiedCartan/RankAdaptiveAbsorption.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:stabilization` | `ModifiedCartan.stabilization_lemma` | [ModifiedCartan/QuotientStabilization.lean:30](../ModifiedCartan/QuotientStabilization.lean#L30) | `[propext, Classical.choice, Quot.sound]` |
-| `cor:centers` | `ModifiedCartan.partition_at_center` | [ModifiedCartan/PartitionCenters.lean:63](../ModifiedCartan/PartitionCenters.lean#L63) | `[propext, Classical.choice, Quot.sound]` |
-| `lem:two-point-kernel` | `ModifiedCartan.two_point_harmonic` | [ModifiedCartan/HarmonicKernel.lean:89](../ModifiedCartan/HarmonicKernel.lean#L89) | `[propext, Classical.choice, Quot.sound]` |
-| `cor:geodesic-comparison` | `ModifiedCartan.geodesic_harmonic_comparison` | [ModifiedCartan/GeodesicComparison.lean:11](../ModifiedCartan/GeodesicComparison.lean#L11) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:sharp-two-absorption` | `ModifiedCartan.sharpTwoAbsorption_proved` | [ModifiedCartan/SharpTwoAbsorption.lean:87](../ModifiedCartan/SharpTwoAbsorption.lean#L87) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:torus-null-set` | `ModifiedCartan.torus_manifold_nullDirections_isClosed` | [ModifiedCartan/TorusManifold.lean:40](../ModifiedCartan/TorusManifold.lean#L40) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:torus-null-set` | `ModifiedCartan.torus_manifold_compact_metric_lower` | [ModifiedCartan/TorusManifold.lean:59](../ModifiedCartan/TorusManifold.lean#L59) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:torus-null-set` | `ModifiedCartan.torus_manifold_compact_inf_pos` | [ModifiedCartan/TorusManifold.lean:84](../ModifiedCartan/TorusManifold.lean#L84) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:torus-null-set` | `ModifiedCartan.torus_manifold_null_image_eq_zeroLocus` | [ModifiedCartan/TorusTangentAlgebraic.lean:51](../ModifiedCartan/TorusTangentAlgebraic.lean#L51) | `[propext, Classical.choice, Quot.sound]` |
-| `prop:projective-equivalence` | `ModifiedCartan.projective_equivalence` | [ModifiedCartan/ProjectiveEquivalence.lean:78](../ModifiedCartan/ProjectiveEquivalence.lean#L78) | `[propext, Classical.choice, Quot.sound]` |
-| `cor:projective-zero-directions` | `ModifiedCartan.projective_zero_directions` | [ModifiedCartan/ProjectiveTori.lean:175](../ModifiedCartan/ProjectiveTori.lean#L175) | `[propext, Classical.choice, Quot.sound]` |
-| `cor:projective-zero-directions` | `ModifiedCartan.projectiveTorusTangentSpace_finrank_le` | [ModifiedCartan/ProjectiveTori.lean:197](../ModifiedCartan/ProjectiveTori.lean#L197) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:main` (1.2; p. 2) | `ModifiedCartan.partitionTheorem_proved` | [ModifiedCartan/PartitionTheorem.lean:104](../ModifiedCartan/PartitionTheorem.lean#L104) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:main` (1.2; p. 2) | `ModifiedCartan.partition_at_recursive_radius` | [ModifiedCartan/PartitionTheorem.lean:10](../ModifiedCartan/PartitionTheorem.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:sharp-five` (1.3; p. 3) | `ModifiedCartan.sharpFiveTheorem_proved` | [ModifiedCartan/SharpFive.lean:12](../ModifiedCartan/SharpFive.lean#L12) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:torus-zero` (1.4; p. 3) | `ModifiedCartan.torus_manifold_metric_zero_iff` | [ModifiedCartan/TorusManifold.lean:30](../ModifiedCartan/TorusManifold.lean#L30) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:cartan-circle` (2.1; p. 5) | `ModifiedCartan.cartanCircleEstimate_proved` | [ModifiedCartan/CartanCircle.lean:123](../ModifiedCartan/CartanCircle.lean#L123) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:wronskian` (2.2; p. 6) | `ModifiedCartan.quantitativeWronskian_proved` | [ModifiedCartan/QuantitativeWronskian.lean:11](../ModifiedCartan/QuantitativeWronskian.lean#L11) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:logderivative` (2.3; p. 7) | `ModifiedCartan.logDerivativeEstimate_proved` | [ModifiedCartan/LogDerivativeEstimate.lean:95](../ModifiedCartan/LogDerivativeEstimate.lean#L95) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:growth` (2.4; p. 8) | `ModifiedCartan.growthLemma_proved` | [ModifiedCartan/Growth.lean:52](../ModifiedCartan/Growth.lean#L52) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:envelope` (2.5; p. 8) | `ModifiedCartan.envelope_lemma` | [ModifiedCartan/Envelope.lean:122](../ModifiedCartan/Envelope.lean#L122) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:poisson-mean` (2.6; p. 9) | `ModifiedCartan.poissonMeanEstimate_proved` | [ModifiedCartan/LogPoisson.lean:246](../ModifiedCartan/LogPoisson.lean#L246) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:absorption` (3.1; p. 9) | `ModifiedCartan.explicitAbsorptionTheorem_proved` | [ModifiedCartan/AbsorptionTheorem.lean:72](../ModifiedCartan/AbsorptionTheorem.lean#L72) | `[propext, Classical.choice, Quot.sound]` |
+| `thm:absorption` (3.1; p. 9) | `ModifiedCartan.absorption_at_recursive_radius` | [ModifiedCartan/AbsorptionTheorem.lean:60](../ModifiedCartan/AbsorptionTheorem.lean#L60) | `[propext, Classical.choice, Quot.sound]` |
+| `cor:rank-adaptive-absorption` (3.2; p. 13) | `ModifiedCartan.rank_adaptive_absorption` | [ModifiedCartan/RankAdaptiveAbsorption.lean:10](../ModifiedCartan/RankAdaptiveAbsorption.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:stabilization` (4.1; p. 13) | `ModifiedCartan.stabilization_lemma` | [ModifiedCartan/QuotientStabilization.lean:30](../ModifiedCartan/QuotientStabilization.lean#L30) | `[propext, Classical.choice, Quot.sound]` |
+| `cor:centers` (4.2; p. 15) | `ModifiedCartan.partition_at_center` | [ModifiedCartan/PartitionCenters.lean:63](../ModifiedCartan/PartitionCenters.lean#L63) | `[propext, Classical.choice, Quot.sound]` |
+| `lem:two-point-kernel` (5.1; p. 16) | `ModifiedCartan.two_point_harmonic` | [ModifiedCartan/HarmonicKernel.lean:89](../ModifiedCartan/HarmonicKernel.lean#L89) | `[propext, Classical.choice, Quot.sound]` |
+| `cor:geodesic-comparison` (5.2; p. 16) | `ModifiedCartan.geodesic_harmonic_comparison` | [ModifiedCartan/GeodesicComparison.lean:11](../ModifiedCartan/GeodesicComparison.lean#L11) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:sharp-two-absorption` (5.3; p. 17) | `ModifiedCartan.sharpTwoAbsorption_proved` | [ModifiedCartan/SharpTwoAbsorption.lean:87](../ModifiedCartan/SharpTwoAbsorption.lean#L87) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:torus-null-set` (6.1; p. 22) | `ModifiedCartan.torus_manifold_nullDirections_isClosed` | [ModifiedCartan/TorusManifold.lean:40](../ModifiedCartan/TorusManifold.lean#L40) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:torus-null-set` (6.1; p. 22) | `ModifiedCartan.torus_manifold_compact_metric_lower` | [ModifiedCartan/TorusManifold.lean:59](../ModifiedCartan/TorusManifold.lean#L59) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:torus-null-set` (6.1; p. 22) | `ModifiedCartan.torus_manifold_compact_inf_pos` | [ModifiedCartan/TorusManifold.lean:84](../ModifiedCartan/TorusManifold.lean#L84) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:torus-null-set` (6.1; p. 22) | `ModifiedCartan.torus_manifold_null_image_eq_zeroLocus` | [ModifiedCartan/TorusTangentAlgebraic.lean:51](../ModifiedCartan/TorusTangentAlgebraic.lean#L51) | `[propext, Classical.choice, Quot.sound]` |
+| `prop:projective-equivalence` (6.2; p. 23) | `ModifiedCartan.projective_equivalence` | [ModifiedCartan/ProjectiveEquivalence.lean:78](../ModifiedCartan/ProjectiveEquivalence.lean#L78) | `[propext, Classical.choice, Quot.sound]` |
+| `cor:projective-zero-directions` (6.3; p. 23) | `ModifiedCartan.projective_zero_directions` | [ModifiedCartan/ProjectiveTori.lean:175](../ModifiedCartan/ProjectiveTori.lean#L175) | `[propext, Classical.choice, Quot.sound]` |
+| `cor:projective-zero-directions` (6.3; p. 23) | `ModifiedCartan.projectiveTorusTangentSpace_finrank_le` | [ModifiedCartan/ProjectiveTori.lean:197](../ModifiedCartan/ProjectiveTori.lean#L197) | `[propext, Classical.choice, Quot.sound]` |
 
-## 补充结论和完整反例
+## Supplemental results and complete counterexample
 
-反例使用实际的复平方根分支、全纯高斯原函数和具体五函数。a、b 通过 z 与 -z 的对称定义给出，保留 3/(4n) 上界；不只是存在某个抽象反例。无分割结论覆盖每个 2 - sqrt 3 < R <= 1 及每个严格递增子列。
+The counterexample uses an actual complex square-root branch, a holomorphic Gaussian primitive, and five explicitly defined functions. The functions a and b are related by z ↦ -z, with the exact `3/(4n)` estimate. The obstruction covers every `2 - sqrt 3 < R ≤ 1` and every strictly increasing subsequence.
 
-| 结论组 | 精确 Lean 名称 | 源文件与行号 | #print axioms 结果 |
+| Result group | Exact Lean name | Source and line | Axiom dependencies |
 |---|---|---|---|
 | `cartan-extraction-required-by-paper` | `ModifiedCartan.cartanExtraction_three` | [ModifiedCartan/CartanThree.lean:33](../ModifiedCartan/CartanThree.lean#L33) | `[propext, Classical.choice, Quot.sound]` |
 | `cartan-extraction-required-by-paper` | `ModifiedCartan.cartanExtraction_four` | [ModifiedCartan/CartanFour.lean:10](../ModifiedCartan/CartanFour.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
@@ -80,20 +82,20 @@
 | `sharp-diameter-obstructions` | `ModifiedCartan.five_partition_diameter_cannot_increase` | [ModifiedCartan/FiveOptimalityUpper.lean:35](../ModifiedCartan/FiveOptimalityUpper.lean#L35) | `[propext, Classical.choice, Quot.sound]` |
 | `sharp-diameter-obstructions` | `ModifiedCartan.two_absorption_diameter_cannot_increase` | [ModifiedCartan/TwoAbsorptionCounterexample.lean:87](../ModifiedCartan/TwoAbsorptionCounterexample.lean#L87) | `[propext, Classical.choice, Quot.sound]` |
 
-## 常数、假设和几何对应
+## Constants, hypotheses, and geometric correspondence
 
-- 保留 r1 = 1、r2 = 2 - sqrt 3、r_m = r_(m-1)/(1024*(K_m+m))；有效的 K_m 由已证明的 Wronskian 估计构造。
-- 保留 epsilon_p = r_(p-1)^(p-1)、秩自适应半径 r_d、包络中的 8 和 64、Poisson 估计中的 q 和 q² - 1、测地比较中的 2C0。
-- 五函数和两项吸收保留任意非空开集及 diameter <= log 3 的端点。没有加入连通性。
-- 射影等价保留两个方向、p >= 3 和 0 < R <= 1，使用真正的射影商拓扑、乘积一致结构和流形全纯映射。
-- 环面子簇使用有限 Laurent 方程的闭零集及实际复嵌入流形表示；切向量是实际流形切向量，环境坐标由嵌入的微分给出。内在 Kobayashi–Royden 度量与坐标圆盘定义的相等已经证明。代数零方向结论是整个零点集的等式，包含反向构造。详见 [几何模型](GEOMETRIC_MODEL.md)。
-- 度量取值于非负扩展实数，按通常约定处理空下确界；这避免了实数空下确界错误地等于零的问题。
+- The radii remain `r1 = 1`, `r2 = 2 - sqrt 3`, and `r_m = r_(m-1)/(1024*(K_m+m))`. Valid values of `K_m` are constructed from the proved Wronskian estimate.
+- The proofs retain `epsilon_p = r_(p-1)^(p-1)`, the rank-adaptive radius `r_d`, the envelope constants 8 and 64, the Poisson coefficients q and `q² - 1`, and the geodesic comparison constant `2C0`.
+- The five-function and two-term absorption theorems allow arbitrary nonempty open sets, including disconnected sets, at the endpoint `diameter ≤ log 3`.
+- Projective equivalence is proved in both directions for `p ≥ 3` and `0 < R ≤ 1`, using the actual quotient topology, product uniform structure, and manifold holomorphic maps.
+- Torus subvarieties are presented as closed zero loci of finitely many Laurent equations with an embedded complex manifold structure. Tangent vectors are manifold tangent vectors, and ambient coordinates come from the embedding differential. Equality of the intrinsic Kobayashi-Royden pseudometric and the coordinate-disk definition is proved. The algebraic null-direction result identifies the entire zero locus, including the converse construction; see the [geometric model](GEOMETRIC_MODEL.md).
+- The pseudometric takes values in the nonnegative extended reals, with the usual positive-infinity value for an empty infimum.
 
-## mathlib 与外部依赖
+## mathlib and external dependencies
 
-Lean 工具链：`leanprover/lean4:v4.34.0-rc1`。固定依赖如下；模块数按编译器 .ilean 的完整导入闭包统计，包含 tactic 基础设施。
+The Lean toolchain is `leanprover/lean4:v4.34.0-rc1`. The following dependencies are pinned. Module counts refer to the compiler's full `.ilean` import closure, including tactic infrastructure.
 
-| 包 | 固定提交 | 导入闭包模块数 |
+| Package | Pinned commit | Modules in import closure |
 |---|---|---|
 | mathlib | `de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11` | 3302 |
 | plausible | `38e9c3ce15cbb63c92e90bb9a92e4eb82131f669` | 13 |
@@ -105,27 +107,19 @@ Lean 工具链：`leanprover/lean4:v4.34.0-rc1`。固定依赖如下；模块数
 | batteries | `01bc479e7432594821ba3fb0ca465211941de86d` | 78 |
 | Cli | `af8bc067a4cc6c6df472a68909a3f40b1c76c43e` | 0 |
 
-此外导入 Lean/Std 核心模块 1399 个。全部 3302 个 mathlib 模块以及其他包和核心模块逐个列于本报告的[依赖附录](MATHLIB_DEPENDENCIES.md)。[机器可读清单](../verification/dependencies.json)包含所有直接导入边、传递导入闭包、固定版本以及本地源码引用的 mathlib 声明。它由 [生成脚本](../scripts/dependency-audit.mjs)读取成功构建的编译器元数据生成，不是估计列表。该导入清单与证明的逻辑公理依赖是两个不同层次；后者完整记录于 [axiom-summary.json](../verification/axiom-summary.json)。
+The closure also contains 1,399 Lean/Std core modules. All 3,302 mathlib modules and every other external module are listed individually in the [dependency appendix](MATHLIB_DEPENDENCIES.md). The [machine-readable inventory](../verification/dependencies.json) records direct import edges, transitive imports, pinned versions, and local references to mathlib declarations. The [generator](../scripts/dependency-audit.mjs) reads compiler metadata from the successful build. Compiler imports and logical axiom dependencies are distinct; the latter are recorded in [axiom-summary.json](../verification/axiom-summary.json).
 
-主要复用 Poisson 表示、Cauchy 估计、解析零点与亚纯函数、紧性与 Arzelà–Ascoli、行列式、Laurent/多项式零点集、流形和射影化基础。未在固定 mathlib 中找到的 Cartan 抽取、定量估计、内在度量桥接和射影结构均在本项目证明。[库来源审计](LIBRARY_AUDIT.md)给出细节和 Cartan 原始文献来源。
+The development reuses Poisson representation, Cauchy estimates, analytic zeros and meromorphic functions, compactness and Arzela-Ascoli, determinants, Laurent and polynomial zero loci, manifolds, and projectivization. The Cartan extraction, quantitative estimates, intrinsic-metric bridge, and required projective constructions are proved locally. The [library audit](LIBRARY_AUDIT.md) records the relevant APIs and original Cartan references.
 
-## 论文与形式化的对应
+## Manuscript correspondence
 
-[数学对应说明](MANUSCRIPT_CORRESPONDENCE.md)说明精确递推半径、内在几何模型、C-class 定义与一般开集结论、结果计数及经典 Cartan 输入的形式化。全部主要结果都有完整证明，常数、假设和结论与论文相符。
+The [correspondence notes](MANUSCRIPT_CORRESPONDENCE.md) explain the exact recursive radii, intrinsic geometric model, C-class definition and open-set theorems, result accounting, and classical Cartan input. Every principal result has a complete proof with the manuscript's constants, hypotheses, and conclusion.
 
-## 构建与复核
+## Build and reproduction
 
-本次成功命令在项目根目录运行：
+The delivered proof audit rebuilt all local modules in a fresh directory using batches of at most four ready modules, then ran `lake build`, `lake env lean ManuscriptCheck.lean`, and `lake env lean Audit.lean`. Dependency commits and clean worktrees were checked. Style-linter suggestions in the logs are not compilation errors.
 
-```powershell
-.\verify.ps1 -Fresh
-```
-
-脚本在 `C:/Users/HUAWEI/AppData/Local/Temp/ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59` 中工作，固定 mathlib 缓存来自 E:/Lean 4/Sendov_conjecture_explicit_n0/.lake/packages。所有本地模块从空目录重建，以至多 4 个就绪模块组成一批；随后正常执行 lake build、lake env lean ManuscriptCheck.lean 和 lake env lean Audit.lean。各包提交和工作树均检查通过。源文件与稿件哈希记录在 [source-hashes.json](../verification/source-hashes.json)。
-
-首次不限制并发的尝试遇到库文件读取错误，改用受控批次后完整重建通过。没有修改数学陈述或降低证明检查。日志中的样式 linter 建议不属于编译错误。
-
-在另一台电脑安装 elan 后可执行：
+After installing elan, run from the repository root:
 
 ```text
 lake exe cache get
@@ -134,25 +128,27 @@ lake env lean ManuscriptCheck.lean
 lake env lean Audit.lean
 ```
 
-Windows 上若使用项目自己的依赖缓存，可运行：
+For the full verification script on Windows, use PowerShell 7:
 
 ```powershell
 .\verify.ps1 -PackageRoot (Resolve-Path '.lake/packages').Path -Fresh
 ```
 
-## 最终验收值
+The script checks the PDF hash, compiled statement-index hash, all principal labels, reviewed definitions, proof entry points, dependency versions, and recursive theorem axioms. The [source hash inventory](../verification/source-hashes.json) records the current delivered inputs. The PDF publication and English documentation update leave every Lean source file byte-for-byte unchanged from the completed proof audit.
 
-| 项目 | 结果 |
+## Final acceptance
+
+| Check | Result |
 |---|---|
-| 19 项主要结果 | VERIFIED |
-| 本地定理审计 | 1020 / 1020 |
-| 证明入口检查 | 54 / 54 |
-| sorry | 0 |
-| admit | 0 |
-| 论文专属公理 | 0 |
+| Principal manuscript results | 19 / 19 VERIFIED |
+| Local theorem axiom audit | 1,020 / 1,020 |
+| Manuscript proof entry points | 54 / 54 |
+| `sorry` | 0 |
+| `admit` | 0 |
+| Manuscript-specific axioms | 0 |
 | RELATIVE_VERIFIED | 0 |
 | WIP / BLOCKED | 0 / 0 |
-| 编译错误 | 0 |
-| 允许的标准逻辑公理 | propext, Classical.choice, Quot.sound |
+| Compilation errors | 0 |
+| Permitted foundational axioms | `propext`, `Classical.choice`, `Quot.sound` |
 
-完整源码、论文及验证记录见 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)。
+The complete project, manuscript, and verification records are available in the [GitHub repository](https://github.com/zhangteng2000/modified-cartan-lean).

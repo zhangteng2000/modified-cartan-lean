@@ -7,7 +7,7 @@ USER_AXIOM_COUNT: 0
 
 # Completed formalization
 
-The current manuscript is paper.tex, SHA-256 76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89. The 19 labeled results, one definition and supplemental conclusions are mapped in ../verification/manuscript-coverage.json. See ../FORMALIZATION_STATUS.md and FINAL_REPORT.md for exact theorem names and source locations.
+The manuscript is [Modified Cartan conjecture.pdf](../Modified%20Cartan%20conjecture.pdf), SHA-256 ca86a110643c3ba6502b7af2cd501c40414d1f0db6dead36d446223728f3e4eb. The compiled statement index and PDF provenance are recorded in [manuscript-pdf.json](../verification/manuscript-pdf.json). The 19 labeled results, one definition and supplemental conclusions are mapped in ../verification/manuscript-coverage.json. See ../FORMALIZATION_STATUS.md and FINAL_REPORT.md for exact theorem names and source locations.
 
 ## Final acceptance
 

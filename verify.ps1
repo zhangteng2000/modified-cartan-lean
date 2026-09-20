@@ -31,15 +31,45 @@ if ($coverage.review.status -ne 'complete') { throw 'Manuscript correspondence r
 $paperPath = Join-Path $PSScriptRoot $coverage.manuscript.file
 $paperHash = (Get-FileHash -LiteralPath $paperPath -Algorithm SHA256).Hash.ToLowerInvariant()
 if ($paperHash -ne $coverage.manuscript.sha256) { throw 'Manuscript has changed since correspondence review.' }
-$paperText = [IO.File]::ReadAllText($paperPath)
-$paperLabels = @()
-foreach ($block in [regex]::Matches($paperText, '(?s)\\begin\{(thm|lem|prop|cor)\}(.*?)\\end\{\1\}')) {
-  $label = [regex]::Match($block.Groups[2].Value, '\\label\{([^}]+)\}')
-  if (!$label.Success) { throw 'A principal manuscript statement lacks a coverage label.' }
-  $paperLabels += $label.Groups[1].Value
+if ($coverage.manuscript.format -ne 'pdf' -or [IO.Path]::GetExtension($paperPath) -ne '.pdf') {
+  throw 'The manuscript artifact must be a PDF.'
 }
-if ($paperLabels.Count -ne 19 -or (Compare-Object ($paperLabels | Sort-Object) ($coverage.principal_results.label | Sort-Object))) {
+$paperStream = [IO.File]::OpenRead($paperPath)
+try {
+  $paperHeader = [byte[]]::new(5)
+  if ($paperStream.Read($paperHeader, 0, 5) -ne 5 -or
+      [Text.Encoding]::ASCII.GetString($paperHeader) -ne '%PDF-') {
+    throw 'The manuscript artifact has an invalid PDF header.'
+  }
+} finally {
+  $paperStream.Dispose()
+}
+$paperManifestPath = Join-Path $PSScriptRoot $coverage.manuscript.label_index_file
+$paperManifestHash = (Get-FileHash -LiteralPath $paperManifestPath -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($paperManifestHash -ne $coverage.manuscript.label_index_sha256) {
+  throw 'The compiled manuscript statement index has changed since review.'
+}
+$paperManifest = Get-Content -LiteralPath $paperManifestPath -Raw | ConvertFrom-Json
+if ($paperManifest.pdf.file -ne $coverage.manuscript.file -or
+    $paperManifest.pdf.sha256 -ne $paperHash -or
+    $paperManifest.source_tex_sha256 -ne $coverage.manuscript.source_tex_sha256 -or
+    $paperManifest.source_tex_sha256 -notmatch '^[0-9a-f]{64}$' -or
+    $paperManifest.compilation.success -ne $true -or $paperManifest.pdf.pages -lt 1) {
+  throw 'The PDF compilation record does not match the reviewed manuscript.'
+}
+$paperLabels = @($paperManifest.principal_results | ForEach-Object { $_.label })
+if ($paperLabels.Count -ne 19 -or
+    @($paperLabels | Sort-Object -Unique).Count -ne 19 -or
+    (Compare-Object ($paperLabels | Sort-Object) ($coverage.principal_results.label | Sort-Object))) {
   throw 'Principal manuscript label coverage mismatch.'
+}
+if ($paperManifest.definitions.Count -ne 1 -or $paperManifest.definitions[0].label -ne 'def:cclass') {
+  throw 'The compiled C-class definition index is incomplete.'
+}
+foreach ($entry in @($paperManifest.principal_results) + @($paperManifest.definitions)) {
+  if (!$entry.number -or !$entry.destination -or $entry.page -lt 1 -or $entry.page -gt $paperManifest.pdf.pages) {
+    throw 'The compiled manuscript statement index contains an invalid location.'
+  }
 }
 $coveredProofs = @()
 foreach ($entry in @($coverage.principal_results) + @($coverage.supplemental_results)) {
@@ -89,8 +119,8 @@ $overrideFile = Join-Path $stage 'local-packages.json'
   schemaVersion = '1.2.0'; packages = $overrides
 } -Depth 10))
 $inputs = $sources + @(Get-ChildItem -LiteralPath $PSScriptRoot -File | Where-Object {
-  $_.Name -in @('lakefile.toml','lean-toolchain','lake-manifest.json','paper.tex','verify.ps1')
-}) + @(Get-Item -LiteralPath $coveragePath)
+  $_.Name -in @('lakefile.toml','lean-toolchain','lake-manifest.json','verify.ps1')
+}) + @(Get-Item -LiteralPath $paperPath, $coveragePath, $paperManifestPath)
 $hashes = @()
 foreach ($file in $inputs) {
   $rel = [IO.Path]::GetRelativePath($PSScriptRoot, $file.FullName)
@@ -162,7 +192,10 @@ try {
   $result = [ordered]@{
     status = 'full_formalization_verified'
     full_paper_proved = $true
+    manuscript_file = $coverage.manuscript.file
     manuscript_sha256 = $paperHash
+    manuscript_source_sha256 = $paperManifest.source_tex_sha256
+    manuscript_pdf_index_sha256 = $paperManifestHash
     coverage_sha256 = (Get-FileHash -LiteralPath $coveragePath -Algorithm SHA256).Hash.ToLowerInvariant()
     manuscript_correspondence_review = 'complete'
     principal_manuscript_results = $paperLabels.Count

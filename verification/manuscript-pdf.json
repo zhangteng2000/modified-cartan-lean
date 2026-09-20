@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "pdf": {
+    "file": "Modified Cartan conjecture.pdf",
+    "sha256": "ca86a110643c3ba6502b7af2cd501c40414d1f0db6dead36d446223728f3e4eb",
+    "pages": 25
+  },
+  "source_tex_sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89",
+  "compilation": {
+    "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2024)",
+    "passes": 3,
+    "shell_escape": false,
+    "success": true,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 2,
+    "maximum_overfull_pt": 2.79588,
+    "overfull_note": "Two address lines extend 2.80 pt beyond the text block; both remain fully visible within the page."
+  },
+  "label_index_method": "Extracted from the manuscript statement environments and final LaTeX auxiliary data; each PDF destination and page was checked.",
+  "principal_results": [
+    {
+      "label": "thm:main",
+      "kind": "thm",
+      "number": "1.2",
+      "page": 2,
+      "destination": "thm.1.2"
+    },
+    {
+      "label": "thm:sharp-five",
+      "kind": "thm",
+      "number": "1.3",
+      "page": 3,
+      "destination": "thm.1.3"
+    },
+    {
+      "label": "thm:torus-zero",
+      "kind": "thm",
+      "number": "1.4",
+      "page": 3,
+      "destination": "thm.1.4"
+    },
+    {
+      "label": "lem:cartan-circle",
+      "kind": "lem",
+      "number": "2.1",
+      "page": 5,
+      "destination": "thm.2.1"
+    },
+    {
+      "label": "prop:wronskian",
+      "kind": "prop",
+      "number": "2.2",
+      "page": 6,
+      "destination": "thm.2.2"
+    },
+    {
+      "label": "lem:logderivative",
+      "kind": "lem",
+      "number": "2.3",
+      "page": 7,
+      "destination": "thm.2.3"
+    },
+    {
+      "label": "lem:growth",
+      "kind": "lem",
+      "number": "2.4",
+      "page": 8,
+      "destination": "thm.2.4"
+    },
+    {
+      "label": "lem:envelope",
+      "kind": "lem",
+      "number": "2.5",
+      "page": 8,
+      "destination": "thm.2.5"
+    },
+    {
+      "label": "lem:poisson-mean",
+      "kind": "lem",
+      "number": "2.6",
+      "page": 9,
+      "destination": "thm.2.6"
+    },
+    {
+      "label": "thm:absorption",
+      "kind": "prop",
+      "number": "3.1",
+      "page": 9,
+      "destination": "thm.3.1"
+    },
+    {
+      "label": "cor:rank-adaptive-absorption",
+      "kind": "cor",
+      "number": "3.2",
+      "page": 13,
+      "destination": "thm.3.2"
+    },
+    {
+      "label": "lem:stabilization",
+      "kind": "lem",
+      "number": "4.1",
+      "page": 13,
+      "destination": "thm.4.1"
+    },
+    {
+      "label": "cor:centers",
+      "kind": "cor",
+      "number": "4.2",
+      "page": 15,
+      "destination": "thm.4.2"
+    },
+    {
+      "label": "lem:two-point-kernel",
+      "kind": "lem",
+      "number": "5.1",
+      "page": 16,
+      "destination": "thm.5.1"
+    },
+    {
+      "label": "cor:geodesic-comparison",
+      "kind": "cor",
+      "number": "5.2",
+      "page": 16,
+      "destination": "thm.5.2"
+    },
+    {
+      "label": "prop:sharp-two-absorption",
+      "kind": "prop",
+      "number": "5.3",
+      "page": 17,
+      "destination": "thm.5.3"
+    },
+    {
+      "label": "prop:torus-null-set",
+      "kind": "prop",
+      "number": "6.1",
+      "page": 22,
+      "destination": "thm.6.1"
+    },
+    {
+      "label": "prop:projective-equivalence",
+      "kind": "prop",
+      "number": "6.2",
+      "page": 23,
+      "destination": "thm.6.2"
+    },
+    {
+      "label": "cor:projective-zero-directions",
+      "kind": "cor",
+      "number": "6.3",
+      "page": 23,
+      "destination": "thm.6.3"
+    }
+  ],
+  "definitions": [
+    {
+      "label": "def:cclass",
+      "kind": "defin",
+      "number": "1.1",
+      "page": 2,
+      "destination": "thm.1.1"
+    }
+  ],
+  "compiled_at_utc": "2026-09-20T08:56:54.793704+00:00",
+  "visual_review": {
+    "status": "passed",
+    "pages_rendered": 25,
+    "renderer": "Poppler pdftoppm",
+    "checked_at_utc": "2026-09-20T09:03:50.881796+00:00",
+    "observations": "All pages inspected; no clipped text, overlapping formulas, missing glyphs, or unresolved references."
+  }
+}

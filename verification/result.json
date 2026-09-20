@@ -1,8 +1,8 @@
 {
   "status": "full_formalization_verified",
   "full_paper_proved": true,
-  "manuscript_sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89",
-  "coverage_sha256": "4abf47ab4664a44e24f604d63876cd8e706ab45d67ee99357158001853e62af9",
+  "manuscript_sha256": "ca86a110643c3ba6502b7af2cd501c40414d1f0db6dead36d446223728f3e4eb",
+  "coverage_sha256": "43acc5b6f65ee15821a3ca2b7b0c1d823f5b31a0603ec630b1fcfc3681fa5315",
   "manuscript_correspondence_review": "complete",
   "principal_manuscript_results": 19,
   "checked_manuscript_entry_points": 54,
@@ -25,5 +25,9 @@
   "verified_at_utc": "2026-09-19T23:38:49.7170484Z",
   "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59",
   "coverage_notes_checked_at_utc": "2026-09-20T08:47:53.9909610Z",
-  "compiler_input_hashes_unchanged": true
+  "manuscript_file": "Modified Cartan conjecture.pdf",
+  "manuscript_source_sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89",
+  "manuscript_pdf_index_sha256": "95770d0ca44d770f171c3cdd68c3e3619a8bccffbb42402d42828ca12b1ef32a",
+  "lean_source_hashes_unchanged": true,
+  "manuscript_artifact_checked_at_utc": "2026-09-20T09:03:50.881796+00:00"
 }
