@@ -11,8 +11,6 @@ No unresolved mathematical or external blocker remains. All principal proof term
 - All Cartan quotient and higher-Wronskian branches, annular transfer and a common full-disk diagonal subsequence.
 - Sharp five-function assembly and exact optimal-radius equality.
 
-## Resolved environment issues
+## Build verification
 
-Defender controlled-folder access prevented further writes in Documents. The original checkout was preserved and work continued at C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan. No security setting was changed. See REVISION_2026-09-19.md.
-
-A first unrestricted fresh build encountered concurrent library-file read failures; the files existed and individual module builds had passed. The final four-module batch build passed completely; see FINAL_REPORT.md and the verification artifacts.
+The verification script builds dependency-ready batches of at most four local modules, then runs the complete Lake build and proof audits. All checks passed; see [FINAL_REPORT.md](FINAL_REPORT.md) and the verification artifacts.

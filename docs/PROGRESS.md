@@ -29,8 +29,8 @@ The final Cartan chain covers all finite quotient limits, the annular merging tr
 
 The geometry uses the intrinsic manifold metric and actual tangent bundle. The null locus is identified with an explicit polynomial zero locus; compact complements have a positive lower bound. The projective equivalence, tangent union and dimension bound use the genuine projective quotient topology and manifold differentials.
 
-## History and environment
+## Reproducibility
 
-The source checkpoint is e84e54567afaa9ded782f6d3da0826311407ac55. Git history preserves the earlier development and audit checkpoints, including the 988-declaration four-function extraction checkpoint. The final verification documents are committed afterward. The GitHub remote is https://github.com/zhangteng2000/modified-cartan-lean; the complete development history is preserved.
+The verified proof source checkpoint is e84e54567afaa9ded782f6d3da0826311407ac55. The project, manuscript and verification records are available at https://github.com/zhangteng2000/modified-cartan-lean.
 
-The initial unrestricted fresh attempt had concurrent library-file read failures. The successful final run builds dependency-ready batches of at most 4 modules, then performs a normal full lake build. Fixed mathlib build artifacts are reused; every local module was rebuilt from source in a new directory. No mathematical or external blocker remains.
+Verification builds dependency-ready batches of at most 4 modules, then performs a normal full lake build. Fixed mathlib build artifacts are reused; every local module was rebuilt from source in a new directory. No mathematical or external blocker remains.

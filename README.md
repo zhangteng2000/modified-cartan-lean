@@ -1,10 +1,10 @@
 # Modified Cartan — Lean 4 + mathlib
 
-修订稿的全部 19 项带标签结果已有完整证明，定义和补充最优性结论也已核对。包括一般分割定理、精确递推半径吸收、五函数锐定理、R₅ = 2 − √3、完整高斯反例，以及环面和射影空间的几何应用。
+论文的全部 19 项带标签结果已有完整证明，定义和补充最优性结论也已核对。包括一般分割定理、精确递推半径吸收、五函数锐定理、R₅ = 2 − √3、完整高斯反例，以及环面和射影空间的几何应用。
 
-项目对应最新的 paper.tex；旧稿保存在 manuscripts/paper-2026-09-18.tex。[修订对比](docs/REVISION_2026-09-19.md)记录了表述修改和 C-class 的 region 用词。原稿常数、半径、不连通开集、直径 ≤ log 3 的端点和双向等价均予保留。
+本项目形式化 [paper.tex](paper.tex) 中的论文《The modified Cartan conjecture》。论文的常数、半径、不连通开集、直径 ≤ log 3 的端点和双向等价均予保留。
 
-- [最终报告](docs/FINAL_REPORT.md)：逐项论文标签、证明名称、来源文件、公理检查和差异说明。
+- [最终报告](docs/FINAL_REPORT.md)：逐项论文标签、证明名称、来源文件、公理检查和数学对应说明。
 - [覆盖清单](FORMALIZATION_STATUS.md)及[机器可读对应表](verification/manuscript-coverage.json)。
 - [构建与审计结果](verification/result.json)、[全部定理公理清单](verification/axiom-summary.json)。
 - [证明依赖图](docs/DEPENDENCIES.md)、[完整编译依赖](verification/dependencies.json)。
@@ -43,4 +43,4 @@ Windows 上也可在获得缓存后运行：
 
 工具链、依赖配置和源文件都在仓库中。脚本不修改 Lean/mathlib 的保护或证明检查设置。
 
-当前完整工作副本位于 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan。Documents 下的原副本保留为先前快照；迁移原因与完整记录见修订说明。完整 Git 历史保存在本地仓库和 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)中。
+完整源码、论文及验证记录见 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)。

@@ -7,6 +7,5 @@
 lean-toolchain text eol=lf
 # Preserve the exact uploaded manuscript bytes across platforms.
 paper.tex -text diff
-manuscripts/*.tex -text diff
 # Keep the delivered compiler logs byte-for-byte.
 verification/*.log -text

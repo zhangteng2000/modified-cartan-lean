@@ -1,8 +1,8 @@
 # 形式化覆盖状态
 
-修订稿的 19 项带标签结果全部有完整 Lean 证明。下表将每个原稿结果映射到实际证明项；Prop 定义本身不作为完成依据。验证脚本另行核对稿件哈希、证明入口和全部定理的递归公理依赖。
+论文的 19 项带标签结果全部有完整 Lean 证明。下表将每个论文结果映射到实际证明项；Prop 定义本身不作为完成依据。验证脚本另行核对稿件哈希、证明入口和全部定理的递归公理依赖。
 
-| 原稿标签 | 状态 | Lean 证明及保留内容 |
+| 论文标签 | 状态 | Lean 证明及保留内容 |
 |---|---|---|
 | `thm:main` | VERIFIED | [partitionTheorem_proved](ModifiedCartan/PartitionTheorem.lean)；[partition_at_recursive_radius](ModifiedCartan/PartitionTheorem.lean)。All p >= 3; actual C-class partition after a common strict subsequence. The explicit radius r_(p-1)^(p-1) is proved as well. |
 | `thm:sharp-five` | VERIFIED | [sharpFiveTheorem_proved](ModifiedCartan/SharpFive.lean)。Arbitrary nonempty open subset of the unit disk, including disconnected sets; diameter <= log 3, with its endpoint. |
@@ -24,7 +24,7 @@
 | `prop:projective-equivalence` | VERIFIED | [projective_equivalence](ModifiedCartan/ProjectiveEquivalence.lean)。Both directions, p >= 3 and 0 < R <= 1; genuine projective quotient topology, product uniformity and manifold holomorphic maps. |
 | `cor:projective-zero-directions` | VERIFIED | [projective_zero_directions](ModifiedCartan/ProjectiveTori.lean)；[projectiveTorusTangentSpace_finrank_le](ModifiedCartan/ProjectiveTori.lean)。Exact union of differential images of actual holomorphic torus embeddings, with dimension <= floor(p/2)-1. |
 
-`def:cclass` 对应 Basic.lean 中的 IsDominant、IsCClass 和 CPartition。主导指标属于该类，保证非空；有界性对每个紧集及所有项成立，收敛是紧集上一致收敛。该谓词适用于一般集合，其在 region 上的限制覆盖修订稿定义。
+`def:cclass` 对应 Basic.lean 中的 IsDominant、IsCClass 和 CPartition。主导指标属于该类，保证非空；有界性对每个紧集及所有项成立，收敛是紧集上一致收敛。该谓词适用于一般集合，其在 region 上的限制覆盖论文定义。
 
 ## 补充结果
 

@@ -32,7 +32,7 @@
           "line": 51
         }
       ],
-      "notes": "The revised definition says region; the Lean predicate applies to arbitrary sets and therefore to regions. No connectedness is added to the sharp open-set theorems. Dominant-index membership makes each C-class nonempty."
+      "notes": "The manuscript defines C-classes on regions; the Lean predicate applies to arbitrary sets and therefore to regions. No connectedness is added to the sharp open-set theorems. Dominant-index membership makes each C-class nonempty."
     }
   ],
   "principal_results": [

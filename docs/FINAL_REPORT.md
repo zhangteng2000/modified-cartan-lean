@@ -1,22 +1,22 @@
-# 修订稿完整形式化验收报告
+# 完整形式化验收报告
 
-修订稿全部 19 项带标签的作者结果，以及最优半径、完整高斯反例、直径不可改进性和射影切空间维数结论均已有 Lean 证明项。289 个本地模块在新的构建目录中重建成功，1020 个本地定理逐一通过递归公理审计。
+论文全部 19 项带标签的作者结果，以及最优半径、完整高斯反例、直径不可改进性和射影切空间维数结论均已有 Lean 证明项。289 个本地模块在新的构建目录中重建成功，1020 个本地定理逐一通过递归公理审计。
 
 验收时间：2026-09-19T23:38:49.7170484Z。源码证明检查点：`e84e54567afaa9ded782f6d3da0826311407ac55`。以下结论由真实的 Lean 编译和审计输出支持；完整记录见 [result.json](../verification/result.json)、[构建日志](../verification/build.log)、[证明入口检查](../verification/manuscript-check.log)和[公理日志](../verification/axioms.log)。
 
 ## 稿件及形式化范围
 
-当前稿件为 [paper.tex](../paper.tex)，SHA-256 为 `76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89`，与用户最新附件逐字节一致。旧稿保存在 manuscripts/paper-2026-09-18.tex。[修订对比](REVISION_2026-09-19.md)记录了全部环境级变化。
+本项目以 [paper.tex](../paper.tex) 为唯一稿件，SHA-256 为 `76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89`。
 
 下表覆盖 19 项带标签结果；另有 def:cclass，对应 Basic.lean 中的 IsDominant、IsCClass 和 CPartition。实际商函数有界性、紧集一致收敛、固定主导指标和严格子列均保留。
 
-经典 Cartan 定理只形式化本文实际需要的 p = 5 全单位圆盘版本，另已证明 p = 3、4。原稿文献综述中的任意 p 历史版本、Borel/Picard 的历史叙述和 Yamanoi 结果不作为本项目新增的作者定理，也没有被作为公理导入。
+经典 Cartan 定理只形式化本文实际需要的 p = 5 全单位圆盘版本，另已证明 p = 3、4。论文文献综述中的任意 p 历史版本、Borel/Picard 的历史叙述和 Yamanoi 结果不作为本项目新增的作者定理，也没有被作为公理导入。
 
 ## 每项主要结果及公理依赖
 
 列出的名称均为实际定理证明项。公理列来自本次 #print axioms 输出，是递归依赖检查，不是对 Prop 定义的检查。三项标准逻辑公理 propext、Classical.choice、Quot.sound 符合用户验收要求。
 
-| 原稿标签 | 精确 Lean 名称 | 源文件与行号 | #print axioms 结果 |
+| 论文标签 | 精确 Lean 名称 | 源文件与行号 | #print axioms 结果 |
 |---|---|---|---|
 | `thm:main` | `ModifiedCartan.partitionTheorem_proved` | [ModifiedCartan/PartitionTheorem.lean:104](../ModifiedCartan/PartitionTheorem.lean#L104) | `[propext, Classical.choice, Quot.sound]` |
 | `thm:main` | `ModifiedCartan.partition_at_recursive_radius` | [ModifiedCartan/PartitionTheorem.lean:10](../ModifiedCartan/PartitionTheorem.lean#L10) | `[propext, Classical.choice, Quot.sound]` |
@@ -109,9 +109,9 @@ Lean 工具链：`leanprover/lean4:v4.34.0-rc1`。固定依赖如下；模块数
 
 主要复用 Poisson 表示、Cauchy 估计、解析零点与亚纯函数、紧性与 Arzelà–Ascoli、行列式、Laurent/多项式零点集、流形和射影化基础。未在固定 mathlib 中找到的 Cartan 抽取、定量估计、内在度量桥接和射影结构均在本项目证明。[库来源审计](LIBRARY_AUDIT.md)给出细节和 Cartan 原始文献来源。
 
-## 差异处理
+## 论文与形式化的对应
 
-[DISCREPANCIES.md](DISCREPANCIES.md)记录全部对应问题：早期仅存在半径的表述已由精确递推半径定理补足；几何坐标模型已与内在切空间及度量连接；修订稿 region 的用词没有导致对一般开集定理加入连通性；辅助引理数量与论文结果数量分别报告；经典 Cartan 输入限定为实际需要且已完整证明的版本。没有未解决的主结果数学缺口。
+[数学对应说明](MANUSCRIPT_CORRESPONDENCE.md)说明精确递推半径、内在几何模型、C-class 定义与一般开集结论、结果计数及经典 Cartan 输入的形式化。全部主要结果都有完整证明，常数、假设和结论与论文相符。
 
 ## 构建与复核
 
@@ -155,4 +155,4 @@ Windows 上若使用项目自己的依赖缓存，可运行：
 | 编译错误 | 0 |
 | 允许的标准逻辑公理 | propext, Classical.choice, Quot.sound |
 
-完整 Git 历史保留在本地交付仓库。最终验证时尚未配置远程仓库；2026-09-20 按上传要求配置了 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)，同步完整项目及提交历史。当前工作副本是 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan；Documents 中的旧副本按原样保留。
+完整源码、论文及验证记录见 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)。

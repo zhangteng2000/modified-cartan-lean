@@ -2,7 +2,7 @@
   "status": "full_formalization_verified",
   "full_paper_proved": true,
   "manuscript_sha256": "76592f6d46c40f2632eb426651fa1e062e4427c302a96ad7406b6a923835bb89",
-  "coverage_sha256": "25e292814ce1612379051ddf348846e580b626c9f55d2defd1103eb4bb1adac8",
+  "coverage_sha256": "4abf47ab4664a44e24f604d63876cd8e706ab45d67ee99357158001853e62af9",
   "manuscript_correspondence_review": "complete",
   "principal_manuscript_results": 19,
   "checked_manuscript_entry_points": 54,
@@ -23,5 +23,7 @@
   "fresh_local_build": true,
   "module_batch_size": 4,
   "verified_at_utc": "2026-09-19T23:38:49.7170484Z",
-  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59"
+  "build_directory": "C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ModifiedCartan-496d74ba5f6a402e9d378ff4c76a3a59",
+  "coverage_notes_checked_at_utc": "2026-09-20T08:47:53.9909610Z",
+  "compiler_input_hashes_unchanged": true
 }
