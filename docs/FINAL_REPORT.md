@@ -155,4 +155,4 @@ Windows 上若使用项目自己的依赖缓存，可运行：
 | 编译错误 | 0 |
 | 允许的标准逻辑公理 | propext, Classical.choice, Quot.sound |
 
-完整 Git 历史保留在本地交付仓库。未配置远程仓库，因此没有远程推送。当前工作副本是 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan；Documents 中的旧副本按原样保留。
+完整 Git 历史保留在本地交付仓库。最终验证时尚未配置远程仓库；2026-09-20 按上传要求配置了 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)，同步完整项目及提交历史。当前工作副本是 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan；Documents 中的旧副本按原样保留。

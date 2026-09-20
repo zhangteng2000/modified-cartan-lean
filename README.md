@@ -43,4 +43,4 @@ Windows 上也可在获得缓存后运行：
 
 工具链、依赖配置和源文件都在仓库中。脚本不修改 Lean/mathlib 的保护或证明检查设置。
 
-当前完整工作副本位于 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan。Documents 下的原副本保留为先前快照；迁移原因与完整记录见修订说明。Git 历史保存在本地仓库中，未配置远程仓库。
+当前完整工作副本位于 C:/Users/HUAWEI/AppData/Local/ModifiedCartanFormalization/outputs/ModifiedCartan。Documents 下的原副本保留为先前快照；迁移原因与完整记录见修订说明。完整 Git 历史保存在本地仓库和 [GitHub 仓库](https://github.com/zhangteng2000/modified-cartan-lean)中。
